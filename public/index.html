@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Med Sense - Medicine Information Checker</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    padding:25px 15px;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:#222;
+}
+
+.container{
+    width:1100px;
+    max-width:100%;
+    margin:auto;
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.logo{
+    text-align:center;
+    font-size:60px;
+}
+
+h1{
+    text-align:center;
+    color:#1565c0;
+    font-size:38px;
+    margin-top:5px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin:8px 0 30px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:7px;
+    color:#333;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#1565c0;
+    box-shadow:0 0 0 3px rgba(21,101,192,.12);
+}
+
+.hint{
+    margin-top:6px;
+    font-size:13px;
+    color:#777;
+}
+
+button{
+    width:100%;
+    border:none;
+    border-radius:11px;
+    padding:16px;
+    background:#1565c0;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:disabled{
+    opacity:.6;
+    cursor:not-allowed;
+}
+
+button:hover:not(:disabled){
+    background:#0d47a1;
+}
+
+#result{
+    display:none;
+    margin-top:30px;
+}
+
+.result-header{
+    padding:22px;
+    background:#e3f2fd;
+    border-left:6px solid #1565c0;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.result-header h2{
+    color:#1565c0;
+    margin-bottom:8px;
+}
+
+.result-header p{
+    line-height:1.7;
+}
+
+.patient-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:25px;
+    background:white;
+}
+
+.patient-table th,
+.patient-table td{
+    border:1px solid #ddd;
+    padding:13px;
+    text-align:left;
+}
+
+.patient-table th{
+    background:#1565c0;
+    color:white;
+}
+
+.section-title{
+    color:#1565c0;
+    margin:25px 0 12px;
+}
+
+.medicine-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+.medicine-table{
+    width:100%;
+    min-width:950px;
+    border-collapse:collapse;
+    background:white;
+}
+
+.medicine-table th{
+    background:#1565c0;
+    color:white;
+    padding:13px;
+    text-align:left;
+    border:1px solid #ddd;
+}
+
+.medicine-table td{
+    padding:13px;
+    border:1px solid #ddd;
+    vertical-align:top;
+    line-height:1.55;
+}
+
+.medicine-table tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.tablet{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    background:#e3f2fd;
+    color:#1565c0;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.good{
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+.warning{
+    margin-top:20px;
+    padding:20px;
+    background:#fff3cd;
+    border-left:6px solid #ff9800;
+    border-radius:10px;
+    line-height:1.7;
+}
+
+.error{
+    padding:20px;
+    background:#ffebee;
+    border-left:6px solid #e53935;
+    border-radius:10px;
+}
+
+.error h2{
+    color:#c62828;
+    margin-bottom:8px;
+}
+
+.medicine-result{
+    margin-top:25px;
+    border:1px solid #ddd;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.medicine-result-header{
+    padding:18px;
+    background:#f5f9ff;
+}
+
+.medicine-result-header h3{
+    color:#1565c0;
+    margin-bottom:6px;
+}
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:18px;
+}
+
+.detail{
+    background:#f8fafc;
+    padding:15px;
+    border-radius:10px;
+}
+
+.detail strong{
+    display:block;
+    color:#1565c0;
+    margin-bottom:7px;
+}
+
+.disclaimer{
+    margin-top:30px;
+    padding:18px;
+    background:#f1f3f5;
+    border-radius:10px;
+    text-align:center;
+    color:#666;
+    font-size:13px;
+    line-height:1.7;
+}
+
+@media(max-width:750px){
+
+    .container{
+        padding:20px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">🩺</div>
+
+<h1>Med Sense</h1>
+
+<p class="subtitle">
+    Disease, Symptoms & Medicine Information Checker
+</p>
+
+
+<!-- =====================================================
+     INPUT SECTION
+===================================================== -->
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label for="disease">
+    🔎 Disease / Condition
+</label>
+
+<input
+    id="disease"
+    list="diseaseList"
+    placeholder="Type or select disease..."
+    autocomplete="off"
+>
+
+<datalist id="diseaseList"></datalist>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="medicine">
+    💊 Medicine / Tablet
+</label>
+
+<input
+    id="medicine"
+    list="medicineList"
+    placeholder="Type or select medicine..."
+    autocomplete="off"
+>
+
+<datalist id="medicineList"></datalist>
+
+</div>
+
+
+<div class="form-group full">
+
+<label for="symptoms">
+    🤒 Symptoms
+</label>
+
+<textarea
+    id="symptoms"
+    placeholder="Example: fever, headache, body pain, cough..."
+></textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="age">
+    👤 Patient Age
+</label>
+
+<input
+    type="number"
+    id="age"
+    min="0"
+    max="120"
+    placeholder="Enter age"
+>
+
+</div>
+
+</div>
+
+
+<button id="checkBtn" onclick="checkInfo()">
+    🔍 CHECK INFORMATION
+</button>
+
+
+<!-- =====================================================
+     RESULT
+===================================================== -->
+
+<div id="result"></div>
+
+
+<div class="disclaimer">
+
+⚠️ <b>Educational information only.</b>
+This website does not diagnose disease or prescribe medication.
+Medicine information can vary by product, strength, country,
+age, weight, allergies, pregnancy, medical conditions and
+other medicines. Always read the medicine's current label
+and consult a doctor or pharmacist when needed.
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   API BASE
+   Same-origin by default. If you host the frontend
+   separately from the backend, set this to the full
+   backend URL, e.g. "https://your-api.example.com"
+===================================================== */
+const API_BASE = "";
+
+
+/* =====================================================
+   HTML ESCAPE
+===================================================== */
+
+function escapeHTML(text){
+
+    return String(text)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =====================================================
+   LOAD AUTOCOMPLETE LISTS FROM THE BACKEND
+===================================================== */
+
+async function loadLists(){
+
+    try{
+
+        const [diseaseRes, medicineRes] = await Promise.all([
+            fetch(`${API_BASE}/api/diseases`),
+            fetch(`${API_BASE}/api/medicines`)
+        ]);
+
+        const diseaseNames = await diseaseRes.json();
+        const medicineNames = await medicineRes.json();
+
+        const diseaseList = document.getElementById("diseaseList");
+        const medicineList = document.getElementById("medicineList");
+
+        diseaseList.innerHTML = diseaseNames
+            .map(name => `<option value="${escapeHTML(name)}">`)
+            .join("");
+
+        medicineList.innerHTML = medicineNames
+            .map(name => `<option value="${escapeHTML(name)}">`)
+            .join("");
+
+    }catch(err){
+
+        console.error("Could not load autocomplete lists:", err);
+
+    }
+
+}
+
+loadLists();
+
+
+/* =====================================================
+   CHECK INFORMATION (calls backend API)
+===================================================== */
+
+async function checkInfo(){
+
+    const diseaseInput = document.getElementById("disease").value;
+    const medicineInput = document.getElementById("medicine").value;
+    const symptoms = document.getElementById("symptoms").value;
+    const age = document.getElementById("age").value;
+
+    const result = document.getElementById("result");
+    const btn = document.getElementById("checkBtn");
+
+    result.style.display = "block";
+    btn.disabled = true;
+    btn.textContent = "🔄 Checking...";
+
+    try{
+
+        const response = await fetch(`${API_BASE}/api/check`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                disease: diseaseInput,
+                medicine: medicineInput,
+                symptoms,
+                age
+            })
+        });
+
+        const data = await response.json();
+
+        if(!response.ok){
+
+            result.innerHTML = `
+                <div class="error">
+                    <h2>❌ ${data.field === "disease" ? "Disease Not Found" : data.field === "medicine" ? "Medicine Not Found" : "Please Check Your Input"}</h2>
+                    <p>${escapeHTML(data.error || "Something went wrong.")}</p>
+                </div>
+            `;
+
+            return;
+
+        }
+
+        renderResult(data, age);
+
+    }catch(err){
+
+        result.innerHTML = `
+            <div class="error">
+                <h2>❌ Connection Error</h2>
+                <p>Could not reach the Med Sense server. Please make sure the backend is running.</p>
+            </div>
+        `;
+
+        console.error(err);
+
+    }finally{
+
+        btn.disabled = false;
+        btn.textContent = "🔍 CHECK INFORMATION";
+
+        result.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   RENDER RESULT
+===================================================== */
+
+function renderResult(data, age){
+
+    const result = document.getElementById("result");
+
+    const status = data.matched
+        ? `<p class="good">✅ This medicine is listed in the Med Sense database for this condition.</p>`
+        : `<p style="color:#c62828;font-weight:bold;">⚠️ This medicine is not listed for this condition in the database.</p>`;
+
+    let medicineRows = "";
+
+    data.listedMedicines.forEach(med => {
+
+        medicineRows += `
+            <tr>
+                <td><b>${escapeHTML(med.name)}</b></td>
+                <td><span class="tablet">${escapeHTML(med.form)}</span></td>
+                <td>${escapeHTML(med.ingredient)}</td>
+                <td>${escapeHTML(med.purpose)}</td>
+                <td>${escapeHTML(med.uses)}</td>
+                <td>${escapeHTML(med.age)}</td>
+                <td>${escapeHTML(med.precautions)}</td>
+            </tr>
+        `;
+
+    });
+
+    const medicine = data.selectedMedicine;
+
+    result.innerHTML = `
+
+        <div class="result-header">
+            <h2>📋 Medicine Information Result</h2>
+            <p>Disease: <b>${escapeHTML(data.disease.name)}</b></p>
+            <p>Medicine selected: <b>${escapeHTML(medicine.name)}</b></p>
+            <p>Patient age: <b>${escapeHTML(age)} years</b></p>
+            <br>
+            ${status}
+        </div>
+
+        <h2 class="section-title">👤 Patient & Disease Information</h2>
+
+        <table class="patient-table">
+            <tr><th>Information</th><th>Details</th></tr>
+            <tr><td>Patient Age</td><td>${escapeHTML(age)} years</td></tr>
+            <tr><td>Disease</td><td>${escapeHTML(data.disease.name)}</td></tr>
+            <tr><td>Category</td><td>${escapeHTML(data.disease.category)}</td></tr>
+            <tr><td>Common Symptoms</td><td>${escapeHTML(data.disease.commonSymptoms)}</td></tr>
+            <tr><td>Patient Entered Symptoms</td><td>${data.patient.symptoms ? escapeHTML(data.patient.symptoms) : "No additional symptoms entered."}</td></tr>
+        </table>
+
+        <h2 class="section-title">💊 Medicines / Tablets Commonly Listed</h2>
+
+        ${
+            medicineRows !== "" ?
+            `
+            <div class="medicine-table-wrapper">
+            <table class="medicine-table">
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Form</th>
+                        <th>Active Ingredient</th>
+                        <th>Purpose</th>
+                        <th>Uses</th>
+                        <th>Age Information</th>
+                        <th>Precautions</th>
+                    </tr>
+                </thead>
+                <tbody>${medicineRows}</tbody>
+            </table>
+            </div>
+            `
+            :
+            `
+            <div class="warning">
+                No self-care medicine is listed here.
+                This condition may require professional
+                diagnosis and treatment.
+            </div>
+            `
+        }
+
+        <h2 class="section-title">💊 Selected Medicine Details</h2>
+
+        <div class="medicine-result">
+
+            <div class="medicine-result-header">
+                <h3>${escapeHTML(medicine.name)}</h3>
+                <p>${data.matched ? "✅ Listed for this condition" : "⚠️ Not listed for this condition"}</p>
+            </div>
+
+            <div class="detail-grid">
+
+                <div class="detail">
+                    <strong>💊 Medicine Form</strong>
+                    ${escapeHTML(medicine.form)}
+                </div>
+
+                <div class="detail">
+                    <strong>🧪 Active Ingredient</strong>
+                    ${escapeHTML(medicine.ingredient)}
+                </div>
+
+                <div class="detail">
+                    <strong>🎯 Purpose</strong>
+                    ${escapeHTML(medicine.purpose)}
+                </div>
+
+                ${
+                    medicine.dose
+                    ? `<div class="detail"><strong>💊 Dose / Strength Information</strong>${escapeHTML(medicine.dose)}</div>`
+                    : ""
+                }
+
+                <div class="detail">
+                    <strong>📌 Uses</strong>
+                    ${escapeHTML(medicine.uses)}
+                </div>
+
+                <div class="detail">
+                    <strong>👶 Age Information</strong>
+                    ${escapeHTML(medicine.age)}
+                </div>
+
+                <div class="detail">
+                    <strong>⚠️ Precautions</strong>
+                    ${escapeHTML(medicine.precautions)}
+                </div>
+
+                <div class="detail">
+                    <strong>❗ Common Side Effects</strong>
+                    ${escapeHTML(medicine.sideEffects)}
+                </div>
+
+                <div class="detail">
+                    <strong>🔄 Interactions</strong>
+                    ${escapeHTML(medicine.interactions)}
+                </div>
+
+                <div class="detail">
+                    <strong>🍽️ Food Information</strong>
+                    ${escapeHTML(medicine.food)}
+                </div>
+
+                <div class="detail">
+                    <strong>🏷️ Availability</strong>
+                    ${escapeHTML(medicine.status)}
+                </div>
+
+                <div class="detail">
+                    <strong>🚨 Important Warning</strong>
+                    ${escapeHTML(medicine.warning)}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="warning">
+            <b>⚠️ Dosage / Tablet Strength Notice</b>
+            <br><br>
+            This checker does not calculate a personalized
+            dose or tell the patient how many tablets to take.
+            The same medicine can be sold in different strengths
+            and forms. Always check the exact package label and
+            follow directions from a doctor or pharmacist.
+        </div>
+
+    `;
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+{
+  "Common Cold": {
+    "category": "Respiratory",
+    "symptoms": "Runny nose, blocked nose, sneezing, sore throat and cough.",
+    "medicines": [
+      "Paracetamol",
+      "Cetirizine",
+      "Saline Nasal Spray"
+    ]
+  },
+  "Cough": {
+    "category": "Respiratory",
+    "symptoms": "Cough, throat irritation and sometimes mucus.",
+    "medicines": [
+      "Dextromethorphan"
+    ]
+  },
+  "Flu (Influenza)": {
+    "category": "Respiratory",
+    "symptoms": "Fever, chills, body aches, fatigue, cough and headache.",
+    "medicines": [
+      "Paracetamol"
+    ]
+  },
+  "Sore Throat": {
+    "category": "Respiratory",
+    "symptoms": "Throat pain, irritation and pain while swallowing.",
+    "medicines": [
+      "Paracetamol"
+    ]
+  },
+  "Allergic Rhinitis": {
+    "category": "Allergy",
+    "symptoms": "Sneezing, runny nose, nasal itching and watery eyes.",
+    "medicines": [
+      "Cetirizine",
+      "Loratadine"
+    ]
+  },
+  "Sinusitis": {
+    "category": "Respiratory",
+    "symptoms": "Blocked nose, facial pressure, headache and nasal discharge.",
+    "medicines": [
+      "Paracetamol",
+      "Saline Nasal Spray"
+    ]
+  },
+  "Asthma": {
+    "category": "Respiratory",
+    "symptoms": "Wheezing, coughing, chest tightness and shortness of breath.",
+    "medicines": [
+      "Salbutamol Inhaler"
+    ]
+  },
+  "Bronchitis": {
+    "category": "Respiratory",
+    "symptoms": "Cough, mucus, fatigue and chest discomfort.",
+    "medicines": [
+      "Paracetamol"
+    ]
+  },
+  "Acidity / Heartburn": {
+    "category": "Digestive",
+    "symptoms": "Burning chest sensation, acid taste and indigestion.",
+    "medicines": [
+      "Antacid",
+      "Omeprazole"
+    ]
+  },
+  "Indigestion": {
+    "category": "Digestive",
+    "symptoms": "Fullness, bloating, belching and upper abdominal discomfort.",
+    "medicines": [
+      "Antacid"
+    ]
+  },
+  "Gas / Flatulence": {
+    "category": "Digestive",
+    "symptoms": "Bloating, abdominal discomfort and passing gas.",
+    "medicines": [
+      "Simethicone"
+    ]
+  },
+  "Constipation": {
+    "category": "Digestive",
+    "symptoms": "Hard stools, infrequent bowel movements and straining.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)",
+      "Bisacodyl"
+    ]
+  },
+  "Diarrhea": {
+    "category": "Digestive",
+    "symptoms": "Loose stools, frequent bowel movements and abdominal cramps.",
+    "medicines": [
+      "ORS",
+      "Loperamide"
+    ]
+  },
+  "Nausea": {
+    "category": "Digestive",
+    "symptoms": "Feeling sick, queasiness and reduced appetite.",
+    "medicines": [
+      "Domperidone"
+    ]
+  },
+  "Vomiting": {
+    "category": "Digestive",
+    "symptoms": "Vomiting, nausea and possible dehydration.",
+    "medicines": [
+      "ORS"
+    ]
+  },
+  "Gastritis": {
+    "category": "Digestive",
+    "symptoms": "Upper abdominal discomfort, nausea and indigestion.",
+    "medicines": [
+      "Omeprazole"
+    ]
+  },
+  "Food Poisoning": {
+    "category": "Digestive",
+    "symptoms": "Diarrhea, vomiting, abdominal cramps and sometimes fever.",
+    "medicines": [
+      "ORS"
+    ]
+  },
+  "Irritable Bowel Syndrome (IBS)": {
+    "category": "Digestive",
+    "symptoms": "Abdominal pain, bloating, diarrhea or constipation.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)"
+    ]
+  },
+  "Headache": {
+    "category": "Pain",
+    "symptoms": "Head pain, pressure and sometimes light sensitivity.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Migraine": {
+    "category": "Pain",
+    "symptoms": "Moderate/severe headache, nausea and light or sound sensitivity.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Toothache": {
+    "category": "Dental",
+    "symptoms": "Tooth pain, sensitivity and pain while chewing.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Back Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Back pain, stiffness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Neck Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Neck pain, stiffness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Muscle Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Muscle soreness, pain and stiffness.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Joint Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Joint pain, stiffness and possible swelling.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Menstrual Cramps": {
+    "category": "Women's Health",
+    "symptoms": "Lower abdominal cramps, back pain and fatigue.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Sprain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Pain, swelling, bruising and difficulty moving the joint.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Muscle Strain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Muscle pain, tenderness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Acne": {
+    "category": "Skin",
+    "symptoms": "Pimples, blackheads, whiteheads and inflamed spots.",
+    "medicines": [
+      "Benzoyl Peroxide"
+    ]
+  },
+  "Eczema": {
+    "category": "Skin",
+    "symptoms": "Dryness, itching, redness and inflammation.",
+    "medicines": [
+      "Hydrocortisone"
+    ]
+  },
+  "Dermatitis": {
+    "category": "Skin",
+    "symptoms": "Redness, itching and skin irritation.",
+    "medicines": [
+      "Hydrocortisone"
+    ]
+  },
+  "Fungal Skin Infection": {
+    "category": "Skin",
+    "symptoms": "Itching, scaling, redness and fungal rash.",
+    "medicines": [
+      "Clotrimazole"
+    ]
+  },
+  "Ringworm": {
+    "category": "Skin",
+    "symptoms": "Circular scaly rash, redness and itching.",
+    "medicines": [
+      "Clotrimazole"
+    ]
+  },
+  "Itching": {
+    "category": "Skin",
+    "symptoms": "Itchy or irritated skin.",
+    "medicines": [
+      "Cetirizine"
+    ]
+  },
+  "Skin Rash": {
+    "category": "Skin",
+    "symptoms": "Redness, itching and changes in skin appearance.",
+    "medicines": [
+      "Hydrocortisone"
+    ]
+  },
+  "Sunburn": {
+    "category": "Skin",
+    "symptoms": "Redness, pain, warmth and possible blistering.",
+    "medicines": [
+      "Paracetamol"
+    ]
+  },
+  "Dandruff": {
+    "category": "Skin",
+    "symptoms": "Flaking, itching and scalp irritation.",
+    "medicines": [
+      "Ketoconazole Shampoo"
+    ]
+  },
+  "Psoriasis": {
+    "category": "Skin",
+    "symptoms": "Red, scaly skin patches and itching.",
+    "medicines": [
+      "Hydrocortisone"
+    ]
+  },
+  "Urinary Tract Infection (UTI)": {
+    "category": "Infection",
+    "symptoms": "Burning urination, frequent urination, urgency and lower abdominal discomfort.",
+    "medicines": [],
+    "note": "Typically requires prescription antibiotics; consult a doctor."
+  },
+  "Conjunctivitis (Pink Eye)": {
+    "category": "Eye",
+    "symptoms": "Red eye, discharge, irritation and watering.",
+    "medicines": [
+      "Lubricating Eye Drops"
+    ]
+  },
+  "Ear Infection": {
+    "category": "Infection",
+    "symptoms": "Ear pain, reduced hearing and sometimes fever.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Throat Infection": {
+    "category": "Infection",
+    "symptoms": "Sore throat, painful swallowing and sometimes fever.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Skin Infection": {
+    "category": "Infection",
+    "symptoms": "Redness, swelling, pain and possible discharge.",
+    "medicines": [],
+    "note": "Treatment depends on cause (bacterial/fungal/viral); consult a doctor for diagnosis."
+  },
+  "Tonsillitis": {
+    "category": "Infection",
+    "symptoms": "Sore throat, swollen tonsils, fever and difficulty swallowing.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Viral Fever": {
+    "category": "Infection",
+    "symptoms": "Fever, fatigue and body aches.",
+    "medicines": [
+      "Paracetamol"
+    ]
+  },
+  "Diabetes": {
+    "category": "Long-term condition",
+    "symptoms": "Increased thirst, frequent urination, fatigue and possible blurred vision.",
+    "medicines": [],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor."
+  },
+  "High Blood Pressure (Hypertension)": {
+    "category": "Long-term condition",
+    "symptoms": "Often no symptoms; headaches or dizziness may occur.",
+    "medicines": [],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor."
+  },
+  "High Cholesterol": {
+    "category": "Long-term condition",
+    "symptoms": "Usually no obvious symptoms.",
+    "medicines": [],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor."
+  },
+  "Thyroid Disorders": {
+    "category": "Long-term condition",
+    "symptoms": "Fatigue, weight changes, temperature sensitivity and heart-rate changes.",
+    "medicines": [],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor."
+  },
+  "Anemia": {
+    "category": "Blood condition",
+    "symptoms": "Fatigue, weakness, pale skin and shortness of breath.",
+    "medicines": [
+      "Iron Supplement",
+      "Folic Acid"
+    ]
+  },
+  "Obesity": {
+    "category": "Long-term condition",
+    "symptoms": "Excess body weight and possible reduced physical fitness.",
+    "medicines": [],
+    "note": "Managed through lifestyle changes and medical guidance rather than OTC medicine."
+  },
+  "Vitamin D Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "May have no symptoms; muscle or bone problems can occur.",
+    "medicines": [
+      "Vitamin D3 Supplement"
+    ]
+  },
+  "Vitamin B12 Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "Fatigue, weakness and possible numbness or tingling.",
+    "medicines": [
+      "Vitamin B12 Supplement"
+    ]
+  },
+  "Menstrual Pain": {
+    "category": "Women's Health",
+    "symptoms": "Cramps, lower abdominal pain and back pain.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Irregular Periods": {
+    "category": "Women's Health",
+    "symptoms": "Unpredictable or changed menstrual cycles.",
+    "medicines": [],
+    "note": "Underlying cause needs medical evaluation; treatment is typically prescription-based."
+  },
+  "Premenstrual Syndrome (PMS)": {
+    "category": "Women's Health",
+    "symptoms": "Mood changes, bloating, breast tenderness and cramps.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Menopause Symptoms": {
+    "category": "Women's Health",
+    "symptoms": "Hot flashes, sleep problems and mood changes.",
+    "medicines": [],
+    "note": "Treatment options (e.g., hormone therapy) require medical guidance."
+  },
+  "Vaginal Yeast Infection": {
+    "category": "Women's Health",
+    "symptoms": "Itching, irritation and unusual discharge.",
+    "medicines": [
+      "Clotrimazole"
+    ]
+  },
+  "Fever": {
+    "category": "General",
+    "symptoms": "Raised temperature, chills, fatigue and body aches.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Dolo 650"
+    ]
+  },
+  "Fatigue": {
+    "category": "General",
+    "symptoms": "Low energy, tiredness and reduced concentration.",
+    "medicines": [
+      "Multivitamin"
+    ]
+  },
+  "Dizziness": {
+    "category": "General",
+    "symptoms": "Lightheadedness, unsteadiness or spinning sensation.",
+    "medicines": [],
+    "note": "Many possible causes; persistent or severe dizziness needs medical evaluation."
+  },
+  "Dehydration": {
+    "category": "General",
+    "symptoms": "Thirst, dry mouth, reduced urination and weakness.",
+    "medicines": [
+      "ORS"
+    ]
+  },
+  "Insomnia": {
+    "category": "Sleep",
+    "symptoms": "Difficulty falling asleep, staying asleep or daytime tiredness.",
+    "medicines": [
+      "Melatonin"
+    ]
+  },
+  "Anxiety": {
+    "category": "Mental Health",
+    "symptoms": "Excessive worry, restlessness, tension and difficulty concentrating.",
+    "medicines": [],
+    "note": "Best addressed with professional evaluation; not typically treated with OTC medicine."
+  },
+  "Motion Sickness": {
+    "category": "Travel-related",
+    "symptoms": "Nausea, dizziness and vomiting during travel.",
+    "medicines": [
+      "Dimenhydrinate"
+    ]
+  },
+  "Allergies": {
+    "category": "Allergy",
+    "symptoms": "Sneezing, itching, runny nose and watery eyes.",
+    "medicines": [
+      "Cetirizine",
+      "Loratadine"
+    ]
+  },
+  "Hemorrhoids (Piles)": {
+    "category": "Digestive",
+    "symptoms": "Rectal discomfort, itching and bleeding during bowel movements.",
+    "medicines": [
+      "Hydrocortisone",
+      "Psyllium Husk (Isabgol)"
+    ]
+  }
+}
