@@ -5,14 +5,19 @@
     "medicines": [
       "Paracetamol",
       "Cetirizine",
-      "Saline Nasal Spray"
+      "Saline Nasal Spray",
+      "Chlorpheniramine",
+      "Xylometazoline Nasal Spray",
+      "Menthol Vapor Balm"
     ]
   },
   "Cough": {
     "category": "Respiratory",
     "symptoms": "Cough, throat irritation and sometimes mucus.",
     "medicines": [
-      "Dextromethorphan"
+      "Dextromethorphan",
+      "Throat Lozenges",
+      "Guaifenesin"
     ]
   },
   "Flu (Influenza)": {
@@ -26,7 +31,8 @@
     "category": "Respiratory",
     "symptoms": "Throat pain, irritation and pain while swallowing.",
     "medicines": [
-      "Paracetamol"
+      "Paracetamol",
+      "Throat Lozenges"
     ]
   },
   "Allergic Rhinitis": {
@@ -34,7 +40,10 @@
     "symptoms": "Sneezing, runny nose, nasal itching and watery eyes.",
     "medicines": [
       "Cetirizine",
-      "Loratadine"
+      "Loratadine",
+      "Levocetirizine",
+      "Fexofenadine",
+      "Chlorpheniramine"
     ]
   },
   "Sinusitis": {
@@ -42,7 +51,8 @@
     "symptoms": "Blocked nose, facial pressure, headache and nasal discharge.",
     "medicines": [
       "Paracetamol",
-      "Saline Nasal Spray"
+      "Saline Nasal Spray",
+      "Xylometazoline Nasal Spray"
     ]
   },
   "Asthma": {
@@ -56,7 +66,9 @@
     "category": "Respiratory",
     "symptoms": "Cough, mucus, fatigue and chest discomfort.",
     "medicines": [
-      "Paracetamol"
+      "Paracetamol",
+      "Guaifenesin",
+      "Ambroxol"
     ]
   },
   "Acidity / Heartburn": {
@@ -64,7 +76,8 @@
     "symptoms": "Burning chest sensation, acid taste and indigestion.",
     "medicines": [
       "Antacid",
-      "Omeprazole"
+      "Omeprazole",
+      "Famotidine"
     ]
   },
   "Indigestion": {
@@ -86,7 +99,8 @@
     "symptoms": "Hard stools, infrequent bowel movements and straining.",
     "medicines": [
       "Psyllium Husk (Isabgol)",
-      "Bisacodyl"
+      "Bisacodyl",
+      "Lactulose"
     ]
   },
   "Diarrhea": {
@@ -94,7 +108,9 @@
     "symptoms": "Loose stools, frequent bowel movements and abdominal cramps.",
     "medicines": [
       "ORS",
-      "Loperamide"
+      "Loperamide",
+      "Probiotics",
+      "Zinc Supplement"
     ]
   },
   "Nausea": {
@@ -129,7 +145,9 @@
     "category": "Digestive",
     "symptoms": "Abdominal pain, bloating, diarrhea or constipation.",
     "medicines": [
-      "Psyllium Husk (Isabgol)"
+      "Psyllium Husk (Isabgol)",
+      "Hyoscine Butylbromide",
+      "Probiotics"
     ]
   },
   "Headache": {
@@ -137,7 +155,8 @@
     "symptoms": "Head pain, pressure and sometimes light sensitivity.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Aspirin"
     ]
   },
   "Migraine": {
@@ -145,7 +164,8 @@
     "symptoms": "Moderate/severe headache, nausea and light or sound sensitivity.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Aspirin"
     ]
   },
   "Toothache": {
@@ -161,7 +181,9 @@
     "symptoms": "Back pain, stiffness and reduced movement.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Neck Pain": {
@@ -169,7 +191,9 @@
     "symptoms": "Neck pain, stiffness and reduced movement.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Muscle Pain": {
@@ -177,7 +201,9 @@
     "symptoms": "Muscle soreness, pain and stiffness.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Joint Pain": {
@@ -185,7 +211,9 @@
     "symptoms": "Joint pain, stiffness and possible swelling.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Menstrual Cramps": {
@@ -201,7 +229,9 @@
     "symptoms": "Pain, swelling, bruising and difficulty moving the joint.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Muscle Strain": {
@@ -209,63 +239,76 @@
     "symptoms": "Muscle pain, tenderness and reduced movement.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray"
     ]
   },
   "Acne": {
     "category": "Skin",
     "symptoms": "Pimples, blackheads, whiteheads and inflamed spots.",
     "medicines": [
-      "Benzoyl Peroxide"
+      "Benzoyl Peroxide",
+      "Salicylic Acid"
     ]
   },
   "Eczema": {
     "category": "Skin",
     "symptoms": "Dryness, itching, redness and inflammation.",
     "medicines": [
-      "Hydrocortisone"
+      "Hydrocortisone",
+      "Emollient / Moisturizer"
     ]
   },
   "Dermatitis": {
     "category": "Skin",
     "symptoms": "Redness, itching and skin irritation.",
     "medicines": [
-      "Hydrocortisone"
+      "Hydrocortisone",
+      "Emollient / Moisturizer"
     ]
   },
   "Fungal Skin Infection": {
     "category": "Skin",
     "symptoms": "Itching, scaling, redness and fungal rash.",
     "medicines": [
-      "Clotrimazole"
+      "Clotrimazole",
+      "Terbinafine Cream"
     ]
   },
   "Ringworm": {
     "category": "Skin",
     "symptoms": "Circular scaly rash, redness and itching.",
     "medicines": [
-      "Clotrimazole"
+      "Clotrimazole",
+      "Terbinafine Cream"
     ]
   },
   "Itching": {
     "category": "Skin",
     "symptoms": "Itchy or irritated skin.",
     "medicines": [
-      "Cetirizine"
+      "Cetirizine",
+      "Levocetirizine",
+      "Calamine Lotion"
     ]
   },
   "Skin Rash": {
     "category": "Skin",
     "symptoms": "Redness, itching and changes in skin appearance.",
     "medicines": [
-      "Hydrocortisone"
+      "Hydrocortisone",
+      "Calamine Lotion"
     ]
   },
   "Sunburn": {
     "category": "Skin",
     "symptoms": "Redness, pain, warmth and possible blistering.",
     "medicines": [
-      "Paracetamol"
+      "Paracetamol",
+      "Aloe Vera Gel",
+      "Calamine Lotion",
+      "Sunscreen"
     ]
   },
   "Dandruff": {
@@ -279,7 +322,8 @@
     "category": "Skin",
     "symptoms": "Red, scaly skin patches and itching.",
     "medicines": [
-      "Hydrocortisone"
+      "Hydrocortisone",
+      "Emollient / Moisturizer"
     ]
   },
   "Urinary Tract Infection (UTI)": {
@@ -308,7 +352,8 @@
     "symptoms": "Sore throat, painful swallowing and sometimes fever.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Throat Lozenges"
     ]
   },
   "Skin Infection": {
@@ -322,7 +367,8 @@
     "symptoms": "Sore throat, swollen tonsils, fever and difficulty swallowing.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Throat Lozenges"
     ]
   },
   "Viral Fever": {
@@ -473,7 +519,9 @@
     "symptoms": "Sneezing, itching, runny nose and watery eyes.",
     "medicines": [
       "Cetirizine",
-      "Loratadine"
+      "Loratadine",
+      "Levocetirizine",
+      "Fexofenadine"
     ]
   },
   "Hemorrhoids (Piles)": {
@@ -483,5 +531,192 @@
       "Hydrocortisone",
       "Psyllium Husk (Isabgol)"
     ]
+  },
+  "Mouth Ulcers": {
+    "category": "Dental / Oral",
+    "symptoms": "Painful small sores inside the mouth, stinging when eating.",
+    "medicines": [
+      "Oral Pain Relief Gel",
+      "Chlorhexidine Mouthwash"
+    ],
+    "note": "See a doctor or dentist if ulcers last more than 2–3 weeks or keep returning."
+  },
+  "Gingivitis": {
+    "category": "Dental / Oral",
+    "symptoms": "Red, swollen or bleeding gums and bad breath.",
+    "medicines": [
+      "Chlorhexidine Mouthwash"
+    ],
+    "note": "Good brushing, flossing and a dental check-up are the main treatment."
+  },
+  "Earwax Buildup": {
+    "category": "Ear",
+    "symptoms": "Blocked or muffled ear feeling, mild hearing reduction.",
+    "medicines": [
+      "Carbamide Peroxide Ear Drops"
+    ],
+    "note": "Avoid cotton buds; see a doctor if pain, discharge or hearing loss occurs."
+  },
+  "Head Lice": {
+    "category": "Skin",
+    "symptoms": "Itchy scalp, visible lice or nits in hair.",
+    "medicines": [
+      "Permethrin"
+    ]
+  },
+  "Scabies": {
+    "category": "Skin",
+    "symptoms": "Intense itching (worse at night), small bumps and burrows between fingers and skin folds.",
+    "medicines": [
+      "Permethrin"
+    ],
+    "note": "Household contacts often need treatment too; confirm diagnosis with a doctor if unsure."
+  },
+  "Intestinal Worms": {
+    "category": "Digestive",
+    "symptoms": "Abdominal discomfort, itching around the anus, poor appetite or weight loss.",
+    "medicines": [
+      "Albendazole"
+    ],
+    "note": "Consult a doctor or pharmacist, especially for children and pregnancy."
+  },
+  "Minor Cuts and Wounds": {
+    "category": "Skin",
+    "symptoms": "Small cuts, scrapes, mild bleeding and pain.",
+    "medicines": [
+      "Povidone-Iodine"
+    ],
+    "note": "Clean with clean running water first; seek care for deep, dirty or bite wounds."
+  },
+  "Minor Burns": {
+    "category": "Skin",
+    "symptoms": "Redness, pain and mild swelling without large blisters.",
+    "medicines": [
+      "Aloe Vera Gel",
+      "Paracetamol"
+    ],
+    "note": "Cool under running water first; seek medical care for large, blistered, facial or deep burns."
+  },
+  "Insect Bites": {
+    "category": "Skin",
+    "symptoms": "Itchy, red, swollen bumps after bites or stings.",
+    "medicines": [
+      "Calamine Lotion",
+      "Hydrocortisone",
+      "Cetirizine"
+    ],
+    "note": "Seek urgent care for breathing difficulty, facial swelling or spreading redness."
+  },
+  "Dry Skin": {
+    "category": "Skin",
+    "symptoms": "Dryness, flaking, tightness and mild itching.",
+    "medicines": [
+      "Emollient / Moisturizer"
+    ]
+  },
+  "Heat Rash (Prickly Heat)": {
+    "category": "Skin",
+    "symptoms": "Tiny itchy red bumps in hot, humid weather, often in skin folds.",
+    "medicines": [
+      "Calamine Lotion"
+    ],
+    "note": "Keep skin cool and dry; wear loose cotton clothing."
+  },
+  "Athlete's Foot": {
+    "category": "Skin",
+    "symptoms": "Itching, peeling and cracking between the toes.",
+    "medicines": [
+      "Terbinafine Cream",
+      "Clotrimazole"
+    ]
+  },
+  "Jock Itch": {
+    "category": "Skin",
+    "symptoms": "Red, itchy rash in the groin or inner thighs.",
+    "medicines": [
+      "Terbinafine Cream",
+      "Clotrimazole"
+    ]
+  },
+  "Cold Sores": {
+    "category": "Skin",
+    "symptoms": "Tingling followed by painful blisters on or around the lips.",
+    "medicines": [
+      "Acyclovir Cream"
+    ],
+    "note": "Contagious until healed; see a doctor if frequent or severe."
+  },
+  "Warts": {
+    "category": "Skin",
+    "symptoms": "Rough, raised growths on the skin, often on hands or feet.",
+    "medicines": [
+      "Salicylic Acid"
+    ],
+    "note": "Slow to clear; see a doctor if on the face or genitals, or if unsure of the diagnosis."
+  },
+  "Nasal Congestion": {
+    "category": "Respiratory",
+    "symptoms": "Blocked nose, difficulty breathing through the nose, facial pressure.",
+    "medicines": [
+      "Saline Nasal Spray",
+      "Xylometazoline Nasal Spray",
+      "Menthol Vapor Balm"
+    ]
+  },
+  "Chest Congestion (Productive Cough)": {
+    "category": "Respiratory",
+    "symptoms": "Chest heaviness with thick mucus and wet cough.",
+    "medicines": [
+      "Guaifenesin",
+      "Ambroxol"
+    ],
+    "note": "See a doctor if it lasts more than about a week or comes with fever or breathlessness."
+  },
+  "Stomach Cramps": {
+    "category": "Digestive",
+    "symptoms": "Cramping abdominal pain that comes and goes.",
+    "medicines": [
+      "Hyoscine Butylbromide"
+    ],
+    "note": "Seek care for severe pain, persistent vomiting, fever or blood in stool."
+  },
+  "Dry Eyes / Eye Strain": {
+    "category": "Eye",
+    "symptoms": "Gritty, tired or burning eyes, often after screen use.",
+    "medicines": [
+      "Lubricating Eye Drops"
+    ],
+    "note": "Take screen breaks and blink often; see an eye doctor if symptoms persist."
+  },
+  "Calcium Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "May have no symptoms; muscle cramps, tingling or weak bones can occur.",
+    "medicines": [
+      "Calcium Supplement"
+    ],
+    "note": "Confirm with a doctor before starting long-term supplements."
+  },
+  "Jet Lag": {
+    "category": "Sleep",
+    "symptoms": "Tiredness, poor sleep and trouble concentrating after crossing time zones.",
+    "medicines": [
+      "Melatonin"
+    ]
+  },
+  "Body Ache": {
+    "category": "General",
+    "symptoms": "Generalized aches and tiredness, often with viral illness.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen"
+    ]
+  },
+  "Zinc Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "Slow healing, frequent infections, hair thinning or loss of taste.",
+    "medicines": [
+      "Zinc Supplement"
+    ],
+    "note": "Confirm with a doctor before starting long-term supplements."
   }
 }
