@@ -8,7 +8,14 @@
       "Saline Nasal Spray",
       "Chlorpheniramine",
       "Xylometazoline Nasal Spray",
-      "Menthol Vapor Balm"
+      "Menthol Vapor Balm",
+      "Ibuprofen",
+      "Pseudoephedrine",
+      "Oxymetazoline Nasal Spray",
+      "Phenylephrine",
+      "Vitamin C Supplement",
+      "Honey-Based Cough Syrup",
+      "Diphenhydramine"
     ]
   },
   "Cough": {
@@ -17,14 +24,25 @@
     "medicines": [
       "Dextromethorphan",
       "Throat Lozenges",
-      "Guaifenesin"
+      "Guaifenesin",
+      "Bromhexine",
+      "Acetylcysteine",
+      "Honey-Based Cough Syrup",
+      "Ambroxol",
+      "Menthol Vapor Balm"
     ]
   },
   "Flu (Influenza)": {
     "category": "Respiratory",
     "symptoms": "Fever, chills, body aches, fatigue, cough and headache.",
     "medicines": [
-      "Paracetamol"
+      "Paracetamol",
+      "Ibuprofen",
+      "Dextromethorphan",
+      "Guaifenesin",
+      "Pseudoephedrine",
+      "ORS",
+      "Vitamin C Supplement"
     ]
   },
   "Sore Throat": {
@@ -32,7 +50,10 @@
     "symptoms": "Throat pain, irritation and pain while swallowing.",
     "medicines": [
       "Paracetamol",
-      "Throat Lozenges"
+      "Throat Lozenges",
+      "Ibuprofen",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
     ]
   },
   "Allergic Rhinitis": {
@@ -43,7 +64,10 @@
       "Loratadine",
       "Levocetirizine",
       "Fexofenadine",
-      "Chlorpheniramine"
+      "Chlorpheniramine",
+      "Desloratadine",
+      "Fluticasone Nasal Spray",
+      "Saline Nasal Spray"
     ]
   },
   "Sinusitis": {
@@ -52,7 +76,11 @@
     "medicines": [
       "Paracetamol",
       "Saline Nasal Spray",
-      "Xylometazoline Nasal Spray"
+      "Xylometazoline Nasal Spray",
+      "Ibuprofen",
+      "Pseudoephedrine",
+      "Oxymetazoline Nasal Spray",
+      "Fluticasone Nasal Spray"
     ]
   },
   "Asthma": {
@@ -68,7 +96,11 @@
     "medicines": [
       "Paracetamol",
       "Guaifenesin",
-      "Ambroxol"
+      "Ambroxol",
+      "Bromhexine",
+      "Acetylcysteine",
+      "Honey-Based Cough Syrup",
+      "Ibuprofen"
     ]
   },
   "Acidity / Heartburn": {
@@ -77,21 +109,31 @@
     "medicines": [
       "Antacid",
       "Omeprazole",
-      "Famotidine"
+      "Famotidine",
+      "Pantoprazole",
+      "Esomeprazole",
+      "Sodium Alginate",
+      "Magnesium Hydroxide"
     ]
   },
   "Indigestion": {
     "category": "Digestive",
     "symptoms": "Fullness, bloating, belching and upper abdominal discomfort.",
     "medicines": [
-      "Antacid"
+      "Antacid",
+      "Sodium Alginate",
+      "Digestive Enzymes",
+      "Simethicone",
+      "Bismuth Subsalicylate"
     ]
   },
   "Gas / Flatulence": {
     "category": "Digestive",
     "symptoms": "Bloating, abdominal discomfort and passing gas.",
     "medicines": [
-      "Simethicone"
+      "Simethicone",
+      "Digestive Enzymes",
+      "Peppermint Oil Capsule"
     ]
   },
   "Constipation": {
@@ -100,7 +142,11 @@
     "medicines": [
       "Psyllium Husk (Isabgol)",
       "Bisacodyl",
-      "Lactulose"
+      "Lactulose",
+      "Senna",
+      "Magnesium Hydroxide",
+      "Polyethylene Glycol (PEG)",
+      "Glycerin Suppository"
     ]
   },
   "Diarrhea": {
@@ -110,35 +156,47 @@
       "ORS",
       "Loperamide",
       "Probiotics",
-      "Zinc Supplement"
+      "Zinc Supplement",
+      "Racecadotril",
+      "Bismuth Subsalicylate"
     ]
   },
   "Nausea": {
     "category": "Digestive",
     "symptoms": "Feeling sick, queasiness and reduced appetite.",
     "medicines": [
-      "Domperidone"
+      "Domperidone",
+      "Ginger Supplement",
+      "Meclizine",
+      "Bismuth Subsalicylate"
     ]
   },
   "Vomiting": {
     "category": "Digestive",
     "symptoms": "Vomiting, nausea and possible dehydration.",
     "medicines": [
-      "ORS"
+      "ORS",
+      "Ginger Supplement"
     ]
   },
   "Gastritis": {
     "category": "Digestive",
     "symptoms": "Upper abdominal discomfort, nausea and indigestion.",
     "medicines": [
-      "Omeprazole"
+      "Omeprazole",
+      "Antacid",
+      "Famotidine",
+      "Pantoprazole",
+      "Sodium Alginate"
     ]
   },
   "Food Poisoning": {
     "category": "Digestive",
     "symptoms": "Diarrhea, vomiting, abdominal cramps and sometimes fever.",
     "medicines": [
-      "ORS"
+      "ORS",
+      "Probiotics",
+      "Racecadotril"
     ]
   },
   "Irritable Bowel Syndrome (IBS)": {
@@ -147,7 +205,10 @@
     "medicines": [
       "Psyllium Husk (Isabgol)",
       "Hyoscine Butylbromide",
-      "Probiotics"
+      "Probiotics",
+      "Mebeverine",
+      "Dicyclomine",
+      "Peppermint Oil Capsule"
     ]
   },
   "Headache": {
@@ -156,7 +217,8 @@
     "medicines": [
       "Paracetamol",
       "Ibuprofen",
-      "Aspirin"
+      "Aspirin",
+      "Naproxen"
     ]
   },
   "Migraine": {
@@ -165,7 +227,8 @@
     "medicines": [
       "Paracetamol",
       "Ibuprofen",
-      "Aspirin"
+      "Aspirin",
+      "Naproxen"
     ]
   },
   "Toothache": {
@@ -173,7 +236,11 @@
     "symptoms": "Tooth pain, sensitivity and pain while chewing.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Naproxen",
+      "Oral Pain Relief Gel",
+      "Clove Oil",
+      "Benzydamine"
     ]
   },
   "Back Pain": {
@@ -183,7 +250,11 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Lidocaine Gel / Ointment"
     ]
   },
   "Neck Pain": {
@@ -193,7 +264,11 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Lidocaine Gel / Ointment"
     ]
   },
   "Muscle Pain": {
@@ -203,7 +278,11 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Magnesium Supplement"
     ]
   },
   "Joint Pain": {
@@ -213,7 +292,11 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Glucosamine Supplement"
     ]
   },
   "Menstrual Cramps": {
@@ -221,7 +304,11 @@
     "symptoms": "Lower abdominal cramps, back pain and fatigue.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Mefenamic Acid",
+      "Naproxen",
+      "Hyoscine Butylbromide",
+      "Magnesium Supplement"
     ]
   },
   "Sprain": {
@@ -231,7 +318,10 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Lidocaine Gel / Ointment"
     ]
   },
   "Muscle Strain": {
@@ -241,7 +331,10 @@
       "Paracetamol",
       "Ibuprofen",
       "Diclofenac Gel",
-      "Pain Relief Balm / Spray"
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Lidocaine Gel / Ointment"
     ]
   },
   "Acne": {
@@ -249,7 +342,8 @@
     "symptoms": "Pimples, blackheads, whiteheads and inflamed spots.",
     "medicines": [
       "Benzoyl Peroxide",
-      "Salicylic Acid"
+      "Salicylic Acid",
+      "Adapalene"
     ]
   },
   "Eczema": {
@@ -257,7 +351,10 @@
     "symptoms": "Dryness, itching, redness and inflammation.",
     "medicines": [
       "Hydrocortisone",
-      "Emollient / Moisturizer"
+      "Emollient / Moisturizer",
+      "Colloidal Oatmeal Lotion",
+      "Petroleum Jelly",
+      "Urea Cream"
     ]
   },
   "Dermatitis": {
@@ -265,7 +362,10 @@
     "symptoms": "Redness, itching and skin irritation.",
     "medicines": [
       "Hydrocortisone",
-      "Emollient / Moisturizer"
+      "Emollient / Moisturizer",
+      "Colloidal Oatmeal Lotion",
+      "Petroleum Jelly",
+      "Zinc Oxide Ointment"
     ]
   },
   "Fungal Skin Infection": {
@@ -273,7 +373,8 @@
     "symptoms": "Itching, scaling, redness and fungal rash.",
     "medicines": [
       "Clotrimazole",
-      "Terbinafine Cream"
+      "Terbinafine Cream",
+      "Miconazole"
     ]
   },
   "Ringworm": {
@@ -281,7 +382,8 @@
     "symptoms": "Circular scaly rash, redness and itching.",
     "medicines": [
       "Clotrimazole",
-      "Terbinafine Cream"
+      "Terbinafine Cream",
+      "Miconazole"
     ]
   },
   "Itching": {
@@ -290,7 +392,10 @@
     "medicines": [
       "Cetirizine",
       "Levocetirizine",
-      "Calamine Lotion"
+      "Calamine Lotion",
+      "Diphenhydramine",
+      "Colloidal Oatmeal Lotion",
+      "Hydrocortisone"
     ]
   },
   "Skin Rash": {
@@ -298,7 +403,10 @@
     "symptoms": "Redness, itching and changes in skin appearance.",
     "medicines": [
       "Hydrocortisone",
-      "Calamine Lotion"
+      "Calamine Lotion",
+      "Colloidal Oatmeal Lotion",
+      "Zinc Oxide Ointment",
+      "Cetirizine"
     ]
   },
   "Sunburn": {
@@ -308,14 +416,20 @@
       "Paracetamol",
       "Aloe Vera Gel",
       "Calamine Lotion",
-      "Sunscreen"
+      "Sunscreen",
+      "Ibuprofen",
+      "Hydrocortisone",
+      "Emollient / Moisturizer"
     ]
   },
   "Dandruff": {
     "category": "Skin",
     "symptoms": "Flaking, itching and scalp irritation.",
     "medicines": [
-      "Ketoconazole Shampoo"
+      "Ketoconazole Shampoo",
+      "Zinc Pyrithione Shampoo",
+      "Selenium Sulfide Shampoo",
+      "Coal Tar Preparation"
     ]
   },
   "Psoriasis": {
@@ -323,20 +437,26 @@
     "symptoms": "Red, scaly skin patches and itching.",
     "medicines": [
       "Hydrocortisone",
-      "Emollient / Moisturizer"
+      "Emollient / Moisturizer",
+      "Coal Tar Preparation",
+      "Salicylic Acid",
+      "Urea Cream"
     ]
   },
   "Urinary Tract Infection (UTI)": {
     "category": "Infection",
     "symptoms": "Burning urination, frequent urination, urgency and lower abdominal discomfort.",
-    "medicines": [],
+    "medicines": [
+      "Disodium Hydrogen Citrate"
+    ],
     "note": "Typically requires prescription antibiotics; consult a doctor."
   },
   "Conjunctivitis (Pink Eye)": {
     "category": "Eye",
     "symptoms": "Red eye, discharge, irritation and watering.",
     "medicines": [
-      "Lubricating Eye Drops"
+      "Lubricating Eye Drops",
+      "Carboxymethylcellulose Eye Drops"
     ]
   },
   "Ear Infection": {
@@ -344,7 +464,8 @@
     "symptoms": "Ear pain, reduced hearing and sometimes fever.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Naproxen"
     ]
   },
   "Throat Infection": {
@@ -353,13 +474,18 @@
     "medicines": [
       "Paracetamol",
       "Ibuprofen",
-      "Throat Lozenges"
+      "Throat Lozenges",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
     ]
   },
   "Skin Infection": {
     "category": "Infection",
     "symptoms": "Redness, swelling, pain and possible discharge.",
-    "medicines": [],
+    "medicines": [
+      "Povidone-Iodine",
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ],
     "note": "Treatment depends on cause (bacterial/fungal/viral); consult a doctor for diagnosis."
   },
   "Tonsillitis": {
@@ -368,14 +494,19 @@
     "medicines": [
       "Paracetamol",
       "Ibuprofen",
-      "Throat Lozenges"
+      "Throat Lozenges",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
     ]
   },
   "Viral Fever": {
     "category": "Infection",
     "symptoms": "Fever, fatigue and body aches.",
     "medicines": [
-      "Paracetamol"
+      "Paracetamol",
+      "Dolo 650",
+      "Ibuprofen",
+      "ORS"
     ]
   },
   "Diabetes": {
@@ -407,7 +538,9 @@
     "symptoms": "Fatigue, weakness, pale skin and shortness of breath.",
     "medicines": [
       "Iron Supplement",
-      "Folic Acid"
+      "Folic Acid",
+      "Vitamin C Supplement",
+      "Vitamin B12 Supplement"
     ]
   },
   "Obesity": {
@@ -420,14 +553,17 @@
     "category": "Nutritional condition",
     "symptoms": "May have no symptoms; muscle or bone problems can occur.",
     "medicines": [
-      "Vitamin D3 Supplement"
+      "Vitamin D3 Supplement",
+      "Calcium Supplement"
     ]
   },
   "Vitamin B12 Deficiency": {
     "category": "Nutritional condition",
     "symptoms": "Fatigue, weakness and possible numbness or tingling.",
     "medicines": [
-      "Vitamin B12 Supplement"
+      "Vitamin B12 Supplement",
+      "Folic Acid",
+      "Vitamin B-Complex"
     ]
   },
   "Menstrual Pain": {
@@ -435,7 +571,11 @@
     "symptoms": "Cramps, lower abdominal pain and back pain.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Mefenamic Acid",
+      "Naproxen",
+      "Hyoscine Butylbromide",
+      "Magnesium Supplement"
     ]
   },
   "Irregular Periods": {
@@ -449,20 +589,28 @@
     "symptoms": "Mood changes, bloating, breast tenderness and cramps.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Naproxen",
+      "Magnesium Supplement",
+      "Calcium Supplement",
+      "Vitamin B6 (Pyridoxine)"
     ]
   },
   "Menopause Symptoms": {
     "category": "Women's Health",
     "symptoms": "Hot flashes, sleep problems and mood changes.",
-    "medicines": [],
+    "medicines": [
+      "Calcium Supplement",
+      "Vitamin D3 Supplement"
+    ],
     "note": "Treatment options (e.g., hormone therapy) require medical guidance."
   },
   "Vaginal Yeast Infection": {
     "category": "Women's Health",
     "symptoms": "Itching, irritation and unusual discharge.",
     "medicines": [
-      "Clotrimazole"
+      "Clotrimazole",
+      "Miconazole"
     ]
   },
   "Fever": {
@@ -471,20 +619,29 @@
     "medicines": [
       "Paracetamol",
       "Ibuprofen",
-      "Dolo 650"
+      "Dolo 650",
+      "ORS",
+      "Naproxen"
     ]
   },
   "Fatigue": {
     "category": "General",
     "symptoms": "Low energy, tiredness and reduced concentration.",
     "medicines": [
-      "Multivitamin"
+      "Multivitamin",
+      "Vitamin B12 Supplement",
+      "Vitamin D3 Supplement",
+      "Vitamin B-Complex",
+      "Vitamin C Supplement"
     ]
   },
   "Dizziness": {
     "category": "General",
     "symptoms": "Lightheadedness, unsteadiness or spinning sensation.",
-    "medicines": [],
+    "medicines": [
+      "Meclizine",
+      "ORS"
+    ],
     "note": "Many possible causes; persistent or severe dizziness needs medical evaluation."
   },
   "Dehydration": {
@@ -498,7 +655,9 @@
     "category": "Sleep",
     "symptoms": "Difficulty falling asleep, staying asleep or daytime tiredness.",
     "medicines": [
-      "Melatonin"
+      "Melatonin",
+      "Diphenhydramine",
+      "Magnesium Supplement"
     ]
   },
   "Anxiety": {
@@ -511,7 +670,10 @@
     "category": "Travel-related",
     "symptoms": "Nausea, dizziness and vomiting during travel.",
     "medicines": [
-      "Dimenhydrinate"
+      "Dimenhydrinate",
+      "Meclizine",
+      "Diphenhydramine",
+      "Ginger Supplement"
     ]
   },
   "Allergies": {
@@ -521,7 +683,10 @@
       "Cetirizine",
       "Loratadine",
       "Levocetirizine",
-      "Fexofenadine"
+      "Fexofenadine",
+      "Desloratadine",
+      "Diphenhydramine",
+      "Chlorpheniramine"
     ]
   },
   "Hemorrhoids (Piles)": {
@@ -529,7 +694,10 @@
     "symptoms": "Rectal discomfort, itching and bleeding during bowel movements.",
     "medicines": [
       "Hydrocortisone",
-      "Psyllium Husk (Isabgol)"
+      "Psyllium Husk (Isabgol)",
+      "Lidocaine Gel / Ointment",
+      "Zinc Oxide Ointment",
+      "Polyethylene Glycol (PEG)"
     ]
   },
   "Mouth Ulcers": {
@@ -537,7 +705,10 @@
     "symptoms": "Painful small sores inside the mouth, stinging when eating.",
     "medicines": [
       "Oral Pain Relief Gel",
-      "Chlorhexidine Mouthwash"
+      "Chlorhexidine Mouthwash",
+      "Benzydamine",
+      "Vitamin B-Complex",
+      "Lidocaine Gel / Ointment"
     ],
     "note": "See a doctor or dentist if ulcers last more than 2–3 weeks or keep returning."
   },
@@ -545,7 +716,8 @@
     "category": "Dental / Oral",
     "symptoms": "Red, swollen or bleeding gums and bad breath.",
     "medicines": [
-      "Chlorhexidine Mouthwash"
+      "Chlorhexidine Mouthwash",
+      "Benzydamine"
     ],
     "note": "Good brushing, flossing and a dental check-up are the main treatment."
   },
@@ -553,7 +725,8 @@
     "category": "Ear",
     "symptoms": "Blocked or muffled ear feeling, mild hearing reduction.",
     "medicines": [
-      "Carbamide Peroxide Ear Drops"
+      "Carbamide Peroxide Ear Drops",
+      "Olive / Mineral Oil Ear Drops"
     ],
     "note": "Avoid cotton buds; see a doctor if pain, discharge or hearing loss occurs."
   },
@@ -561,14 +734,17 @@
     "category": "Skin",
     "symptoms": "Itchy scalp, visible lice or nits in hair.",
     "medicines": [
-      "Permethrin"
+      "Permethrin",
+      "Dimeticone Lotion"
     ]
   },
   "Scabies": {
     "category": "Skin",
     "symptoms": "Intense itching (worse at night), small bumps and burrows between fingers and skin folds.",
     "medicines": [
-      "Permethrin"
+      "Permethrin",
+      "Benzyl Benzoate",
+      "Cetirizine"
     ],
     "note": "Household contacts often need treatment too; confirm diagnosis with a doctor if unsure."
   },
@@ -576,7 +752,8 @@
     "category": "Digestive",
     "symptoms": "Abdominal discomfort, itching around the anus, poor appetite or weight loss.",
     "medicines": [
-      "Albendazole"
+      "Albendazole",
+      "Mebendazole"
     ],
     "note": "Consult a doctor or pharmacist, especially for children and pregnancy."
   },
@@ -584,7 +761,10 @@
     "category": "Skin",
     "symptoms": "Small cuts, scrapes, mild bleeding and pain.",
     "medicines": [
-      "Povidone-Iodine"
+      "Povidone-Iodine",
+      "Antibiotic Ointment (Neomycin/Bacitracin)",
+      "Petroleum Jelly",
+      "Ibuprofen"
     ],
     "note": "Clean with clean running water first; seek care for deep, dirty or bite wounds."
   },
@@ -593,7 +773,10 @@
     "symptoms": "Redness, pain and mild swelling without large blisters.",
     "medicines": [
       "Aloe Vera Gel",
-      "Paracetamol"
+      "Paracetamol",
+      "Petroleum Jelly",
+      "Lidocaine Gel / Ointment",
+      "Ibuprofen"
     ],
     "note": "Cool under running water first; seek medical care for large, blistered, facial or deep burns."
   },
@@ -603,7 +786,9 @@
     "medicines": [
       "Calamine Lotion",
       "Hydrocortisone",
-      "Cetirizine"
+      "Cetirizine",
+      "Lidocaine Gel / Ointment",
+      "Diphenhydramine"
     ],
     "note": "Seek urgent care for breathing difficulty, facial swelling or spreading redness."
   },
@@ -611,14 +796,19 @@
     "category": "Skin",
     "symptoms": "Dryness, flaking, tightness and mild itching.",
     "medicines": [
-      "Emollient / Moisturizer"
+      "Emollient / Moisturizer",
+      "Urea Cream",
+      "Petroleum Jelly",
+      "Colloidal Oatmeal Lotion"
     ]
   },
   "Heat Rash (Prickly Heat)": {
     "category": "Skin",
     "symptoms": "Tiny itchy red bumps in hot, humid weather, often in skin folds.",
     "medicines": [
-      "Calamine Lotion"
+      "Calamine Lotion",
+      "Prickly Heat Powder",
+      "Zinc Oxide Ointment"
     ],
     "note": "Keep skin cool and dry; wear loose cotton clothing."
   },
@@ -627,7 +817,8 @@
     "symptoms": "Itching, peeling and cracking between the toes.",
     "medicines": [
       "Terbinafine Cream",
-      "Clotrimazole"
+      "Clotrimazole",
+      "Miconazole"
     ]
   },
   "Jock Itch": {
@@ -635,7 +826,8 @@
     "symptoms": "Red, itchy rash in the groin or inner thighs.",
     "medicines": [
       "Terbinafine Cream",
-      "Clotrimazole"
+      "Clotrimazole",
+      "Miconazole"
     ]
   },
   "Cold Sores": {
@@ -660,7 +852,10 @@
     "medicines": [
       "Saline Nasal Spray",
       "Xylometazoline Nasal Spray",
-      "Menthol Vapor Balm"
+      "Menthol Vapor Balm",
+      "Oxymetazoline Nasal Spray",
+      "Pseudoephedrine",
+      "Fluticasone Nasal Spray"
     ]
   },
   "Chest Congestion (Productive Cough)": {
@@ -668,7 +863,9 @@
     "symptoms": "Chest heaviness with thick mucus and wet cough.",
     "medicines": [
       "Guaifenesin",
-      "Ambroxol"
+      "Ambroxol",
+      "Bromhexine",
+      "Acetylcysteine"
     ],
     "note": "See a doctor if it lasts more than about a week or comes with fever or breathlessness."
   },
@@ -676,7 +873,9 @@
     "category": "Digestive",
     "symptoms": "Cramping abdominal pain that comes and goes.",
     "medicines": [
-      "Hyoscine Butylbromide"
+      "Hyoscine Butylbromide",
+      "Dicyclomine",
+      "Peppermint Oil Capsule"
     ],
     "note": "Seek care for severe pain, persistent vomiting, fever or blood in stool."
   },
@@ -684,7 +883,8 @@
     "category": "Eye",
     "symptoms": "Gritty, tired or burning eyes, often after screen use.",
     "medicines": [
-      "Lubricating Eye Drops"
+      "Lubricating Eye Drops",
+      "Carboxymethylcellulose Eye Drops"
     ],
     "note": "Take screen breaks and blink often; see an eye doctor if symptoms persist."
   },
@@ -692,7 +892,9 @@
     "category": "Nutritional condition",
     "symptoms": "May have no symptoms; muscle cramps, tingling or weak bones can occur.",
     "medicines": [
-      "Calcium Supplement"
+      "Calcium Supplement",
+      "Vitamin D3 Supplement",
+      "Magnesium Supplement"
     ],
     "note": "Confirm with a doctor before starting long-term supplements."
   },
@@ -708,14 +910,19 @@
     "symptoms": "Generalized aches and tiredness, often with viral illness.",
     "medicines": [
       "Paracetamol",
-      "Ibuprofen"
+      "Ibuprofen",
+      "Dolo 650",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Magnesium Supplement"
     ]
   },
   "Zinc Deficiency": {
     "category": "Nutritional condition",
     "symptoms": "Slow healing, frequent infections, hair thinning or loss of taste.",
     "medicines": [
-      "Zinc Supplement"
+      "Zinc Supplement",
+      "Multivitamin"
     ],
     "note": "Confirm with a doctor before starting long-term supplements."
   }
