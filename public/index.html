@@ -8,49 +8,164 @@
 
 <title>Med Sense - Medicine Information Checker</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+/* =====================================================
+   DESIGN TOKENS
+===================================================== */
+
+:root{
+    --ink:#0a2e30;          /* deep teal-black for text */
+    --pine:#0a4d4e;         /* primary dark */
+    --teal:#0f8a82;         /* primary action */
+    --teal-hover:#0b6f69;
+    --mint:#7ff0d0;         /* pulse / highlight */
+    --mist:#eaf6f3;         /* tinted surfaces */
+    --paper:#f6fbfa;        /* input background */
+    --line:#d3e5e1;         /* borders */
+    --muted:#587571;        /* secondary text */
+    --amber:#f5a524;
+    --amber-bg:#fff6e0;
+    --danger:#c62828;
+    --danger-bg:#fdecec;
+    --good:#1b7f4b;
+
+    --font-display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+    --font-body:"Manrope","Segoe UI",Arial,sans-serif;
+}
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
     min-height:100vh;
-    padding:25px 15px;
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-    color:#222;
+    padding:28px 16px;
+    font-family:var(--font-body);
+    color:var(--ink);
+    line-height:1.55;
+    background:
+        radial-gradient(900px 500px at 8% -10%, #c9f1e6 0%, transparent 60%),
+        radial-gradient(800px 500px at 100% 0%, #dcdcff 0%, transparent 55%),
+        #eef6f4;
 }
+
+input,
+textarea,
+button{
+    font:inherit;
+}
+
+/* =====================================================
+   CARD + HERO
+===================================================== */
 
 .container{
     width:1100px;
     max-width:100%;
     margin:auto;
-    background:white;
-    border-radius:22px;
-    padding:35px;
-    box-shadow:0 20px 50px rgba(0,0,0,.2);
+    background:#fff;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 30px 70px -20px rgba(10,77,78,.35);
 }
 
-.logo{
-    text-align:center;
-    font-size:60px;
+.hero{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    padding:44px 40px 70px;
+    color:#fff;
+    background:linear-gradient(120deg,#062a33 0%,#0a4d4e 55%,#0f8a82 100%);
+    overflow:hidden;
+}
+
+.mark{
+    flex:none;
+    width:74px;
+    height:74px;
+    display:grid;
+    place-items:center;
+    border-radius:22px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);
+    backdrop-filter:blur(6px);
+}
+
+.mark svg{
+    width:38px;
+    height:38px;
+}
+
+.hero-text{
+    position:relative;
+    z-index:1;
 }
 
 h1{
-    text-align:center;
-    color:#1565c0;
-    font-size:38px;
-    margin-top:5px;
+    font-family:var(--font-display);
+    font-weight:800;
+    font-size:46px;
+    line-height:1.05;
+    letter-spacing:-.02em;
+    color:#fff;
 }
 
 .subtitle{
-    text-align:center;
-    color:#666;
-    margin:8px 0 30px;
+    margin-top:8px;
+    max-width:48ch;
+    color:#c9ece6;
+    font-size:16px;
 }
+
+/* The heartbeat line: draws itself once on load */
+.pulse{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:70px;
+    pointer-events:none;
+}
+
+.pulse-line{
+    fill:none;
+    stroke:var(--mint);
+    stroke-width:2.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:1;
+    stroke-dashoffset:1;
+    filter:drop-shadow(0 0 6px rgba(127,240,208,.7));
+    animation:draw 2.4s ease-out .3s forwards;
+}
+
+@keyframes draw{
+    to{ stroke-dashoffset:0; }
+}
+
+@media (prefers-reduced-motion:reduce){
+    .pulse-line{
+        animation:none;
+        stroke-dashoffset:0;
+    }
+}
+
+.main{
+    padding:38px 40px 40px;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
 
 .form-grid{
     display:grid;
@@ -68,19 +183,28 @@ h1{
 
 label{
     display:block;
-    font-weight:bold;
-    margin-bottom:7px;
-    color:#333;
+    font-weight:700;
+    font-size:15px;
+    margin-bottom:8px;
+    color:var(--pine);
 }
 
 input,
 textarea{
     width:100%;
-    padding:14px;
-    border:1px solid #ccc;
-    border-radius:10px;
+    padding:14px 16px;
+    border:1.5px solid var(--line);
+    border-radius:14px;
     font-size:16px;
+    color:var(--ink);
+    background:var(--paper);
     outline:none;
+    transition:border-color .15s, box-shadow .15s, background .15s;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#8aa5a1;
 }
 
 textarea{
@@ -90,201 +214,280 @@ textarea{
 
 input:focus,
 textarea:focus{
-    border-color:#1565c0;
-    box-shadow:0 0 0 3px rgba(21,101,192,.12);
+    background:#fff;
+    border-color:var(--teal);
+    box-shadow:0 0 0 4px rgba(15,138,130,.16);
 }
 
 .hint{
     margin-top:6px;
     font-size:13px;
-    color:#777;
+    color:var(--muted);
 }
 
 button{
     width:100%;
     border:none;
-    border-radius:11px;
-    padding:16px;
-    background:#1565c0;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
+    border-radius:14px;
+    padding:17px;
+    background:linear-gradient(120deg,var(--pine),var(--teal));
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing:.01em;
     cursor:pointer;
+    box-shadow:0 14px 28px -12px rgba(15,138,130,.7);
+    transition:transform .15s, box-shadow .15s, filter .15s;
 }
 
 button:disabled{
-    opacity:.6;
+    opacity:.65;
     cursor:not-allowed;
 }
 
 button:hover:not(:disabled){
-    background:#0d47a1;
+    transform:translateY(-1px);
+    filter:brightness(1.08);
+    box-shadow:0 18px 32px -12px rgba(15,138,130,.8);
 }
+
+button:focus-visible{
+    outline:3px solid var(--mint);
+    outline-offset:3px;
+}
+
+/* =====================================================
+   RESULT
+===================================================== */
 
 #result{
     display:none;
-    margin-top:30px;
+    margin-top:34px;
 }
 
 .result-header{
-    padding:22px;
-    background:#e3f2fd;
-    border-left:6px solid #1565c0;
-    border-radius:10px;
-    margin-bottom:20px;
+    padding:24px 26px;
+    background:var(--mist);
+    border-left:6px solid var(--teal);
+    border-radius:16px;
+    margin-bottom:22px;
 }
 
 .result-header h2{
-    color:#1565c0;
-    margin-bottom:8px;
+    font-family:var(--font-display);
+    color:var(--pine);
+    margin-bottom:10px;
 }
 
 .result-header p{
     line-height:1.7;
 }
 
+.section-title{
+    font-family:var(--font-display);
+    font-size:22px;
+    letter-spacing:-.01em;
+    color:var(--pine);
+    margin:30px 0 14px;
+}
+
 .patient-table{
     width:100%;
-    border-collapse:collapse;
+    border-collapse:separate;
+    border-spacing:0;
+    border:1px solid var(--line);
+    border-radius:16px;
+    overflow:hidden;
     margin-bottom:25px;
-    background:white;
+    background:#fff;
 }
 
 .patient-table th,
 .patient-table td{
-    border:1px solid #ddd;
-    padding:13px;
+    border-bottom:1px solid var(--line);
+    padding:13px 16px;
     text-align:left;
+    vertical-align:top;
+}
+
+.patient-table tr:last-child td{
+    border-bottom:0;
 }
 
 .patient-table th{
-    background:#1565c0;
-    color:white;
+    background:var(--pine);
+    color:#fff;
+    font-weight:600;
 }
 
-.section-title{
-    color:#1565c0;
-    margin:25px 0 12px;
+.patient-table td:first-child{
+    width:32%;
+    font-weight:700;
+    color:var(--pine);
+    background:var(--mist);
 }
 
 .medicine-table-wrapper{
     width:100%;
     overflow-x:auto;
+    border:1px solid var(--line);
+    border-radius:16px;
 }
 
 .medicine-table{
     width:100%;
     min-width:950px;
     border-collapse:collapse;
-    background:white;
+    background:#fff;
 }
 
 .medicine-table th{
-    background:#1565c0;
-    color:white;
-    padding:13px;
+    background:var(--pine);
+    color:#fff;
+    padding:14px 16px;
     text-align:left;
-    border:1px solid #ddd;
+    font-weight:600;
+    white-space:nowrap;
 }
 
 .medicine-table td{
-    padding:13px;
-    border:1px solid #ddd;
+    padding:14px 16px;
+    border-bottom:1px solid var(--line);
     vertical-align:top;
     line-height:1.55;
 }
 
+.medicine-table tr:last-child td{
+    border-bottom:0;
+}
+
 .medicine-table tr:nth-child(even){
-    background:#f8fafc;
+    background:#f3faf8;
 }
 
 .tablet{
     display:inline-block;
-    padding:5px 10px;
+    padding:5px 12px;
     border-radius:20px;
-    background:#e3f2fd;
-    color:#1565c0;
-    font-weight:bold;
+    background:var(--mist);
+    border:1px solid var(--line);
+    color:var(--pine);
+    font-weight:700;
     font-size:13px;
 }
 
 .good{
-    color:#2e7d32;
-    font-weight:bold;
+    color:var(--good);
+    font-weight:700;
 }
 
 .warning{
-    margin-top:20px;
-    padding:20px;
-    background:#fff3cd;
-    border-left:6px solid #ff9800;
-    border-radius:10px;
+    margin-top:22px;
+    padding:20px 22px;
+    background:var(--amber-bg);
+    border-left:6px solid var(--amber);
+    border-radius:16px;
     line-height:1.7;
 }
 
 .error{
-    padding:20px;
-    background:#ffebee;
-    border-left:6px solid #e53935;
-    border-radius:10px;
+    padding:22px;
+    background:var(--danger-bg);
+    border-left:6px solid var(--danger);
+    border-radius:16px;
 }
 
 .error h2{
-    color:#c62828;
+    color:var(--danger);
     margin-bottom:8px;
 }
 
 .medicine-result{
     margin-top:25px;
-    border:1px solid #ddd;
-    border-radius:15px;
+    border:1px solid var(--line);
+    border-radius:20px;
     overflow:hidden;
 }
 
 .medicine-result-header{
-    padding:18px;
-    background:#f5f9ff;
+    padding:20px 22px;
+    background:linear-gradient(120deg,#e3f6f1,#e8e9ff);
+    border-bottom:1px solid var(--line);
 }
 
 .medicine-result-header h3{
-    color:#1565c0;
+    font-family:var(--font-display);
+    font-size:24px;
+    color:var(--pine);
     margin-bottom:6px;
 }
 
 .detail-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    padding:18px;
+    gap:14px;
+    padding:20px;
 }
 
 .detail{
-    background:#f8fafc;
-    padding:15px;
-    border-radius:10px;
+    background:var(--paper);
+    padding:16px 18px;
+    border-radius:14px;
+    border:1px solid var(--line);
 }
 
 .detail strong{
     display:block;
-    color:#1565c0;
+    color:var(--teal-hover);
     margin-bottom:7px;
 }
 
+/* The last detail is always the important warning */
+.detail:last-child{
+    background:var(--amber-bg);
+    border-color:#f1d493;
+}
+
+.detail:last-child strong{
+    color:#9a5b00;
+}
+
 .disclaimer{
-    margin-top:30px;
-    padding:18px;
-    background:#f1f3f5;
-    border-radius:10px;
+    margin-top:32px;
+    padding:18px 20px;
+    background:var(--mist);
+    border:1px dashed #b5d3cd;
+    border-radius:14px;
     text-align:center;
-    color:#666;
+    color:var(--muted);
     font-size:13px;
     line-height:1.7;
 }
 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
 @media(max-width:750px){
 
-    .container{
-        padding:20px;
+    .hero{
+        padding:32px 22px 64px;
+        gap:16px;
+    }
+
+    .mark{
+        width:58px;
+        height:58px;
+        border-radius:18px;
+    }
+
+    .mark svg{
+        width:30px;
+        height:30px;
+    }
+
+    .main{
+        padding:26px 20px 28px;
     }
 
     .form-grid{
@@ -300,7 +503,7 @@ button:hover:not(:disabled){
     }
 
     h1{
-        font-size:28px;
+        font-size:32px;
     }
 
 }
@@ -313,13 +516,29 @@ button:hover:not(:disabled){
 
 <div class="container">
 
-<div class="logo">🩺</div>
+<header class="hero">
 
-<h1>Med Sense</h1>
+    <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7ff0d0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>
+        </svg>
+    </div>
 
-<p class="subtitle">
-    Disease, Symptoms & Medicine Information Checker
-</p>
+    <div class="hero-text">
+        <h1>Med Sense</h1>
+        <p class="subtitle">
+            Disease, Symptoms & Medicine Information Checker
+        </p>
+    </div>
+
+    <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true">
+        <path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke"
+              d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/>
+    </svg>
+
+</header>
+
+<div class="main">
 
 
 <!-- =====================================================
@@ -398,7 +617,7 @@ button:hover:not(:disabled){
 
 
 <button id="checkBtn" onclick="checkInfo()">
-    🔍 CHECK INFORMATION
+    🔍 Check information
 </button>
 
 
@@ -417,6 +636,8 @@ Medicine information can vary by product, strength, country,
 age, weight, allergies, pregnancy, medical conditions and
 other medicines. Always read the medicine's current label
 and consult a doctor or pharmacist when needed.
+
+</div>
 
 </div>
 
@@ -550,7 +771,7 @@ async function checkInfo(){
     }finally{
 
         btn.disabled = false;
-        btn.textContent = "🔍 CHECK INFORMATION";
+        btn.textContent = "🔍 Check information";
 
         result.scrollIntoView({
             behavior:"smooth",
