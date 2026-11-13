@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Med Sense - Dashboard</title>
+<meta name="description" content="Browse diseases and the over-the-counter and common medicines listed for them. Educational information only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="js/theme.js"></script>
+<style>
+:root{--ink:#0a2e30;--pine:#0a4d4e;--teal:#0f8a82;--teal-hover:#0b6f69;--mint:#7ff0d0;--mist:#eaf6f3;--paper:#f6fbfa;--line:#d3e5e1;--muted:#587571;--amber:#f5a524;--amber-bg:#fff6e0;--font-display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--font-body:"Manrope","Segoe UI",Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;padding:28px 16px;font-family:var(--font-body);color:var(--ink);line-height:1.55;background:radial-gradient(900px 500px at 8% -10%,#c9f1e6 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#dcdcff 0%,transparent 55%),#eef6f4}
+input,button{font:inherit}
+a{color:var(--teal)}
+.container{width:1100px;max-width:100%;margin:auto;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(10,77,78,.35)}
+.hero{position:relative;display:flex;align-items:center;gap:22px;padding:44px 40px 70px;color:#fff;background:linear-gradient(120deg,#062a33 0%,#0a4d4e 55%,#0f8a82 100%);overflow:hidden}
+.mark{flex:none;width:74px;height:74px;display:grid;place-items:center;border-radius:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28)}
+.mark svg{width:38px;height:38px}
+.hero-text{position:relative;z-index:1}
+h1{font-family:var(--font-display);font-weight:800;font-size:46px;line-height:1.05;letter-spacing:-.02em;color:#fff}
+.subtitle{margin-top:8px;max-width:48ch;color:#c9ece6;font-size:16px}
+.pulse{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px;pointer-events:none}
+.pulse-line{fill:none;stroke:var(--mint);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 0 6px rgba(127,240,208,.7));animation:draw 2.4s ease-out .3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.pulse-line{animation:none;stroke-dashoffset:0}}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:14px 40px;border-bottom:1px solid var(--line);background:var(--paper)}
+nav a{text-decoration:none;font-weight:700;font-size:14px;color:var(--pine);padding:8px 16px;border-radius:99px}
+nav a:hover{background:var(--mist)}nav a.on{background:var(--teal);color:#fff}
+nav a.out{margin-left:auto;border:1.5px solid var(--teal)}
+.main{padding:34px 40px 40px}
+h2{font-family:var(--font-display);font-size:26px;color:var(--pine);margin:0 0 6px}
+h3{font-family:var(--font-display);font-size:19px;color:var(--pine)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px}
+.stat{background:var(--mist);border-radius:18px;padding:16px 20px}
+.stat b{display:block;font-family:var(--font-display);font-size:34px;color:var(--teal)}
+.stat span{color:var(--muted);font-weight:600;font-size:14px}
+input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;font-size:16px;color:var(--ink);background:var(--paper)}
+input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,130,.35);border-color:var(--teal)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 20px}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--pine);font-weight:600;font-size:13px;padding:6px 14px;border-radius:99px;cursor:pointer}
+.chip.on,.chip:hover{background:var(--pine);border-color:var(--pine);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px}
+.card:hover{border-color:var(--teal);box-shadow:0 10px 24px -14px rgba(10,77,78,.5)}
+.card small{display:inline-block;background:var(--mist);color:var(--pine);font-weight:700;font-size:12px;padding:2px 10px;border-radius:99px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px;margin-top:4px}
+.lead{color:var(--muted);margin-bottom:16px}
+.back{display:inline-block;margin-bottom:16px;font-weight:700;text-decoration:none}
+.box{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:18px 22px;margin-top:16px}
+.box h3{margin-bottom:6px}
+.box.warn{background:var(--amber-bg);border-color:var(--amber)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 16px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.tags a{text-decoration:none;background:#fff;border:1.5px solid var(--line);color:var(--pine);font-weight:600;font-size:14px;padding:6px 14px;border-radius:99px}
+.tags a:hover{border-color:var(--teal);background:var(--mist)}
+.btn{display:inline-block;margin-top:18px;text-decoration:none;background:var(--teal);color:#fff;font-weight:700;padding:12px 22px;border-radius:14px}
+.btn:hover{background:var(--teal-hover)}
+.note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;width:auto!important;padding:10px 18px!important;border-radius:99px!important;font-size:14px!important;background:var(--pine)!important;color:#fff!important;box-shadow:0 8px 24px rgba(0,0,0,.3)!important}
+[data-theme="dark"]{color-scheme:dark;--ink:#e3f1ef;--pine:#8fe3d4;--teal:#19a79d;--teal-hover:#5fd3c6;--mist:#16302f;--paper:#122625;--line:#27433f;--muted:#9ab8b3;--amber-bg:#3a2d10;--danger-bg:#3a1a1a;--good:#5fd38f}
+[data-theme="dark"] body{background:radial-gradient(900px 500px at 8% -10%,#0d3a35 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#1d1d4a 0%,transparent 55%),#0b1615}
+[data-theme="dark"] .container{background:#0f1f1e;box-shadow:0 30px 70px -20px #000}
+[data-theme="dark"] input,[data-theme="dark"] textarea{background:var(--paper);color:var(--ink)}
+[data-theme="dark"] input:focus,[data-theme="dark"] textarea:focus{background:#16302f}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#6f8f8a}
+[data-theme="dark"] .chip,[data-theme="dark"] .tags a,[data-theme="dark"] .patient-table,[data-theme="dark"] .medicine-table{background:#122625}
+[data-theme="dark"] .chip.on,[data-theme="dark"] .chip:hover{background:#0a6b66;border-color:#0a6b66;color:#fff}
+[data-theme="dark"] nav a.on{background:#0f8a82}
+[data-theme="dark"] .patient-table th,[data-theme="dark"] .medicine-table th{background:#0a4d4e;color:#fff}
+[data-theme="dark"] .medicine-table tr:nth-child(even){background:#152b2a}
+[data-theme="dark"] .medicine-result-header{background:linear-gradient(120deg,#12302d,#1c1c45)}
+[data-theme="dark"] .detail:last-child,[data-theme="dark"] .box.warn{border-color:#8a6a1c}
+[data-theme="dark"] .detail:last-child strong{color:#f5c15a}
+[data-theme="dark"] .disclaimer{border-color:#2f5550}
+[data-theme="dark"] button:not(.chip):not(.theme-toggle){background:linear-gradient(120deg,#0a6b66,#0f8a82)}
+[data-theme="dark"] .btn{background:#0f8a82}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+  <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#7ff0d0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></div>
+  <div class="hero-text"><h1>Med Sense</h1><p class="subtitle">Dashboard: browse every disease and medicine in one place</p></div>
+  <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/></svg>
+</header>
+<nav id="nav"></nav>
+<div class="main" id="app"><p class="lead">Loading...</p></div>
+</div>
+<script>
+const API_BASE="";
+let D={},M={},cat="All",q="";
+const app=document.getElementById("app"),nav=document.getElementById("nav");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const enc=encodeURIComponent;
+const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
+function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a class="out" href="checker.html">Open Checker</a>'}
+function home(){
+  bar("home");
+  const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
+  app.innerHTML='<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
+  '<input id="q" type="search" placeholder="Search diseases, symptoms or medicines" aria-label="Search" value="'+esc(q)+'">'+
+  '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
+  const draw=()=>{
+    document.getElementById("chips").innerHTML=cats.map(c=>'<button class="chip '+(c===cat?"on":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
+    const s=q.toLowerCase();
+    const list=Object.entries(D).filter(([n,d])=>(cat==="All"||d.category===cat)&&(!s||(n+d.symptoms+d.medicines.join(" ")).toLowerCase().includes(s)));
+    document.getElementById("g").innerHTML=list.map(([n,d])=>'<a class="card" href="#d/'+enc(n)+'"><small>'+esc(d.category)+'</small><h3>'+esc(n)+'</h3><p>'+esc(d.symptoms.slice(0,80))+(d.symptoms.length>80?"...":"")+'</p></a>').join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
+  };
+  draw();
+  document.getElementById("q").oninput=e=>{q=e.target.value.trim();draw()};
+  document.getElementById("chips").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;draw()}};
+}
+function disease(n){
+  const d=D[n];if(!d)return home();
+  bar("home");
+  app.innerHTML='<a class="back" href="#home">Back to diseases</a><span class="tags"><a href="#home" style="pointer-events:none">'+esc(d.category)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+
+  '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+
+  '<div class="box"><h3>Medicines commonly listed ('+d.medicines.length+')</h3><div class="tags">'+d.medicines.map(m=>M[m]?'<a href="#m/'+enc(m)+'">'+esc(m)+'</a>':'<a href="#home" style="pointer-events:none">'+esc(m)+'</a>').join("")+'</div></div>'+
+  '<a class="btn" href="checker.html">Check a medicine for '+esc(n)+'</a>'+NOTE;
+  scrollTo(0,0);
+}
+function meds(){
+  bar("med");
+  app.innerHTML='<h2>All medicines</h2><p class="lead">Tap a medicine for uses, precautions and side effects.</p><input id="mq" type="search" placeholder="Search medicines or purpose" aria-label="Search medicines"><div class="grid" id="g" style="margin-top:18px"></div>'+NOTE;
+  const draw=s=>{document.getElementById("g").innerHTML=Object.entries(M).filter(([n,m])=>(n+m.purpose+m.ingredient).toLowerCase().includes(s)).sort().map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join("")||'<p class="lead">No match.</p>'};
+  draw("");document.getElementById("mq").oninput=e=>draw(e.target.value.trim().toLowerCase());
+}
+function medicine(n){
+  const m=M[n];if(!m)return meds();
+  bar("med");
+  const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k])=>k);
+  const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
+  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+esc(m.form)+' &middot; '+esc(m.ingredient)+'</p>'+
+  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+
+  '<div class="facts">'+F.map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
+  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
+  (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(k=>'<a href="#d/'+enc(k)+'">'+esc(k)+'</a>').join("")+'</div></div>':'')+NOTE;
+  scrollTo(0,0);
+}
+function route(){
+  const h=location.hash.slice(1),i=h.indexOf("/"),k=i<0?h:h.slice(0,i),v=i<0?"":decodeURIComponent(h.slice(i+1));
+  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else home();
+}
+const get=(api,file)=>fetch(API_BASE+api).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch("data/"+file).then(r=>r.json()));
+Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","medicines.json")])
+ .then(([d,m])=>{D=d;M=m;route();addEventListener("hashchange",route)})
+ .catch(()=>{app.innerHTML='<p class="lead">Could not load data. Please refresh, or start the server with <b>npm start</b>.</p>'});
+</script>
+</body>
+</html>
