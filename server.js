@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const diseases = require("./public/data/diseases.json");
 const medicines = require("./public/data/medicines.json");
+const ingredients = require("./public/data/ingredients.json");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -70,6 +71,7 @@ app.get("/api/medicines", (req, res) => {
 // Full lists (used by the dashboard)
 app.get("/api/diseases-all", (req, res) => res.json(diseases));
 app.get("/api/medicines-all", (req, res) => res.json(medicines));
+app.get("/api/ingredients-all", (req, res) => res.json(ingredients));
 
 // Full record for one disease
 app.get("/api/diseases/:name", (req, res) => {
@@ -131,6 +133,7 @@ app.post("/api/check", (req, res) => {
       name: diseaseKey,
       category: diseaseData.category,
       commonSymptoms: diseaseData.symptoms,
+      warningSigns: diseaseData.warningSigns || [],
     },
     matched,
     listedMedicines,

@@ -553,6 +553,38 @@ input,textarea{caret-color:var(--teal)}
 [data-theme="dark"] .error{background:#3a1a1a}
 [data-theme="dark"] .patient-table td:first-child{background:#143332;color:#bfe9e2}
 [data-theme="dark"] .medicine-table td,[data-theme="dark"] .patient-table td{color:#dcefec}
+
+/* ---- warning signs, compare, print ---- */
+.redflag{margin:22px 0;padding:18px 22px;background:#fdecec;border-left:6px solid #c62828;border-radius:16px}
+.redflag h3{color:#b71c1c;margin-bottom:8px;font-family:var(--font-display)}
+.redflag ul{padding-left:20px;line-height:1.75}.redflag .em{margin-top:10px;font-weight:700}
+.cmpsel{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0 18px}
+.cmpsel select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px}
+.cmpwrap{overflow-x:auto;border:1.5px solid var(--line);border-radius:16px;margin-top:8px}
+table.cmp{width:100%;min-width:640px;border-collapse:collapse}
+.cmp th,.cmp td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5}
+.cmp thead th{background:#0a4d4e;color:#fff}.cmp thead th a{color:#fff}
+.cmp tbody th{background:var(--mist);color:var(--teal-hover);width:140px}
+.cmp tr:last-child>*{border-bottom:0}
+[data-theme="dark"] .redflag{background:#3a1a1a;border-color:#e05555}
+[data-theme="dark"] .redflag h3{color:#ff9a9a}
+.print-only{display:none}
+.printhead{padding:0 0 10px;border-bottom:2px solid #000;margin-bottom:14px}
+.notes i{display:block;border-bottom:1px solid #999;height:28px}
+@media print{
+ @page{margin:14mm}
+ *{background:#fff!important;color:#111!important;box-shadow:none!important;text-shadow:none!important;-webkit-text-fill-color:#111!important}
+ body{padding:0}.container{border:0!important;width:100%!important;border-radius:0!important}
+ .hero,nav,.theme-toggle,.no-print,.chips,.btn,button,input,textarea,.cmpsel,.form-grid,.stats,.back{display:none!important}
+ .print-only{display:block!important}
+ .card,.box,.detail,.result-header,.warning,.error,.redflag{border:1px solid #888!important;break-inside:avoid}
+ .tags a,.chip{border:1px solid #888!important}
+ th{font-weight:700;border-bottom:2px solid #000!important}
+ table,.medicine-table,table.cmp{min-width:0!important}
+ .cmpwrap,.medicine-table-wrapper{overflow:visible!important}
+ a{text-decoration:none}
+}
+[data-theme="dark"] button.btn.fav{background:transparent!important;color:#7ff0d0!important;border:1.5px solid #19a79d}
 </style>
 
 </head>
@@ -755,6 +787,14 @@ async function loadLists(){
 
 loadLists();
 
+(function prefill(){
+    const p = new URLSearchParams(location.search);
+    const d = p.get("disease"), m = p.get("medicine");
+    if(d) document.getElementById("disease").value = d;
+    if(m) document.getElementById("medicine").value = m;
+    if(d || m) document.getElementById(d && m ? "age" : (d ? "medicine" : "disease")).focus();
+})();
+
 
 /* =====================================================
    CHECK INFORMATION (calls backend API)
@@ -861,6 +901,8 @@ function renderResult(data, age){
     });
 
     const medicine = data.selectedMedicine;
+    const signs = data.disease.warningSigns || [];
+    const warnHtml = signs.length ? `<div class="redflag"><h3>🚨 Warning signs: get medical help</h3><ul>${signs.map(x => `<li>${escapeHTML(x)}</li>`).join("")}</ul><p class="em">Emergency? Call your local emergency number (112 in India).</p></div>` : "";
     const a = Number(age);
     const ageNote = a < 12 ? "Children's medicine use depends on age and weight. Please ask a pediatrician or pharmacist before giving any medicine."
         : a >= 65 ? "Older adults can be more sensitive to side effects and interactions. Please check with a doctor or pharmacist before use."
@@ -879,6 +921,7 @@ function renderResult(data, age){
             ${status}
         </div>
 
+        ${warnHtml}
         <h2 class="section-title">👤 Patient & Disease Information</h2>
 
         <table class="patient-table">
@@ -1011,6 +1054,10 @@ function renderResult(data, age){
 
     `;
 
+
+    const qs = ["Is this medicine suitable for my age and any other health conditions I have?","Can I take it together with the other medicines or supplements I use?","What strength, how often and for how long should I take it?","Which symptoms mean I should come back or seek urgent care?"];
+    result.insertAdjacentHTML("afterbegin", `<div class="print-only printhead"><b style="font-size:20px">Med Sense · Medicine information report</b><br>Date: ${new Date().toLocaleDateString()} &nbsp; Name: ____________________<br><small>Educational information only. Prepared to discuss with a doctor or pharmacist.</small></div>`);
+    result.insertAdjacentHTML("beforeend", `<h2 class="section-title">📝 Questions to ask your doctor</h2><div class="medicine-result" style="padding:18px 24px"><ul style="padding-left:20px;line-height:1.9">${qs.map(x => `<li>${x}</li>`).join("")}</ul><div class="print-only notes"><b>Notes</b><i></i><i></i><i></i><i></i></div></div><div class="no-print" style="margin-top:18px"><button type="button" onclick="window.print()">🖨️ Print / Save as PDF report for my doctor</button></div>`);
 }
 
 </script>

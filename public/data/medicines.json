@@ -10,7 +10,10 @@
     "interactions": "Some medicines and combination products may contain the same active ingredient.",
     "food": "Follow the product label.",
     "status": "Commonly available OTC in many markets.",
-    "warning": "Do not use more than directed."
+    "warning": "Do not use more than directed.",
+    "actives": [
+      "Paracetamol"
+    ]
   },
   "Ibuprofen": {
     "form": "Tablet / Capsule / Suspension",
@@ -23,7 +26,10 @@
     "interactions": "Can interact with certain blood thinners and other NSAIDs.",
     "food": "Follow the product label; some people take it with food to reduce stomach upset.",
     "status": "OTC in many markets, but availability varies.",
-    "warning": "Do not combine with another NSAID unless advised."
+    "warning": "Do not combine with another NSAID unless advised.",
+    "actives": [
+      "Ibuprofen"
+    ]
   },
   "Dolo 650": {
     "form": "Tablet",
@@ -37,7 +43,10 @@
     "interactions": "May interact with medicines such as warfarin and other medicines containing paracetamol. Avoid taking multiple paracetamol-containing products together.",
     "food": "Can be taken with or without food.",
     "status": "OTC medicine in India, subject to applicable local regulations.",
-    "warning": "Do not exceed the recommended daily amount. Do not combine Dolo 650 with other medicines containing paracetamol unless advised by a healthcare professional. Seek medical advice if fever is persistent, severe, or accompanied by concerning symptoms."
+    "warning": "Do not exceed the recommended daily amount. Do not combine Dolo 650 with other medicines containing paracetamol unless advised by a healthcare professional. Seek medical advice if fever is persistent, severe, or accompanied by concerning symptoms.",
+    "actives": [
+      "Paracetamol"
+    ]
   },
   "Cetirizine": {
     "form": "Tablet / Syrup",
@@ -50,7 +59,10 @@
     "interactions": "Other medicines that cause drowsiness may increase this effect.",
     "food": "Usually can be taken with or without food; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Do not drive or operate machinery if it makes you drowsy."
+    "warning": "Do not drive or operate machinery if it makes you drowsy.",
+    "actives": [
+      "Cetirizine"
+    ]
   },
   "Loratadine": {
     "form": "Tablet / Syrup",
@@ -63,7 +75,10 @@
     "interactions": "Tell a pharmacist or doctor about other medicines.",
     "food": "Follow product instructions.",
     "status": "OTC in many markets.",
-    "warning": "Seek urgent care for severe allergic reactions."
+    "warning": "Seek urgent care for severe allergic reactions.",
+    "actives": [
+      "Loratadine"
+    ]
   },
   "Omeprazole": {
     "form": "Capsule / Tablet",
@@ -76,7 +91,10 @@
     "interactions": "Can interact with some prescription and non-prescription medicines.",
     "food": "Product directions may specify timing in relation to meals.",
     "status": "OTC or prescription depending on product and country.",
-    "warning": "Do not use longer than the product label recommends without medical advice."
+    "warning": "Do not use longer than the product label recommends without medical advice.",
+    "actives": [
+      "Omeprazole"
+    ]
   },
   "Antacid": {
     "form": "Tablet / Chewable Tablet / Liquid",
@@ -89,7 +107,13 @@
     "interactions": "Some antacids can affect absorption of other medicines.",
     "food": "Follow the specific product instructions.",
     "status": "Usually OTC.",
-    "warning": "Persistent or severe chest or abdominal symptoms require medical evaluation."
+    "warning": "Persistent or severe chest or abdominal symptoms require medical evaluation.",
+    "actives": [
+      "Aluminium hydroxide",
+      "Magnesium hydroxide",
+      "Calcium carbonate"
+    ],
+    "variable": true
   },
   "ORS": {
     "form": "Oral Rehydration Solution / Powder",
@@ -102,7 +126,13 @@
     "interactions": "Medical conditions affecting fluid balance may require professional advice.",
     "food": "Used as a fluid replacement rather than a conventional tablet medicine.",
     "status": "Generally OTC.",
-    "warning": "Severe dehydration or inability to drink requires urgent medical care."
+    "warning": "Severe dehydration or inability to drink requires urgent medical care.",
+    "actives": [
+      "Sodium chloride",
+      "Potassium chloride",
+      "Glucose",
+      "Sodium citrate"
+    ]
   },
   "Dextromethorphan": {
     "form": "Syrup / Tablet / Lozenges",
@@ -115,7 +145,10 @@
     "interactions": "Can interact with some medicines, including certain serotonergic medicines.",
     "food": "Follow the product label.",
     "status": "OTC in many markets.",
-    "warning": "Persistent or worsening cough requires medical evaluation."
+    "warning": "Persistent or worsening cough requires medical evaluation.",
+    "actives": [
+      "Dextromethorphan"
+    ]
   },
   "Saline Nasal Spray": {
     "form": "Nasal Spray",
@@ -128,7 +161,10 @@
     "interactions": "Usually has few medicine interactions.",
     "food": "Not applicable.",
     "status": "Usually OTC.",
-    "warning": "Persistent severe nasal symptoms require evaluation."
+    "warning": "Persistent severe nasal symptoms require evaluation.",
+    "actives": [
+      "Sodium chloride"
+    ]
   },
   "Clotrimazole": {
     "form": "Cream / Topical",
@@ -141,7 +177,10 @@
     "interactions": "Ask a pharmacist if using other topical medicines on the same area.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Persistent or worsening rash should be professionally evaluated."
+    "warning": "Persistent or worsening rash should be professionally evaluated.",
+    "actives": [
+      "Clotrimazole"
+    ]
   },
   "Hydrocortisone": {
     "form": "Cream / Ointment",
@@ -154,7 +193,10 @@
     "interactions": "Tell a healthcare professional about other topical medicines.",
     "food": "Not applicable.",
     "status": "OTC or prescription depending on strength and country.",
-    "warning": "Worsening redness, pain, pus or fever may indicate infection."
+    "warning": "Worsening redness, pain, pus or fever may indicate infection.",
+    "actives": [
+      "Hydrocortisone"
+    ]
   },
   "Benzoyl Peroxide": {
     "form": "Gel / Cream / Wash",
@@ -167,7 +209,10 @@
     "interactions": "Other irritating skin products can increase irritation.",
     "food": "Not applicable.",
     "status": "Usually OTC.",
-    "warning": "Stop and seek advice for severe irritation or allergic reaction."
+    "warning": "Stop and seek advice for severe irritation or allergic reaction.",
+    "actives": [
+      "Benzoyl Peroxide"
+    ]
   },
   "Loperamide": {
     "form": "Tablet / Capsule / Liquid",
@@ -180,7 +225,10 @@
     "interactions": "Ask a pharmacist about other medicines.",
     "food": "Follow product directions.",
     "status": "OTC in many markets.",
-    "warning": "Blood in stool, high fever or severe abdominal pain requires medical evaluation."
+    "warning": "Blood in stool, high fever or severe abdominal pain requires medical evaluation.",
+    "actives": [
+      "Loperamide"
+    ]
   },
   "Salbutamol Inhaler": {
     "form": "Inhaler",
@@ -193,7 +241,10 @@
     "interactions": "Certain heart medicines and other bronchodilators may interact.",
     "food": "Not applicable.",
     "status": "Prescription or pharmacist-supervised in many markets.",
-    "warning": "Seek urgent care if breathing difficulty is severe or not relieved."
+    "warning": "Seek urgent care if breathing difficulty is severe or not relieved.",
+    "actives": [
+      "Salbutamol"
+    ]
   },
   "Simethicone": {
     "form": "Tablet / Chewable / Drops",
@@ -206,7 +257,10 @@
     "interactions": "Few known interactions.",
     "food": "Usually taken after meals; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Persistent bloating or pain should be medically evaluated."
+    "warning": "Persistent bloating or pain should be medically evaluated.",
+    "actives": [
+      "Simethicone"
+    ]
   },
   "Psyllium Husk (Isabgol)": {
     "form": "Powder / Granules",
@@ -219,7 +273,10 @@
     "interactions": "May affect absorption of some medicines if taken at the same time.",
     "food": "Usually mixed with water or milk; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Persistent constipation should be medically evaluated."
+    "warning": "Persistent constipation should be medically evaluated.",
+    "actives": [
+      "Psyllium husk"
+    ]
   },
   "Bisacodyl": {
     "form": "Tablet / Suppository",
@@ -232,7 +289,10 @@
     "interactions": "Ask a pharmacist about use with other medicines.",
     "food": "Follow the product label.",
     "status": "OTC in many markets.",
-    "warning": "Persistent or severe constipation requires medical evaluation."
+    "warning": "Persistent or severe constipation requires medical evaluation.",
+    "actives": [
+      "Bisacodyl"
+    ]
   },
   "Domperidone": {
     "form": "Tablet",
@@ -245,7 +305,10 @@
     "interactions": "Can interact with certain heart and other medicines.",
     "food": "Usually taken before meals; follow the label.",
     "status": "OTC or prescription depending on country.",
-    "warning": "Persistent vomiting or signs of dehydration require medical care."
+    "warning": "Persistent vomiting or signs of dehydration require medical care.",
+    "actives": [
+      "Domperidone"
+    ]
   },
   "Ketoconazole Shampoo": {
     "form": "Shampoo",
@@ -258,7 +321,10 @@
     "interactions": "Few known interactions with topical use.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Persistent or worsening scalp irritation should be evaluated."
+    "warning": "Persistent or worsening scalp irritation should be evaluated.",
+    "actives": [
+      "Ketoconazole"
+    ]
   },
   "Lubricating Eye Drops": {
     "form": "Eye Drops",
@@ -271,7 +337,11 @@
     "interactions": "Few known interactions.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Eye pain, vision change or thick discharge needs prompt medical evaluation."
+    "warning": "Eye pain, vision change or thick discharge needs prompt medical evaluation.",
+    "actives": [
+      "Artificial tear polymers"
+    ],
+    "variable": true
   },
   "Iron Supplement": {
     "form": "Tablet / Capsule / Syrup",
@@ -284,7 +354,10 @@
     "interactions": "Can reduce absorption of some other medicines if taken together.",
     "food": "Often taken with food to reduce stomach upset; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Keep out of reach of children; iron overdose can be dangerous."
+    "warning": "Keep out of reach of children; iron overdose can be dangerous.",
+    "actives": [
+      "Ferrous sulfate"
+    ]
   },
   "Folic Acid": {
     "form": "Tablet",
@@ -297,7 +370,10 @@
     "interactions": "Ask a pharmacist about use with certain other medicines.",
     "food": "Can usually be taken with or without food.",
     "status": "OTC in many markets.",
-    "warning": "Underlying cause of anemia should be medically evaluated."
+    "warning": "Underlying cause of anemia should be medically evaluated.",
+    "actives": [
+      "Folic acid"
+    ]
   },
   "Vitamin D3 Supplement": {
     "form": "Tablet / Capsule / Sachet",
@@ -310,7 +386,10 @@
     "interactions": "Ask a pharmacist about use with certain other medicines.",
     "food": "Often taken with a meal for better absorption.",
     "status": "OTC in many markets.",
-    "warning": "Confirm deficiency and dosing with a healthcare professional."
+    "warning": "Confirm deficiency and dosing with a healthcare professional.",
+    "actives": [
+      "Cholecalciferol"
+    ]
   },
   "Vitamin B12 Supplement": {
     "form": "Tablet / Capsule / Injection",
@@ -323,7 +402,11 @@
     "interactions": "Ask a pharmacist about use with certain other medicines.",
     "food": "Can usually be taken with or without food.",
     "status": "OTC in many markets.",
-    "warning": "Confirm deficiency and dosing with a healthcare professional."
+    "warning": "Confirm deficiency and dosing with a healthcare professional.",
+    "actives": [
+      "Cyanocobalamin",
+      "Methylcobalamin"
+    ]
   },
   "Multivitamin": {
     "form": "Tablet / Capsule",
@@ -336,7 +419,12 @@
     "interactions": "Ask a pharmacist about use with certain other medicines.",
     "food": "Often taken with food.",
     "status": "OTC in many markets.",
-    "warning": "Persistent fatigue should be medically evaluated."
+    "warning": "Persistent fatigue should be medically evaluated.",
+    "actives": [
+      "Vitamins (various)",
+      "Minerals (various)"
+    ],
+    "variable": true
   },
   "Melatonin": {
     "form": "Tablet / Gummy",
@@ -349,7 +437,10 @@
     "interactions": "May interact with certain other medicines; ask a pharmacist.",
     "food": "Usually taken shortly before bedtime.",
     "status": "OTC in some markets, prescription-only in others.",
-    "warning": "Persistent insomnia should be medically evaluated."
+    "warning": "Persistent insomnia should be medically evaluated.",
+    "actives": [
+      "Melatonin"
+    ]
   },
   "Dimenhydrinate": {
     "form": "Tablet",
@@ -362,7 +453,10 @@
     "interactions": "Other sedating medicines may increase drowsiness.",
     "food": "Usually taken before travel; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Consult a doctor before use in young children."
+    "warning": "Consult a doctor before use in young children.",
+    "actives": [
+      "Dimenhydrinate"
+    ]
   },
   "Diclofenac Gel": {
     "form": "Topical gel / spray",
@@ -375,7 +469,10 @@
     "interactions": "Avoid using together with oral NSAIDs unless advised. Tell a professional if you take blood thinners.",
     "food": "Not applicable (applied to skin).",
     "status": "OTC in many markets; strength and availability vary.",
-    "warning": "Do not apply under tight bandages or heat pads unless the label allows."
+    "warning": "Do not apply under tight bandages or heat pads unless the label allows.",
+    "actives": [
+      "Diclofenac"
+    ]
   },
   "Pain Relief Balm / Spray": {
     "form": "Balm / Ointment / Spray",
@@ -388,7 +485,13 @@
     "interactions": "Methyl salicylate may add to the effect of blood thinners if used over large areas.",
     "food": "Not applicable (applied to skin).",
     "status": "Widely available OTC.",
-    "warning": "Keep out of reach of children; swallowing can be toxic."
+    "warning": "Keep out of reach of children; swallowing can be toxic.",
+    "actives": [
+      "Menthol",
+      "Methyl salicylate",
+      "Camphor"
+    ],
+    "variable": true
   },
   "Aspirin": {
     "form": "Tablet (plain or enteric-coated)",
@@ -401,7 +504,10 @@
     "interactions": "Interacts with blood thinners, other NSAIDs, some diabetes and blood pressure medicines.",
     "food": "Taking with food may reduce stomach upset.",
     "status": "OTC in many markets; availability varies.",
-    "warning": "Do not combine with another NSAID unless advised. Do not give to children or teens for fever."
+    "warning": "Do not combine with another NSAID unless advised. Do not give to children or teens for fever.",
+    "actives": [
+      "Acetylsalicylic acid"
+    ]
   },
   "Famotidine": {
     "form": "Tablet",
@@ -414,7 +520,10 @@
     "interactions": "May affect absorption of some medicines (e.g., certain antifungals and HIV medicines).",
     "food": "Can be taken with or without food; follow the label.",
     "status": "OTC in some markets; prescription-only in others.",
-    "warning": "Persistent heartburn needs medical evaluation."
+    "warning": "Persistent heartburn needs medical evaluation.",
+    "actives": [
+      "Famotidine"
+    ]
   },
   "Levocetirizine": {
     "form": "Tablet / Syrup",
@@ -427,7 +536,10 @@
     "interactions": "Additive sedation with alcohol or sedative medicines.",
     "food": "Can be taken with or without food.",
     "status": "Availability varies by country; commonly sold OTC in India.",
-    "warning": "Do not combine with other antihistamines unless advised."
+    "warning": "Do not combine with other antihistamines unless advised.",
+    "actives": [
+      "Levocetirizine"
+    ]
   },
   "Fexofenadine": {
     "form": "Tablet / Suspension",
@@ -440,7 +552,10 @@
     "interactions": "Antacids with aluminium/magnesium and fruit juices (grapefruit, orange, apple) can reduce absorption.",
     "food": "Take with water; avoid fruit juice around the dose.",
     "status": "OTC in many markets; availability varies.",
-    "warning": "Do not take with fruit juice."
+    "warning": "Do not take with fruit juice.",
+    "actives": [
+      "Fexofenadine"
+    ]
   },
   "Chlorpheniramine": {
     "form": "Tablet / Syrup (often in combination cold products)",
@@ -453,7 +568,10 @@
     "interactions": "Additive sedation with alcohol, sleeping pills or other antihistamines.",
     "food": "Can be taken with or without food.",
     "status": "Commonly OTC, often as part of combination cold medicines.",
-    "warning": "Do not drive or operate machinery if drowsy."
+    "warning": "Do not drive or operate machinery if drowsy.",
+    "actives": [
+      "Chlorpheniramine"
+    ]
   },
   "Xylometazoline Nasal Spray": {
     "form": "Nasal spray / drops",
@@ -466,7 +584,10 @@
     "interactions": "Caution with MAO inhibitor antidepressants.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Prolonged use can worsen congestion (rebound effect)."
+    "warning": "Prolonged use can worsen congestion (rebound effect).",
+    "actives": [
+      "Xylometazoline"
+    ]
   },
   "Guaifenesin": {
     "form": "Syrup / Tablet (often in combination cough products)",
@@ -479,7 +600,10 @@
     "interactions": "Check combination products for duplicate ingredients.",
     "food": "Take with water; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Persistent cough needs medical evaluation."
+    "warning": "Persistent cough needs medical evaluation.",
+    "actives": [
+      "Guaifenesin"
+    ]
   },
   "Ambroxol": {
     "form": "Syrup / Tablet",
@@ -492,7 +616,10 @@
     "interactions": "Usually few interactions; avoid combining with cough suppressants unless advised.",
     "food": "Usually taken after food.",
     "status": "Commonly sold OTC or on pharmacist advice in India; varies elsewhere.",
-    "warning": "Do not use with cough suppressants without advice."
+    "warning": "Do not use with cough suppressants without advice.",
+    "actives": [
+      "Ambroxol"
+    ]
   },
   "Throat Lozenges": {
     "form": "Lozenge",
@@ -505,7 +632,13 @@
     "interactions": "Avoid doubling up with other products containing the same active ingredient.",
     "food": "Dissolve slowly; avoid eating or drinking right after if numbing.",
     "status": "Widely available OTC.",
-    "warning": "Persistent sore throat needs medical evaluation."
+    "warning": "Persistent sore throat needs medical evaluation.",
+    "actives": [
+      "Menthol",
+      "Benzocaine",
+      "Flurbiprofen"
+    ],
+    "variable": true
   },
   "Calamine Lotion": {
     "form": "Lotion",
@@ -518,7 +651,11 @@
     "interactions": "No significant interactions when applied to skin.",
     "food": "Not applicable.",
     "status": "Widely available OTC.",
-    "warning": "For external use only."
+    "warning": "For external use only.",
+    "actives": [
+      "Calamine",
+      "Zinc oxide"
+    ]
   },
   "Povidone-Iodine": {
     "form": "Antiseptic solution / ointment",
@@ -531,7 +668,10 @@
     "interactions": "May be inactivated by some other antiseptics; can affect thyroid tests.",
     "food": "Not applicable.",
     "status": "Widely available OTC.",
-    "warning": "For external use only; do not swallow."
+    "warning": "For external use only; do not swallow.",
+    "actives": [
+      "Povidone-iodine"
+    ]
   },
   "Terbinafine Cream": {
     "form": "Cream / Gel / Spray",
@@ -544,7 +684,10 @@
     "interactions": "No significant interactions expected with topical use.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "For external use only."
+    "warning": "For external use only.",
+    "actives": [
+      "Terbinafine"
+    ]
   },
   "Permethrin": {
     "form": "Cream / Lotion",
@@ -557,7 +700,10 @@
     "interactions": "No significant interactions expected with topical use.",
     "food": "Not applicable.",
     "status": "OTC in some markets; may need a prescription in others.",
-    "warning": "Do not use on infants without medical advice."
+    "warning": "Do not use on infants without medical advice.",
+    "actives": [
+      "Permethrin"
+    ]
   },
   "Albendazole": {
     "form": "Tablet / Suspension",
@@ -570,7 +716,10 @@
     "interactions": "Some medicines (e.g., certain anticonvulsants, cimetidine) can change its levels.",
     "food": "Often taken with food (especially fatty food) to improve absorption; follow instructions.",
     "status": "Prescription status varies; commonly dispensed on pharmacist or doctor advice.",
-    "warning": "Seek medical advice before use in pregnancy or for children."
+    "warning": "Seek medical advice before use in pregnancy or for children.",
+    "actives": [
+      "Albendazole"
+    ]
   },
   "Hyoscine Butylbromide": {
     "form": "Tablet",
@@ -583,7 +732,10 @@
     "interactions": "Additive effect with other anticholinergic medicines such as some antihistamines.",
     "food": "Can be taken with or without food.",
     "status": "OTC in some markets, prescription-only in others.",
-    "warning": "Severe abdominal pain, fever or blood in stool needs medical care."
+    "warning": "Severe abdominal pain, fever or blood in stool needs medical care.",
+    "actives": [
+      "Hyoscine butylbromide"
+    ]
   },
   "Probiotics": {
     "form": "Capsule / Sachet / Yogurt-based",
@@ -596,7 +748,13 @@
     "interactions": "Take apart from antibiotics unless the label says otherwise; antifungal medicines may reduce yeast-based probiotics.",
     "food": "Follow the product label.",
     "status": "Sold as supplements or food products.",
-    "warning": "Not a substitute for fluids (ORS) in diarrhea."
+    "warning": "Not a substitute for fluids (ORS) in diarrhea.",
+    "actives": [
+      "Lactobacillus",
+      "Bifidobacterium",
+      "Saccharomyces"
+    ],
+    "variable": true
   },
   "Zinc Supplement": {
     "form": "Tablet / Dispersible tablet / Syrup",
@@ -609,7 +767,10 @@
     "interactions": "Can reduce absorption of some antibiotics (quinolones, tetracyclines) and iron.",
     "food": "Taking with food may reduce stomach upset.",
     "status": "Sold OTC as a supplement.",
-    "warning": "Do not exceed the labeled amount."
+    "warning": "Do not exceed the labeled amount.",
+    "actives": [
+      "Zinc"
+    ]
   },
   "Calcium Supplement": {
     "form": "Tablet / Chewable",
@@ -622,7 +783,13 @@
     "interactions": "Can reduce absorption of some antibiotics, thyroid medicine and iron; separate by a few hours.",
     "food": "Calcium carbonate is best with food; calcium citrate can be taken any time.",
     "status": "Sold OTC as a supplement.",
-    "warning": "Do not exceed the labeled amount."
+    "warning": "Do not exceed the labeled amount.",
+    "actives": [
+      "Calcium carbonate",
+      "Calcium citrate",
+      "Cholecalciferol"
+    ],
+    "variable": true
   },
   "Chlorhexidine Mouthwash": {
     "form": "Mouthwash",
@@ -635,7 +802,10 @@
     "interactions": "Some toothpastes may reduce its effect; rinse mouth between brushing and mouthwash.",
     "food": "Avoid eating or drinking right after use.",
     "status": "OTC in many markets.",
-    "warning": "Not a replacement for brushing and dental care."
+    "warning": "Not a replacement for brushing and dental care.",
+    "actives": [
+      "Chlorhexidine"
+    ]
   },
   "Oral Pain Relief Gel": {
     "form": "Gel",
@@ -648,7 +818,13 @@
     "interactions": "Avoid if allergic to aspirin or local anesthetics.",
     "food": "Avoid eating or drinking right after application.",
     "status": "Widely available OTC.",
-    "warning": "Do not use on large areas or for long periods."
+    "warning": "Do not use on large areas or for long periods.",
+    "actives": [
+      "Choline salicylate",
+      "Benzocaine",
+      "Lidocaine"
+    ],
+    "variable": true
   },
   "Carbamide Peroxide Ear Drops": {
     "form": "Ear drops",
@@ -661,7 +837,10 @@
     "interactions": "No significant interactions expected.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "See a doctor if pain, discharge or hearing loss occurs."
+    "warning": "See a doctor if pain, discharge or hearing loss occurs.",
+    "actives": [
+      "Carbamide peroxide"
+    ]
   },
   "Aloe Vera Gel": {
     "form": "Gel",
@@ -674,7 +853,10 @@
     "interactions": "No significant interactions with topical use.",
     "food": "Not applicable.",
     "status": "Widely available as a cosmetic/OTC product.",
-    "warning": "Seek medical care for large, deep, blistering or face/genital burns."
+    "warning": "Seek medical care for large, deep, blistering or face/genital burns.",
+    "actives": [
+      "Aloe vera extract"
+    ]
   },
   "Emollient / Moisturizer": {
     "form": "Cream / Ointment / Lotion",
@@ -687,7 +869,14 @@
     "interactions": "May reduce absorption of other creams if applied immediately before them.",
     "food": "Not applicable.",
     "status": "Widely available OTC.",
-    "warning": "Keep away from open flames if using paraffin-based products."
+    "warning": "Keep away from open flames if using paraffin-based products.",
+    "actives": [
+      "Petrolatum",
+      "Glycerin",
+      "Ceramides",
+      "Liquid paraffin"
+    ],
+    "variable": true
   },
   "Acyclovir Cream": {
     "form": "Cream",
@@ -700,7 +889,10 @@
     "interactions": "No significant interactions with topical use.",
     "food": "Not applicable.",
     "status": "OTC in some markets; prescription in others.",
-    "warning": "Do not share towels or touch sores."
+    "warning": "Do not share towels or touch sores.",
+    "actives": [
+      "Acyclovir"
+    ]
   },
   "Salicylic Acid": {
     "form": "Gel / Cream / Face wash / Paint",
@@ -713,7 +905,10 @@
     "interactions": "Avoid combining with other strong exfoliants or retinoids unless advised.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "For external use only; stop if burning or severe irritation occurs."
+    "warning": "For external use only; stop if burning or severe irritation occurs.",
+    "actives": [
+      "Salicylic acid"
+    ]
   },
   "Sunscreen": {
     "form": "Lotion / Cream / Gel / Spray",
@@ -726,7 +921,11 @@
     "interactions": "No significant interactions.",
     "food": "Not applicable.",
     "status": "Widely available OTC.",
-    "warning": "Sunscreen reduces but does not eliminate risk; use shade and clothing too."
+    "warning": "Sunscreen reduces but does not eliminate risk; use shade and clothing too.",
+    "actives": [
+      "UV filters"
+    ],
+    "variable": true
   },
   "Lactulose": {
     "form": "Syrup",
@@ -739,7 +938,10 @@
     "interactions": "Other laxatives may add to effects.",
     "food": "Follow the label; drink adequate fluids.",
     "status": "OTC in many markets.",
-    "warning": "Prolonged laxative use should be medically supervised."
+    "warning": "Prolonged laxative use should be medically supervised.",
+    "actives": [
+      "Lactulose"
+    ]
   },
   "Menthol Vapor Balm": {
     "form": "Balm / Rub / Inhalation",
@@ -752,7 +954,12 @@
     "interactions": "No significant interactions with external use.",
     "food": "Not applicable.",
     "status": "Widely available OTC.",
-    "warning": "Camphor is toxic if swallowed; keep away from children."
+    "warning": "Camphor is toxic if swallowed; keep away from children.",
+    "actives": [
+      "Menthol",
+      "Camphor",
+      "Eucalyptus oil"
+    ]
   },
   "Naproxen": {
     "form": "Tablet",
@@ -765,7 +972,10 @@
     "interactions": "Can interact with blood thinners, other NSAIDs, aspirin, some blood pressure medicines and lithium.",
     "food": "Take with food or milk to reduce stomach upset.",
     "status": "OTC in some markets, prescription-only in others.",
-    "warning": "Do not combine with other NSAIDs such as ibuprofen, diclofenac or aspirin."
+    "warning": "Do not combine with other NSAIDs such as ibuprofen, diclofenac or aspirin.",
+    "actives": [
+      "Naproxen"
+    ]
   },
   "Mefenamic Acid": {
     "form": "Tablet / Suspension",
@@ -778,7 +988,10 @@
     "interactions": "Can interact with blood thinners, other NSAIDs and some blood pressure medicines.",
     "food": "Take with food to reduce stomach upset.",
     "status": "Availability varies; often pharmacy-sold or prescription depending on the country.",
-    "warning": "Stop and seek care if you develop severe diarrhea, rash or black stools."
+    "warning": "Stop and seek care if you develop severe diarrhea, rash or black stools.",
+    "actives": [
+      "Mefenamic acid"
+    ]
   },
   "Ibuprofen Gel": {
     "form": "Topical gel",
@@ -791,7 +1004,10 @@
     "interactions": "Systemic absorption is low, but caution with oral NSAIDs and blood thinners.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Do not cover with tight bandages or heat pads unless the label allows."
+    "warning": "Do not cover with tight bandages or heat pads unless the label allows.",
+    "actives": [
+      "Ibuprofen"
+    ]
   },
   "Capsaicin Cream": {
     "form": "Topical cream",
@@ -804,7 +1020,10 @@
     "interactions": "No significant common interactions with topical use.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Do not use with heating pads or tight wraps."
+    "warning": "Do not use with heating pads or tight wraps.",
+    "actives": [
+      "Capsaicin"
+    ]
   },
   "Lidocaine Gel / Ointment": {
     "form": "Topical gel / ointment / patch",
@@ -817,7 +1036,10 @@
     "interactions": "Can add to the effect of other local anesthetics or certain heart rhythm medicines if used heavily.",
     "food": "Not applicable.",
     "status": "OTC in lower strengths; stronger forms may need a prescription.",
-    "warning": "Do not use on large areas or with heat; seek advice for children."
+    "warning": "Do not use on large areas or with heat; seek advice for children.",
+    "actives": [
+      "Lidocaine"
+    ]
   },
   "Glucosamine Supplement": {
     "form": "Tablet / Capsule",
@@ -830,7 +1052,10 @@
     "interactions": "May interact with warfarin and affect blood sugar in some people.",
     "food": "Often taken with food.",
     "status": "Dietary supplement; availability varies.",
-    "warning": "Benefit is modest and not guaranteed; not a substitute for medical care."
+    "warning": "Benefit is modest and not guaranteed; not a substitute for medical care.",
+    "actives": [
+      "Glucosamine"
+    ]
   },
   "Pseudoephedrine": {
     "form": "Tablet / Syrup (often combined)",
@@ -843,7 +1068,10 @@
     "interactions": "Do not use with MAO inhibitors; caution with other stimulants and blood pressure medicines.",
     "food": "Can be taken with or without food.",
     "status": "Sold behind the counter or restricted in many markets; may be Rx-only.",
-    "warning": "Do not combine with other decongestant products."
+    "warning": "Do not combine with other decongestant products.",
+    "actives": [
+      "Pseudoephedrine"
+    ]
   },
   "Oxymetazoline Nasal Spray": {
     "form": "Nasal spray",
@@ -856,7 +1084,10 @@
     "interactions": "Avoid with MAO inhibitors; caution with other decongestants.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Do not use for more than about 3 days unless advised."
+    "warning": "Do not use for more than about 3 days unless advised.",
+    "actives": [
+      "Oxymetazoline"
+    ]
   },
   "Fluticasone Nasal Spray": {
     "form": "Nasal spray",
@@ -869,7 +1100,10 @@
     "interactions": "Some medicines (e.g., ritonavir, ketoconazole) can raise levels.",
     "food": "Not applicable.",
     "status": "OTC in some markets, prescription-only in others.",
-    "warning": "Use regularly as directed; not for instant relief."
+    "warning": "Use regularly as directed; not for instant relief.",
+    "actives": [
+      "Fluticasone"
+    ]
   },
   "Desloratadine": {
     "form": "Tablet / Syrup",
@@ -882,7 +1116,10 @@
     "interactions": "Few interactions; avoid with other antihistamines unless advised.",
     "food": "With or without food.",
     "status": "OTC or prescription depending on country.",
-    "warning": "Do not combine with other antihistamines."
+    "warning": "Do not combine with other antihistamines.",
+    "actives": [
+      "Desloratadine"
+    ]
   },
   "Diphenhydramine": {
     "form": "Tablet / Capsule / Syrup / Cream",
@@ -895,7 +1132,10 @@
     "interactions": "Adds to the sedation of alcohol, sleep aids and other antihistamines.",
     "food": "With or without food.",
     "status": "OTC in many markets.",
-    "warning": "Do not use with other products containing diphenhydramine."
+    "warning": "Do not use with other products containing diphenhydramine.",
+    "actives": [
+      "Diphenhydramine"
+    ]
   },
   "Phenylephrine": {
     "form": "Tablet / Syrup (usually combined)",
@@ -908,7 +1148,10 @@
     "interactions": "Avoid with MAO inhibitors; check other cold products for duplicates.",
     "food": "With or without food.",
     "status": "OTC in many combination products.",
-    "warning": "Oral effectiveness is limited; do not stack decongestants."
+    "warning": "Oral effectiveness is limited; do not stack decongestants.",
+    "actives": [
+      "Phenylephrine"
+    ]
   },
   "Bromhexine": {
     "form": "Tablet / Syrup",
@@ -921,7 +1164,10 @@
     "interactions": "Combination with cough suppressants is not advisable.",
     "food": "After food.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Avoid combining with cough suppressants unless a doctor advises."
+    "warning": "Avoid combining with cough suppressants unless a doctor advises.",
+    "actives": [
+      "Bromhexine"
+    ]
   },
   "Acetylcysteine": {
     "form": "Effervescent tablet / Sachet / Syrup",
@@ -934,7 +1180,10 @@
     "interactions": "Can reduce the effect of some antibiotics if taken at the same time.",
     "food": "After food.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Do not combine with cough suppressants unless advised."
+    "warning": "Do not combine with cough suppressants unless advised.",
+    "actives": [
+      "Acetylcysteine"
+    ]
   },
   "Honey-Based Cough Syrup": {
     "form": "Syrup / Lozenge",
@@ -947,7 +1196,12 @@
     "interactions": "No significant interactions.",
     "food": "With or without food.",
     "status": "OTC in many markets.",
-    "warning": "Do not give to infants under 1 year."
+    "warning": "Do not give to infants under 1 year.",
+    "actives": [
+      "Honey",
+      "Herbal extracts"
+    ],
+    "variable": true
   },
   "Benzydamine": {
     "form": "Throat spray / Mouthwash / Gel",
@@ -960,7 +1214,10 @@
     "interactions": "No significant interactions with topical use.",
     "food": "Use after food for best contact time.",
     "status": "OTC in many markets.",
-    "warning": "Do not use for more than a week without advice."
+    "warning": "Do not use for more than a week without advice.",
+    "actives": [
+      "Benzydamine"
+    ]
   },
   "Pantoprazole": {
     "form": "Tablet",
@@ -973,7 +1230,10 @@
     "interactions": "Can interact with certain HIV medicines, clopidogrel and methotrexate.",
     "food": "Usually taken before a meal.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Persistent symptoms, vomiting or black stools need medical review."
+    "warning": "Persistent symptoms, vomiting or black stools need medical review.",
+    "actives": [
+      "Pantoprazole"
+    ]
   },
   "Esomeprazole": {
     "form": "Capsule / Tablet",
@@ -986,7 +1246,10 @@
     "interactions": "Can interact with clopidogrel, methotrexate and some HIV medicines.",
     "food": "Usually taken before a meal.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Do not use beyond the label period without medical advice."
+    "warning": "Do not use beyond the label period without medical advice.",
+    "actives": [
+      "Esomeprazole"
+    ]
   },
   "Sodium Alginate": {
     "form": "Liquid / Chewable tablet",
@@ -999,7 +1262,10 @@
     "interactions": "Separate from some medicines by a couple of hours.",
     "food": "After meals and at bedtime.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice if symptoms are frequent."
+    "warning": "Seek advice if symptoms are frequent.",
+    "actives": [
+      "Sodium alginate"
+    ]
   },
   "Digestive Enzymes": {
     "form": "Tablet / Capsule / Syrup",
@@ -1012,7 +1278,14 @@
     "interactions": "Few interactions.",
     "food": "With or just after meals.",
     "status": "OTC in many markets.",
-    "warning": "Not a substitute for evaluating persistent digestive problems."
+    "warning": "Not a substitute for evaluating persistent digestive problems.",
+    "actives": [
+      "Pancreatin",
+      "Amylase",
+      "Protease",
+      "Lipase"
+    ],
+    "variable": true
   },
   "Magnesium Hydroxide": {
     "form": "Suspension / Tablet",
@@ -1025,7 +1298,10 @@
     "interactions": "Can reduce absorption of some medicines such as certain antibiotics.",
     "food": "With water; follow the label.",
     "status": "OTC in many markets.",
-    "warning": "Do not use daily for long periods."
+    "warning": "Do not use daily for long periods.",
+    "actives": [
+      "Magnesium hydroxide"
+    ]
   },
   "Senna": {
     "form": "Tablet / Syrup",
@@ -1038,7 +1314,10 @@
     "interactions": "Overuse may worsen effects of some heart or diuretic medicines.",
     "food": "Often taken at bedtime; works in about 6 to 12 hours.",
     "status": "OTC in many markets.",
-    "warning": "Do not use for more than a week without advice."
+    "warning": "Do not use for more than a week without advice.",
+    "actives": [
+      "Sennosides"
+    ]
   },
   "Polyethylene Glycol (PEG)": {
     "form": "Powder / Solution",
@@ -1051,7 +1330,10 @@
     "interactions": "May reduce absorption of some medicines if taken at the same time.",
     "food": "With plenty of fluid.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice if constipation persists."
+    "warning": "Seek advice if constipation persists.",
+    "actives": [
+      "Polyethylene glycol"
+    ]
   },
   "Glycerin Suppository": {
     "form": "Suppository",
@@ -1064,7 +1346,10 @@
     "interactions": "No significant interactions.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Not for regular use."
+    "warning": "Not for regular use.",
+    "actives": [
+      "Glycerin"
+    ]
   },
   "Racecadotril": {
     "form": "Capsule / Granules",
@@ -1077,7 +1362,10 @@
     "interactions": "Caution with ACE inhibitors.",
     "food": "Before meals.",
     "status": "OTC or prescription depending on the country.",
-    "warning": "Seek care for blood in stools, high fever or dehydration."
+    "warning": "Seek care for blood in stools, high fever or dehydration.",
+    "actives": [
+      "Racecadotril"
+    ]
   },
   "Bismuth Subsalicylate": {
     "form": "Chewable tablet / Suspension",
@@ -1090,7 +1378,10 @@
     "interactions": "Interacts with aspirin, blood thinners and some antibiotics.",
     "food": "With or without food.",
     "status": "OTC in some markets.",
-    "warning": "Do not use with fever and bloody stools; seek care."
+    "warning": "Do not use with fever and bloody stools; seek care.",
+    "actives": [
+      "Bismuth subsalicylate"
+    ]
   },
   "Dicyclomine": {
     "form": "Tablet / Syrup",
@@ -1103,7 +1394,10 @@
     "interactions": "Adds to other anticholinergic medicines such as antihistamines.",
     "food": "Before meals.",
     "status": "OTC or prescription depending on the country.",
-    "warning": "Avoid driving if it makes you dizzy."
+    "warning": "Avoid driving if it makes you dizzy.",
+    "actives": [
+      "Dicyclomine"
+    ]
   },
   "Mebeverine": {
     "form": "Tablet / Capsule",
@@ -1116,7 +1410,10 @@
     "interactions": "Few significant interactions.",
     "food": "Usually taken before meals.",
     "status": "OTC or prescription depending on the country.",
-    "warning": "Persistent or worsening symptoms need medical review."
+    "warning": "Persistent or worsening symptoms need medical review.",
+    "actives": [
+      "Mebeverine"
+    ]
   },
   "Peppermint Oil Capsule": {
     "form": "Enteric-coated capsule",
@@ -1129,7 +1426,10 @@
     "interactions": "May affect some medicines metabolized by the liver.",
     "food": "Usually before meals.",
     "status": "Supplement or OTC depending on the market.",
-    "warning": "Avoid with severe reflux or gallstones unless advised."
+    "warning": "Avoid with severe reflux or gallstones unless advised.",
+    "actives": [
+      "Peppermint oil"
+    ]
   },
   "Ginger Supplement": {
     "form": "Capsule / Tea / Lozenge",
@@ -1142,7 +1442,10 @@
     "interactions": "May enhance the effect of blood thinners.",
     "food": "With or after food.",
     "status": "Supplement or food product.",
-    "warning": "Not a substitute for care if vomiting persists."
+    "warning": "Not a substitute for care if vomiting persists.",
+    "actives": [
+      "Ginger extract"
+    ]
   },
   "Meclizine": {
     "form": "Tablet",
@@ -1155,7 +1458,10 @@
     "interactions": "Adds to alcohol and other sedatives.",
     "food": "With or without food.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Sudden dizziness with weakness, speech trouble or chest pain needs emergency care."
+    "warning": "Sudden dizziness with weakness, speech trouble or chest pain needs emergency care.",
+    "actives": [
+      "Meclizine"
+    ]
   },
   "Mebendazole": {
     "form": "Chewable tablet / Suspension",
@@ -1168,7 +1474,10 @@
     "interactions": "Cimetidine and some other medicines can alter levels.",
     "food": "With food improves absorption.",
     "status": "OTC or prescription depending on the country.",
-    "warning": "Complete the course; seek advice if symptoms persist."
+    "warning": "Complete the course; seek advice if symptoms persist.",
+    "actives": [
+      "Mebendazole"
+    ]
   },
   "Benzyl Benzoate": {
     "form": "Lotion",
@@ -1181,7 +1490,10 @@
     "interactions": "No significant interactions with topical use.",
     "food": "Not applicable.",
     "status": "OTC in some markets, prescription in others.",
-    "warning": "Do not use on broken skin; follow the full schedule."
+    "warning": "Do not use on broken skin; follow the full schedule.",
+    "actives": [
+      "Benzyl benzoate"
+    ]
   },
   "Dimeticone Lotion": {
     "form": "Lotion / Spray",
@@ -1194,7 +1506,10 @@
     "interactions": "None significant.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Flammable in some forms; avoid heat during use."
+    "warning": "Flammable in some forms; avoid heat during use.",
+    "actives": [
+      "Dimeticone"
+    ]
   },
   "Miconazole": {
     "form": "Cream / Powder / Vaginal cream",
@@ -1207,7 +1522,10 @@
     "interactions": "Can increase the effect of warfarin even with topical use.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice if no improvement or for recurrent infections."
+    "warning": "Seek advice if no improvement or for recurrent infections.",
+    "actives": [
+      "Miconazole"
+    ]
   },
   "Zinc Pyrithione Shampoo": {
     "form": "Shampoo",
@@ -1220,7 +1538,10 @@
     "interactions": "None significant.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice if the scalp is very red, painful or oozing."
+    "warning": "Seek advice if the scalp is very red, painful or oozing.",
+    "actives": [
+      "Zinc pyrithione"
+    ]
   },
   "Selenium Sulfide Shampoo": {
     "form": "Shampoo",
@@ -1233,7 +1554,10 @@
     "interactions": "None significant.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Do not use on broken or inflamed skin."
+    "warning": "Do not use on broken or inflamed skin.",
+    "actives": [
+      "Selenium sulfide"
+    ]
   },
   "Coal Tar Preparation": {
     "form": "Shampoo / Ointment",
@@ -1246,7 +1570,10 @@
     "interactions": "Avoid with other photosensitizing agents.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Avoid prolonged sun exposure after use."
+    "warning": "Avoid prolonged sun exposure after use.",
+    "actives": [
+      "Coal tar"
+    ]
   },
   "Adapalene": {
     "form": "Gel / Cream",
@@ -1259,7 +1586,10 @@
     "interactions": "Avoid combining with other irritating products unless advised.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Results take weeks; do not overuse."
+    "warning": "Results take weeks; do not overuse.",
+    "actives": [
+      "Adapalene"
+    ]
   },
   "Antibiotic Ointment (Neomycin/Bacitracin)": {
     "form": "Topical ointment",
@@ -1272,7 +1602,13 @@
     "interactions": "None significant with topical use.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek care for deep, dirty or spreading infections."
+    "warning": "Seek care for deep, dirty or spreading infections.",
+    "actives": [
+      "Neomycin",
+      "Bacitracin",
+      "Polymyxin B"
+    ],
+    "variable": true
   },
   "Petroleum Jelly": {
     "form": "Ointment",
@@ -1285,7 +1621,10 @@
     "interactions": "None.",
     "food": "Not applicable.",
     "status": "OTC / cosmetic.",
-    "warning": "Do not apply to very hot or freshly burned skin."
+    "warning": "Do not apply to very hot or freshly burned skin.",
+    "actives": [
+      "Petrolatum"
+    ]
   },
   "Urea Cream": {
     "form": "Cream / Lotion",
@@ -1298,7 +1637,10 @@
     "interactions": "None significant.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Higher strengths may need professional guidance."
+    "warning": "Higher strengths may need professional guidance.",
+    "actives": [
+      "Urea"
+    ]
   },
   "Colloidal Oatmeal Lotion": {
     "form": "Lotion / Cream / Bath",
@@ -1311,7 +1653,10 @@
     "interactions": "None.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice for infected or oozing rashes."
+    "warning": "Seek advice for infected or oozing rashes.",
+    "actives": [
+      "Colloidal oatmeal"
+    ]
   },
   "Zinc Oxide Ointment": {
     "form": "Ointment / Cream",
@@ -1324,7 +1669,10 @@
     "interactions": "None.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek advice for persistent rash or bleeding."
+    "warning": "Seek advice for persistent rash or bleeding.",
+    "actives": [
+      "Zinc oxide"
+    ]
   },
   "Prickly Heat Powder": {
     "form": "Powder",
@@ -1337,7 +1685,13 @@
     "interactions": "None.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Keep skin cool and dry."
+    "warning": "Keep skin cool and dry.",
+    "actives": [
+      "Menthol",
+      "Zinc oxide",
+      "Starch"
+    ],
+    "variable": true
   },
   "Olive / Mineral Oil Ear Drops": {
     "form": "Ear drops",
@@ -1350,7 +1704,11 @@
     "interactions": "None.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Do not insert objects into the ear."
+    "warning": "Do not insert objects into the ear.",
+    "actives": [
+      "Olive oil",
+      "Mineral oil"
+    ]
   },
   "Carboxymethylcellulose Eye Drops": {
     "form": "Eye drops",
@@ -1363,7 +1721,11 @@
     "interactions": "Wait several minutes between different eye drops.",
     "food": "Not applicable.",
     "status": "OTC in many markets.",
-    "warning": "Seek care for eye pain, vision change or discharge."
+    "warning": "Seek care for eye pain, vision change or discharge.",
+    "actives": [
+      "Carboxymethylcellulose",
+      "Hypromellose"
+    ]
   },
   "Clove Oil": {
     "form": "Topical oil / Gel",
@@ -1376,7 +1738,10 @@
     "interactions": "May enhance the effect of blood thinners if swallowed.",
     "food": "Not applicable.",
     "status": "Available OTC or as a traditional remedy.",
-    "warning": "Does not treat the cause; see a dentist."
+    "warning": "Does not treat the cause; see a dentist.",
+    "actives": [
+      "Eugenol"
+    ]
   },
   "Vitamin C Supplement": {
     "form": "Tablet / Effervescent / Chewable",
@@ -1389,7 +1754,10 @@
     "interactions": "Can increase iron absorption.",
     "food": "With or after food.",
     "status": "OTC supplement.",
-    "warning": "Does not prevent or cure colds in most people."
+    "warning": "Does not prevent or cure colds in most people.",
+    "actives": [
+      "Ascorbic acid"
+    ]
   },
   "Vitamin B-Complex": {
     "form": "Tablet / Capsule / Syrup",
@@ -1402,7 +1770,15 @@
     "interactions": "Certain medicines may interact with specific B vitamins.",
     "food": "With or after food.",
     "status": "OTC supplement.",
-    "warning": "Not a replacement for a balanced diet."
+    "warning": "Not a replacement for a balanced diet.",
+    "actives": [
+      "Thiamine (B1)",
+      "Riboflavin (B2)",
+      "Niacin (B3)",
+      "Pyridoxine",
+      "Cyanocobalamin"
+    ],
+    "variable": true
   },
   "Magnesium Supplement": {
     "form": "Tablet / Capsule / Powder",
@@ -1415,7 +1791,10 @@
     "interactions": "Can reduce absorption of some antibiotics and bisphosphonates.",
     "food": "With food.",
     "status": "OTC supplement.",
-    "warning": "Do not exceed label amounts."
+    "warning": "Do not exceed label amounts.",
+    "actives": [
+      "Magnesium"
+    ]
   },
   "Vitamin B6 (Pyridoxine)": {
     "form": "Tablet",
@@ -1428,7 +1807,10 @@
     "interactions": "May reduce the effect of levodopa and some seizure medicines.",
     "food": "With or without food.",
     "status": "OTC supplement.",
-    "warning": "Do not exceed label amounts."
+    "warning": "Do not exceed label amounts.",
+    "actives": [
+      "Pyridoxine"
+    ]
   },
   "Disodium Hydrogen Citrate": {
     "form": "Syrup / Sachet",
@@ -1441,7 +1823,10 @@
     "interactions": "May affect absorption of some medicines.",
     "food": "Dilute in water as directed.",
     "status": "OTC in India and some markets.",
-    "warning": "UTI usually needs a doctor and urine test; seek care if fever, back pain or blood in urine."
+    "warning": "UTI usually needs a doctor and urine test; seek care if fever, back pain or blood in urine.",
+    "actives": [
+      "Disodium hydrogen citrate"
+    ]
   },
   "Metformin": {
     "form": "Tablet",
@@ -1454,7 +1839,10 @@
     "interactions": "Alcohol and some contrast dyes can increase risk of serious side effects.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Metformin"
+    ]
   },
   "Glimepiride": {
     "form": "Tablet",
@@ -1467,7 +1855,10 @@
     "interactions": "Other diabetes medicines and alcohol can increase the risk of low blood sugar.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Glimepiride"
+    ]
   },
   "Insulin": {
     "form": "Injection",
@@ -1480,7 +1871,10 @@
     "interactions": "Many medicines and alcohol can change blood sugar response.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Insulin"
+    ]
   },
   "Amlodipine": {
     "form": "Tablet",
@@ -1493,7 +1887,10 @@
     "interactions": "Grapefruit and some medicines may change its effect.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Amlodipine"
+    ]
   },
   "Telmisartan": {
     "form": "Tablet",
@@ -1506,7 +1903,10 @@
     "interactions": "NSAIDs, potassium supplements and some diuretics may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Telmisartan"
+    ]
   },
   "Losartan": {
     "form": "Tablet",
@@ -1519,7 +1919,10 @@
     "interactions": "NSAIDs and potassium supplements may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Losartan"
+    ]
   },
   "Atorvastatin": {
     "form": "Tablet",
@@ -1532,7 +1935,10 @@
     "interactions": "Grapefruit juice in large amounts and some antibiotics may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Atorvastatin"
+    ]
   },
   "Rosuvastatin": {
     "form": "Tablet",
@@ -1545,7 +1951,10 @@
     "interactions": "Some antacids, blood thinners and other medicines may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Rosuvastatin"
+    ]
   },
   "Levothyroxine": {
     "form": "Tablet",
@@ -1558,7 +1967,10 @@
     "interactions": "Calcium, iron and antacids can reduce absorption; keep a gap.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Levothyroxine"
+    ]
   },
   "Carbimazole": {
     "form": "Tablet",
@@ -1571,7 +1983,10 @@
     "interactions": "Tell your doctor about all medicines you take.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Carbimazole"
+    ]
   },
   "Orlistat": {
     "form": "Capsule",
@@ -1584,7 +1999,10 @@
     "interactions": "May reduce absorption of fat-soluble vitamins and some medicines.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Orlistat"
+    ]
   },
   "Norethisterone": {
     "form": "Tablet",
@@ -1597,7 +2015,10 @@
     "interactions": "Some epilepsy and TB medicines may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Norethisterone"
+    ]
   },
   "Ashwagandha Supplement": {
     "form": "Capsule / Tablet",
@@ -1610,7 +2031,10 @@
     "interactions": "May add to the effect of sedatives and thyroid medicines.",
     "food": "Follow the product label.",
     "status": "Available OTC or as a supplement in many markets.",
-    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen."
+    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen.",
+    "actives": [
+      "Ashwagandha root extract"
+    ]
   },
   "Escitalopram": {
     "form": "Tablet",
@@ -1623,7 +2047,10 @@
     "interactions": "Other serotonergic medicines, blood thinners and NSAIDs may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Escitalopram"
+    ]
   },
   "Budesonide Inhaler": {
     "form": "Inhaler",
@@ -1636,7 +2063,10 @@
     "interactions": "Some antifungals can raise its levels.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Budesonide"
+    ]
   },
   "Montelukast": {
     "form": "Tablet",
@@ -1649,7 +2079,10 @@
     "interactions": "Some seizure medicines may change its effect.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Montelukast"
+    ]
   },
   "Nitrofurantoin": {
     "form": "Capsule",
@@ -1662,7 +2095,10 @@
     "interactions": "Antacids with magnesium may reduce absorption.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Nitrofurantoin"
+    ]
   },
   "Cranberry Supplement": {
     "form": "Capsule / Juice",
@@ -1675,7 +2111,10 @@
     "interactions": "May interact with warfarin.",
     "food": "Follow the product label.",
     "status": "Available OTC or as a supplement in many markets.",
-    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen."
+    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen.",
+    "actives": [
+      "Cranberry extract"
+    ]
   },
   "Electrolyte Powder": {
     "form": "Powder / Sachet",
@@ -1688,7 +2127,12 @@
     "interactions": "Check with a doctor if on a low-salt diet or with kidney disease.",
     "food": "Follow the product label.",
     "status": "Available OTC or as a supplement in many markets.",
-    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen."
+    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen.",
+    "actives": [
+      "Sodium chloride",
+      "Potassium chloride",
+      "Glucose"
+    ]
   },
   "Wart Freeze Spray": {
     "form": "Spray",
@@ -1701,7 +2145,11 @@
     "interactions": "Not applicable.",
     "food": "Follow the product label.",
     "status": "Available OTC or as a supplement in many markets.",
-    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen."
+    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen.",
+    "actives": [
+      "Dimethyl ether",
+      "Propane"
+    ]
   },
   "Colchicine": {
     "form": "Tablet",
@@ -1714,7 +2162,10 @@
     "interactions": "Some antibiotics and statins increase toxicity risk.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Colchicine"
+    ]
   },
   "Allopurinol": {
     "form": "Tablet",
@@ -1727,7 +2178,10 @@
     "interactions": "Some immune medicines and antibiotics may interact.",
     "food": "Follow your doctor's or pharmacist's instructions.",
     "status": "Prescription only in most countries.",
-    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines."
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Allopurinol"
+    ]
   },
   "Biotin Supplement": {
     "form": "Tablet",
@@ -1740,6 +2194,57 @@
     "interactions": "May affect thyroid and heart blood tests.",
     "food": "Follow the product label.",
     "status": "Available OTC or as a supplement in many markets.",
-    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen."
+    "warning": "Do not exceed the label directions. See a doctor if symptoms persist or worsen.",
+    "actives": [
+      "Biotin"
+    ]
+  },
+  "Tamsulosin": {
+    "form": "Capsule",
+    "ingredient": "Tamsulosin",
+    "purpose": "Alpha blocker",
+    "uses": "Used by doctors to relax the urinary tract, for enlarged prostate symptoms and to help pass some kidney stones.",
+    "age": "Use in children and older adults depends on the condition and the doctor's assessment.",
+    "precautions": "May cause dizziness on standing; tell your eye surgeon before cataract surgery.",
+    "sideEffects": "Dizziness, stuffy nose, abnormal ejaculation.",
+    "interactions": "Other blood pressure medicines can add to the dizziness.",
+    "food": "Follow your doctor's or pharmacist's instructions.",
+    "status": "Prescription only in most countries.",
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Tamsulosin"
+    ]
+  },
+  "Alendronate": {
+    "form": "Tablet",
+    "ingredient": "Alendronate",
+    "purpose": "Bone strengthening (bisphosphonate)",
+    "uses": "Used for osteoporosis to slow bone loss.",
+    "age": "Use in children and older adults depends on the condition and the doctor's assessment.",
+    "precautions": "Take with a full glass of water and stay upright for 30 minutes; dental checks are advised.",
+    "sideEffects": "Heartburn, stomach pain, bone or muscle ache.",
+    "interactions": "Calcium, antacids and iron reduce absorption; keep a gap.",
+    "food": "Follow your doctor's or pharmacist's instructions.",
+    "status": "Prescription only in most countries.",
+    "warning": "Start, change or stop only under a doctor's supervision. Never share prescription medicines.",
+    "actives": [
+      "Alendronate"
+    ]
+  },
+  "Diosmin": {
+    "form": "Tablet",
+    "ingredient": "Diosmin (often with hesperidin)",
+    "purpose": "Vein support",
+    "uses": "Used for symptoms of venous insufficiency such as heavy, tired legs and varicose veins.",
+    "age": "Generally for adults; follow the label.",
+    "precautions": "Swelling, skin changes or leg pain should be checked by a doctor.",
+    "sideEffects": "Stomach upset, headache.",
+    "interactions": "Tell a pharmacist about other medicines.",
+    "food": "Usually taken with meals; follow the label.",
+    "status": "OTC or prescription depending on the country.",
+    "warning": "See a doctor urgently for a painful, swollen, red leg.",
+    "actives": [
+      "Diosmin"
+    ]
   }
 }

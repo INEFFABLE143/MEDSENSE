@@ -107,3 +107,12 @@ pharmacist.
 - The dashboard (home page) also works as a static site (e.g. GitHub Pages: publish the `public/` folder); it reads `public/data/*.json` directly.
 - The checker page needs the Node server (`/api/check`), so host the whole app on Render, Railway, etc.
 - The theme (light/dark) follows the device setting and is remembered in the browser.
+
+## Features
+- Dashboard with category filters and multi-symptom search (e.g. "fever, cough" ranks diseases by how many words match).
+- Save diseases and medicines (stored in the browser only) and see them under **Saved**.
+- "Check a medicine for ..." opens the checker with the disease or medicine already filled in (`checker.html?disease=...&medicine=...`).
+
+- **Ingredients** tab: every active ingredient with its class, mechanism of action and the medicines that contain it, plus typical excipients per dosage form (for study).
+- **Compare** tab: up to 3 medicines side by side, with a warning when they share an active ingredient.
+- **Warning signs** on every disease, and a **Print / Save as PDF** report to take to a doctor.

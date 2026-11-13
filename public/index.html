@@ -58,7 +58,7 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
 .tags a:hover{border-color:var(--teal);background:var(--mist)}
 .btn{display:inline-block;margin-top:18px;text-decoration:none;background:var(--teal);color:#fff;font-weight:700;padding:12px 22px;border-radius:14px}
 .btn:hover{background:var(--teal-hover)}
-.note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+.btn{margin-right:8px}button.btn{border:0;cursor:pointer;font-size:16px}.btn.fav{background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:10.5px 20px}.note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
 @media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
 .theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;width:auto!important;padding:10px 18px!important;border-radius:99px!important;font-size:14px!important;background:var(--pine)!important;color:#fff!important;box-shadow:0 8px 24px rgba(0,0,0,.3)!important}
 [data-theme="dark"]{color-scheme:dark;--ink:#e3f1ef;--pine:#8fe3d4;--teal:#19a79d;--teal-hover:#5fd3c6;--mist:#16302f;--paper:#122625;--line:#27433f;--muted:#9ab8b3;--amber-bg:#3a2d10;--danger-bg:#3a1a1a;--good:#5fd38f}
@@ -104,6 +104,38 @@ input,textarea{caret-color:var(--teal)}
 [data-theme="dark"] .error{background:#3a1a1a}
 [data-theme="dark"] .patient-table td:first-child{background:#143332;color:#bfe9e2}
 [data-theme="dark"] .medicine-table td,[data-theme="dark"] .patient-table td{color:#dcefec}
+
+/* ---- warning signs, compare, print ---- */
+.redflag{margin:22px 0;padding:18px 22px;background:#fdecec;border-left:6px solid #c62828;border-radius:16px}
+.redflag h3{color:#b71c1c;margin-bottom:8px;font-family:var(--font-display)}
+.redflag ul{padding-left:20px;line-height:1.75}.redflag .em{margin-top:10px;font-weight:700}
+.cmpsel{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0 18px}
+.cmpsel select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px}
+.cmpwrap{overflow-x:auto;border:1.5px solid var(--line);border-radius:16px;margin-top:8px}
+table.cmp{width:100%;min-width:640px;border-collapse:collapse}
+.cmp th,.cmp td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5}
+.cmp thead th{background:#0a4d4e;color:#fff}.cmp thead th a{color:#fff}
+.cmp tbody th{background:var(--mist);color:var(--teal-hover);width:140px}
+.cmp tr:last-child>*{border-bottom:0}
+[data-theme="dark"] .redflag{background:#3a1a1a;border-color:#e05555}
+[data-theme="dark"] .redflag h3{color:#ff9a9a}
+.print-only{display:none}
+.printhead{padding:0 0 10px;border-bottom:2px solid #000;margin-bottom:14px}
+.notes i{display:block;border-bottom:1px solid #999;height:28px}
+@media print{
+ @page{margin:14mm}
+ *{background:#fff!important;color:#111!important;box-shadow:none!important;text-shadow:none!important;-webkit-text-fill-color:#111!important}
+ body{padding:0}.container{border:0!important;width:100%!important;border-radius:0!important}
+ .hero,nav,.theme-toggle,.no-print,.chips,.btn,button,input,textarea,.cmpsel,.form-grid,.stats,.back{display:none!important}
+ .print-only{display:block!important}
+ .card,.box,.detail,.result-header,.warning,.error,.redflag{border:1px solid #888!important;break-inside:avoid}
+ .tags a,.chip{border:1px solid #888!important}
+ th{font-weight:700;border-bottom:2px solid #000!important}
+ table,.medicine-table,table.cmp{min-width:0!important}
+ .cmpwrap,.medicine-table-wrapper{overflow:visible!important}
+ a{text-decoration:none}
+}
+[data-theme="dark"] button.btn.fav{background:transparent!important;color:#7ff0d0!important;border:1.5px solid #19a79d}
 </style>
 </head>
 <body>
@@ -114,27 +146,33 @@ input,textarea{caret-color:var(--teal)}
   <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/></svg>
 </header>
 <nav id="nav"></nav>
-<div class="main" id="app"><p class="lead">Loading...</p></div>
+<div class="print-only printhead" id="ph"></div><div class="main" id="app"><p class="lead">Loading...</p></div><div class="print-only notes"><b>Notes / questions for my doctor</b><i></i><i></i><i></i><i></i><i></i></div>
 </div>
 <script>
 const API_BASE="";
 let D={},M={},cat="All",q="";
+let F={d:[],m:[]};try{const x=JSON.parse(localStorage.getItem("medsense-favs"));if(x&&Array.isArray(x.d)&&Array.isArray(x.m))F=x}catch(e){}
+const isF=(t,n)=>F[t].includes(n);
+function togF(t,n){F[t]=isF(t,n)?F[t].filter(x=>x!==n):[...F[t],n];try{localStorage.setItem("medsense-favs",JSON.stringify(F))}catch(e){}}
+const favBtn=(t,n)=>'<button type="button" class="btn fav" id="fv">'+(isF(t,n)?"♥ Saved":"♡ Save")+'</button> ';
+const favWire=(t,n)=>{document.getElementById("fv").onclick=()=>{togF(t,n);document.getElementById("fv").textContent=isF(t,n)?"♥ Saved":"♡ Save";bar(t==="d"?"home":"med")}};
+const card=(n,small,p,t)=>'<a class="card" href="#'+(t==="d"?"d":"m")+'/'+enc(n)+'"><small>'+esc(small)+'</small><h3>'+(isF(t,n)?"♥ ":"")+esc(n)+'</h3><p>'+esc(p)+'</p></a>';
 const app=document.getElementById("app"),nav=document.getElementById("nav");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const enc=encodeURIComponent;
 const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
-function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a class="out" href="checker.html">Open Checker</a>'}
+function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a href="#ingredients" class="'+(on==="ing"?"on":"")+'">Ingredients</a><a href="#compare" class="'+(on==="cmp"?"on":"")+'">Compare</a><a href="#saved" class="'+(on==="saved"?"on":"")+'">Saved ('+(F.d.length+F.m.length)+')</a><a class="out" href="checker.html">Open Checker</a>'}
 function home(){
   bar("home");
   const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
   app.innerHTML='<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
-  '<input id="q" type="search" placeholder="Search diseases, symptoms or medicines" aria-label="Search" value="'+esc(q)+'">'+
+  '<input id="q" type="search" placeholder="Search by symptom, disease or medicine (e.g. fever, cough)" aria-label="Search" value="'+esc(q)+'">'+
   '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
   const draw=()=>{
     document.getElementById("chips").innerHTML=cats.map(c=>'<button class="chip '+(c===cat?"on":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
-    const s=q.toLowerCase();
-    const list=Object.entries(D).filter(([n,d])=>(cat==="All"||d.category===cat)&&(!s||(n+d.symptoms+d.medicines.join(" ")).toLowerCase().includes(s)));
-    document.getElementById("g").innerHTML=list.map(([n,d])=>'<a class="card" href="#d/'+enc(n)+'"><small>'+esc(d.category)+'</small><h3>'+esc(n)+'</h3><p>'+esc(d.symptoms.slice(0,80))+(d.symptoms.length>80?"...":"")+'</p></a>').join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
+    const toks=q.toLowerCase().split(/[\s,;]+/).filter(t=>t.length>1);
+    const list=Object.entries(D).filter(([n,d])=>cat==="All"||d.category===cat).map(([n,d])=>{const h=(n+" "+d.symptoms+" "+d.medicines.join(" ")).toLowerCase();return [n,d,toks.filter(t=>h.includes(t)).length]}).filter(x=>!toks.length||x[2]>0).sort((a,b)=>b[2]-a[2]);
+    document.getElementById("g").innerHTML=list.map(([n,d,c])=>card(n,d.category+(toks.length>1?" · "+c+"/"+toks.length+" match":""),d.symptoms.slice(0,80)+(d.symptoms.length>80?"...":""),"d")).join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
   };
   draw();
   document.getElementById("q").oninput=e=>{q=e.target.value.trim();draw()};
@@ -144,10 +182,10 @@ function disease(n){
   const d=D[n];if(!d)return home();
   bar("home");
   app.innerHTML='<a class="back" href="#home">Back to diseases</a><span class="tags"><a href="#home" style="pointer-events:none">'+esc(d.category)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+
-  '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+
+  '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+warnBox(d)+
   '<div class="box"><h3>Medicines commonly listed ('+d.medicines.length+')</h3><div class="tags">'+d.medicines.map(m=>M[m]?'<a href="#m/'+enc(m)+'">'+esc(m)+'</a>':'<a href="#home" style="pointer-events:none">'+esc(m)+'</a>').join("")+'</div></div>'+
-  '<a class="btn" href="checker.html">Check a medicine for '+esc(n)+'</a>'+NOTE;
-  scrollTo(0,0);
+  favBtn("d",n)+PB+'<a class="btn" href="checker.html?disease='+enc(n)+'">Check a medicine for '+esc(n)+'</a>'+NOTE;
+  favWire("d",n);scrollTo(0,0);
 }
 function meds(){
   bar("med");
@@ -160,20 +198,67 @@ function medicine(n){
   bar("med");
   const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k])=>k);
   const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
-  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+esc(m.form)+' &middot; '+esc(m.ingredient)+'</p>'+
-  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+
+  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+esc(m.form)+' &middot; '+esc(m.ingredient)+'</p><p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
+  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+ingBox(m)+
   '<div class="facts">'+F.map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
   (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
   (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(k=>'<a href="#d/'+enc(k)+'">'+esc(k)+'</a>').join("")+'</div></div>':'')+NOTE;
+  favWire("m",n);scrollTo(0,0);
+}
+function saved(){
+  bar("saved");const ds=F.d.filter(n=>D[n]),ms=F.m.filter(n=>M[n]);
+  app.innerHTML='<h2>Saved</h2><p class="lead">Your saved diseases and medicines. They are stored in this browser only.</p>'+(ds.length||ms.length?(ds.length?'<h3>Diseases</h3><div class="grid" style="margin:10px 0 22px">'+ds.map(n=>card(n,D[n].category,D[n].symptoms.slice(0,80),"d")).join("")+'</div>':'')+(ms.length?'<h3>Medicines</h3><div class="grid" style="margin-top:10px">'+ms.map(n=>card(n,M[n].form,M[n].purpose,"m")).join("")+'</div>':''):'<p class="lead">Nothing saved yet. Open a disease or medicine and tap Save.</p>')+NOTE;
   scrollTo(0,0);
+}
+let IG={};
+const PB='<button type="button" class="btn fav no-print" onclick="print()">🖨️ Print</button>';
+addEventListener("beforeprint",()=>{document.getElementById("ph").innerHTML='<b style="font-size:20px">Med Sense · Medicine information report</b><br>Date: '+new Date().toLocaleDateString()+' &nbsp; Name: ____________________ &nbsp; Age: ______<br><small>Educational information only. Prepared to discuss with a doctor or pharmacist.</small>'});
+const warnBox=d=>(d.warningSigns&&d.warningSigns.length)?'<div class="redflag"><h3>🚨 Warning signs: get medical help</h3><ul>'+d.warningSigns.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul><p class="em">Emergency? Call your local emergency number (112 in India).</p></div>':'';
+const EX=[[/inhaler/i,"propellant (HFA) or a lactose carrier powder"],[/injection/i,"water for injection, buffers, tonicity agents, a preservative"],[/nasal/i,"purified water, buffers, a preservative such as benzalkonium chloride"],[/drops/i,"sterile water or oil base, buffers, tonicity agents, a preservative or preservative-free"],[/^(?!.*nasal).*spray/i,"propellant or solvent, fragrance-free carrier"],[/capsule/i,"gelatin or HPMC shell, fillers, magnesium stearate, colourants"],[/tablet/i,"fillers (lactose, microcrystalline cellulose), binders (starch, povidone), disintegrants (croscarmellose), lubricant (magnesium stearate), film coat (HPMC, titanium dioxide)"],[/syrup|suspension|liquid|juice/i,"water, sweeteners (sucrose, sorbitol), preservatives (sodium benzoate or parabens), flavours, colours, thickeners (xanthan gum)"],[/gel|cream|ointment|lotion|balm/i,"base (water, petrolatum or liquid paraffin), emulsifiers, thickeners (carbomer), preservatives, fragrance"],[/powder|sachet/i,"sugar or sweeteners, flavours, anti-caking agent"],[/lozenge/i,"sugar or isomalt, flavours, colours"],[/shampoo/i,"surfactants, water, preservatives, fragrance"],[/mouthwash/i,"water, ethanol or glycerin, flavour, sweetener, colour"]];
+const excip=f=>{const r=EX.filter(([re])=>re.test(f)).map(x=>x[1]);return r.length?r.join(" | "):"varies by brand"};
+const ingBox=m=>{const a=m.actives||[];return a.length?'<div class="box"><h3>Ingredients</h3><p class="lead" style="margin:4px 0">Active ingredient'+(a.length>1?"s":"")+(m.variable?" (varies by brand)":"")+':</p><div class="tags">'+a.map(x=>IG[x]?'<a href="#i/'+enc(x)+'">'+esc(x)+'</a>':'<a href="#medicines" style="pointer-events:none">'+esc(x)+'</a>').join("")+'</div><p class="lead" style="margin:12px 0 0"><b>Typical inactive ingredients (excipients):</b> '+esc(excip(m.form))+'. Exact excipients differ by brand, so check the pack leaflet.</p></div>':''};
+function ingredients(){
+  bar("ing");
+  app.innerHTML='<h2>Medicine ingredients</h2><p class="lead">Every active ingredient used in the medicines on Med Sense, with its class and how it works. Tap one to see which medicines contain it.</p><input id="iq" type="search" placeholder="Search ingredient or class (e.g. NSAID, antihistamine)" aria-label="Search ingredients"><p class="lead" id="ic" style="margin:12px 0 0"></p><div class="grid" id="g" style="margin-top:14px"></div>'+NOTE;
+  const draw=s=>{const l=Object.entries(IG).filter(([n,g])=>(n+" "+g.class+" "+(g.mechanism||"")).toLowerCase().includes(s));
+    document.getElementById("ic").textContent=l.length+" ingredient"+(l.length===1?"":"s");
+    document.getElementById("g").innerHTML=l.map(([n,g])=>'<a class="card" href="#i/'+enc(n)+'"><small>'+esc(g.class)+'</small><h3>'+esc(n)+'</h3><p>In '+g.medicines.length+' medicine'+(g.medicines.length===1?"":"s")+'</p></a>').join("")||'<p class="lead">No match.</p>'};
+  draw("");document.getElementById("iq").oninput=e=>draw(e.target.value.trim().toLowerCase());
+}
+function ingredient(n){
+  const g=IG[n];if(!g)return ingredients();
+  bar("ing");
+  const forms=[...new Set(g.medicines.map(x=>M[x]&&M[x].form).filter(Boolean))].join(" · ");
+  app.innerHTML='<a class="back" href="#ingredients">Back to ingredients</a><span class="tags"><a href="#ingredients" style="pointer-events:none">'+esc(g.class)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+PB+
+  '<div class="box"><h3>How it works (mechanism)</h3><p>'+esc(g.mechanism||"Mechanism details have not been added for this ingredient yet.")+'</p></div>'+
+  '<div class="box"><h3>Found in ('+g.medicines.length+')</h3><div class="tags">'+g.medicines.map(x=>'<a href="#m/'+enc(x)+'">'+esc(x)+'</a>').join("")+'</div></div>'+
+  '<div class="box"><h3>Dosage forms in this app</h3><p>'+esc(forms)+'</p></div>'+NOTE;
+  scrollTo(0,0);
+}
+function compare(v){
+  bar("cmp");
+  const sel=(v||"").split("|").filter(x=>M[x]).slice(0,3),names=Object.keys(M).sort();
+  app.innerHTML='<h2>Compare medicines</h2><p class="lead">Choose two or three medicines to see them side by side.</p><div class="cmpsel">'+[0,1,2].map(i=>'<select id="c'+i+'" aria-label="Medicine '+(i+1)+'"><option value="">'+(i<2?"Choose a medicine":"Add a third (optional)")+'</option>'+names.map(x=>'<option'+(sel[i]===x?" selected":"")+'>'+esc(x)+'</option>').join("")+'</select>').join("")+'</div><div id="cmpout"></div>'+NOTE;
+  const R=[["Form","form"],["Active ingredients","a"],["Purpose","purpose"],["Used for","u"],["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"],["Warning","warning"]];
+  const val=(x,k)=>k==="a"?(M[x].actives||[]).join(", "):k==="u"?(Object.entries(D).filter(([n,d])=>d.medicines.includes(x)).map(e=>e[0]).slice(0,8).join(", ")||"Not listed"):(M[x][k]||"-");
+  const out=()=>{
+    const v=[0,1,2].map(i=>document.getElementById("c"+i).value).filter(Boolean);
+    history.replaceState(null,"","#compare/"+v.map(enc).join("|"));
+    const o=document.getElementById("cmpout");
+    if(v.length<2){o.innerHTML='<p class="lead">Pick at least two medicines.</p>';return}
+    const cnt={};v.forEach(x=>(M[x].actives||[]).forEach(a=>{(cnt[a]=cnt[a]||[]).push(x)}));
+    const dup=Object.entries(cnt).filter(([a,l])=>l.length>1);
+    o.innerHTML=PB+(dup.length?'<div class="box warn"><h3>⚠️ Same ingredient in more than one medicine</h3><p>'+dup.map(([a,l])=>esc(a)+' is in '+l.map(esc).join(" and ")).join(". ")+'. Taking these together can double the dose. Ask a pharmacist first.</p></div>':'')+'<div class="cmpwrap"><table class="cmp"><thead><tr><th></th>'+v.map(x=>'<th><a href="#m/'+enc(x)+'">'+esc(x)+'</a></th>').join("")+'</tr></thead><tbody>'+R.map(([t,k])=>'<tr><th scope="row">'+t+'</th>'+v.map(x=>'<td>'+esc(val(x,k))+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>';
+  };
+  [0,1,2].forEach(i=>document.getElementById("c"+i).onchange=out);out();scrollTo(0,0);
 }
 function route(){
   const h=location.hash.slice(1),i=h.indexOf("/"),k=i<0?h:h.slice(0,i),v=i<0?"":decodeURIComponent(h.slice(i+1));
-  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else home();
+  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else if(k==="saved")saved();else if(k==="ingredients")ingredients();else if(k==="i")ingredient(v);else if(k==="compare")compare(v);else home();
 }
 const get=(api,file)=>fetch(API_BASE+api).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch("data/"+file).then(r=>r.json()));
-Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","medicines.json")])
- .then(([d,m])=>{D=d;M=m;route();addEventListener("hashchange",route)})
+Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","medicines.json"),get("/api/ingredients-all","ingredients.json")])
+ .then(([d,m,g])=>{D=d;M=m;IG=g;route();addEventListener("hashchange",route)})
  .catch(()=>{app.innerHTML='<p class="lead">Could not load data. Please refresh, or start the server with <b>npm start</b>.</p>'});
 </script>
 </body>

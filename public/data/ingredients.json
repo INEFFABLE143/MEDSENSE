@@ -1,0 +1,1064 @@
+{
+  "Acetylcysteine": {
+    "class": "Mucolytic / antidote",
+    "mechanism": "Splits disulfide bonds in mucus; replenishes glutathione (used in paracetamol overdose).",
+    "medicines": [
+      "Acetylcysteine"
+    ]
+  },
+  "Acetylsalicylic acid": {
+    "class": "NSAID / antiplatelet",
+    "mechanism": "Irreversibly inhibits COX-1, lowering prostaglandins and platelet thromboxane A2.",
+    "medicines": [
+      "Aspirin"
+    ]
+  },
+  "Acyclovir": {
+    "class": "Antiviral",
+    "mechanism": "Nucleoside analogue activated by viral thymidine kinase; blocks herpes virus DNA polymerase.",
+    "medicines": [
+      "Acyclovir Cream"
+    ]
+  },
+  "Adapalene": {
+    "class": "Topical retinoid",
+    "mechanism": "Binds retinoic acid receptors to normalise skin cell turnover.",
+    "medicines": [
+      "Adapalene"
+    ]
+  },
+  "Albendazole": {
+    "class": "Anthelmintic",
+    "mechanism": "Binds worm beta-tubulin, blocking microtubule formation and glucose uptake.",
+    "medicines": [
+      "Albendazole"
+    ]
+  },
+  "Alendronate": {
+    "class": "Bisphosphonate",
+    "mechanism": "Binds bone and inhibits osteoclasts, slowing bone loss.",
+    "medicines": [
+      "Alendronate"
+    ]
+  },
+  "Allopurinol": {
+    "class": "Xanthine oxidase inhibitor",
+    "mechanism": "Reduces uric acid production.",
+    "medicines": [
+      "Allopurinol"
+    ]
+  },
+  "Aloe vera extract": {
+    "class": "Soothing skin gel",
+    "medicines": [
+      "Aloe Vera Gel"
+    ]
+  },
+  "Aluminium hydroxide": {
+    "class": "Antacid",
+    "medicines": [
+      "Antacid"
+    ],
+    "mechanism": "Neutralises stomach acid; can cause constipation."
+  },
+  "Ambroxol": {
+    "class": "Mucolytic",
+    "mechanism": "Breaks up thick mucus and helps clear it from the airways.",
+    "medicines": [
+      "Ambroxol"
+    ]
+  },
+  "Amlodipine": {
+    "class": "Calcium channel blocker",
+    "mechanism": "Blocks L-type calcium channels in vascular smooth muscle, relaxing arteries.",
+    "medicines": [
+      "Amlodipine"
+    ]
+  },
+  "Amylase": {
+    "class": "Digestive aid",
+    "medicines": [
+      "Digestive Enzymes"
+    ]
+  },
+  "Artificial tear polymers": {
+    "class": "Eye lubricant",
+    "medicines": [
+      "Lubricating Eye Drops"
+    ]
+  },
+  "Ascorbic acid": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin C, an antioxidant and cofactor for collagen synthesis.",
+    "medicines": [
+      "Vitamin C Supplement"
+    ]
+  },
+  "Ashwagandha root extract": {
+    "class": "Herbal supplement",
+    "medicines": [
+      "Ashwagandha Supplement"
+    ]
+  },
+  "Atorvastatin": {
+    "class": "Statin",
+    "mechanism": "Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.",
+    "medicines": [
+      "Atorvastatin"
+    ]
+  },
+  "Bacitracin": {
+    "class": "Polypeptide antibiotic",
+    "medicines": [
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ],
+    "mechanism": "Blocks bacterial cell wall synthesis."
+  },
+  "Benzocaine": {
+    "class": "Local anaesthetic",
+    "medicines": [
+      "Throat Lozenges",
+      "Oral Pain Relief Gel"
+    ],
+    "mechanism": "Blocks voltage-gated sodium channels in surface nerves to numb pain."
+  },
+  "Benzoyl Peroxide": {
+    "class": "Antibacterial / keratolytic",
+    "mechanism": "Releases oxygen radicals that kill C. acnes and loosen pores.",
+    "medicines": [
+      "Benzoyl Peroxide"
+    ]
+  },
+  "Benzydamine": {
+    "class": "Local anti-inflammatory and pain reliever",
+    "medicines": [
+      "Benzydamine"
+    ]
+  },
+  "Benzyl benzoate": {
+    "class": "Scabicide",
+    "medicines": [
+      "Benzyl Benzoate"
+    ]
+  },
+  "Bifidobacterium": {
+    "class": "Supports gut flora",
+    "medicines": [
+      "Probiotics"
+    ]
+  },
+  "Biotin": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin B7, a cofactor for carboxylase enzymes.",
+    "medicines": [
+      "Biotin Supplement"
+    ]
+  },
+  "Bisacodyl": {
+    "class": "Stimulant laxative",
+    "mechanism": "Stimulates colonic nerves and motility and increases fluid secretion.",
+    "medicines": [
+      "Bisacodyl"
+    ]
+  },
+  "Bismuth subsalicylate": {
+    "class": "Antidiarrheal / antacid",
+    "medicines": [
+      "Bismuth Subsalicylate"
+    ],
+    "mechanism": "Coats the gut, reduces secretion and has mild antimicrobial and anti-inflammatory action."
+  },
+  "Bromhexine": {
+    "class": "Mucolytic",
+    "mechanism": "Breaks up thick mucus and helps clear it from the airways.",
+    "medicines": [
+      "Bromhexine"
+    ]
+  },
+  "Budesonide": {
+    "class": "Corticosteroid",
+    "mechanism": "Reduces airway or nasal inflammation by suppressing inflammatory gene expression.",
+    "medicines": [
+      "Budesonide Inhaler"
+    ]
+  },
+  "Calamine": {
+    "class": "Soothing skin protectant",
+    "medicines": [
+      "Calamine Lotion"
+    ]
+  },
+  "Calcium carbonate": {
+    "class": "Antacid / calcium source",
+    "medicines": [
+      "Antacid",
+      "Calcium Supplement"
+    ],
+    "mechanism": "Neutralises stomach acid and supplies calcium."
+  },
+  "Calcium citrate": {
+    "class": "Mineral supplement",
+    "medicines": [
+      "Calcium Supplement"
+    ]
+  },
+  "Camphor": {
+    "class": "Topical muscle and joint pain relief",
+    "medicines": [
+      "Pain Relief Balm / Spray",
+      "Menthol Vapor Balm"
+    ]
+  },
+  "Capsaicin": {
+    "class": "Counter-irritant",
+    "mechanism": "Activates TRPV1 then depletes substance P, reducing pain signalling.",
+    "medicines": [
+      "Capsaicin Cream"
+    ]
+  },
+  "Carbamide peroxide": {
+    "class": "Softens earwax",
+    "medicines": [
+      "Carbamide Peroxide Ear Drops"
+    ]
+  },
+  "Carbimazole": {
+    "class": "Antithyroid",
+    "mechanism": "Converted to methimazole, which inhibits thyroid peroxidase and hormone synthesis.",
+    "medicines": [
+      "Carbimazole"
+    ]
+  },
+  "Carboxymethylcellulose": {
+    "class": "Artificial tears",
+    "medicines": [
+      "Carboxymethylcellulose Eye Drops"
+    ]
+  },
+  "Ceramides": {
+    "class": "Skin barrier moisturizer",
+    "medicines": [
+      "Emollient / Moisturizer"
+    ]
+  },
+  "Cetirizine": {
+    "class": "Antihistamine (2nd generation)",
+    "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
+    "medicines": [
+      "Cetirizine"
+    ]
+  },
+  "Chlorhexidine": {
+    "class": "Antiseptic",
+    "mechanism": "Disrupts microbial membranes (chlorhexidine) or releases iodine (povidone-iodine) to kill microbes.",
+    "medicines": [
+      "Chlorhexidine Mouthwash"
+    ]
+  },
+  "Chlorpheniramine": {
+    "class": "Antihistamine (1st generation)",
+    "mechanism": "Blocks H1 receptors and enters the brain, so it is sedating and also dries secretions.",
+    "medicines": [
+      "Chlorpheniramine"
+    ]
+  },
+  "Cholecalciferol": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin D3; converted to calcitriol to raise calcium and phosphate absorption.",
+    "medicines": [
+      "Vitamin D3 Supplement",
+      "Calcium Supplement"
+    ]
+  },
+  "Choline salicylate": {
+    "class": "Topical mouth ulcer and gum pain relief",
+    "medicines": [
+      "Oral Pain Relief Gel"
+    ]
+  },
+  "Clotrimazole": {
+    "class": "Azole antifungal",
+    "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
+    "medicines": [
+      "Clotrimazole"
+    ]
+  },
+  "Coal tar": {
+    "class": "Keratolytic and anti-scaling agent",
+    "medicines": [
+      "Coal Tar Preparation"
+    ]
+  },
+  "Colchicine": {
+    "class": "Anti-gout",
+    "mechanism": "Binds tubulin and reduces neutrophil migration into inflamed joints.",
+    "medicines": [
+      "Colchicine"
+    ]
+  },
+  "Colloidal oatmeal": {
+    "class": "Skin soother",
+    "medicines": [
+      "Colloidal Oatmeal Lotion"
+    ]
+  },
+  "Cranberry extract": {
+    "class": "Urinary tract support",
+    "medicines": [
+      "Cranberry Supplement"
+    ]
+  },
+  "Cyanocobalamin": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin B12, needed for nerve function and red blood cell formation.",
+    "medicines": [
+      "Vitamin B12 Supplement",
+      "Vitamin B-Complex"
+    ]
+  },
+  "Desloratadine": {
+    "class": "Antihistamine (2nd generation)",
+    "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
+    "medicines": [
+      "Desloratadine"
+    ]
+  },
+  "Dextromethorphan": {
+    "class": "Antitussive",
+    "mechanism": "Acts on the brainstem cough centre (NMDA antagonist, sigma-1 agonist) to suppress cough.",
+    "medicines": [
+      "Dextromethorphan"
+    ]
+  },
+  "Diclofenac": {
+    "class": "NSAID",
+    "mechanism": "Inhibits COX-1 and COX-2, lowering prostaglandin synthesis (pain, inflammation, fever).",
+    "medicines": [
+      "Diclofenac Gel"
+    ]
+  },
+  "Dicyclomine": {
+    "class": "Antispasmodic",
+    "mechanism": "Blocks muscarinic receptors in gut smooth muscle, relieving cramps.",
+    "medicines": [
+      "Dicyclomine"
+    ]
+  },
+  "Dimenhydrinate": {
+    "class": "Antihistamine / antiemetic",
+    "mechanism": "Blocks H1 and muscarinic receptors in the vestibular pathway, easing motion sickness and nausea.",
+    "medicines": [
+      "Dimenhydrinate"
+    ]
+  },
+  "Dimethyl ether": {
+    "class": "Wart removal",
+    "medicines": [
+      "Wart Freeze Spray"
+    ]
+  },
+  "Dimeticone": {
+    "class": "Anti-foaming agent",
+    "mechanism": "Lowers surface tension so gas bubbles merge; not absorbed.",
+    "medicines": [
+      "Dimeticone Lotion"
+    ]
+  },
+  "Diosmin": {
+    "class": "Vein support",
+    "medicines": [
+      "Diosmin"
+    ]
+  },
+  "Diphenhydramine": {
+    "class": "Antihistamine (1st generation)",
+    "mechanism": "Blocks H1 receptors and enters the brain, so it is sedating and also dries secretions.",
+    "medicines": [
+      "Diphenhydramine"
+    ]
+  },
+  "Disodium hydrogen citrate": {
+    "class": "Urinary alkalinizer",
+    "medicines": [
+      "Disodium Hydrogen Citrate"
+    ]
+  },
+  "Domperidone": {
+    "class": "Prokinetic / antiemetic",
+    "mechanism": "Blocks dopamine D2 receptors in the gut and the chemoreceptor trigger zone.",
+    "medicines": [
+      "Domperidone"
+    ]
+  },
+  "Escitalopram": {
+    "class": "SSRI",
+    "mechanism": "Blocks serotonin reuptake, raising synaptic serotonin.",
+    "medicines": [
+      "Escitalopram"
+    ]
+  },
+  "Esomeprazole": {
+    "class": "Proton pump inhibitor",
+    "mechanism": "Irreversibly blocks the gastric H+/K+ ATPase (proton pump), sharply cutting stomach acid.",
+    "medicines": [
+      "Esomeprazole"
+    ]
+  },
+  "Eucalyptus oil": {
+    "class": "Aromatic decongestant rub",
+    "medicines": [
+      "Menthol Vapor Balm"
+    ]
+  },
+  "Eugenol": {
+    "class": "Natural dental analgesic",
+    "medicines": [
+      "Clove Oil"
+    ]
+  },
+  "Famotidine": {
+    "class": "H2 receptor blocker",
+    "mechanism": "Blocks histamine H2 receptors on stomach parietal cells, reducing acid secretion.",
+    "medicines": [
+      "Famotidine"
+    ]
+  },
+  "Ferrous sulfate": {
+    "class": "Mineral",
+    "mechanism": "Supplies iron for haemoglobin synthesis.",
+    "medicines": [
+      "Iron Supplement"
+    ]
+  },
+  "Fexofenadine": {
+    "class": "Antihistamine (2nd generation)",
+    "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
+    "medicines": [
+      "Fexofenadine"
+    ]
+  },
+  "Flurbiprofen": {
+    "class": "Soothes throat pain and irritation",
+    "medicines": [
+      "Throat Lozenges"
+    ]
+  },
+  "Fluticasone": {
+    "class": "Corticosteroid",
+    "mechanism": "Reduces airway or nasal inflammation by suppressing inflammatory gene expression.",
+    "medicines": [
+      "Fluticasone Nasal Spray"
+    ]
+  },
+  "Folic acid": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin B9, needed for DNA synthesis and red blood cell formation.",
+    "medicines": [
+      "Folic Acid"
+    ]
+  },
+  "Ginger extract": {
+    "class": "Natural anti-nausea aid",
+    "medicines": [
+      "Ginger Supplement"
+    ]
+  },
+  "Glimepiride": {
+    "class": "Sulfonylurea",
+    "mechanism": "Closes pancreatic K-ATP channels, triggering insulin release.",
+    "medicines": [
+      "Glimepiride"
+    ]
+  },
+  "Glucosamine": {
+    "class": "Joint health supplement",
+    "medicines": [
+      "Glucosamine Supplement"
+    ]
+  },
+  "Glucose": {
+    "class": "Carbohydrate",
+    "medicines": [
+      "ORS",
+      "Electrolyte Powder"
+    ],
+    "mechanism": "Drives sodium and water absorption in the gut through the SGLT1 co-transporter (the basis of ORS)."
+  },
+  "Glycerin": {
+    "class": "Skin barrier moisturizer",
+    "medicines": [
+      "Emollient / Moisturizer",
+      "Glycerin Suppository"
+    ]
+  },
+  "Guaifenesin": {
+    "class": "Expectorant",
+    "mechanism": "Increases airway fluid and thins mucus so it is easier to cough up.",
+    "medicines": [
+      "Guaifenesin"
+    ]
+  },
+  "Herbal extracts": {
+    "class": "Soothing demulcent",
+    "medicines": [
+      "Honey-Based Cough Syrup"
+    ]
+  },
+  "Honey": {
+    "class": "Soothing demulcent",
+    "medicines": [
+      "Honey-Based Cough Syrup"
+    ]
+  },
+  "Hydrocortisone": {
+    "class": "Topical corticosteroid",
+    "mechanism": "Anti-inflammatory and anti-itch through glucocorticoid receptor signalling.",
+    "medicines": [
+      "Hydrocortisone"
+    ]
+  },
+  "Hyoscine butylbromide": {
+    "class": "Antispasmodic",
+    "mechanism": "Blocks muscarinic receptors in gut smooth muscle, relieving cramps.",
+    "medicines": [
+      "Hyoscine Butylbromide"
+    ]
+  },
+  "Hypromellose": {
+    "class": "Artificial tears",
+    "medicines": [
+      "Carboxymethylcellulose Eye Drops"
+    ]
+  },
+  "Ibuprofen": {
+    "class": "NSAID",
+    "mechanism": "Inhibits COX-1 and COX-2, lowering prostaglandin synthesis (pain, inflammation, fever).",
+    "medicines": [
+      "Ibuprofen",
+      "Ibuprofen Gel"
+    ]
+  },
+  "Insulin": {
+    "class": "Hormone",
+    "mechanism": "Replaces insulin to move glucose into cells and lower blood sugar.",
+    "medicines": [
+      "Insulin"
+    ]
+  },
+  "Ketoconazole": {
+    "class": "Azole antifungal",
+    "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
+    "medicines": [
+      "Ketoconazole Shampoo"
+    ]
+  },
+  "Lactobacillus": {
+    "class": "Probiotic",
+    "medicines": [
+      "Probiotics"
+    ],
+    "mechanism": "Live bacteria that help restore gut flora and compete with pathogens."
+  },
+  "Lactulose": {
+    "class": "Osmotic laxative",
+    "mechanism": "Holds water in the bowel by osmosis; magnesium hydroxide also neutralises acid.",
+    "medicines": [
+      "Lactulose"
+    ]
+  },
+  "Levocetirizine": {
+    "class": "Antihistamine (2nd generation)",
+    "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
+    "medicines": [
+      "Levocetirizine"
+    ]
+  },
+  "Levothyroxine": {
+    "class": "Thyroid hormone",
+    "mechanism": "Synthetic T4 that replaces missing thyroid hormone.",
+    "medicines": [
+      "Levothyroxine"
+    ]
+  },
+  "Lidocaine": {
+    "class": "Local anaesthetic",
+    "mechanism": "Blocks voltage-gated sodium channels, stopping nerve pain signals.",
+    "medicines": [
+      "Oral Pain Relief Gel",
+      "Lidocaine Gel / Ointment"
+    ]
+  },
+  "Lipase": {
+    "class": "Digestive aid",
+    "medicines": [
+      "Digestive Enzymes"
+    ]
+  },
+  "Liquid paraffin": {
+    "class": "Skin barrier moisturizer",
+    "medicines": [
+      "Emollient / Moisturizer"
+    ]
+  },
+  "Loperamide": {
+    "class": "Antidiarrheal",
+    "mechanism": "Mu-opioid agonist in the gut wall that slows motility and increases fluid absorption.",
+    "medicines": [
+      "Loperamide"
+    ]
+  },
+  "Loratadine": {
+    "class": "Antihistamine (2nd generation)",
+    "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
+    "medicines": [
+      "Loratadine"
+    ]
+  },
+  "Losartan": {
+    "class": "Angiotensin receptor blocker",
+    "mechanism": "Blocks AT1 receptors, causing vasodilation and lower blood pressure.",
+    "medicines": [
+      "Losartan"
+    ]
+  },
+  "Magnesium": {
+    "class": "Mineral",
+    "medicines": [
+      "Magnesium Supplement"
+    ],
+    "mechanism": "Cofactor in hundreds of enzymes; important for muscle and nerve function."
+  },
+  "Magnesium hydroxide": {
+    "class": "Osmotic laxative",
+    "mechanism": "Holds water in the bowel by osmosis; magnesium hydroxide also neutralises acid.",
+    "medicines": [
+      "Antacid",
+      "Magnesium Hydroxide"
+    ]
+  },
+  "Mebendazole": {
+    "class": "Anthelmintic",
+    "mechanism": "Binds worm beta-tubulin, blocking microtubule formation and glucose uptake.",
+    "medicines": [
+      "Mebendazole"
+    ]
+  },
+  "Mebeverine": {
+    "class": "Antispasmodic",
+    "medicines": [
+      "Mebeverine"
+    ],
+    "mechanism": "Relaxes gut smooth muscle directly, easing IBS cramps."
+  },
+  "Meclizine": {
+    "class": "Antihistamine / antiemetic",
+    "mechanism": "Blocks H1 and muscarinic receptors in the vestibular pathway, easing motion sickness and nausea.",
+    "medicines": [
+      "Meclizine"
+    ]
+  },
+  "Mefenamic acid": {
+    "class": "NSAID",
+    "mechanism": "Inhibits COX-1 and COX-2, lowering prostaglandin synthesis (pain, inflammation, fever).",
+    "medicines": [
+      "Mefenamic Acid"
+    ]
+  },
+  "Melatonin": {
+    "class": "Sleep-wake regulator",
+    "mechanism": "Activates MT1/MT2 receptors to signal night and adjust the body clock.",
+    "medicines": [
+      "Melatonin"
+    ]
+  },
+  "Menthol": {
+    "class": "Counter-irritant / cooling agent",
+    "medicines": [
+      "Pain Relief Balm / Spray",
+      "Throat Lozenges",
+      "Menthol Vapor Balm",
+      "Prickly Heat Powder"
+    ],
+    "mechanism": "Activates TRPM8 cold receptors, giving a cooling feel that distracts from pain and itch."
+  },
+  "Metformin": {
+    "class": "Biguanide",
+    "mechanism": "Lowers liver glucose output and improves insulin sensitivity (AMPK activation).",
+    "medicines": [
+      "Metformin"
+    ]
+  },
+  "Methyl salicylate": {
+    "class": "Topical muscle and joint pain relief",
+    "medicines": [
+      "Pain Relief Balm / Spray"
+    ]
+  },
+  "Methylcobalamin": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin B12, needed for nerve function and red blood cell formation.",
+    "medicines": [
+      "Vitamin B12 Supplement"
+    ]
+  },
+  "Miconazole": {
+    "class": "Azole antifungal",
+    "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
+    "medicines": [
+      "Miconazole"
+    ]
+  },
+  "Mineral oil": {
+    "class": "Ear wax softener",
+    "medicines": [
+      "Olive / Mineral Oil Ear Drops"
+    ]
+  },
+  "Minerals (various)": {
+    "class": "General nutritional supplement",
+    "medicines": [
+      "Multivitamin"
+    ]
+  },
+  "Montelukast": {
+    "class": "Leukotriene receptor antagonist",
+    "mechanism": "Blocks CysLT1 receptors, reducing airway inflammation and bronchoconstriction.",
+    "medicines": [
+      "Montelukast"
+    ]
+  },
+  "Naproxen": {
+    "class": "NSAID",
+    "mechanism": "Inhibits COX-1 and COX-2, lowering prostaglandin synthesis (pain, inflammation, fever).",
+    "medicines": [
+      "Naproxen"
+    ]
+  },
+  "Neomycin": {
+    "class": "Aminoglycoside antibiotic",
+    "medicines": [
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ],
+    "mechanism": "Binds the bacterial 30S ribosome, blocking protein synthesis."
+  },
+  "Niacin (B3)": {
+    "class": "Vitamin supplement",
+    "medicines": [
+      "Vitamin B-Complex"
+    ]
+  },
+  "Nitrofurantoin": {
+    "class": "Urinary antibacterial",
+    "mechanism": "Reactive metabolites damage bacterial DNA and ribosomes in the urine.",
+    "medicines": [
+      "Nitrofurantoin"
+    ]
+  },
+  "Norethisterone": {
+    "class": "Hormonal cycle regulation",
+    "medicines": [
+      "Norethisterone"
+    ]
+  },
+  "Olive oil": {
+    "class": "Ear wax softener",
+    "medicines": [
+      "Olive / Mineral Oil Ear Drops"
+    ]
+  },
+  "Omeprazole": {
+    "class": "Proton pump inhibitor",
+    "mechanism": "Irreversibly blocks the gastric H+/K+ ATPase (proton pump), sharply cutting stomach acid.",
+    "medicines": [
+      "Omeprazole"
+    ]
+  },
+  "Orlistat": {
+    "class": "Lipase inhibitor",
+    "mechanism": "Blocks gut lipases so about a third of dietary fat is not absorbed.",
+    "medicines": [
+      "Orlistat"
+    ]
+  },
+  "Oxymetazoline": {
+    "class": "Decongestant",
+    "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
+    "medicines": [
+      "Oxymetazoline Nasal Spray"
+    ]
+  },
+  "Pancreatin": {
+    "class": "Digestive aid",
+    "medicines": [
+      "Digestive Enzymes"
+    ]
+  },
+  "Pantoprazole": {
+    "class": "Proton pump inhibitor",
+    "mechanism": "Irreversibly blocks the gastric H+/K+ ATPase (proton pump), sharply cutting stomach acid.",
+    "medicines": [
+      "Pantoprazole"
+    ]
+  },
+  "Paracetamol": {
+    "class": "Analgesic / antipyretic",
+    "mechanism": "Acts mainly in the central nervous system (COX inhibition and other pathways) to reduce pain and fever; little anti-inflammatory effect.",
+    "medicines": [
+      "Paracetamol",
+      "Dolo 650"
+    ]
+  },
+  "Peppermint oil": {
+    "class": "Natural antispasmodic",
+    "medicines": [
+      "Peppermint Oil Capsule"
+    ]
+  },
+  "Permethrin": {
+    "class": "Antiparasitic (pyrethroid)",
+    "mechanism": "Keeps sodium channels open in lice and mites, paralysing them.",
+    "medicines": [
+      "Permethrin"
+    ]
+  },
+  "Petrolatum": {
+    "class": "Occlusive emollient",
+    "medicines": [
+      "Emollient / Moisturizer",
+      "Petroleum Jelly"
+    ],
+    "mechanism": "Forms a barrier that reduces water loss from the skin."
+  },
+  "Phenylephrine": {
+    "class": "Decongestant",
+    "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
+    "medicines": [
+      "Phenylephrine"
+    ]
+  },
+  "Polyethylene glycol": {
+    "class": "Osmotic laxative",
+    "mechanism": "Holds water in the bowel by osmosis; magnesium hydroxide also neutralises acid.",
+    "medicines": [
+      "Polyethylene Glycol (PEG)"
+    ]
+  },
+  "Polymyxin B": {
+    "class": "Topical antibiotic",
+    "medicines": [
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ]
+  },
+  "Potassium chloride": {
+    "class": "Fluid and electrolyte replacement",
+    "medicines": [
+      "ORS",
+      "Electrolyte Powder"
+    ]
+  },
+  "Povidone-iodine": {
+    "class": "Antiseptic",
+    "mechanism": "Disrupts microbial membranes (chlorhexidine) or releases iodine (povidone-iodine) to kill microbes.",
+    "medicines": [
+      "Povidone-Iodine"
+    ]
+  },
+  "Propane": {
+    "class": "Wart removal",
+    "medicines": [
+      "Wart Freeze Spray"
+    ]
+  },
+  "Protease": {
+    "class": "Digestive aid",
+    "medicines": [
+      "Digestive Enzymes"
+    ]
+  },
+  "Pseudoephedrine": {
+    "class": "Decongestant",
+    "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
+    "medicines": [
+      "Pseudoephedrine"
+    ]
+  },
+  "Psyllium husk": {
+    "class": "Bulk-forming laxative / fiber supplement",
+    "medicines": [
+      "Psyllium Husk (Isabgol)"
+    ]
+  },
+  "Pyridoxine": {
+    "class": "Vitamin",
+    "mechanism": "Vitamin B6, a cofactor in amino acid metabolism.",
+    "medicines": [
+      "Vitamin B-Complex",
+      "Vitamin B6 (Pyridoxine)"
+    ]
+  },
+  "Racecadotril": {
+    "class": "Antisecretory",
+    "mechanism": "Inhibits enkephalinase, reducing intestinal fluid secretion.",
+    "medicines": [
+      "Racecadotril"
+    ]
+  },
+  "Riboflavin (B2)": {
+    "class": "Vitamin supplement",
+    "medicines": [
+      "Vitamin B-Complex"
+    ]
+  },
+  "Rosuvastatin": {
+    "class": "Statin",
+    "mechanism": "Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.",
+    "medicines": [
+      "Rosuvastatin"
+    ]
+  },
+  "Saccharomyces": {
+    "class": "Supports gut flora",
+    "medicines": [
+      "Probiotics"
+    ]
+  },
+  "Salbutamol": {
+    "class": "Short-acting beta-2 agonist",
+    "mechanism": "Relaxes bronchial smooth muscle through beta-2 receptors for quick relief of wheeze.",
+    "medicines": [
+      "Salbutamol Inhaler"
+    ]
+  },
+  "Salicylic acid": {
+    "class": "Keratolytic",
+    "mechanism": "Dissolves bonds between skin cells so thickened skin sheds.",
+    "medicines": [
+      "Salicylic Acid"
+    ]
+  },
+  "Selenium sulfide": {
+    "class": "Antifungal / cytostatic",
+    "medicines": [
+      "Selenium Sulfide Shampoo"
+    ],
+    "mechanism": "Slows skin cell turnover and inhibits Malassezia yeast."
+  },
+  "Sennosides": {
+    "class": "Stimulant laxative",
+    "mechanism": "Stimulates colonic nerves and motility and increases fluid secretion.",
+    "medicines": [
+      "Senna"
+    ]
+  },
+  "Simethicone": {
+    "class": "Anti-foaming agent",
+    "mechanism": "Lowers surface tension so gas bubbles merge; not absorbed.",
+    "medicines": [
+      "Simethicone"
+    ]
+  },
+  "Sodium alginate": {
+    "class": "Raft-forming antireflux agent",
+    "medicines": [
+      "Sodium Alginate"
+    ],
+    "mechanism": "Forms a gel raft on stomach contents that blocks acid reflux."
+  },
+  "Sodium chloride": {
+    "class": "Electrolyte / isotonic agent",
+    "medicines": [
+      "ORS",
+      "Saline Nasal Spray",
+      "Electrolyte Powder"
+    ],
+    "mechanism": "Replaces sodium and water; in nasal sprays it thins mucus and flushes irritants."
+  },
+  "Sodium citrate": {
+    "class": "Fluid and electrolyte replacement",
+    "medicines": [
+      "ORS"
+    ]
+  },
+  "Starch": {
+    "class": "Cooling skin powder",
+    "medicines": [
+      "Prickly Heat Powder"
+    ]
+  },
+  "Tamsulosin": {
+    "class": "Alpha-1A blocker",
+    "mechanism": "Relaxes smooth muscle in the prostate and bladder neck.",
+    "medicines": [
+      "Tamsulosin"
+    ]
+  },
+  "Telmisartan": {
+    "class": "Angiotensin receptor blocker",
+    "mechanism": "Blocks AT1 receptors, causing vasodilation and lower blood pressure.",
+    "medicines": [
+      "Telmisartan"
+    ]
+  },
+  "Terbinafine": {
+    "class": "Allylamine antifungal",
+    "mechanism": "Inhibits squalene epoxidase, blocking ergosterol synthesis.",
+    "medicines": [
+      "Terbinafine Cream"
+    ]
+  },
+  "Thiamine (B1)": {
+    "class": "Vitamin supplement",
+    "medicines": [
+      "Vitamin B-Complex"
+    ]
+  },
+  "UV filters": {
+    "class": "Sun protection",
+    "medicines": [
+      "Sunscreen"
+    ]
+  },
+  "Urea": {
+    "class": "Keratolytic / humectant",
+    "medicines": [
+      "Urea Cream"
+    ],
+    "mechanism": "Holds water in the skin and softens thick, dry skin."
+  },
+  "Vitamins (various)": {
+    "class": "General nutritional supplement",
+    "medicines": [
+      "Multivitamin"
+    ]
+  },
+  "Xylometazoline": {
+    "class": "Decongestant",
+    "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
+    "medicines": [
+      "Xylometazoline Nasal Spray"
+    ]
+  },
+  "Zinc": {
+    "class": "Mineral",
+    "medicines": [
+      "Zinc Supplement"
+    ],
+    "mechanism": "Cofactor for many enzymes; supports immunity and wound healing."
+  },
+  "Zinc oxide": {
+    "class": "Skin protectant / astringent",
+    "medicines": [
+      "Calamine Lotion",
+      "Zinc Oxide Ointment",
+      "Prickly Heat Powder"
+    ],
+    "mechanism": "Forms a physical barrier and has mild astringent and antiseptic action."
+  },
+  "Zinc pyrithione": {
+    "class": "Antifungal / antibacterial",
+    "medicines": [
+      "Zinc Pyrithione Shampoo"
+    ],
+    "mechanism": "Disrupts fungal membrane transport and metabolism, reducing dandruff yeast."
+  }
+}
