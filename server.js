@@ -55,6 +55,123 @@ function findMedicineKey(input) {
 }
 
 /* ============================================================
+   SUGGESTION HELPERS
+   Used when a disease or medicine is not found, so the user
+   gets useful options from YOUR database instead of a dead end.
+============================================================ */
+
+const STOP_WORDS = new Set([
+  "and", "the", "with", "for", "from", "have", "has", "disease",
+  "problem", "issue", "condition", "symptom", "symptoms",
+]);
+
+// Classic Levenshtein distance (handles typos like "diarhea")
+function editDistance(a, b) {
+  const m = a.length;
+  const n = b.length;
+  const dp = Array.from({ length: m + 1 }, (_, i) => {
+    const row = new Array(n + 1).fill(0);
+    row[0] = i;
+    return row;
+  });
+  for (let j = 1; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+      );
+    }
+  }
+  return dp[m][n];
+}
+
+function similarity(a, b) {
+  if (!a || !b) return 0;
+  return 1 - editDistance(a, b) / Math.max(a.length, b.length);
+}
+
+// Medicines of a disease that actually exist in medicines.json
+function listedMedicinesFor(diseaseKey) {
+  return (diseases[diseaseKey].medicines || [])
+    .filter((name) => medicines[name])
+    .map((name) => ({ name, ...medicines[name] }));
+}
+
+// Diseases in which a given medicine is listed
+function diseasesUsingMedicine(medicineKey) {
+  return Object.keys(diseases).filter((d) =>
+    (diseases[d].medicines || []).some((m) => normalize(m) === normalize(medicineKey))
+  );
+}
+
+// "Did you mean ...?" for a mistyped / unknown medicine name.
+// Also matches on active ingredient (e.g. "acetaminophen" -> Paracetamol).
+function closestMedicineNames(input, limit = 5) {
+  const s = normalize(input);
+  if (s.length < 2) return [];
+
+  return Object.keys(medicines)
+    .map((name) => {
+      const n = normalize(name);
+      const m = medicines[name];
+      let score = similarity(s, n);
+
+      if (s.length >= 3 && (n.includes(s) || (n.length >= 3 && s.includes(n)))) score += 0.5;
+
+      const haystack = normalize(`${m.ingredient || ""} ${(m.actives || []).join(" ")}`);
+      if (s.length >= 3 && haystack.includes(s)) score += 0.5;
+
+      return { name, score };
+    })
+    .filter((x) => x.score >= 0.6)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.name);
+}
+
+// Similar diseases for an unknown disease name, also using the
+// symptoms the user typed (e.g. "stomach pain" -> Stomach Cramps).
+function suggestDiseases(input, extraText = "", limit = 4) {
+  const s = normalize(input);
+  const tokens = normalize(`${input} ${extraText}`)
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t.length > 2 && !STOP_WORDS.has(t));
+
+  return Object.entries(diseases)
+    .map(([name, d]) => {
+      const n = normalize(name);
+      const hay = `${n} ${normalize(d.symptoms || "")} ${normalize(d.category || "")}`;
+      let score = 0;
+
+      for (const t of tokens) {
+        if (n.includes(t)) score += 3;
+        else if (hay.includes(t)) score += 1;
+      }
+
+      const closeness = similarity(s, n);
+      if (s.length >= 3 && closeness >= 0.6) score += closeness * 5;
+
+      return { name, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ name }) => ({
+      name,
+      category: diseases[name].category,
+      symptoms: diseases[name].symptoms,
+      note: diseases[name].note || null,
+      medicines: listedMedicinesFor(name).map((m) => ({
+        name: m.name,
+        form: m.form,
+        purpose: m.purpose,
+      })),
+    }));
+}
+
+/* ============================================================
    API ROUTES
 ============================================================ */
 
@@ -76,14 +193,26 @@ app.get("/api/ingredients-all", (req, res) => res.json(ingredients));
 // Full record for one disease
 app.get("/api/diseases/:name", (req, res) => {
   const key = findDiseaseKey(req.params.name);
-  if (!key) return res.status(404).json({ error: "Disease not found", query: req.params.name });
+  if (!key) {
+    return res.status(404).json({
+      error: "Disease not found",
+      query: req.params.name,
+      suggestedDiseases: suggestDiseases(req.params.name),
+    });
+  }
   res.json({ name: key, ...diseases[key] });
 });
 
 // Full record for one medicine
 app.get("/api/medicines/:name", (req, res) => {
   const key = findMedicineKey(req.params.name);
-  if (!key) return res.status(404).json({ error: "Medicine not found", query: req.params.name });
+  if (!key) {
+    return res.status(404).json({
+      error: "Medicine not found",
+      query: req.params.name,
+      didYouMean: closestMedicineNames(req.params.name),
+    });
+  }
   res.json({ name: key, ...medicines[key] });
 });
 
@@ -92,6 +221,10 @@ app.get("/api/medicines/:name", (req, res) => {
  * body: { disease, medicine, symptoms, age }
  * Mirrors the original front-end logic, but run server-side so the
  * database and matching rules aren't exposed/editable in client JS.
+ *
+ * Not-found responses (404) now carry suggestions:
+ *  - field "medicine": { disease, didYouMean, suggestedMedicines }
+ *  - field "disease":  { suggestedDiseases, medicineName, medicineUsedFor }
  */
 app.post("/api/check", (req, res) => {
   const { disease, medicine, symptoms = "", age } = req.body || {};
@@ -107,12 +240,36 @@ app.post("/api/check", (req, res) => {
 
   const diseaseKey = findDiseaseKey(disease);
   if (!diseaseKey) {
-    return res.status(404).json({ error: `"${disease}" is not currently in the database.`, field: "disease" });
+    // Disease unknown: offer similar diseases, and if the medicine IS
+    // known, tell the user which diseases it is listed for.
+    const knownMedicineKey = findMedicineKey(medicine);
+    return res.status(404).json({
+      error: `"${disease}" is not currently in the database.`,
+      field: "disease",
+      suggestedDiseases: suggestDiseases(disease, symptoms),
+      medicineName: knownMedicineKey,
+      medicineUsedFor: knownMedicineKey ? diseasesUsingMedicine(knownMedicineKey) : [],
+    });
   }
 
   const medicineKey = findMedicineKey(medicine);
   if (!medicineKey) {
-    return res.status(404).json({ error: `"${medicine}" is not currently in the medicine database.`, field: "medicine" });
+    // Medicine unknown: suggest the medicines in the database that are
+    // listed for this disease (plus close spellings of what was typed).
+    const dd = diseases[diseaseKey];
+    return res.status(404).json({
+      error: `"${medicine}" is not currently in the medicine database.`,
+      field: "medicine",
+      disease: {
+        name: diseaseKey,
+        category: dd.category,
+        commonSymptoms: dd.symptoms,
+        warningSigns: dd.warningSigns || [],
+        note: dd.note || null,
+      },
+      didYouMean: closestMedicineNames(medicine),
+      suggestedMedicines: listedMedicinesFor(diseaseKey),
+    });
   }
 
   const diseaseData = diseases[diseaseKey];
@@ -120,9 +277,7 @@ app.post("/api/check", (req, res) => {
 
   const matched = diseaseData.medicines.some((m) => normalize(m) === normalize(medicineKey));
 
-  const listedMedicines = diseaseData.medicines
-    .filter((name) => medicines[name])
-    .map((name) => ({ name, ...medicines[name] }));
+  const listedMedicines = listedMedicinesFor(diseaseKey);
 
   res.json({
     patient: {
