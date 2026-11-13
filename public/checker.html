@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Med Sense - Medicine Checker</title>
-
+<link rel="icon" type="image/svg+xml" href="med-sense-icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -45,6 +45,9 @@
     padding:0;
     box-sizing:border-box;
 }
+
+.logo-img{flex:none;width:74px;height:74px;border-radius:22px;box-shadow:0 8px 24px -8px rgba(0,0,0,.5)}
+@media(max-width:750px){.logo-img{width:58px;height:58px}}
 
 body{
     min-height:100vh;
@@ -596,11 +599,7 @@ table.cmp{width:100%;min-width:640px;border-collapse:collapse}
 
 <header class="hero">
 
-    <div class="mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#7ff0d0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>
-        </svg>
-    </div>
+       <img src="med-sense-icon.svg" alt="Med Sense logo" class="logo-img">
 
     <div class="hero-text">
         <h1>Med Sense</h1>
