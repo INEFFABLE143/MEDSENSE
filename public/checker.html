@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script src="js/theme.js"></script>
+<script src="js/suggest.js"></script>
 <style>
 
 /* =====================================================
@@ -27,7 +28,7 @@
     --mint:#7ff0d0;         /* pulse / highlight */
     --mist:#eaf6f3;         /* tinted surfaces */
     --paper:#f6fbfa;        /* input background */
-    --line:#d3e5e1;         /* borders */
+    --line:#d3e5e1;        /* borders */
     --muted:#587571;        /* secondary text */
     --amber:#f5a524;
     --amber-bg:#fff6e0;
@@ -831,12 +832,9 @@ async function checkInfo(){
 
         if(!response.ok){
 
-            result.innerHTML = `
-                <div class="error">
-                    <h2>❌ ${data.field === "disease" ? "Disease Not Found" : data.field === "medicine" ? "Medicine Not Found" : "Please Check Your Input"}</h2>
-                    <p>${escapeHTML(data.error || "Something went wrong.")}</p>
-                </div>
-            `;
+            // suggest.js shows the error plus medicines / diseases
+            // from the database that the user can pick instead
+            renderNotFound(data);
 
             return;
 
