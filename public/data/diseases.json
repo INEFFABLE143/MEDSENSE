@@ -735,7 +735,7 @@
     ]
   },
   "Mouth Ulcers": {
-    "category": "Dental / Oral",
+    "category": "Dental",
     "symptoms": "Painful small sores inside the mouth, stinging when eating.",
     "medicines": [
       "Oral Pain Relief Gel",
@@ -747,7 +747,7 @@
     "note": "See a doctor or dentist if ulcers last more than 2–3 weeks or keep returning."
   },
   "Gingivitis": {
-    "category": "Dental / Oral",
+    "category": "Dental",
     "symptoms": "Red, swollen or bleeding gums and bad breath.",
     "medicines": [
       "Chlorhexidine Mouthwash",

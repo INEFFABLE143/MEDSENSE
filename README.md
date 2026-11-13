@@ -18,19 +18,11 @@ information from a small built-in database, exactly like the original.
 medsense/
 ├── server.js              # Express app + API routes
 ├── package.json
-
 └── public/
     ├── index.html          # Dashboard (home page)
     ├── checker.html        # Medicine checker
     ├── js/theme.js         # Light / dark theme toggle
     └── data/               # diseases.json + medicines.json
-=======
-├── data/
-│   ├── diseases.json       # disease -> category, common symptoms, associated OTC medicines
-│   └── medicines.json      # medicine -> form, ingredient, uses, precautions, etc.
-└── public/
-    └── index.html          # frontend (fetches data from the API)
->>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
 ```
 
 ## Setup
@@ -98,13 +90,8 @@ with a JSON body like `{ "error": "..." }`.
   `API_BASE` constant near the top of the `<script>` tag in `public/index.html` to your
   backend's full URL, and make sure CORS stays enabled server-side (it already is, via
   the `cors` package).
-
 - To extend the database, just add entries to `public/data/diseases.json` and
   `public/data/medicines.json` — no code changes needed.
-=======
-- To extend the database, just add entries to `data/diseases.json` and
-  `data/medicines.json` — no code changes needed.
->>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
 
 ## Disclaimer
 
@@ -115,11 +102,8 @@ other medicines. Always check the current package label and consult a doctor or
 pharmacist.
 "# MEDSENSE" 
 
-
 ## Hosting notes
 
 - The dashboard (home page) also works as a static site (e.g. GitHub Pages: publish the `public/` folder); it reads `public/data/*.json` directly.
 - The checker page needs the Node server (`/api/check`), so host the whole app on Render, Railway, etc.
 - The theme (light/dark) follows the device setting and is remembered in the browser.
-=======
->>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
