@@ -2,8 +2,13 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 
+<<<<<<< HEAD
 const diseases = require("./public/data/diseases.json");
 const medicines = require("./public/data/medicines.json");
+=======
+const diseases = require("./data/diseases.json");
+const medicines = require("./data/medicines.json");
+>>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -31,11 +36,20 @@ function findDiseaseKey(input) {
   for (const key of Object.keys(diseases)) {
     if (normalize(key) === search) return key;
   }
+<<<<<<< HEAD
   if (search.length < 3) return null;
   const keys = Object.keys(diseases);
   return keys.find((k) => normalize(k).startsWith(search)) ||
     keys.find((k) => normalize(k).includes(search)) ||
     keys.find((k) => normalize(k).length >= 3 && search.includes(normalize(k))) || null;
+=======
+  for (const key of Object.keys(diseases)) {
+    if (normalize(key).includes(search) || search.includes(normalize(key))) {
+      return key;
+    }
+  }
+  return null;
+>>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
 }
 
 function findMedicineKey(input) {
@@ -46,11 +60,20 @@ function findMedicineKey(input) {
   for (const key of Object.keys(medicines)) {
     if (normalize(key) === search) return key;
   }
+<<<<<<< HEAD
   if (search.length < 3) return null;
   const keys = Object.keys(medicines);
   return keys.find((k) => normalize(k).startsWith(search)) ||
     keys.find((k) => normalize(k).includes(search)) ||
     keys.find((k) => normalize(k).length >= 3 && search.includes(normalize(k))) || null;
+=======
+  for (const key of Object.keys(medicines)) {
+    if (normalize(key).includes(search) || search.includes(normalize(key))) {
+      return key;
+    }
+  }
+  return null;
+>>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
 }
 
 /* ============================================================
@@ -141,10 +164,14 @@ app.post("/api/check", (req, res) => {
 });
 
 // Fallback to the SPA for any non-API route
+<<<<<<< HEAD
 app.use("/api", (req, res) => res.status(404).json({ error: "Not found" }));
 
 app.use((req, res) => {
   if (path.extname(req.path)) return res.status(404).send("Not found");
+=======
+app.get(/^(?!\/api).*/, (req, res) => {
+>>>>>>> 244fbe8326070565a89c52be89ac3c90517912c6
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
