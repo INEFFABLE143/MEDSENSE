@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 
-<<<<<<< HEAD
+
 const diseases = require("./public/data/diseases.json");
 const medicines = require("./public/data/medicines.json");
 =======
@@ -36,7 +36,7 @@ function findDiseaseKey(input) {
   for (const key of Object.keys(diseases)) {
     if (normalize(key) === search) return key;
   }
-<<<<<<< HEAD
+
   if (search.length < 3) return null;
   const keys = Object.keys(diseases);
   return keys.find((k) => normalize(k).startsWith(search)) ||
@@ -60,7 +60,7 @@ function findMedicineKey(input) {
   for (const key of Object.keys(medicines)) {
     if (normalize(key) === search) return key;
   }
-<<<<<<< HEAD
+
   if (search.length < 3) return null;
   const keys = Object.keys(medicines);
   return keys.find((k) => normalize(k).startsWith(search)) ||
@@ -164,7 +164,7 @@ app.post("/api/check", (req, res) => {
 });
 
 // Fallback to the SPA for any non-API route
-<<<<<<< HEAD
+
 app.use("/api", (req, res) => res.status(404).json({ error: "Not found" }));
 
 app.use((req, res) => {

@@ -18,7 +18,7 @@ information from a small built-in database, exactly like the original.
 medsense/
 ├── server.js              # Express app + API routes
 ├── package.json
-<<<<<<< HEAD
+
 └── public/
     ├── index.html          # Dashboard (home page)
     ├── checker.html        # Medicine checker
@@ -98,7 +98,7 @@ with a JSON body like `{ "error": "..." }`.
   `API_BASE` constant near the top of the `<script>` tag in `public/index.html` to your
   backend's full URL, and make sure CORS stays enabled server-side (it already is, via
   the `cors` package).
-<<<<<<< HEAD
+
 - To extend the database, just add entries to `public/data/diseases.json` and
   `public/data/medicines.json` — no code changes needed.
 =======
@@ -114,7 +114,7 @@ product, strength, country, age, weight, allergies, pregnancy, other conditions,
 other medicines. Always check the current package label and consult a doctor or
 pharmacist.
 "# MEDSENSE" 
-<<<<<<< HEAD
+
 
 ## Hosting notes
 
