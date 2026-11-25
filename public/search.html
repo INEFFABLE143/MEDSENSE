@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Med Sense - Search all medicines</title>
+<link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
+<link rel="apple-touch-icon" href="img/med-sense-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/brand.css">
+<script src="js/theme.js"></script>
+<script src="js/fdacard.js"></script>
+<style>
+:root{--ink:#0a2e30;--pine:#0a4d4e;--teal:#0f8a82;--mint:#7ff0d0;--mist:#eaf6f3;--paper:#f6fbfa;--line:#d3e5e1;--muted:#587571;--amber:#f5a524;--amber-bg:#fff6e0;--font-display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--font-body:"Manrope","Segoe UI",Arial,sans-serif}
+[data-theme="dark"]{color-scheme:dark;--ink:#eaf6f4;--pine:#8fe3d4;--teal:#19a79d;--mist:#143332;--paper:#0f2322;--line:#2a4a46;--muted:#9ab8b3;--amber-bg:#33280e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;padding:28px 16px;font-family:var(--font-body);color:var(--ink);line-height:1.55;background:radial-gradient(900px 500px at 8% -10%,#c9f1e6 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#dcdcff 0%,transparent 55%),#eef6f4}
+[data-theme="dark"] body{background:radial-gradient(900px 520px at 5% -10%,#0f4a43 0%,transparent 60%),#070f0f}
+input,button{font:inherit}
+.container{width:1100px;max-width:100%;margin:auto;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(10,77,78,.35)}
+[data-theme="dark"] .container{background:#0c1a19;border:1px solid #1f3d39}
+.hero{position:relative;display:flex;align-items:center;gap:22px;padding:40px 40px 44px;color:#fff;background:linear-gradient(120deg,#062a33 0%,#0a4d4e 55%,#0f8a82 100%)}
+.logo-img{flex:none;width:74px;height:74px;border-radius:22px;box-shadow:0 8px 24px -8px rgba(0,0,0,.5)}
+h1{font-family:var(--font-display);font-weight:800;font-size:40px;line-height:1.05;letter-spacing:-.02em}
+.subtitle{margin-top:8px;color:#c9ece6}
+.back{position:absolute;top:18px;right:22px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:8px 16px;border:1.5px solid rgba(255,255,255,.5);border-radius:99px;background:rgba(255,255,255,.12)}
+.main{padding:30px 40px 36px}
+h2{font-family:var(--font-display);font-size:22px;color:var(--pine);margin:22px 0 6px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row input{flex:1;min-width:220px;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;font-size:16px;color:var(--ink);background:var(--paper)}
+.row button{padding:14px 26px;border:0;border-radius:14px;background:var(--teal);color:#fff;font-weight:700;cursor:pointer}
+.hint,.lead{color:var(--muted);font-size:14px;margin-top:8px}
+.box{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:14px 20px;margin-top:12px}
+.box h3{font-family:var(--font-display);font-size:16px;color:var(--pine);margin-bottom:4px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 14px}
+.warn{background:var(--amber-bg);border-color:var(--amber)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{border:1.5px solid var(--line);background:var(--paper);color:var(--pine);font-weight:600;font-size:14px;padding:6px 14px;border-radius:99px;cursor:pointer}
+.chip:hover{background:var(--pine);color:#fff}
+.badge{display:inline-block;background:var(--mist);color:var(--pine);font-weight:700;font-size:12px;padding:2px 10px;border-radius:99px}
+.note{font-size:13px;color:var(--muted);margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;padding:10px 18px;border-radius:99px;border:1.5px solid rgba(127,240,208,.5);background:#0b6f69;color:#fff;font-size:14px;cursor:pointer}
+@media(max-width:700px){.hero{padding:32px 22px 40px}h1{font-size:30px}.main{padding:24px 20px}.logo-img{width:58px;height:58px}.back{position:static;margin-left:auto}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+  <img src="img/med-sense-icon.svg" alt="Med Sense logo" class="logo-img" width="74" height="74">
+  <div><h1>Search all medicines</h1><p class="subtitle">Your Med Sense database plus the live U.S. FDA drug-label database</p></div>
+  <a class="back" href="./">&larr; Dashboard</a>
+</header>
+<div class="main">
+  <form class="row" id="f" role="search">
+    <input id="q" type="search" placeholder="Any medicine, brand or ingredient (e.g. Dolo 650, ibuprofen, omeprazole)" aria-label="Medicine name" autocomplete="off" required minlength="2">
+    <button type="submit">Search</button>
+  </form>
+  <p class="hint">Tip: generic names work best online (paracetamol, ibuprofen, metformin). Indian-only brands may not be found in the FDA database.</p>
+  <div id="out"></div>
+  <p class="note">Educational information only. It does not diagnose disease or prescribe medication. Online results come from U.S. FDA labels. Always check your pack label and ask a doctor or pharmacist.</p>
+</div>
+<footer class="site-footer">
+  <img class="brand-logo is-light" src="img/med-sense-logo.svg" alt="Med Sense - Medicine, made clear." width="168" height="46">
+  <img class="brand-logo is-dark" src="img/med-sense-logo-dark.svg" alt="" aria-hidden="true" width="168" height="46">
+  <small>Educational information only. Not a substitute for advice from a doctor or pharmacist.</small>
+</footer>
+</div>
+<script>
+var out = document.getElementById("out"), qi = document.getElementById("q");
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+var FIELDS=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
+function localCard(m){
+  return '<h2>In the Med Sense database</h2><div class="box"><span class="badge">'+esc(m.form)+'</span><h3 style="font-size:20px;margin-top:6px">'+esc(m.name)+'</h3><p class="lead">'+esc(m.ingredient)+'</p><p style="margin-top:6px"><b>Purpose:</b> '+esc(m.purpose)+'</p></div>'+
+    '<div class="facts">'+FIELDS.filter(function(f){return m[f[1]]}).map(function(f){return '<div class="box"><h3>'+f[0]+'</h3><p>'+esc(m[f[1]])+'</p></div>'}).join("")+'</div>'+
+    (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'');
+}
+function chips(list){return '<div class="chips">'+list.map(function(n){return '<button type="button" class="chip" data-q="'+esc(n)+'">'+esc(n)+'</button>'}).join("")+'</div>'}
+async function search(term){
+  term=term.trim(); if(term.length<2) return;
+  out.innerHTML='<p class="lead">Searching...</p>';
+  history.replaceState(null,"","?q="+encodeURIComponent(term));
+  try{
+    var r=await fetch("/api/lookup?q="+encodeURIComponent(term)); var d=await r.json();
+    if(!r.ok) throw new Error(d.error||"Search failed");
+    var h="", ext=d.external||{};
+    if(d.local) h+=localCard(d.local);
+    if(ext.found) h+='<h2>U.S. FDA drug label</h2>'+window.renderFdaCard(ext);
+    if(!d.local && !ext.found){
+      h+='<div class="box warn"><h3>No match found for "'+esc(term)+'"</h3><p>'+(ext.unavailable?'The online drug database could not be reached right now. Please try again later.':'Try the generic (ingredient) name, or check the spelling.')+'</p></div>';
+      var sug=(d.localDidYouMean||[]).concat(ext.suggestions||[]).filter(function(n,i,a){return a.indexOf(n)===i});
+      if(sug.length) h+='<h2>Did you mean?</h2>'+chips(sug);
+    } else if(d.local && ext.unavailable){
+      h+='<p class="hint">The online FDA lookup could not be reached, so only the Med Sense result is shown.</p>';
+    }
+    out.innerHTML=h;
+  }catch(e){ out.innerHTML='<div class="box warn"><h3>Could not search</h3><p>'+esc(e.message)+' Make sure the server is running (<b>npm start</b>).</p></div>'; }
+}
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();search(qi.value)});
+out.addEventListener("click",function(e){var b=e.target.closest("[data-q]");if(b){qi.value=b.dataset.q;search(b.dataset.q)}});
+var p=new URLSearchParams(location.search).get("q"); if(p){qi.value=p;search(p)}
+</script>
+</body>
+</html>

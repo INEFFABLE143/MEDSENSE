@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Med Sense - Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
+<link rel="apple-touch-icon" href="img/med-sense-icon.svg">
+<meta property="og:title" content="Med Sense - Medicine, made clear.">
+<meta property="og:image" content="img/med-sense-logo.svg">
+<link rel="stylesheet" href="css/brand.css">
+<meta name="description" content="Browse diseases and the over-the-counter and common medicines listed for them. Educational information only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="js/theme.js"></script>
+<style>
+  .logo-img{flex:none;width:74px;height:74px;border-radius:22px;box-shadow:0 8px 24px -8px rgba(0,0,0,.5)}
+@media(max-width:750px){.logo-img{width:58px;height:58px}}
+:root{--ink:#0a2e30;--pine:#0a4d4e;--teal:#0f8a82;--teal-hover:#0b6f69;--mint:#7ff0d0;--mist:#eaf6f3;--paper:#f6fbfa;--line:#d3e5e1;--muted:#587571;--amber:#f5a524;--amber-bg:#fff6e0;--font-display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--font-body:"Manrope","Segoe UI",Arial,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;padding:28px 16px;font-family:var(--font-body);color:var(--ink);line-height:1.55;background:radial-gradient(900px 500px at 8% -10%,#c9f1e6 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#dcdcff 0%,transparent 55%),#eef6f4}
+input,button{font:inherit}
+a{color:var(--teal)}
+.container{width:1100px;max-width:100%;margin:auto;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(10,77,78,.35)}
+.hero{position:relative;display:flex;align-items:center;gap:22px;padding:44px 40px 70px;color:#fff;background:linear-gradient(120deg,#062a33 0%,#0a4d4e 55%,#0f8a82 100%);overflow:hidden}
+.mark{flex:none;width:74px;height:74px;display:grid;place-items:center;border-radius:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28)}
+.mark svg{width:38px;height:38px}
+.hero-text{position:relative;z-index:1}
+h1{font-family:var(--font-display);font-weight:800;font-size:46px;line-height:1.05;letter-spacing:-.02em;color:#fff}
+.subtitle{margin-top:8px;max-width:48ch;color:#c9ece6;font-size:16px}
+.pulse{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px;pointer-events:none}
+.pulse-line{fill:none;stroke:var(--mint);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 0 6px rgba(127,240,208,.7));animation:draw 2.4s ease-out .3s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.pulse-line{animation:none;stroke-dashoffset:0}}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:14px 40px;border-bottom:1px solid var(--line);background:var(--paper)}
+nav a{text-decoration:none;font-weight:700;font-size:14px;color:var(--pine);padding:8px 16px;border-radius:99px}
+nav a:hover{background:var(--mist)}nav a.on{background:var(--teal);color:#fff}
+nav a.out{margin-left:auto;border:1.5px solid var(--teal)}
+.main{padding:34px 40px 40px}
+h2{font-family:var(--font-display);font-size:26px;color:var(--pine);margin:0 0 6px}
+h3{font-family:var(--font-display);font-size:19px;color:var(--pine)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px}
+.stat{background:var(--mist);border-radius:18px;padding:16px 20px}
+.stat b{display:block;font-family:var(--font-display);font-size:34px;color:var(--teal)}
+.stat span{color:var(--muted);font-weight:600;font-size:14px}
+input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;font-size:16px;color:var(--ink);background:var(--paper)}
+input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,130,.35);border-color:var(--teal)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 20px}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--pine);font-weight:600;font-size:13px;padding:6px 14px;border-radius:99px;cursor:pointer}
+.chip.on,.chip:hover{background:var(--pine);border-color:var(--pine);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px}
+.card:hover{border-color:var(--teal);box-shadow:0 10px 24px -14px rgba(10,77,78,.5)}
+.card small{display:inline-block;background:var(--mist);color:var(--pine);font-weight:700;font-size:12px;padding:2px 10px;border-radius:99px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px;margin-top:4px}
+.lead{color:var(--muted);margin-bottom:16px}
+.back{display:inline-block;margin-bottom:16px;font-weight:700;text-decoration:none}
+.box{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:18px 22px;margin-top:16px}
+.box h3{margin-bottom:6px}
+.box.warn{background:var(--amber-bg);border-color:var(--amber)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 16px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.tags a{text-decoration:none;background:#fff;border:1.5px solid var(--line);color:var(--pine);font-weight:600;font-size:14px;padding:6px 14px;border-radius:99px}
+.tags a:hover{border-color:var(--teal);background:var(--mist)}
+.btn{display:inline-block;margin-top:18px;text-decoration:none;background:var(--teal);color:#fff;font-weight:700;padding:12px 22px;border-radius:14px}
+.btn:hover{background:var(--teal-hover)}
+.btn{margin-right:8px}button.btn{border:0;cursor:pointer;font-size:16px}.btn.fav{background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:10.5px 20px}.note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;width:auto!important;padding:10px 18px!important;border-radius:99px!important;font-size:14px!important;background:var(--pine)!important;color:#fff!important;box-shadow:0 8px 24px rgba(0,0,0,.3)!important}
+[data-theme="dark"]{color-scheme:dark;--ink:#e3f1ef;--pine:#8fe3d4;--teal:#19a79d;--teal-hover:#5fd3c6;--mist:#16302f;--paper:#122625;--line:#27433f;--muted:#9ab8b3;--amber-bg:#3a2d10;--danger-bg:#3a1a1a;--good:#5fd38f}
+[data-theme="dark"] body{background:radial-gradient(900px 500px at 8% -10%,#0d3a35 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#1d1d4a 0%,transparent 55%),#0b1615}
+[data-theme="dark"] .container{background:#0f1f1e;box-shadow:0 30px 70px -20px #000}
+[data-theme="dark"] input,[data-theme="dark"] textarea{background:var(--paper);color:var(--ink)}
+[data-theme="dark"] input:focus,[data-theme="dark"] textarea:focus{background:#16302f}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{color:#6f8f8a}
+[data-theme="dark"] .chip,[data-theme="dark"] .tags a,[data-theme="dark"] .patient-table,[data-theme="dark"] .medicine-table{background:#122625}
+[data-theme="dark"] .chip.on,[data-theme="dark"] .chip:hover{background:#0a6b66;border-color:#0a6b66;color:#fff}
+[data-theme="dark"] nav a.on{background:#0f8a82}
+[data-theme="dark"] .patient-table th,[data-theme="dark"] .medicine-table th{background:#0a4d4e;color:#fff}
+[data-theme="dark"] .medicine-table tr:nth-child(even){background:#152b2a}
+[data-theme="dark"] .medicine-result-header{background:linear-gradient(120deg,#12302d,#1c1c45)}
+[data-theme="dark"] .detail:last-child,[data-theme="dark"] .box.warn{border-color:#8a6a1c}
+[data-theme="dark"] .detail:last-child strong{color:#f5c15a}
+[data-theme="dark"] .disclaimer{border-color:#2f5550}
+[data-theme="dark"] button:not(.chip):not(.theme-toggle){background:linear-gradient(120deg,#0a6b66,#0f8a82)}
+[data-theme="dark"] .btn{background:#0f8a82}
+
+
+/* ---- dark theme polish + input visibility fixes ---- */
+input,textarea{caret-color:var(--teal)}
+[data-theme="dark"] input,[data-theme="dark"] textarea,[data-theme="dark"] select{caret-color:#7ff0d0;-webkit-text-fill-color:var(--ink)}
+[data-theme="dark"] input::placeholder,[data-theme="dark"] textarea::placeholder{-webkit-text-fill-color:#7d9c97;opacity:1}
+[data-theme="dark"] input:-webkit-autofill,[data-theme="dark"] input:-webkit-autofill:hover,[data-theme="dark"] input:-webkit-autofill:focus,[data-theme="dark"] textarea:-webkit-autofill{-webkit-text-fill-color:#e3f1ef!important;caret-color:#7ff0d0;-webkit-box-shadow:0 0 0 1000px #122625 inset!important;box-shadow:0 0 0 1000px #122625 inset!important;transition:background-color 9999s ease-out}
+[data-theme="dark"] option{background:#122625;color:#e3f1ef}
+.theme-toggle{background:#0b6f69!important;color:#fff!important;border:1.5px solid rgba(127,240,208,.5)!important}
+[data-theme="dark"]{--ink:#eaf6f4;--paper:#0f2322;--mist:#143332;--line:#2a4a46}
+[data-theme="dark"] body{background:radial-gradient(900px 520px at 5% -10%,#0f4a43 0%,transparent 60%),radial-gradient(800px 520px at 100% 0%,#2a1f5c 0%,transparent 55%),#070f0f}
+[data-theme="dark"] .container{background:#0c1a19;border:1px solid #1f3d39;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 60px -30px rgba(25,167,157,.5)}
+[data-theme="dark"] .hero{background:linear-gradient(120deg,#05161c 0%,#0a3d44 50%,#3a2a7a 100%)}
+[data-theme="dark"] nav{background:#0f2322}
+[data-theme="dark"] nav a{color:#bfe9e2}
+[data-theme="dark"] nav a:hover{background:#17403d}
+[data-theme="dark"] .stat{background:linear-gradient(135deg,#123432,#1a1f4a);border:1px solid #27484a}
+[data-theme="dark"] .stat b{color:#7ff0d0}
+[data-theme="dark"] .card,[data-theme="dark"] .box,[data-theme="dark"] .detail,[data-theme="dark"] .result-header{background:#0f2322;border-color:#27443f}
+[data-theme="dark"] .card:hover{border-color:#19a79d;box-shadow:0 10px 30px -12px rgba(127,240,208,.35)}
+[data-theme="dark"] .card h3,[data-theme="dark"] h2,[data-theme="dark"] h3{color:#e8fbf7}
+[data-theme="dark"] .card small,[data-theme="dark"] .tablet{background:#17403d;color:#9cf0df;border-color:#27605a}
+[data-theme="dark"] .box.warn,[data-theme="dark"] .warning,[data-theme="dark"] .detail:last-child{background:#33280e}
+[data-theme="dark"] .error{background:#3a1a1a}
+[data-theme="dark"] .patient-table td:first-child{background:#143332;color:#bfe9e2}
+[data-theme="dark"] .medicine-table td,[data-theme="dark"] .patient-table td{color:#dcefec}
+
+/* ---- warning signs, compare, print ---- */
+.redflag{margin:22px 0;padding:18px 22px;background:#fdecec;border-left:6px solid #c62828;border-radius:16px}
+.redflag h3{color:#b71c1c;margin-bottom:8px;font-family:var(--font-display)}
+.redflag ul{padding-left:20px;line-height:1.75}.redflag .em{margin-top:10px;font-weight:700}
+.cmpsel{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0 18px}
+.cmpsel select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px}
+.cmpwrap{overflow-x:auto;border:1.5px solid var(--line);border-radius:16px;margin-top:8px}
+table.cmp{width:100%;min-width:640px;border-collapse:collapse}
+.cmp th,.cmp td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5}
+.cmp thead th{background:#0a4d4e;color:#fff}.cmp thead th a{color:#fff}
+.cmp tbody th{background:var(--mist);color:var(--teal-hover);width:140px}
+.cmp tr:last-child>*{border-bottom:0}
+[data-theme="dark"] .redflag{background:#3a1a1a;border-color:#e05555}
+[data-theme="dark"] .redflag h3{color:#ff9a9a}
+.print-only{display:none}
+.printhead{padding:0 0 10px;border-bottom:2px solid #000;margin-bottom:14px}
+.notes i{display:block;border-bottom:1px solid #999;height:28px}
+@media print{
+ @page{margin:14mm}
+ *{background:#fff!important;color:#111!important;box-shadow:none!important;text-shadow:none!important;-webkit-text-fill-color:#111!important}
+ body{padding:0}.container{border:0!important;width:100%!important;border-radius:0!important}
+ .hero,nav,.theme-toggle,.no-print,.chips,.btn,button,input,textarea,.cmpsel,.form-grid,.stats,.back{display:none!important}
+ .print-only{display:block!important}
+ .card,.box,.detail,.result-header,.warning,.error,.redflag{border:1px solid #888!important;break-inside:avoid}
+ .tags a,.chip{border:1px solid #888!important}
+ th{font-weight:700;border-bottom:2px solid #000!important}
+ table,.medicine-table,table.cmp{min-width:0!important}
+ .cmpwrap,.medicine-table-wrapper{overflow:visible!important}
+ a{text-decoration:none}
+}
+[data-theme="dark"] button.btn.fav{background:transparent!important;color:#7ff0d0!important;border:1.5px solid #19a79d}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="hero">
+  <img src="img/med-sense-icon.svg" alt="Med Sense logo" class="logo-img" width="74" height="74">
+  <div class="hero-text"><h1>Med Sense</h1><p class="subtitle">Dashboard: browse every disease and medicine in one place</p></div>
+  <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/></svg>
+</header>
+<nav id="nav"></nav>
+<div class="print-only printhead" id="ph"></div><div class="main" id="app"><p class="lead">Loading...</p></div><div class="print-only notes"><b>Notes / questions for my doctor</b><i></i><i></i><i></i><i></i><i></i></div>
+<footer class="site-footer">
+  <img class="brand-logo is-light" src="img/med-sense-logo.svg" alt="Med Sense - Medicine, made clear." width="168" height="46">
+  <img class="brand-logo is-dark" src="img/med-sense-logo-dark.svg" alt="" aria-hidden="true" width="168" height="46">
+  <small>Educational information only. Not a substitute for advice from a doctor or pharmacist.</small>
+</footer>
+</div>
+<script>
+const API_BASE="";
+let D={},M={},cat="All",q="";
+let F={d:[],m:[]};try{const x=JSON.parse(localStorage.getItem("medsense-favs"));if(x&&Array.isArray(x.d)&&Array.isArray(x.m))F=x}catch(e){}
+const isF=(t,n)=>F[t].includes(n);
+function togF(t,n){F[t]=isF(t,n)?F[t].filter(x=>x!==n):[...F[t],n];try{localStorage.setItem("medsense-favs",JSON.stringify(F))}catch(e){}}
+const favBtn=(t,n)=>'<button type="button" class="btn fav" id="fv">'+(isF(t,n)?"♥ Saved":"♡ Save")+'</button> ';
+const favWire=(t,n)=>{document.getElementById("fv").onclick=()=>{togF(t,n);document.getElementById("fv").textContent=isF(t,n)?"♥ Saved":"♡ Save";bar(t==="d"?"home":"med")}};
+const card=(n,small,p,t)=>'<a class="card" href="#'+(t==="d"?"d":"m")+'/'+enc(n)+'"><small>'+esc(small)+'</small><h3>'+(isF(t,n)?"♥ ":"")+esc(n)+'</h3><p>'+esc(p)+'</p></a>';
+const app=document.getElementById("app"),nav=document.getElementById("nav");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const enc=encodeURIComponent;
+const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
+function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a href="#ingredients" class="'+(on==="ing"?"on":"")+'">Ingredients</a><a href="#compare" class="'+(on==="cmp"?"on":"")+'">Compare</a><a href="#saved" class="'+(on==="saved"?"on":"")+'">Saved ('+(F.d.length+F.m.length)+')</a><a href="search.html">Search all medicines</a><a class="out" href="checker.html">Open Checker</a>'}
+function home(){
+  bar("home");
+  const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
+  app.innerHTML='<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
+  '<input id="q" type="search" placeholder="Search by symptom, disease or medicine (e.g. fever, cough)" aria-label="Search" value="'+esc(q)+'">'+
+  '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
+  const draw=()=>{
+    document.getElementById("chips").innerHTML=cats.map(c=>'<button class="chip '+(c===cat?"on":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
+    const toks=q.toLowerCase().split(/[\s,;]+/).filter(t=>t.length>1);
+    const list=Object.entries(D).filter(([n,d])=>cat==="All"||d.category===cat).map(([n,d])=>{const h=(n+" "+d.symptoms+" "+d.medicines.join(" ")).toLowerCase();return [n,d,toks.filter(t=>h.includes(t)).length]}).filter(x=>!toks.length||x[2]>0).sort((a,b)=>b[2]-a[2]);
+    document.getElementById("g").innerHTML=list.map(([n,d,c])=>card(n,d.category+(toks.length>1?" · "+c+"/"+toks.length+" match":""),d.symptoms.slice(0,80)+(d.symptoms.length>80?"...":""),"d")).join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
+  };
+  draw();
+  document.getElementById("q").oninput=e=>{q=e.target.value.trim();draw()};
+  document.getElementById("chips").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;draw()}};
+}
+function disease(n){
+  const d=D[n];if(!d)return home();
+  bar("home");
+  app.innerHTML='<a class="back" href="#home">Back to diseases</a><span class="tags"><a href="#home" style="pointer-events:none">'+esc(d.category)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+
+  '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+warnBox(d)+
+  '<div class="box"><h3>Medicines commonly listed ('+d.medicines.length+')</h3><div class="tags">'+d.medicines.map(m=>M[m]?'<a href="#m/'+enc(m)+'">'+esc(m)+'</a>':'<a href="#home" style="pointer-events:none">'+esc(m)+'</a>').join("")+'</div></div>'+
+  favBtn("d",n)+PB+'<a class="btn" href="checker.html?disease='+enc(n)+'">Check a medicine for '+esc(n)+'</a>'+NOTE;
+  favWire("d",n);scrollTo(0,0);
+}
+function meds(){
+  bar("med");
+  app.innerHTML='<h2>All medicines</h2><p class="lead">Tap a medicine for uses, precautions and side effects.</p><input id="mq" type="search" placeholder="Search medicines or purpose" aria-label="Search medicines"><div class="grid" id="g" style="margin-top:18px"></div>'+NOTE;
+  const draw=s=>{document.getElementById("g").innerHTML=Object.entries(M).filter(([n,m])=>(n+m.purpose+m.ingredient).toLowerCase().includes(s)).sort().map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join("")||'<p class="lead">No match.</p>'};
+  draw("");document.getElementById("mq").oninput=e=>draw(e.target.value.trim().toLowerCase());
+}
+function medicine(n){
+  const m=M[n];if(!m)return meds();
+  bar("med");
+  const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k])=>k);
+  const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
+  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+esc(m.form)+' &middot; '+esc(m.ingredient)+'</p><p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
+  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+ingBox(m)+
+  '<div class="facts">'+F.map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
+  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
+  (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(k=>'<a href="#d/'+enc(k)+'">'+esc(k)+'</a>').join("")+'</div></div>':'')+NOTE;
+  favWire("m",n);scrollTo(0,0);
+}
+function saved(){
+  bar("saved");const ds=F.d.filter(n=>D[n]),ms=F.m.filter(n=>M[n]);
+  app.innerHTML='<h2>Saved</h2><p class="lead">Your saved diseases and medicines. They are stored in this browser only.</p>'+(ds.length||ms.length?(ds.length?'<h3>Diseases</h3><div class="grid" style="margin:10px 0 22px">'+ds.map(n=>card(n,D[n].category,D[n].symptoms.slice(0,80),"d")).join("")+'</div>':'')+(ms.length?'<h3>Medicines</h3><div class="grid" style="margin-top:10px">'+ms.map(n=>card(n,M[n].form,M[n].purpose,"m")).join("")+'</div>':''):'<p class="lead">Nothing saved yet. Open a disease or medicine and tap Save.</p>')+NOTE;
+  scrollTo(0,0);
+}
+let IG={};
+const PB='<button type="button" class="btn fav no-print" onclick="print()">🖨️ Print</button>';
+addEventListener("beforeprint",()=>{document.getElementById("ph").innerHTML='<img class="print-logo" src="img/med-sense-logo.svg" alt="Med Sense"><b style="font-size:20px">Med Sense · Medicine information report</b><br>Date: '+new Date().toLocaleDateString()+' &nbsp; Name: ____________________ &nbsp; Age: ______<br><small>Educational information only. Prepared to discuss with a doctor or pharmacist.</small>'});
+const warnBox=d=>(d.warningSigns&&d.warningSigns.length)?'<div class="redflag"><h3>🚨 Warning signs: get medical help</h3><ul>'+d.warningSigns.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul><p class="em">Emergency? Call your local emergency number (112 in India).</p></div>':'';
+const EX=[[/inhaler/i,"propellant (HFA) or a lactose carrier powder"],[/injection/i,"water for injection, buffers, tonicity agents, a preservative"],[/nasal/i,"purified water, buffers, a preservative such as benzalkonium chloride"],[/drops/i,"sterile water or oil base, buffers, tonicity agents, a preservative or preservative-free"],[/^(?!.*nasal).*spray/i,"propellant or solvent, fragrance-free carrier"],[/capsule/i,"gelatin or HPMC shell, fillers, magnesium stearate, colourants"],[/tablet/i,"fillers (lactose, microcrystalline cellulose), binders (starch, povidone), disintegrants (croscarmellose), lubricant (magnesium stearate), film coat (HPMC, titanium dioxide)"],[/syrup|suspension|liquid|juice/i,"water, sweeteners (sucrose, sorbitol), preservatives (sodium benzoate or parabens), flavours, colours, thickeners (xanthan gum)"],[/gel|cream|ointment|lotion|balm/i,"base (water, petrolatum or liquid paraffin), emulsifiers, thickeners (carbomer), preservatives, fragrance"],[/powder|sachet/i,"sugar or sweeteners, flavours, anti-caking agent"],[/lozenge/i,"sugar or isomalt, flavours, colours"],[/shampoo/i,"surfactants, water, preservatives, fragrance"],[/mouthwash/i,"water, ethanol or glycerin, flavour, sweetener, colour"]];
+const excip=f=>{const r=EX.filter(([re])=>re.test(f)).map(x=>x[1]);return r.length?r.join(" | "):"varies by brand"};
+const ingBox=m=>{const a=m.actives||[];return a.length?'<div class="box"><h3>Ingredients</h3><p class="lead" style="margin:4px 0">Active ingredient'+(a.length>1?"s":"")+(m.variable?" (varies by brand)":"")+':</p><div class="tags">'+a.map(x=>IG[x]?'<a href="#i/'+enc(x)+'">'+esc(x)+'</a>':'<a href="#medicines" style="pointer-events:none">'+esc(x)+'</a>').join("")+'</div><p class="lead" style="margin:12px 0 0"><b>Typical inactive ingredients (excipients):</b> '+esc(excip(m.form))+'. Exact excipients differ by brand, so check the pack leaflet.</p></div>':''};
+function ingredients(){
+  bar("ing");
+  app.innerHTML='<h2>Medicine ingredients</h2><p class="lead">Every active ingredient used in the medicines on Med Sense, with its class and how it works. Tap one to see which medicines contain it.</p><input id="iq" type="search" placeholder="Search ingredient or class (e.g. NSAID, antihistamine)" aria-label="Search ingredients"><p class="lead" id="ic" style="margin:12px 0 0"></p><div class="grid" id="g" style="margin-top:14px"></div>'+NOTE;
+  const draw=s=>{const l=Object.entries(IG).filter(([n,g])=>(n+" "+g.class+" "+(g.mechanism||"")).toLowerCase().includes(s));
+    document.getElementById("ic").textContent=l.length+" ingredient"+(l.length===1?"":"s");
+    document.getElementById("g").innerHTML=l.map(([n,g])=>'<a class="card" href="#i/'+enc(n)+'"><small>'+esc(g.class)+'</small><h3>'+esc(n)+'</h3><p>In '+g.medicines.length+' medicine'+(g.medicines.length===1?"":"s")+'</p></a>').join("")||'<p class="lead">No match.</p>'};
+  draw("");document.getElementById("iq").oninput=e=>draw(e.target.value.trim().toLowerCase());
+}
+function ingredient(n){
+  const g=IG[n];if(!g)return ingredients();
+  bar("ing");
+  const forms=[...new Set(g.medicines.map(x=>M[x]&&M[x].form).filter(Boolean))].join(" · ");
+  app.innerHTML='<a class="back" href="#ingredients">Back to ingredients</a><span class="tags"><a href="#ingredients" style="pointer-events:none">'+esc(g.class)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+PB+
+  '<div class="box"><h3>How it works (mechanism)</h3><p>'+esc(g.mechanism||"Mechanism details have not been added for this ingredient yet.")+'</p></div>'+
+  '<div class="box"><h3>Found in ('+g.medicines.length+')</h3><div class="tags">'+g.medicines.map(x=>'<a href="#m/'+enc(x)+'">'+esc(x)+'</a>').join("")+'</div></div>'+
+  '<div class="box"><h3>Dosage forms in this app</h3><p>'+esc(forms)+'</p></div>'+NOTE;
+  scrollTo(0,0);
+}
+function compare(v){
+  bar("cmp");
+  const sel=(v||"").split("|").filter(x=>M[x]).slice(0,3),names=Object.keys(M).sort();
+  app.innerHTML='<h2>Compare medicines</h2><p class="lead">Choose two or three medicines to see them side by side.</p><div class="cmpsel">'+[0,1,2].map(i=>'<select id="c'+i+'" aria-label="Medicine '+(i+1)+'"><option value="">'+(i<2?"Choose a medicine":"Add a third (optional)")+'</option>'+names.map(x=>'<option'+(sel[i]===x?" selected":"")+'>'+esc(x)+'</option>').join("")+'</select>').join("")+'</div><div id="cmpout"></div>'+NOTE;
+  const R=[["Form","form"],["Active ingredients","a"],["Purpose","purpose"],["Used for","u"],["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"],["Warning","warning"]];
+  const val=(x,k)=>k==="a"?(M[x].actives||[]).join(", "):k==="u"?(Object.entries(D).filter(([n,d])=>d.medicines.includes(x)).map(e=>e[0]).slice(0,8).join(", ")||"Not listed"):(M[x][k]||"-");
+  const out=()=>{
+    const v=[0,1,2].map(i=>document.getElementById("c"+i).value).filter(Boolean);
+    history.replaceState(null,"","#compare/"+v.map(enc).join("|"));
+    const o=document.getElementById("cmpout");
+    if(v.length<2){o.innerHTML='<p class="lead">Pick at least two medicines.</p>';return}
+    const cnt={};v.forEach(x=>(M[x].actives||[]).forEach(a=>{(cnt[a]=cnt[a]||[]).push(x)}));
+    const dup=Object.entries(cnt).filter(([a,l])=>l.length>1);
+    o.innerHTML=PB+(dup.length?'<div class="box warn"><h3>⚠️ Same ingredient in more than one medicine</h3><p>'+dup.map(([a,l])=>esc(a)+' is in '+l.map(esc).join(" and ")).join(". ")+'. Taking these together can double the dose. Ask a pharmacist first.</p></div>':'')+'<div class="cmpwrap"><table class="cmp"><thead><tr><th></th>'+v.map(x=>'<th><a href="#m/'+enc(x)+'">'+esc(x)+'</a></th>').join("")+'</tr></thead><tbody>'+R.map(([t,k])=>'<tr><th scope="row">'+t+'</th>'+v.map(x=>'<td>'+esc(val(x,k))+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>';
+  };
+  [0,1,2].forEach(i=>document.getElementById("c"+i).onchange=out);out();scrollTo(0,0);
+}
+function route(){
+  const h=location.hash.slice(1),i=h.indexOf("/"),k=i<0?h:h.slice(0,i),v=i<0?"":decodeURIComponent(h.slice(i+1));
+  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else if(k==="saved")saved();else if(k==="ingredients")ingredients();else if(k==="i")ingredient(v);else if(k==="compare")compare(v);else home();
+}
+const get=(api,file)=>fetch(API_BASE+api).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch("data/"+file).then(r=>r.json()));
+Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","medicines.json"),get("/api/ingredients-all","ingredients.json")])
+ .then(([d,m,g])=>{D=d;M=m;IG=g;route();addEventListener("hashchange",route)})
+ .catch(()=>{app.innerHTML='<p class="lead">Could not load data. Please refresh, or start the server with <b>npm start</b>.</p>'});
+</script>
+</body>
+</html>

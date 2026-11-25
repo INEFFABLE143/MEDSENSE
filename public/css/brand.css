@@ -1,0 +1,11 @@
+/* Med Sense brand: footer logo + light/dark logo switching */
+.brand-logo{display:block;height:46px;width:auto}
+.brand-logo.is-dark{display:none}
+[data-theme="dark"] .brand-logo.is-light{display:none}
+[data-theme="dark"] .brand-logo.is-dark{display:block}
+.site-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 20px;padding:20px 40px 24px;border-top:1px solid var(--line);background:var(--paper)}
+.site-footer small{color:var(--muted);font-size:13px;max-width:44ch}
+[data-theme="dark"] .site-footer{background:#0f2322;border-color:#27443f}
+.print-logo{height:40px;width:auto;display:block;margin-bottom:8px}
+@media(max-width:700px){.site-footer{padding:18px 20px 22px}.brand-logo{height:40px}}
+@media print{.site-footer{display:none!important}}

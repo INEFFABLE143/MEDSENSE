@@ -1,0 +1,1840 @@
+{
+  "Common Cold": {
+    "category": "Respiratory",
+    "symptoms": "Runny nose, blocked nose, sneezing, sore throat and cough.",
+    "medicines": [
+      "Paracetamol",
+      "Cetirizine",
+      "Saline Nasal Spray",
+      "Chlorpheniramine",
+      "Xylometazoline Nasal Spray",
+      "Menthol Vapor Balm",
+      "Ibuprofen",
+      "Pseudoephedrine",
+      "Oxymetazoline Nasal Spray",
+      "Phenylephrine",
+      "Vitamin C Supplement",
+      "Honey-Based Cough Syrup",
+      "Diphenhydramine"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Cough": {
+    "category": "Respiratory",
+    "symptoms": "Cough, throat irritation and sometimes mucus.",
+    "medicines": [
+      "Dextromethorphan",
+      "Throat Lozenges",
+      "Guaifenesin",
+      "Bromhexine",
+      "Acetylcysteine",
+      "Honey-Based Cough Syrup",
+      "Ambroxol",
+      "Menthol Vapor Balm"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Flu (Influenza)": {
+    "category": "Respiratory",
+    "symptoms": "Fever, chills, body aches, fatigue, cough and headache.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Dextromethorphan",
+      "Guaifenesin",
+      "Pseudoephedrine",
+      "ORS",
+      "Vitamin C Supplement"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Sore Throat": {
+    "category": "Respiratory",
+    "symptoms": "Throat pain, irritation and pain while swallowing.",
+    "medicines": [
+      "Paracetamol",
+      "Throat Lozenges",
+      "Ibuprofen",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
+    ],
+    "warningSigns": [
+      "Difficulty swallowing or breathing",
+      "Drooling or a muffled voice",
+      "Fever above 39 °C",
+      "Lasting more than a week"
+    ]
+  },
+  "Allergic Rhinitis": {
+    "category": "Allergy",
+    "symptoms": "Sneezing, runny nose, nasal itching and watery eyes.",
+    "medicines": [
+      "Cetirizine",
+      "Loratadine",
+      "Levocetirizine",
+      "Fexofenadine",
+      "Chlorpheniramine",
+      "Desloratadine",
+      "Fluticasone Nasal Spray",
+      "Saline Nasal Spray"
+    ],
+    "warningSigns": [
+      "Swelling of the face, lips or tongue",
+      "Trouble breathing or a tight throat",
+      "Dizziness or fainting after exposure"
+    ]
+  },
+  "Sinusitis": {
+    "category": "Respiratory",
+    "symptoms": "Blocked nose, facial pressure, headache and nasal discharge.",
+    "medicines": [
+      "Paracetamol",
+      "Saline Nasal Spray",
+      "Xylometazoline Nasal Spray",
+      "Ibuprofen",
+      "Pseudoephedrine",
+      "Oxymetazoline Nasal Spray",
+      "Fluticasone Nasal Spray"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Asthma": {
+    "category": "Respiratory",
+    "symptoms": "Wheezing, coughing, chest tightness and shortness of breath.",
+    "medicines": [
+      "Salbutamol Inhaler",
+      "Budesonide Inhaler",
+      "Montelukast"
+    ],
+    "warningSigns": [
+      "Cannot speak a full sentence",
+      "Reliever inhaler is not helping or is needed very often",
+      "Blue or grey lips",
+      "Chest tightness that keeps getting worse"
+    ]
+  },
+  "Bronchitis": {
+    "category": "Respiratory",
+    "symptoms": "Cough, mucus, fatigue and chest discomfort.",
+    "medicines": [
+      "Paracetamol",
+      "Guaifenesin",
+      "Ambroxol",
+      "Bromhexine",
+      "Acetylcysteine",
+      "Honey-Based Cough Syrup",
+      "Ibuprofen"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Acidity / Heartburn": {
+    "category": "Digestive",
+    "symptoms": "Burning chest sensation, acid taste and indigestion.",
+    "medicines": [
+      "Antacid",
+      "Omeprazole",
+      "Famotidine",
+      "Pantoprazole",
+      "Esomeprazole",
+      "Sodium Alginate",
+      "Magnesium Hydroxide"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Indigestion": {
+    "category": "Digestive",
+    "symptoms": "Fullness, bloating, belching and upper abdominal discomfort.",
+    "medicines": [
+      "Antacid",
+      "Sodium Alginate",
+      "Digestive Enzymes",
+      "Simethicone",
+      "Bismuth Subsalicylate"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Gas / Flatulence": {
+    "category": "Digestive",
+    "symptoms": "Bloating, abdominal discomfort and passing gas.",
+    "medicines": [
+      "Simethicone",
+      "Digestive Enzymes",
+      "Peppermint Oil Capsule"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Constipation": {
+    "category": "Digestive",
+    "symptoms": "Hard stools, infrequent bowel movements and straining.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)",
+      "Bisacodyl",
+      "Lactulose",
+      "Senna",
+      "Magnesium Hydroxide",
+      "Polyethylene Glycol (PEG)",
+      "Glycerin Suppository"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Diarrhea": {
+    "category": "Digestive",
+    "symptoms": "Loose stools, frequent bowel movements and abdominal cramps.",
+    "medicines": [
+      "ORS",
+      "Loperamide",
+      "Probiotics",
+      "Zinc Supplement",
+      "Racecadotril",
+      "Bismuth Subsalicylate"
+    ],
+    "warningSigns": [
+      "Blood or black stool",
+      "Signs of dehydration (dry mouth, very little urine, dizziness)",
+      "Fever above 39 °C",
+      "Lasting more than 2 days (sooner in babies and children)"
+    ]
+  },
+  "Nausea": {
+    "category": "Digestive",
+    "symptoms": "Feeling sick, queasiness and reduced appetite.",
+    "medicines": [
+      "Domperidone",
+      "Ginger Supplement",
+      "Meclizine",
+      "Bismuth Subsalicylate"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Vomiting": {
+    "category": "Digestive",
+    "symptoms": "Vomiting, nausea and possible dehydration.",
+    "medicines": [
+      "ORS",
+      "Ginger Supplement"
+    ],
+    "warningSigns": [
+      "Blood or black stool",
+      "Signs of dehydration (dry mouth, very little urine, dizziness)",
+      "Fever above 39 °C",
+      "Lasting more than 2 days (sooner in babies and children)"
+    ]
+  },
+  "Gastritis": {
+    "category": "Digestive",
+    "symptoms": "Upper abdominal discomfort, nausea and indigestion.",
+    "medicines": [
+      "Omeprazole",
+      "Antacid",
+      "Famotidine",
+      "Pantoprazole",
+      "Sodium Alginate"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Food Poisoning": {
+    "category": "Digestive",
+    "symptoms": "Diarrhea, vomiting, abdominal cramps and sometimes fever.",
+    "medicines": [
+      "ORS",
+      "Probiotics",
+      "Racecadotril"
+    ],
+    "warningSigns": [
+      "Blood or black stool",
+      "Signs of dehydration (dry mouth, very little urine, dizziness)",
+      "Fever above 39 °C",
+      "Lasting more than 2 days (sooner in babies and children)"
+    ]
+  },
+  "Irritable Bowel Syndrome (IBS)": {
+    "category": "Digestive",
+    "symptoms": "Abdominal pain, bloating, diarrhea or constipation.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)",
+      "Hyoscine Butylbromide",
+      "Probiotics",
+      "Mebeverine",
+      "Dicyclomine",
+      "Peppermint Oil Capsule"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Headache": {
+    "category": "Pain",
+    "symptoms": "Head pain, pressure and sometimes light sensitivity.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Aspirin",
+      "Naproxen"
+    ],
+    "warningSigns": [
+      "Sudden 'thunderclap' or worst-ever headache",
+      "Headache after a head injury",
+      "Fever with a stiff neck or rash",
+      "Weakness, speech trouble, confusion or vision changes"
+    ]
+  },
+  "Migraine": {
+    "category": "Pain",
+    "symptoms": "Moderate/severe headache, nausea and light or sound sensitivity.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Aspirin",
+      "Naproxen"
+    ],
+    "warningSigns": [
+      "Sudden 'thunderclap' or worst-ever headache",
+      "Headache after a head injury",
+      "Fever with a stiff neck or rash",
+      "Weakness, speech trouble, confusion or vision changes"
+    ]
+  },
+  "Toothache": {
+    "category": "Dental",
+    "symptoms": "Tooth pain, sensitivity and pain while chewing.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Naproxen",
+      "Oral Pain Relief Gel",
+      "Clove Oil",
+      "Benzydamine"
+    ],
+    "warningSigns": [
+      "Facial swelling or fever with tooth or gum pain",
+      "Trouble swallowing or breathing",
+      "Bleeding that will not stop"
+    ]
+  },
+  "Back Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Back pain, stiffness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Lidocaine Gel / Ointment"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Neck Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Neck pain, stiffness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Lidocaine Gel / Ointment"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Muscle Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Muscle soreness, pain and stiffness.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Joint Pain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Joint pain, stiffness and possible swelling.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Capsaicin Cream",
+      "Glucosamine Supplement"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Menstrual Cramps": {
+    "category": "Women's Health",
+    "symptoms": "Lower abdominal cramps, back pain and fatigue.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Mefenamic Acid",
+      "Naproxen",
+      "Hyoscine Butylbromide",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Sprain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Pain, swelling, bruising and difficulty moving the joint.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Lidocaine Gel / Ointment"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Muscle Strain": {
+    "category": "Musculoskeletal",
+    "symptoms": "Muscle pain, tenderness and reduced movement.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Diclofenac Gel",
+      "Pain Relief Balm / Spray",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Lidocaine Gel / Ointment"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Acne": {
+    "category": "Skin",
+    "symptoms": "Pimples, blackheads, whiteheads and inflamed spots.",
+    "medicines": [
+      "Benzoyl Peroxide",
+      "Salicylic Acid",
+      "Adapalene"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Eczema": {
+    "category": "Skin",
+    "symptoms": "Dryness, itching, redness and inflammation.",
+    "medicines": [
+      "Hydrocortisone",
+      "Emollient / Moisturizer",
+      "Colloidal Oatmeal Lotion",
+      "Petroleum Jelly",
+      "Urea Cream"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Dermatitis": {
+    "category": "Skin",
+    "symptoms": "Redness, itching and skin irritation.",
+    "medicines": [
+      "Hydrocortisone",
+      "Emollient / Moisturizer",
+      "Colloidal Oatmeal Lotion",
+      "Petroleum Jelly",
+      "Zinc Oxide Ointment"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Fungal Skin Infection": {
+    "category": "Skin",
+    "symptoms": "Itching, scaling, redness and fungal rash.",
+    "medicines": [
+      "Clotrimazole",
+      "Terbinafine Cream",
+      "Miconazole"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Ringworm": {
+    "category": "Skin",
+    "symptoms": "Circular scaly rash, redness and itching.",
+    "medicines": [
+      "Clotrimazole",
+      "Terbinafine Cream",
+      "Miconazole"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Itching": {
+    "category": "Skin",
+    "symptoms": "Itchy or irritated skin.",
+    "medicines": [
+      "Cetirizine",
+      "Levocetirizine",
+      "Calamine Lotion",
+      "Diphenhydramine",
+      "Colloidal Oatmeal Lotion",
+      "Hydrocortisone"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Skin Rash": {
+    "category": "Skin",
+    "symptoms": "Redness, itching and changes in skin appearance.",
+    "medicines": [
+      "Hydrocortisone",
+      "Calamine Lotion",
+      "Colloidal Oatmeal Lotion",
+      "Zinc Oxide Ointment",
+      "Cetirizine"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Sunburn": {
+    "category": "Skin",
+    "symptoms": "Redness, pain, warmth and possible blistering.",
+    "medicines": [
+      "Paracetamol",
+      "Aloe Vera Gel",
+      "Calamine Lotion",
+      "Sunscreen",
+      "Ibuprofen",
+      "Hydrocortisone",
+      "Emollient / Moisturizer"
+    ],
+    "warningSigns": [
+      "Blistering over a large area",
+      "Fever, chills or confusion",
+      "Severe pain"
+    ]
+  },
+  "Dandruff": {
+    "category": "Skin",
+    "symptoms": "Flaking, itching and scalp irritation.",
+    "medicines": [
+      "Ketoconazole Shampoo",
+      "Zinc Pyrithione Shampoo",
+      "Selenium Sulfide Shampoo",
+      "Coal Tar Preparation"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Psoriasis": {
+    "category": "Skin",
+    "symptoms": "Red, scaly skin patches and itching.",
+    "medicines": [
+      "Hydrocortisone",
+      "Emollient / Moisturizer",
+      "Coal Tar Preparation",
+      "Salicylic Acid",
+      "Urea Cream"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Urinary Tract Infection (UTI)": {
+    "category": "Infection",
+    "symptoms": "Burning urination, frequent urination, urgency and lower abdominal discomfort.",
+    "medicines": [
+      "Disodium Hydrogen Citrate",
+      "Nitrofurantoin",
+      "Cranberry Supplement",
+      "Paracetamol"
+    ],
+    "note": "Typically requires prescription antibiotics; consult a doctor.",
+    "warningSigns": [
+      "Fever or chills",
+      "Back or flank pain",
+      "Blood in urine",
+      "Symptoms in pregnancy or in a child"
+    ]
+  },
+  "Conjunctivitis (Pink Eye)": {
+    "category": "Eye",
+    "symptoms": "Red eye, discharge, irritation and watering.",
+    "medicines": [
+      "Lubricating Eye Drops",
+      "Carboxymethylcellulose Eye Drops"
+    ],
+    "warningSigns": [
+      "Vision changes or severe eye pain",
+      "Newborn with red eyes",
+      "Contact lens wearer with a red painful eye"
+    ]
+  },
+  "Ear Infection": {
+    "category": "Infection",
+    "symptoms": "Ear pain, reduced hearing and sometimes fever.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Naproxen"
+    ],
+    "warningSigns": [
+      "High fever lasting more than 3 days",
+      "Confusion, stiff neck or severe headache",
+      "Difficulty breathing or constant vomiting",
+      "Signs of dehydration"
+    ]
+  },
+  "Throat Infection": {
+    "category": "Infection",
+    "symptoms": "Sore throat, painful swallowing and sometimes fever.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Throat Lozenges",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
+    ],
+    "warningSigns": [
+      "High fever lasting more than 3 days",
+      "Confusion, stiff neck or severe headache",
+      "Difficulty breathing or constant vomiting",
+      "Signs of dehydration"
+    ]
+  },
+  "Skin Infection": {
+    "category": "Infection",
+    "symptoms": "Redness, swelling, pain and possible discharge.",
+    "medicines": [
+      "Povidone-Iodine",
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ],
+    "note": "Treatment depends on cause (bacterial/fungal/viral); consult a doctor for diagnosis.",
+    "warningSigns": [
+      "High fever lasting more than 3 days",
+      "Confusion, stiff neck or severe headache",
+      "Difficulty breathing or constant vomiting",
+      "Signs of dehydration"
+    ]
+  },
+  "Tonsillitis": {
+    "category": "Infection",
+    "symptoms": "Sore throat, swollen tonsils, fever and difficulty swallowing.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Throat Lozenges",
+      "Benzydamine",
+      "Honey-Based Cough Syrup"
+    ],
+    "warningSigns": [
+      "Difficulty swallowing or breathing",
+      "Drooling or a muffled voice",
+      "Fever above 39 °C",
+      "Lasting more than a week"
+    ]
+  },
+  "Viral Fever": {
+    "category": "Infection",
+    "symptoms": "Fever, fatigue and body aches.",
+    "medicines": [
+      "Paracetamol",
+      "Dolo 650",
+      "Ibuprofen",
+      "ORS"
+    ],
+    "warningSigns": [
+      "Fever of 39.5 °C or higher, or lasting more than 3 days",
+      "Severe headache, stiff neck or confusion",
+      "Bleeding, rash or severe belly pain",
+      "Breathing difficulty"
+    ]
+  },
+  "Diabetes": {
+    "category": "Metabolic & Hormonal",
+    "symptoms": "Increased thirst, frequent urination, fatigue and possible blurred vision.",
+    "medicines": [
+      "Metformin",
+      "Glimepiride",
+      "Insulin"
+    ],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor.",
+    "warningSigns": [
+      "Extreme thirst and frequent urination with confusion",
+      "Fruity breath, vomiting or fast breathing",
+      "Low sugar signs: sweating, shaking, confusion",
+      "Foot wounds that do not heal"
+    ]
+  },
+  "High Blood Pressure (Hypertension)": {
+    "category": "Heart Health",
+    "symptoms": "Often no symptoms; headaches or dizziness may occur.",
+    "medicines": [
+      "Amlodipine",
+      "Telmisartan",
+      "Losartan"
+    ],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor.",
+    "warningSigns": [
+      "Chest pain, severe headache or breathlessness",
+      "Sudden vision change or weakness",
+      "A reading above 180/120 mmHg with symptoms"
+    ]
+  },
+  "High Cholesterol": {
+    "category": "Heart Health",
+    "symptoms": "Usually no obvious symptoms.",
+    "medicines": [
+      "Atorvastatin",
+      "Rosuvastatin"
+    ],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor.",
+    "warningSigns": [
+      "Chest pain or pressure",
+      "Sudden weakness on one side or slurred speech",
+      "Fainting or a racing heartbeat with dizziness",
+      "Leg swelling with breathlessness"
+    ]
+  },
+  "Thyroid Disorders": {
+    "category": "Metabolic & Hormonal",
+    "symptoms": "Fatigue, weight changes, temperature sensitivity and heart-rate changes.",
+    "medicines": [
+      "Levothyroxine",
+      "Carbimazole"
+    ],
+    "note": "Requires medical diagnosis and prescription management; consult a doctor.",
+    "warningSigns": [
+      "Chest pain, shortness of breath or fainting",
+      "Confusion or extreme drowsiness",
+      "Rapid weight change with severe tiredness",
+      "Having missed prescribed medicine for several days"
+    ]
+  },
+  "Anemia": {
+    "category": "Blood condition",
+    "symptoms": "Fatigue, weakness, pale skin and shortness of breath.",
+    "medicines": [
+      "Iron Supplement",
+      "Folic Acid",
+      "Vitamin C Supplement",
+      "Vitamin B12 Supplement"
+    ],
+    "warningSigns": [
+      "Breathlessness, fast heartbeat or fainting",
+      "Unusual bleeding or bruising",
+      "Black stools or blood in vomit",
+      "Extreme tiredness with pale skin"
+    ]
+  },
+  "Obesity": {
+    "category": "Metabolic & Hormonal",
+    "symptoms": "Excess body weight and possible reduced physical fitness.",
+    "medicines": [
+      "Orlistat",
+      "Multivitamin"
+    ],
+    "note": "Managed through lifestyle changes and medical guidance rather than OTC medicine.",
+    "warningSigns": [
+      "Chest pain, shortness of breath or fainting",
+      "Confusion or extreme drowsiness",
+      "Rapid weight change with severe tiredness",
+      "Having missed prescribed medicine for several days"
+    ]
+  },
+  "Vitamin D Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "May have no symptoms; muscle or bone problems can occur.",
+    "medicines": [
+      "Vitamin D3 Supplement",
+      "Calcium Supplement"
+    ],
+    "warningSigns": [
+      "Constant fatigue, dizziness or breathlessness",
+      "Numbness, tingling or balance problems",
+      "Unexplained weight loss",
+      "Symptoms that continue despite supplements"
+    ]
+  },
+  "Vitamin B12 Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "Fatigue, weakness and possible numbness or tingling.",
+    "medicines": [
+      "Vitamin B12 Supplement",
+      "Folic Acid",
+      "Vitamin B-Complex"
+    ],
+    "warningSigns": [
+      "Constant fatigue, dizziness or breathlessness",
+      "Numbness, tingling or balance problems",
+      "Unexplained weight loss",
+      "Symptoms that continue despite supplements"
+    ]
+  },
+  "Menstrual Pain": {
+    "category": "Women's Health",
+    "symptoms": "Cramps, lower abdominal pain and back pain.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Mefenamic Acid",
+      "Naproxen",
+      "Hyoscine Butylbromide",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Irregular Periods": {
+    "category": "Women's Health",
+    "symptoms": "Unpredictable or changed menstrual cycles.",
+    "medicines": [
+      "Norethisterone",
+      "Folic Acid",
+      "Vitamin D3 Supplement",
+      "Iron Supplement"
+    ],
+    "note": "Underlying cause needs medical evaluation; treatment is typically prescription-based.",
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Premenstrual Syndrome (PMS)": {
+    "category": "Women's Health",
+    "symptoms": "Mood changes, bloating, breast tenderness and cramps.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Naproxen",
+      "Magnesium Supplement",
+      "Calcium Supplement",
+      "Vitamin B6 (Pyridoxine)"
+    ],
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Menopause Symptoms": {
+    "category": "Women's Health",
+    "symptoms": "Hot flashes, sleep problems and mood changes.",
+    "medicines": [
+      "Calcium Supplement",
+      "Vitamin D3 Supplement"
+    ],
+    "note": "Treatment options (e.g., hormone therapy) require medical guidance.",
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Vaginal Yeast Infection": {
+    "category": "Women's Health",
+    "symptoms": "Itching, irritation and unusual discharge.",
+    "medicines": [
+      "Clotrimazole",
+      "Miconazole"
+    ],
+    "warningSigns": [
+      "Very heavy bleeding (soaking a pad every hour)",
+      "Severe pelvic pain or fainting",
+      "Pain with a missed period or possible pregnancy",
+      "Unusual discharge with fever"
+    ]
+  },
+  "Fever": {
+    "category": "General",
+    "symptoms": "Raised temperature, chills, fatigue and body aches.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Dolo 650",
+      "ORS",
+      "Naproxen"
+    ],
+    "warningSigns": [
+      "Fever of 39.5 °C or higher, or lasting more than 3 days",
+      "Stiff neck, severe headache or confusion",
+      "A rash that does not fade when pressed",
+      "Any fever in a baby under 3 months",
+      "Seizure or fit"
+    ]
+  },
+  "Fatigue": {
+    "category": "General",
+    "symptoms": "Low energy, tiredness and reduced concentration.",
+    "medicines": [
+      "Multivitamin",
+      "Vitamin B12 Supplement",
+      "Vitamin D3 Supplement",
+      "Vitamin B-Complex",
+      "Vitamin C Supplement"
+    ],
+    "warningSigns": [
+      "Fever above 39.5 °C (103 °F) or lasting 3+ days",
+      "Confusion, severe drowsiness or fainting",
+      "Trouble breathing",
+      "Symptoms that are severe or getting worse"
+    ]
+  },
+  "Dizziness": {
+    "category": "General",
+    "symptoms": "Lightheadedness, unsteadiness or spinning sensation.",
+    "medicines": [
+      "Meclizine",
+      "ORS"
+    ],
+    "note": "Many possible causes; persistent or severe dizziness needs medical evaluation.",
+    "warningSigns": [
+      "Fever above 39.5 °C (103 °F) or lasting 3+ days",
+      "Confusion, severe drowsiness or fainting",
+      "Trouble breathing",
+      "Symptoms that are severe or getting worse"
+    ]
+  },
+  "Dehydration": {
+    "category": "General",
+    "symptoms": "Thirst, dry mouth, reduced urination and weakness.",
+    "medicines": [
+      "ORS",
+      "Electrolyte Powder",
+      "Zinc Supplement"
+    ],
+    "warningSigns": [
+      "Very little or no urine",
+      "Confusion or fainting",
+      "Fast heartbeat",
+      "Cannot keep fluids down"
+    ]
+  },
+  "Insomnia": {
+    "category": "Sleep",
+    "symptoms": "Difficulty falling asleep, staying asleep or daytime tiredness.",
+    "medicines": [
+      "Melatonin",
+      "Diphenhydramine",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Loud snoring with pauses in breathing",
+      "Falling asleep while driving or working",
+      "Thoughts of self-harm",
+      "Poor sleep lasting more than 3 weeks"
+    ]
+  },
+  "Anxiety": {
+    "category": "Mental Health",
+    "symptoms": "Excessive worry, restlessness, tension and difficulty concentrating.",
+    "medicines": [
+      "Ashwagandha Supplement",
+      "Magnesium Supplement",
+      "Vitamin B-Complex",
+      "Escitalopram"
+    ],
+    "note": "Best addressed with professional evaluation; not typically treated with OTC medicine.",
+    "warningSigns": [
+      "Thoughts of self-harm or suicide: seek help immediately",
+      "Panic with chest pain or breathlessness",
+      "Unable to manage daily life",
+      "Seeing or hearing things that are not there"
+    ]
+  },
+  "Motion Sickness": {
+    "category": "Travel-related",
+    "symptoms": "Nausea, dizziness and vomiting during travel.",
+    "medicines": [
+      "Dimenhydrinate",
+      "Meclizine",
+      "Diphenhydramine",
+      "Ginger Supplement"
+    ],
+    "warningSigns": [
+      "Fever after travel to a malaria or dengue area",
+      "Severe diarrhea or vomiting",
+      "Confusion or trouble breathing"
+    ]
+  },
+  "Allergies": {
+    "category": "Allergy",
+    "symptoms": "Sneezing, itching, runny nose and watery eyes.",
+    "medicines": [
+      "Cetirizine",
+      "Loratadine",
+      "Levocetirizine",
+      "Fexofenadine",
+      "Desloratadine",
+      "Diphenhydramine",
+      "Chlorpheniramine"
+    ],
+    "warningSigns": [
+      "Swelling of the face, lips or tongue",
+      "Trouble breathing or a tight throat",
+      "Dizziness or fainting after exposure"
+    ]
+  },
+  "Hemorrhoids (Piles)": {
+    "category": "Digestive",
+    "symptoms": "Rectal discomfort, itching and bleeding during bowel movements.",
+    "medicines": [
+      "Hydrocortisone",
+      "Psyllium Husk (Isabgol)",
+      "Lidocaine Gel / Ointment",
+      "Zinc Oxide Ointment",
+      "Polyethylene Glycol (PEG)"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Mouth Ulcers": {
+    "category": "Dental",
+    "symptoms": "Painful small sores inside the mouth, stinging when eating.",
+    "medicines": [
+      "Oral Pain Relief Gel",
+      "Chlorhexidine Mouthwash",
+      "Benzydamine",
+      "Vitamin B-Complex",
+      "Lidocaine Gel / Ointment"
+    ],
+    "note": "See a doctor or dentist if ulcers last more than 2–3 weeks or keep returning.",
+    "warningSigns": [
+      "Facial swelling or fever with tooth or gum pain",
+      "Trouble swallowing or breathing",
+      "Bleeding that will not stop"
+    ]
+  },
+  "Gingivitis": {
+    "category": "Dental",
+    "symptoms": "Red, swollen or bleeding gums and bad breath.",
+    "medicines": [
+      "Chlorhexidine Mouthwash",
+      "Benzydamine"
+    ],
+    "note": "Good brushing, flossing and a dental check-up are the main treatment.",
+    "warningSigns": [
+      "Facial swelling or fever with tooth or gum pain",
+      "Trouble swallowing or breathing",
+      "Bleeding that will not stop"
+    ]
+  },
+  "Earwax Buildup": {
+    "category": "Ear",
+    "symptoms": "Blocked or muffled ear feeling, mild hearing reduction.",
+    "medicines": [
+      "Carbamide Peroxide Ear Drops",
+      "Olive / Mineral Oil Ear Drops"
+    ],
+    "note": "Avoid cotton buds; see a doctor if pain, discharge or hearing loss occurs.",
+    "warningSigns": [
+      "Severe ear pain with fever",
+      "Sudden hearing loss",
+      "Pus or blood draining from the ear",
+      "Swelling or redness behind the ear"
+    ]
+  },
+  "Head Lice": {
+    "category": "Skin",
+    "symptoms": "Itchy scalp, visible lice or nits in hair.",
+    "medicines": [
+      "Permethrin",
+      "Dimeticone Lotion"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Scabies": {
+    "category": "Skin",
+    "symptoms": "Intense itching (worse at night), small bumps and burrows between fingers and skin folds.",
+    "medicines": [
+      "Permethrin",
+      "Benzyl Benzoate",
+      "Cetirizine"
+    ],
+    "note": "Household contacts often need treatment too; confirm diagnosis with a doctor if unsure.",
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Intestinal Worms": {
+    "category": "Digestive",
+    "symptoms": "Abdominal discomfort, itching around the anus, poor appetite or weight loss.",
+    "medicines": [
+      "Albendazole",
+      "Mebendazole"
+    ],
+    "note": "Consult a doctor or pharmacist, especially for children and pregnancy.",
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Minor Cuts and Wounds": {
+    "category": "Skin",
+    "symptoms": "Small cuts, scrapes, mild bleeding and pain.",
+    "medicines": [
+      "Povidone-Iodine",
+      "Antibiotic Ointment (Neomycin/Bacitracin)",
+      "Petroleum Jelly",
+      "Ibuprofen"
+    ],
+    "note": "Clean with clean running water first; seek care for deep, dirty or bite wounds.",
+    "warningSigns": [
+      "Bleeding that does not stop after 10 minutes of pressure",
+      "Deep wound or visible tissue",
+      "Redness, pus, fever, or no recent tetanus shot"
+    ]
+  },
+  "Minor Burns": {
+    "category": "Skin",
+    "symptoms": "Redness, pain and mild swelling without large blisters.",
+    "medicines": [
+      "Aloe Vera Gel",
+      "Paracetamol",
+      "Petroleum Jelly",
+      "Lidocaine Gel / Ointment",
+      "Ibuprofen"
+    ],
+    "note": "Cool under running water first; seek medical care for large, blistered, facial or deep burns.",
+    "warningSigns": [
+      "Burn larger than the palm, or on the face, hands or genitals",
+      "Deep, white or charred skin",
+      "Signs of infection"
+    ]
+  },
+  "Insect Bites": {
+    "category": "Skin",
+    "symptoms": "Itchy, red, swollen bumps after bites or stings.",
+    "medicines": [
+      "Calamine Lotion",
+      "Hydrocortisone",
+      "Cetirizine",
+      "Lidocaine Gel / Ointment",
+      "Diphenhydramine"
+    ],
+    "note": "Seek urgent care for breathing difficulty, facial swelling or spreading redness.",
+    "warningSigns": [
+      "Swelling of the face or lips, or trouble breathing",
+      "Spreading redness or fever",
+      "A bull's-eye rash"
+    ]
+  },
+  "Dry Skin": {
+    "category": "Skin",
+    "symptoms": "Dryness, flaking, tightness and mild itching.",
+    "medicines": [
+      "Emollient / Moisturizer",
+      "Urea Cream",
+      "Petroleum Jelly",
+      "Colloidal Oatmeal Lotion"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Heat Rash (Prickly Heat)": {
+    "category": "Skin",
+    "symptoms": "Tiny itchy red bumps in hot, humid weather, often in skin folds.",
+    "medicines": [
+      "Calamine Lotion",
+      "Prickly Heat Powder",
+      "Zinc Oxide Ointment"
+    ],
+    "note": "Keep skin cool and dry; wear loose cotton clothing.",
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Athlete's Foot": {
+    "category": "Skin",
+    "symptoms": "Itching, peeling and cracking between the toes.",
+    "medicines": [
+      "Terbinafine Cream",
+      "Clotrimazole",
+      "Miconazole"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Jock Itch": {
+    "category": "Skin",
+    "symptoms": "Red, itchy rash in the groin or inner thighs.",
+    "medicines": [
+      "Terbinafine Cream",
+      "Clotrimazole",
+      "Miconazole"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Cold Sores": {
+    "category": "Skin",
+    "symptoms": "Tingling followed by painful blisters on or around the lips.",
+    "medicines": [
+      "Acyclovir Cream",
+      "Lidocaine Gel / Ointment",
+      "Petroleum Jelly",
+      "Sunscreen"
+    ],
+    "note": "Contagious until healed; see a doctor if frequent or severe.",
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Warts": {
+    "category": "Skin",
+    "symptoms": "Rough, raised growths on the skin, often on hands or feet.",
+    "medicines": [
+      "Salicylic Acid",
+      "Wart Freeze Spray",
+      "Petroleum Jelly"
+    ],
+    "note": "Slow to clear; see a doctor if on the face or genitals, or if unsure of the diagnosis.",
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Nasal Congestion": {
+    "category": "Respiratory",
+    "symptoms": "Blocked nose, difficulty breathing through the nose, facial pressure.",
+    "medicines": [
+      "Saline Nasal Spray",
+      "Xylometazoline Nasal Spray",
+      "Menthol Vapor Balm",
+      "Oxymetazoline Nasal Spray",
+      "Pseudoephedrine",
+      "Fluticasone Nasal Spray"
+    ],
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Chest Congestion (Productive Cough)": {
+    "category": "Respiratory",
+    "symptoms": "Chest heaviness with thick mucus and wet cough.",
+    "medicines": [
+      "Guaifenesin",
+      "Ambroxol",
+      "Bromhexine",
+      "Acetylcysteine"
+    ],
+    "note": "See a doctor if it lasts more than about a week or comes with fever or breathlessness.",
+    "warningSigns": [
+      "Difficulty breathing, wheezing or breathlessness at rest",
+      "Blue or grey lips, or chest pain",
+      "Coughing up blood",
+      "Fever lasting more than 3 days, or symptoms lasting more than 10 days"
+    ]
+  },
+  "Stomach Cramps": {
+    "category": "Digestive",
+    "symptoms": "Cramping abdominal pain that comes and goes.",
+    "medicines": [
+      "Hyoscine Butylbromide",
+      "Dicyclomine",
+      "Peppermint Oil Capsule"
+    ],
+    "note": "Seek care for severe pain, persistent vomiting, fever or blood in stool.",
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Dry Eyes / Eye Strain": {
+    "category": "Eye",
+    "symptoms": "Gritty, tired or burning eyes, often after screen use.",
+    "medicines": [
+      "Lubricating Eye Drops",
+      "Carboxymethylcellulose Eye Drops"
+    ],
+    "note": "Take screen breaks and blink often; see an eye doctor if symptoms persist.",
+    "warningSigns": [
+      "Sudden loss of vision or double vision",
+      "Severe eye pain or light sensitivity",
+      "Eye injury or chemical splash",
+      "Swelling with pus around the eye"
+    ]
+  },
+  "Calcium Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "May have no symptoms; muscle cramps, tingling or weak bones can occur.",
+    "medicines": [
+      "Calcium Supplement",
+      "Vitamin D3 Supplement",
+      "Magnesium Supplement"
+    ],
+    "note": "Confirm with a doctor before starting long-term supplements.",
+    "warningSigns": [
+      "Constant fatigue, dizziness or breathlessness",
+      "Numbness, tingling or balance problems",
+      "Unexplained weight loss",
+      "Symptoms that continue despite supplements"
+    ]
+  },
+  "Jet Lag": {
+    "category": "Sleep",
+    "symptoms": "Tiredness, poor sleep and trouble concentrating after crossing time zones.",
+    "medicines": [
+      "Melatonin",
+      "Magnesium Supplement",
+      "Multivitamin"
+    ],
+    "warningSigns": [
+      "Loud snoring with pauses in breathing",
+      "Falling asleep while driving or working",
+      "Thoughts of self-harm",
+      "Poor sleep lasting more than 3 weeks"
+    ]
+  },
+  "Body Ache": {
+    "category": "General",
+    "symptoms": "Generalized aches and tiredness, often with viral illness.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Dolo 650",
+      "Naproxen",
+      "Ibuprofen Gel",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Fever above 39.5 °C (103 °F) or lasting 3+ days",
+      "Confusion, severe drowsiness or fainting",
+      "Trouble breathing",
+      "Symptoms that are severe or getting worse"
+    ]
+  },
+  "Zinc Deficiency": {
+    "category": "Nutritional condition",
+    "symptoms": "Slow healing, frequent infections, hair thinning or loss of taste.",
+    "medicines": [
+      "Zinc Supplement",
+      "Multivitamin"
+    ],
+    "note": "Confirm with a doctor before starting long-term supplements.",
+    "warningSigns": [
+      "Constant fatigue, dizziness or breathlessness",
+      "Numbness, tingling or balance problems",
+      "Unexplained weight loss",
+      "Symptoms that continue despite supplements"
+    ]
+  },
+  "Gout": {
+    "category": "Musculoskeletal",
+    "symptoms": "Sudden severe joint pain, redness, swelling and warmth, often in the big toe.",
+    "medicines": [
+      "Naproxen",
+      "Colchicine",
+      "Allopurinol",
+      "Ibuprofen"
+    ],
+    "warningSigns": [
+      "Fever with a hot, swollen joint",
+      "Your first attack of severe joint pain",
+      "Pain that is not settling"
+    ]
+  },
+  "Osteoarthritis": {
+    "category": "Musculoskeletal",
+    "symptoms": "Joint pain, stiffness after rest, reduced movement and swelling.",
+    "medicines": [
+      "Paracetamol",
+      "Diclofenac Gel",
+      "Glucosamine Supplement",
+      "Capsaicin Cream",
+      "Calcium Supplement"
+    ],
+    "warningSigns": [
+      "Cannot move or put weight on the limb",
+      "Visible deformity or severe swelling",
+      "Numbness, tingling or weakness",
+      "Fever with a hot, red joint"
+    ]
+  },
+  "Hives (Urticaria)": {
+    "category": "Allergy",
+    "symptoms": "Raised itchy welts on the skin that come and go.",
+    "medicines": [
+      "Cetirizine",
+      "Levocetirizine",
+      "Fexofenadine",
+      "Calamine Lotion",
+      "Hydrocortisone"
+    ],
+    "warningSigns": [
+      "Swelling of the face, lips or tongue",
+      "Trouble breathing or a tight throat",
+      "Dizziness or fainting after exposure"
+    ]
+  },
+  "Tension Headache": {
+    "category": "Pain",
+    "symptoms": "Dull band-like pressure around the head, neck and shoulder tightness.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Pain Relief Balm / Spray",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "Sudden 'thunderclap' or worst-ever headache",
+      "Headache after a head injury",
+      "Fever with a stiff neck or rash",
+      "Weakness, speech trouble, confusion or vision changes"
+    ]
+  },
+  "Chickenpox": {
+    "category": "Infection",
+    "symptoms": "Itchy blisters, fever, tiredness and loss of appetite.",
+    "medicines": [
+      "Paracetamol",
+      "Calamine Lotion",
+      "Colloidal Oatmeal Lotion",
+      "Cetirizine"
+    ],
+    "warningSigns": [
+      "Fever lasting beyond 4 days",
+      "Skin that becomes red, hot or full of pus",
+      "Breathing difficulty or confusion",
+      "Pregnant, newborn or weak immunity"
+    ]
+  },
+  "GERD (Acid Reflux)": {
+    "category": "Digestive",
+    "symptoms": "Burning chest pain, sour taste, regurgitation and worse symptoms when lying down.",
+    "medicines": [
+      "Omeprazole",
+      "Pantoprazole",
+      "Famotidine",
+      "Sodium Alginate",
+      "Antacid"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Peptic Ulcer": {
+    "category": "Digestive",
+    "symptoms": "Burning upper stomach pain, bloating, nausea and pain between meals.",
+    "medicines": [
+      "Pantoprazole",
+      "Esomeprazole",
+      "Omeprazole",
+      "Sodium Alginate"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Cracked Heels": {
+    "category": "Skin",
+    "symptoms": "Dry, thickened skin and painful cracks on the heels.",
+    "medicines": [
+      "Urea Cream",
+      "Petroleum Jelly",
+      "Emollient / Moisturizer",
+      "Salicylic Acid"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Diaper Rash": {
+    "category": "Skin",
+    "symptoms": "Red, sore skin in the diaper area of babies.",
+    "medicines": [
+      "Zinc Oxide Ointment",
+      "Petroleum Jelly",
+      "Clotrimazole"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Hair Fall": {
+    "category": "Skin",
+    "symptoms": "Increased shedding, thinning hair or widening parting.",
+    "medicines": [
+      "Biotin Supplement",
+      "Zinc Supplement",
+      "Iron Supplement",
+      "Multivitamin",
+      "Ketoconazole Shampoo"
+    ],
+    "warningSigns": [
+      "Rapidly spreading redness, warmth or pus",
+      "Fever together with the rash",
+      "Blisters, peeling, or sores in the mouth or eyes",
+      "No improvement after 1 to 2 weeks"
+    ]
+  },
+  "Kidney Stones": {
+    "category": "Kidney & Urinary",
+    "symptoms": "Severe pain in the side or back, pain while urinating, blood in urine and nausea.",
+    "medicines": [
+      "Paracetamol",
+      "Naproxen",
+      "Tamsulosin",
+      "Disodium Hydrogen Citrate",
+      "ORS"
+    ],
+    "warningSigns": [
+      "Blood in urine",
+      "Fever with back or flank pain",
+      "Unable to pass urine",
+      "Severe pain in waves with vomiting"
+    ]
+  },
+  "Osteoporosis": {
+    "category": "Bone Health",
+    "symptoms": "Often no symptoms until a fracture; height loss, stooped posture and back pain.",
+    "medicines": [
+      "Calcium Supplement",
+      "Vitamin D3 Supplement",
+      "Alendronate",
+      "Magnesium Supplement"
+    ],
+    "warningSigns": [
+      "A fall or suspected fracture",
+      "Sudden severe back pain",
+      "Loss of height with constant pain"
+    ]
+  },
+  "Leg Cramps": {
+    "category": "Bone Health",
+    "symptoms": "Sudden painful tightening of calf or foot muscles, often at night.",
+    "medicines": [
+      "Magnesium Supplement",
+      "Calcium Supplement",
+      "Pain Relief Balm / Spray",
+      "ORS"
+    ],
+    "warningSigns": [
+      "A fall or suspected fracture",
+      "Sudden severe back pain",
+      "Loss of height with constant pain"
+    ]
+  },
+  "Varicose Veins": {
+    "category": "Heart Health",
+    "symptoms": "Twisted visible veins, heavy aching legs, swelling and night cramps.",
+    "medicines": [
+      "Diosmin",
+      "Ibuprofen Gel",
+      "Aloe Vera Gel"
+    ],
+    "warningSigns": [
+      "Chest pain or pressure",
+      "Sudden weakness on one side or slurred speech",
+      "Fainting or a racing heartbeat with dizziness",
+      "Leg swelling with breathlessness"
+    ]
+  },
+  "Teething": {
+    "category": "Child Care",
+    "symptoms": "Drooling, sore swollen gums, fussiness and chewing on objects.",
+    "medicines": [
+      "Paracetamol",
+      "Oral Pain Relief Gel"
+    ],
+    "warningSigns": [
+      "Fever in a baby under 3 months",
+      "Difficulty breathing or feeding",
+      "Unusual drowsiness or a bulging soft spot",
+      "Fewer wet nappies, or signs of dehydration"
+    ]
+  },
+  "Infant Colic": {
+    "category": "Child Care",
+    "symptoms": "Frequent crying spells in a healthy baby, usually in the evening, with a tight belly.",
+    "medicines": [
+      "Simethicone",
+      "Probiotics"
+    ],
+    "warningSigns": [
+      "Fever in a baby under 3 months",
+      "Difficulty breathing or feeding",
+      "Unusual drowsiness or a bulging soft spot",
+      "Fewer wet nappies, or signs of dehydration"
+    ]
+  },
+  "Lactose Intolerance": {
+    "category": "Digestive",
+    "symptoms": "Bloating, gas, cramps and diarrhea after dairy.",
+    "medicines": [
+      "Digestive Enzymes",
+      "Probiotics",
+      "Simethicone"
+    ],
+    "warningSigns": [
+      "Blood in stool or vomit, or black stools",
+      "Severe or worsening belly pain",
+      "Cannot keep fluids down, or signs of dehydration",
+      "Unplanned weight loss or trouble swallowing"
+    ]
+  },
+  "Dengue Fever": {
+    "category": "Infection",
+    "symptoms": "High fever, severe headache, pain behind the eyes, joint and muscle pain, and rash.",
+    "medicines": [
+      "Paracetamol",
+      "ORS",
+      "Electrolyte Powder"
+    ],
+    "warningSigns": [
+      "Severe belly pain or constant vomiting",
+      "Bleeding gums or nose, or black stools",
+      "Drowsiness or restlessness",
+      "Cold clammy skin as the fever drops",
+      "Avoid ibuprofen and aspirin unless a doctor says otherwise"
+    ]
+  },
+  "Stye (Eyelid Bump)": {
+    "category": "Eye",
+    "symptoms": "Red tender lump on the eyelid edge, watering and swelling.",
+    "medicines": [
+      "Lubricating Eye Drops",
+      "Antibiotic Ointment (Neomycin/Bacitracin)"
+    ],
+    "warningSigns": [
+      "Sudden loss of vision or double vision",
+      "Severe eye pain or light sensitivity",
+      "Eye injury or chemical splash",
+      "Swelling with pus around the eye"
+    ]
+  },
+  "Stress": {
+    "category": "Mental Health",
+    "symptoms": "Tension, irritability, poor sleep, headaches and trouble concentrating.",
+    "medicines": [
+      "Magnesium Supplement",
+      "Vitamin B-Complex",
+      "Ashwagandha Supplement",
+      "Melatonin"
+    ],
+    "warningSigns": [
+      "Thoughts of self-harm or suicide: seek help immediately",
+      "Panic with chest pain or breathlessness",
+      "Unable to manage daily life",
+      "Seeing or hearing things that are not there"
+    ]
+  },
+  "Hangover": {
+    "category": "General",
+    "symptoms": "Headache, nausea, thirst, tiredness and stomach upset after alcohol.",
+    "medicines": [
+      "ORS",
+      "Electrolyte Powder",
+      "Vitamin B-Complex",
+      "Antacid"
+    ],
+    "warningSigns": [
+      "Fever above 39.5 °C (103 °F) or lasting 3+ days",
+      "Confusion, severe drowsiness or fainting",
+      "Trouble breathing",
+      "Symptoms that are severe or getting worse"
+    ]
+  },
+  "Bad Breath": {
+    "category": "Dental",
+    "symptoms": "Persistent unpleasant mouth odor, dry mouth and coated tongue.",
+    "medicines": [
+      "Chlorhexidine Mouthwash",
+      "Probiotics"
+    ],
+    "warningSigns": [
+      "Facial swelling or fever with tooth or gum pain",
+      "Trouble swallowing or breathing",
+      "Bleeding that will not stop"
+    ]
+  }
+}
