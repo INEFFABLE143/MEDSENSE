@@ -173,7 +173,7 @@ const app=document.getElementById("app"),nav=document.getElementById("nav");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const enc=encodeURIComponent;
 const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
-function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a href="#ingredients" class="'+(on==="ing"?"on":"")+'">Ingredients</a><a href="#compare" class="'+(on==="cmp"?"on":"")+'">Compare</a><a href="#saved" class="'+(on==="saved"?"on":"")+'">Saved ('+(F.d.length+F.m.length)+')</a><a class="out" href="checker.html">Open Checker</a>'}
+function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a href="#ingredients" class="'+(on==="ing"?"on":"")+'">Ingredients</a><a href="#compare" class="'+(on==="cmp"?"on":"")+'">Compare</a><a href="#saved" class="'+(on==="saved"?"on":"")+'">Saved ('+(F.d.length+F.m.length)+')</a><a href="scan.html">Scan</a><a class="out" href="checker.html">Open Checker</a>'}
 function home(){
   bar("home");
   const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
