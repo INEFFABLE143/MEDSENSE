@@ -9,6 +9,7 @@
 <meta property="og:title" content="Med Sense - Medicine, made clear.">
 <meta property="og:image" content="img/med-sense-logo.svg">
 <link rel="stylesheet" href="css/brand.css">
+<link rel="stylesheet" href="css/layout.css">
 <meta name="description" content="Browse diseases and the over-the-counter and common medicines listed for them. Educational information only.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,13 +147,13 @@ table.cmp{width:100%;min-width:640px;border-collapse:collapse}
 </style>
 </head>
 <body>
+<script src="js/sidebar.js"></script>
 <div class="container">
 <header class="hero">
   <img src="img/med-sense-icon.svg" alt="Med Sense logo" class="logo-img" width="74" height="74">
   <div class="hero-text"><h1>Med Sense</h1><p class="subtitle">Dashboard: browse every disease and medicine in one place</p></div>
   <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/></svg>
 </header>
-<nav id="nav"></nav>
 <div class="print-only printhead" id="ph"></div><div class="main" id="app"><p class="lead">Loading...</p></div><div class="print-only notes"><b>Notes / questions for my doctor</b><i></i><i></i><i></i><i></i><i></i></div>
 <footer class="site-footer">
   <img class="brand-logo is-light" src="img/med-sense-logo.svg" alt="Med Sense - Medicine, made clear." width="168" height="46">
@@ -169,11 +170,11 @@ function togF(t,n){F[t]=isF(t,n)?F[t].filter(x=>x!==n):[...F[t],n];try{localStor
 const favBtn=(t,n)=>'<button type="button" class="btn fav" id="fv">'+(isF(t,n)?"♥ Saved":"♡ Save")+'</button> ';
 const favWire=(t,n)=>{document.getElementById("fv").onclick=()=>{togF(t,n);document.getElementById("fv").textContent=isF(t,n)?"♥ Saved":"♡ Save";bar(t==="d"?"home":"med")}};
 const card=(n,small,p,t)=>'<a class="card" href="#'+(t==="d"?"d":"m")+'/'+enc(n)+'"><small>'+esc(small)+'</small><h3>'+(isF(t,n)?"♥ ":"")+esc(n)+'</h3><p>'+esc(p)+'</p></a>';
-const app=document.getElementById("app"),nav=document.getElementById("nav");
+const app=document.getElementById("app");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const enc=encodeURIComponent;
 const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
-function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'">Diseases</a><a href="#medicines" class="'+(on==="med"?"on":"")+'">Medicines</a><a href="#ingredients" class="'+(on==="ing"?"on":"")+'">Ingredients</a><a href="#compare" class="'+(on==="cmp"?"on":"")+'">Compare</a><a href="#saved" class="'+(on==="saved"?"on":"")+'">Saved ('+(F.d.length+F.m.length)+')</a><a href="search.html">Search all medicines</a><a class="out" href="checker.html">Open Checker</a>'}
+function bar(on){if(window.msSideSync)window.msSideSync()}
 function home(){
   bar("home");
   const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));

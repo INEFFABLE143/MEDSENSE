@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: "1mb" }));
 app.use(express.static(path.join(__dirname, "public")));
 
 /* ============================================================
@@ -320,6 +320,178 @@ app.post("/api/check", async (req, res) => {
     disclaimer:
       "Educational information only. This does not diagnose disease or prescribe medication. Always check the exact package label and consult a doctor or pharmacist.",
   });
+});
+
+/* ============================================================
+   PRESCRIPTION SCANNER (typed text and PDF only)
+   The browser reads the PDF / text file / pasted text and sends the
+   text lines here. We keep only the lines that look like medicines,
+   match them against YOUR medicines.json and list alternatives that
+   have the SAME active ingredient. No photos, no handwriting, no
+   API key, nothing is stored.
+============================================================ */
+
+const activeKey = (m) => (m.actives || []).map(normalize).sort().join("|");
+
+// Same active ingredient(s) only. Never suggests a different ingredient.
+function alternativesFor(medicineKey) {
+  const key = activeKey(medicines[medicineKey]);
+  if (!key) return [];
+  return Object.keys(medicines)
+    .filter((n) => n !== medicineKey && activeKey(medicines[n]) === key)
+    .map((n) => ({
+      name: n,
+      form: medicines[n].form,
+      purpose: medicines[n].purpose,
+      precautions: medicines[n].precautions,
+    }));
+}
+
+// "Tab. Dolo 650 mg BD x 5 days" -> "dolo"  (drops forms, strengths, frequencies)
+function cleanName(text) {
+  return normalize(text)
+    .replace(/^\W*rx\b[\s.:]*/, " ")
+    .replace(/\b(tab|tabs|tablet|tablets|cap|caps|capsule|capsules|syp|syrup|susp|suspension|inj|injection|cream|gel|oint|ointment|drops|inhaler|sachet)\b\.?/g, " ")
+    .replace(/\b\d+(\.\d+)?\s*(mg|mcg|µg|g|ml|iu|%)\b/g, " ")
+    .replace(/[^a-z0-9 \-()]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function matchMedicine(written, genericGuess) {
+  const tries = [
+    { text: written, via: "name" },
+    { text: genericGuess, via: "ingredient" },
+  ];
+  for (const t of tries) {
+    if (!t.text) continue;
+    const raw = normalize(t.text);
+    const cleaned = cleanName(t.text);
+    // exact name or alias, with and without the strength (e.g. "Dolo 650")
+    for (const cand of [raw, cleaned]) {
+      if (!cand) continue;
+      const exact =
+        Object.keys(medicines).find((k) => normalize(k) === cand) ||
+        (MEDICINE_ALIASES[cand] && medicines[MEDICINE_ALIASES[cand]] ? MEDICINE_ALIASES[cand] : null);
+      if (exact) return { status: "matched", via: t.via, key: exact };
+    }
+    // a known medicine name written inside the text (e.g. "dolo 650" in "tab dolo 650 mg bd")
+    const inside = Object.keys(medicines)
+      .filter((k) => normalize(k).length >= 4)
+      .filter((k) =>
+        new RegExp(`(^|[^a-z0-9])${normalize(k).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}($|[^a-z0-9])`).test(raw)
+      )
+      .sort((a, b) => b.length - a.length)[0];
+    if (inside) return { status: "matched", via: t.via, key: inside };
+    // active-ingredient match (e.g. "acetaminophen" -> Paracetamol)
+    if (cleaned.length >= 4) {
+      const byIngredient = Object.keys(medicines).find((k) => {
+        const hay = normalize(`${medicines[k].ingredient || ""} ${(medicines[k].actives || []).join(" ")}`);
+        return hay.includes(cleaned);
+      });
+      if (byIngredient) return { status: "matched", via: "ingredient", key: byIngredient };
+    }
+  }
+  // Not certain: only offer "did you mean", never auto-accept a fuzzy match
+  const possible = closestMedicineNames(cleanName(written) || written || genericGuess || "", 3);
+  return possible.length
+    ? { status: "possible", via: "fuzzy", suggestions: possible }
+    : { status: "not_found", via: null };
+}
+
+function describeMatch(m) {
+  if (!m.key) return { status: m.status, suggestions: m.suggestions || [] };
+  const rec = medicines[m.key];
+  return {
+    status: m.status,
+    matchedVia: m.via, // "name" or "ingredient" (identified from the generic name)
+    medicine: {
+      name: m.key,
+      form: rec.form,
+      ingredient: rec.ingredient,
+      purpose: rec.purpose,
+      uses: rec.uses,
+      precautions: rec.precautions,
+      warning: rec.warning,
+    },
+    alternatives: alternativesFor(m.key),
+  };
+}
+
+// Dosage hints as written: "1-0-1", "BD", "x 5 days", "after food" ...
+const DOSAGE_PATTERNS = [
+  /\b\d\s*-\s*\d\s*-\s*\d(?:\s*-\s*\d)?\b/,
+  /\b(?:od|bd|bid|tds|tid|qid|qds|hs|sos|prn|stat)\b/i,
+  /\b(?:once|twice|thrice)\s+(?:a\s+|per\s+)?(?:daily|day|week)\b/i,
+  /\b(?:x|for)\s*\d+\s*(?:days?|weeks?|months?)\b/i,
+  /\b(?:before|after|with)\s+(?:food|meals?|breakfast|lunch|dinner)\b/i,
+];
+function extractDosage(line) {
+  return DOSAGE_PATTERNS.map((re) => (line.match(re) || [""])[0].trim()).filter(Boolean).join(", ");
+}
+
+const MED_LINE_START =
+  /^\W*(?:rx\b\W*)?(\d+\s*[.)\-:]?\s*)?\W*(tab|tabs|tablet|cap|caps|capsule|syp|syrup|inj|susp|cream|oint|gel|drops|sachet|inhaler)\b/i;
+
+function matchPrescriptionLines(lines) {
+  const results = [];
+  const seen = new Set();
+  const pieces = lines
+    .slice(0, 300)
+    .flatMap((raw) => String(raw || "").slice(0, 300).split(";"))
+    .map((l) => l.replace(/\s+/g, " ").trim());
+
+  for (const line of pieces) {
+    if (line.length < 3) continue;
+
+    let m = matchMedicine(line, "");
+    if (m.status !== "matched") {
+      m = null;
+      const tokens = normalize(line).split(/[^a-z]+/).filter((t) => t.length >= 5);
+      for (const t of tokens) {
+        const top = closestMedicineNames(t, 1)[0];
+        if (top && similarity(t, normalize(top)) >= 0.75) {
+          m = { status: "possible", via: "fuzzy", suggestions: [top] };
+          break;
+        }
+      }
+    }
+    if (!m && !MED_LINE_START.test(line)) continue; // ignore doctor name, address, dates ...
+    if (!m) m = { status: "not_found", via: null };
+
+    const id = m.key || (m.suggestions && m.suggestions[0]) || normalize(line);
+    if (seen.has(id)) continue;
+    seen.add(id);
+    results.push({
+      written: line,
+      genericName: "",
+      strength: (line.match(/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|iu)\b/i) || [""])[0],
+      dosage: extractDosage(line),
+      confidence: m.status === "matched" ? (m.via === "name" ? "high" : "medium") : "low",
+      ...describeMatch(m),
+    });
+  }
+  return results;
+}
+
+// POST /api/scan-text   body: { lines: ["Tab. Dolo 650 mg 1-0-1 x 5 days", ...] }
+app.post("/api/scan-text", (req, res) => {
+  const lines = req.body && req.body.lines;
+  if (!Array.isArray(lines) || !lines.length) {
+    return res.status(400).json({ error: "No text received. Paste your prescription or upload a PDF with selectable text." });
+  }
+  res.json({
+    isPrescription: true,
+    notes: "Read from typed text. Check every name against your prescription, because the text may contain mistakes.",
+    results: matchPrescriptionLines(lines),
+    disclaimer:
+      "Educational information only. Check every name against your prescription. Alternatives share the same active ingredient only. Never switch medicines without asking your doctor or pharmacist.",
+  });
+});
+
+// GET /api/alternatives/:name  (used when the user corrects a scanned name)
+app.get("/api/alternatives/:name", (req, res) => {
+  res.json(describeMatch(matchMedicine(req.params.name, "")));
 });
 
 // Fallback to the SPA for any non-API route

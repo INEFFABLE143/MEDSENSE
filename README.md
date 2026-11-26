@@ -19,8 +19,9 @@ med-sense/
     ├── index.html       # Dashboard (diseases, medicines, ingredients, compare, saved)
     ├── checker.html     # Medicine checker
     ├── search.html      # Search ALL medicines (own data + live FDA lookup)
-    ├── css/brand.css
-    ├── js/              # theme.js, suggest.js, fdacard.js
+    ├── scan.html        # Prescription scanner (typed text and PDF only)
+    ├── css/             # brand.css, layout.css (sidebar menu + scrollbar)
+    ├── js/              # theme.js, sidebar.js, suggest.js, fdacard.js
     ├── img/             # logos and icon
     └── data/            # diseases.json, medicines.json, ingredients.json
 ```
@@ -49,10 +50,25 @@ OPENFDA_API_KEY=yourkey npm start
 |--------|----------|-------------|
 | GET | `/api/lookup?q=name` | Search any medicine: returns your record (if any) and the live FDA label (if any). |
 | GET | `/api/external/medicines/:name` | Live FDA lookup only. |
+| POST | `/api/scan-text` | Body `{ lines: [...] }` (text lines from a prescription). Returns the medicines found and same-ingredient alternatives. |
+| GET | `/api/alternatives/:name` | Match one medicine name and list same-ingredient alternatives (used when a scanned name is corrected). |
 | POST | `/api/check` | Body `{ disease, medicine, symptoms, age }`. If the medicine is not in your data, the response (404) includes the FDA label in `external`. |
 | GET | `/api/diseases`, `/api/medicines` | Name lists for autocomplete. |
 | GET | `/api/diseases/:name`, `/api/medicines/:name` | One record (fuzzy matched). |
 | GET | `/api/diseases-all`, `/api/medicines-all`, `/api/ingredients-all` | Full data used by the dashboard. |
+
+## Prescription scanner
+
+`scan.html` reads **typed or printed prescriptions only**: a PDF with selectable text (read in the browser with pdf.js),
+a `.txt` file, or pasted text. Photos and handwriting are not supported, and scanned PDFs without a text layer are
+rejected with a clear message. Only the extracted text lines are sent to `/api/scan-text`; nothing is stored and no API
+key is needed. Alternatives always share the same active ingredient.
+
+## Sidebar menu and scrolling
+
+`js/sidebar.js` + `css/layout.css` add the sidebar menu (Diseases, Medicines, Ingredients, Compare, Saved, plus Scan,
+Checker and Search) and the scroll helpers (wide scrollbar, progress bar, jump-to-top/bottom buttons) to every page.
+New page? Add `<link rel="stylesheet" href="css/layout.css">` in `<head>` and `<script src="js/sidebar.js"></script>` as the first line inside `<body>`.
 
 ## Live lookup notes
 

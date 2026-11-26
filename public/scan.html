@@ -6,6 +6,7 @@
 <title>Med Sense - Scan Prescription</title>
 <link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
 <link rel="stylesheet" href="css/brand.css">
+<link rel="stylesheet" href="css/layout.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{min-height:100vh;padding:28px 16px;font-family:var(--font-body);color:var(--ink);line-height:1.55;background:#eef6f4}
 [data-theme="dark"] body{background:#0b1a19}
-input,button{font:inherit}
+input,button,textarea{font:inherit}
 a{color:var(--teal)}
 .container{width:900px;max-width:100%;margin:auto;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(10,77,78,.35)}
 [data-theme="dark"] .container{background:#0f2322}
@@ -24,92 +25,206 @@ a{color:var(--teal)}
 .hero img{width:60px;height:60px;border-radius:18px}
 h1{font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1.1;color:#fff}
 .sub{color:#c9ece6;font-size:15px;margin-top:4px}
-nav{display:flex;gap:8px;flex-wrap:wrap;padding:14px 32px;border-bottom:1px solid var(--line);background:var(--paper)}
-nav a{text-decoration:none;font-weight:700;font-size:14px;color:var(--pine);padding:8px 16px;border-radius:99px}
-nav a:hover{background:var(--mist)}nav a.on{background:var(--teal);color:#fff}
 .main{padding:28px 32px 36px}
 h2{font-family:var(--font-display);font-size:24px;color:var(--pine);margin-bottom:6px}
 .lead{color:var(--muted);margin-bottom:16px}
-.drop{display:flex;flex-direction:column;align-items:center;gap:12px;border:2px dashed var(--line);border-radius:18px;padding:26px 16px;background:var(--paper);text-align:center}
-.drop img{max-width:100%;max-height:300px;border-radius:12px;display:none}
-.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.tabs{display:flex;gap:8px;margin:4px 0 14px}
+.tab{cursor:pointer;user-select:none;font-weight:700;font-size:14px;padding:9px 18px;border-radius:99px;border:1.5px solid var(--line);background:var(--paper);color:var(--pine)}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.tab:focus-visible,.drop:focus-visible,.btn:focus-visible{outline:3px solid rgba(15,138,130,.45);outline-offset:2px}
+.drop{display:flex;flex-direction:column;align-items:center;gap:6px;border:2px dashed var(--line);border-radius:18px;padding:30px 16px;background:var(--paper);text-align:center;cursor:pointer}
+.drop.over{border-color:var(--teal);background:var(--mist)}
+.drop .big{font-size:34px;line-height:1}
+.drop b{color:var(--pine)}
+.drop small{color:var(--muted)}
+.picked{margin-top:12px;font-size:14px;font-weight:700;color:var(--good)}
+textarea{width:100%;min-height:190px;resize:vertical;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);line-height:1.6}
+textarea:focus,input[type=text]:focus{outline:3px solid rgba(15,138,130,.35);border-color:var(--teal)}
 .btn{display:inline-block;border:0;cursor:pointer;background:var(--teal);color:#fff;font-weight:700;padding:12px 22px;border-radius:99px;text-decoration:none}
 .btn.alt{background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:10.5px 20px}
 .btn:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 input[type=text]{width:100%;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}
 .warn{background:var(--amber-bg);border-radius:14px;padding:12px 16px;margin:14px 0;font-size:14px}
 .err{background:var(--danger-bg);border-radius:14px;padding:12px 16px;margin:14px 0;font-size:14px}
 .card{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px;margin-top:14px}
-.card h3{font-family:var(--font-display);font-size:19px;color:var(--pine)}
+.card h3{font-family:var(--font-display);font-size:19px;color:var(--pine);overflow-wrap:anywhere}
 .meta{color:var(--muted);font-size:13px;margin:2px 0 8px}
 .badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px;background:var(--mist);color:var(--pine);margin-right:6px}
 .badge.low{background:var(--danger-bg)}.badge.medium{background:var(--amber-bg)}.badge.ok{color:var(--good)}
 .edit{display:flex;gap:8px;margin:10px 0}
 .alts{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:14px}
-.chip{display:inline-block;margin:4px 6px 0 0;padding:5px 12px;border:1.5px solid var(--line);border-radius:99px;background:#fff;color:var(--pine);font-weight:600;font-size:13px;text-decoration:none}
+.chip{display:inline-block;margin:4px 6px 0 0;padding:5px 12px;border:1.5px solid var(--line);border-radius:99px;background:#fff;color:var(--pine);font-weight:600;font-size:13px;text-decoration:none;cursor:pointer}
 [data-theme="dark"] .chip{background:var(--mist)}
+details.read{margin-top:18px;font-size:14px}
+details.read summary{cursor:pointer;font-weight:700;color:var(--pine)}
+details.read pre{margin-top:8px;padding:12px 14px;max-height:220px;overflow:auto;white-space:pre-wrap;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
 .spin{display:none;margin:14px auto;text-align:center;color:var(--muted)}
 .theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;padding:10px 18px;border:0;border-radius:99px;font-size:14px;background:var(--pine);color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.3)}
 [data-theme="dark"] .theme-toggle{color:#0a2e30}
-@media(max-width:700px){.main,.hero,nav{padding-left:18px;padding-right:18px}h1{font-size:28px}}
+@media(max-width:700px){.main,.hero{padding-left:18px;padding-right:18px}h1{font-size:28px}}
 </style>
 </head>
 <body>
+<script src="js/sidebar.js"></script>
 <div class="container">
 <header class="hero">
   <img src="img/med-sense-icon.svg" alt="Med Sense logo" width="60" height="60">
-  <div><h1>Scan Prescription</h1><p class="sub">Take a photo and see the medicines and same-ingredient alternatives</p></div>
+  <div><h1>Scan Prescription</h1><p class="sub">Upload a typed prescription or PDF and see the medicines and same-ingredient alternatives</p></div>
 </header>
-<nav>
-  <a href="index.html#home">Diseases</a><a href="index.html#medicines">Medicines</a><a href="index.html#ingredients">Ingredients</a><a href="index.html#compare">Compare</a><a href="index.html#saved">Saved</a><a class="on" href="scan.html">Scan</a><a href="checker.html">Checker</a>
-</nav>
 <div class="main">
-  <h2>Upload or take a photo</h2>
-  <p class="lead">Use a clear, well-lit photo of the whole prescription. Your photo is sent only to be read and is not stored.</p>
+  <h2>Add your prescription</h2>
+  <p class="lead">Works with typed or printed prescriptions: a PDF with selectable text, a .txt file, or text you paste. Photos and handwriting are not supported. The file is read in your browser, only the text lines are sent to match medicine names, and nothing is stored.</p>
 
-  <div class="drop">
-    <img id="preview" alt="Prescription preview">
-    <div class="row">
-      <label class="btn">📷 Take photo<input id="cam" type="file" accept="image/*" capture="environment" hidden></label>
-      <label class="btn alt">🖼️ Choose image<input id="pick" type="file" accept="image/*" hidden></label>
-    </div>
+  <div class="tabs" role="tablist" aria-label="How to add your prescription">
+    <div class="tab" role="tab" tabindex="0" id="tabFile" aria-selected="true" aria-controls="paneFile">Upload PDF or text file</div>
+    <div class="tab" role="tab" tabindex="0" id="tabText" aria-selected="false" aria-controls="paneText">Paste text</div>
+  </div>
+
+  <div id="paneFile" role="tabpanel" aria-labelledby="tabFile">
+    <label class="drop" id="drop" for="file">
+      <span class="big" aria-hidden="true">📄</span>
+      <b>Choose a PDF or .txt file</b>
+      <small>or drag it here (up to 5 MB)</small>
+      <input id="file" type="file" accept=".pdf,.txt,application/pdf,text/plain" hidden>
+    </label>
+    <p class="picked" id="picked" hidden></p>
+  </div>
+
+  <div id="paneText" role="tabpanel" aria-labelledby="tabText" hidden>
+    <textarea id="txt" aria-label="Prescription text" placeholder="Tab. Dolo 650 mg 1-0-1 x 5 days after food&#10;Cap. Omeprazole 20 mg OD before breakfast&#10;Syp. Cough syrup 5 ml TDS"></textarea>
+  </div>
+
+  <div class="actions">
     <button id="go" class="btn" disabled>Scan prescription</button>
+    <button id="clear" class="btn alt" type="button">Clear</button>
   </div>
+  <div class="spin" id="spin" role="status">Reading your prescription…</div>
+  <div id="out" aria-live="polite"></div>
 
-  <div class="row" style="margin-top:14px;font-size:14px">
-    <label><input type="radio" name="mode" value="free" checked> 🆓 Free (on your device, best for printed text)</label>
-    <label id="aiOpt" style="display:none"><input type="radio" name="mode" value="ai"> ✨ AI (better for handwriting)</label>
-  </div>
-  <div class="spin" id="spin">Reading your prescription… this takes a few seconds</div>
-  <div id="out"></div>
-
-  <p class="warn" style="margin-top:22px">⚕️ Educational information only. Scanned text can be wrong, so check every name against your prescription. Alternatives share the same active ingredient only. Never switch medicines without asking your doctor or pharmacist.</p>
+  <p class="warn" style="margin-top:22px">⚕️ Educational information only. Check every name against your prescription. Alternatives share the same active ingredient only. Never switch medicines without asking your doctor or pharmacist.</p>
 </div>
 </div>
 
 <script>
 (function(){
-  var imgData=null,preview=document.getElementById("preview"),go=document.getElementById("go"),out=document.getElementById("out"),spin=document.getElementById("spin");
+  var MAX_BYTES=5*1024*1024, MAX_PAGES=10;
+  var PDFJS="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
+  var PDFJS_WORKER="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  var $=function(id){return document.getElementById(id)};
+  var go=$("go"),out=$("out"),spin=$("spin"),fileIn=$("file"),txt=$("txt"),drop=$("drop"),picked=$("picked");
+  var mode="file",file=null;
+
   function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}
+  function fail(msg){out.innerHTML='<div class="err">'+esc(msg)+'</div>'}
 
-  // Shrink to max 1600px and re-encode as JPEG: faster upload, strips photo metadata (location etc.)
-  function prepare(file){
-    var img=new Image(),url=URL.createObjectURL(file);
-    img.onload=function(){
-      var max=1600,r=Math.min(1,max/Math.max(img.width,img.height));
-      var c=document.createElement("canvas");c.width=Math.round(img.width*r);c.height=Math.round(img.height*r);
-      c.getContext("2d").drawImage(img,0,0,c.width,c.height);
-      imgData=c.toDataURL("image/jpeg",0.85);
-      preview.src=imgData;preview.style.display="block";go.disabled=false;out.innerHTML="";
-      URL.revokeObjectURL(url);
-    };
-    img.onerror=function(){out.innerHTML='<div class="err">That file could not be opened as an image.</div>'};
-    img.src=url;
+  /* ---------- tabs ---------- */
+  function setMode(m){
+    mode=m;
+    $("tabFile").setAttribute("aria-selected",m==="file");
+    $("tabText").setAttribute("aria-selected",m==="text");
+    $("paneFile").hidden=m!=="file";
+    $("paneText").hidden=m!=="text";
+    out.innerHTML="";refresh();
   }
-  ["cam","pick"].forEach(function(id){document.getElementById(id).addEventListener("change",function(e){if(e.target.files[0])prepare(e.target.files[0])})});
+  [["tabFile","file"],["tabText","text"]].forEach(function(p){
+    var el=$(p[0]);
+    el.addEventListener("click",function(){setMode(p[1])});
+    el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();setMode(p[1])}});
+  });
+  function refresh(){go.disabled=mode==="file"?!file:!txt.value.trim()}
+  txt.addEventListener("input",refresh);
 
+  /* ---------- choosing a file ---------- */
+  function kind(f){
+    var n=f.name.toLowerCase();
+    if(f.type==="application/pdf"||/\.pdf$/.test(n))return"pdf";
+    if(f.type==="text/plain"||/\.txt$/.test(n))return"txt";
+    return"";
+  }
+  function pick(f){
+    out.innerHTML="";file=null;picked.hidden=true;
+    if(!f){refresh();return}
+    if(!kind(f)){
+      fail(/^image\//.test(f.type)||/\.(jpe?g|png|webp|gif|heic)$/i.test(f.name)
+        ?"Photos are not supported. Upload a PDF or .txt file, or paste the prescription text."
+        :"That file type is not supported. Upload a PDF or .txt file, or paste the prescription text.");
+      refresh();return;
+    }
+    if(f.size>MAX_BYTES){fail("That file is larger than 5 MB. Upload a smaller PDF or paste the text.");refresh();return}
+    file=f;picked.textContent="✔ "+f.name+" ("+Math.max(1,Math.round(f.size/1024))+" KB)";picked.hidden=false;refresh();
+  }
+  fileIn.addEventListener("change",function(e){pick(e.target.files[0])});
+  drop.tabIndex=0;
+  drop.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();fileIn.click()}});
+  ["dragenter","dragover"].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.add("over")})});
+  ["dragleave","drop"].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.remove("over")})});
+  drop.addEventListener("drop",function(e){if(e.dataTransfer.files[0])pick(e.dataTransfer.files[0])});
+  $("clear").addEventListener("click",function(){file=null;fileIn.value="";txt.value="";picked.hidden=true;out.innerHTML="";refresh()});
+
+  /* ---------- reading text ---------- */
+  function loadPdfJs(){
+    return new Promise(function(res,rej){
+      if(window.pdfjsLib)return res();
+      var s=document.createElement("script");s.src=PDFJS;
+      s.onload=function(){window.pdfjsLib.GlobalWorkerOptions.workerSrc=PDFJS_WORKER;res()};
+      s.onerror=function(){rej(new Error("Could not load the PDF reader. Check your internet connection, or paste the text instead."))};
+      document.head.appendChild(s);
+    });
+  }
+  // Rebuild visual lines: group text pieces that share a baseline, then order left to right.
+  function pageLines(items){
+    var pieces=items.filter(function(it){return it.str&&it.str.trim()}).map(function(it){return{s:it.str,x:it.transform[4],y:it.transform[5],w:it.width||0}});
+    pieces.sort(function(a,b){return b.y-a.y||a.x-b.x});
+    var rows=[],cur=null;
+    pieces.forEach(function(p){
+      if(!cur||Math.abs(cur.y-p.y)>4){cur={y:p.y,p:[]};rows.push(cur)}
+      cur.p.push(p);
+    });
+    return rows.map(function(r){
+      r.p.sort(function(a,b){return a.x-b.x});
+      var line="",end=null;
+      r.p.forEach(function(p){
+        if(end!==null&&p.x-end>1&&!/\s$/.test(line))line+=" ";
+        line+=p.s;end=p.x+p.w;
+      });
+      return line.replace(/\s+/g," ").trim();
+    }).filter(Boolean);
+  }
+  function readPdf(f){
+    spin.textContent="Reading the PDF…";
+    return Promise.all([f.arrayBuffer(),loadPdfJs()]).then(function(r){
+      return pdfjsLib.getDocument({data:r[0]}).promise;
+    }).then(function(pdf){
+      var n=Math.min(pdf.numPages,MAX_PAGES),chain=Promise.resolve([]);
+      for(var i=1;i<=n;i++){(function(i){
+        chain=chain.then(function(all){
+          return pdf.getPage(i).then(function(p){return p.getTextContent()}).then(function(tc){return all.concat(pageLines(tc.items))});
+        });
+      })(i)}
+      return chain;
+    }).then(function(lines){
+      if(lines.join("").length<10)throw new Error("This PDF has no selectable text, so it looks like a scan or a photo. Only typed or printed PDFs are supported. Paste the text instead.");
+      return lines;
+    },function(e){
+      if(e&&e.message&&/PDF reader/.test(e.message))throw e;
+      throw new Error("Could not read this PDF. It may be password-protected or damaged.");
+    });
+  }
+  function getLines(){
+    if(mode==="text")return Promise.resolve(txt.value.split(/\r?\n/).map(function(l){return l.trim()}).filter(Boolean));
+    if(kind(file)==="pdf")return readPdf(file);
+    return file.text().then(function(t){return t.split(/\r?\n/).map(function(l){return l.trim()}).filter(Boolean)});
+  }
+  function postJson(url,body){
+    return fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||"Scan failed");return j})});
+  }
+
+  /* ---------- showing results ---------- */
   function altsHtml(r){
-    if(!r.medicine)return "";
+    if(!r.medicine)return"";
     var a=r.alternatives||[];
     return '<div class="alts"><b>Same-ingredient alternatives in our database:</b><br>'+
       (a.length?a.map(function(x){return '<a class="chip" href="index.html#m/'+encodeURIComponent(x.name)+'">'+esc(x.name)+' <small>('+esc(x.form)+')</small></a>'}).join(""):'<span class="meta">None listed. Ask your pharmacist about generics of '+esc(r.medicine.ingredient)+'.</span>')+'</div>';
@@ -128,11 +243,11 @@ input[type=text]{width:100%;padding:10px 14px;border:1.5px solid var(--line);bor
     }
     return '<p><span class="badge low">Not in our database</span> Ask your pharmacist about this one.</p>';
   }
-  function render(data){
+  function render(data,lines,source){
     var h="";
-    if(!data.isPrescription||!data.results.length){
-      h+='<div class="warn">No medicines could be read. Try a clearer, closer, well-lit photo.</div>';
-    } else {
+    if(!data.results.length){
+      h+='<div class="warn">No medicines were found in this text. Lines usually start with Tab., Cap. or Syp. followed by the medicine name. Check the text below, or fix a name and search again.</div>';
+    }else{
       h+='<h2 style="margin-top:24px">Medicines found ('+data.results.length+')</h2><p class="lead">Check each name against your prescription. Wrong? Edit it and search again.</p>';
       data.results.forEach(function(r,i){
         h+='<div class="card" data-i="'+i+'"><h3>'+esc(r.written||"(unreadable)")+'</h3>'+
@@ -142,53 +257,19 @@ input[type=text]{width:100%;padding:10px 14px;border:1.5px solid var(--line);bor
           '<div class="edit"><input type="text" value="'+esc(r.written)+'" aria-label="Correct the medicine name"><button type="button" class="btn alt" data-search>Search</button></div></div>';
       });
     }
+    h+='<details class="read"><summary>Text we read from '+esc(source)+' ('+lines.length+' line'+(lines.length===1?"":"s")+')</summary><pre>'+esc(lines.join("\n"))+'</pre></details>';
     if(data.notes)h+='<p class="meta" style="margin-top:12px">Note: '+esc(data.notes)+'</p>';
     out.innerHTML=h;
   }
 
-  // Show the AI option only if the server has an API key
-  fetch("/api/scan-config").then(function(r){return r.json()}).then(function(c){
-    if(c.ai){var o=document.getElementById("aiOpt");o.style.display="";o.querySelector("input").checked=true}
-  }).catch(function(){});
-
-  function loadTess(){
-    return new Promise(function(res,rej){
-      if(window.Tesseract)return res();
-      var s=document.createElement("script");
-      s.src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js";
-      s.onload=res;
-      s.onerror=function(){rej(new Error("Could not load the free OCR engine. Check your internet connection."))};
-      document.head.appendChild(s);
-    });
-  }
-  function postJson(url,body){
-    return fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
-      .then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||"Scan failed");return j})});
-  }
-  function scanFree(){
-    spin.textContent="Loading free OCR (first time only, about 10 seconds)…";
-    return loadTess().then(function(){
-      return Tesseract.recognize(imgData,"eng",{logger:function(m){
-        if(m.status==="recognizing text")spin.textContent="Reading text… "+Math.round(m.progress*100)+"%";
-      }});
-    }).then(function(r){
-      var lines=r.data.text.split(/\n/).map(function(l){return l.trim()}).filter(Boolean);
-      return postJson("/api/scan-text",{lines:lines});
-    });
-  }
-  function scanAI(){
-    spin.textContent="Reading your prescription… this takes a few seconds";
-    return postJson("/api/scan",{image:imgData});
-  }
-
   go.addEventListener("click",function(){
-    if(!imgData)return;
-    var mode=document.querySelector('input[name="mode"]:checked').value;
+    if(go.disabled)return;
+    var source=mode==="text"?"pasted text":file.name;
     go.disabled=true;spin.style.display="block";out.innerHTML="";
-    (mode==="ai"?scanAI():scanFree())
-      .then(render)
-      .catch(function(e){out.innerHTML='<div class="err">'+esc(e.message)+'</div>'})
-      .then(function(){spin.style.display="none";go.disabled=false});
+    getLines().then(function(lines){
+      spin.textContent="Matching medicines…";
+      return postJson("/api/scan-text",{lines:lines}).then(function(data){render(data,lines,source)});
+    }).catch(function(e){fail(e.message)}).then(function(){spin.style.display="none";refresh()});
   });
 
   // Fix a name by hand (or tap a "did you mean" chip) and look it up again
@@ -202,6 +283,7 @@ input[type=text]{width:100%;padding:10px 14px;border:1.5px solid var(--line);bor
     if(e.target.hasAttribute("data-search")){var v=card.querySelector("input").value.trim();if(v)research(card,v)}
     if(e.target.dataset.fix)research(card,e.target.dataset.fix);
   });
+  refresh();
 })();
 </script>
 </body>
