@@ -28,6 +28,12 @@ const MEDICINE_ALIASES = {
   "dolo-650": "Dolo 650",
 };
 
+// Medicine Study Library: makes its medicines findable in the checker and
+// attaches class / mechanism / NLEM and RxNorm status to the result.
+const { mergeLibrary } = require("./library");
+const LIBRARY = mergeLibrary(medicines, require("./public/data/medicine-library.json"), normalize);
+Object.assign(MEDICINE_ALIASES, LIBRARY.aliases);
+
 function findDiseaseKey(input) {
   const search = normalize(input);
   for (const key of Object.keys(diseases)) {
@@ -317,6 +323,7 @@ app.post("/api/check", async (req, res) => {
     matched,
     listedMedicines,
     selectedMedicine: { name: medicineKey, ...medicineData },
+    library: LIBRARY.byKey[medicineKey] || null,
     disclaimer:
       "Educational information only. This does not diagnose disease or prescribe medication. Always check the exact package label and consult a doctor or pharmacist.",
   });

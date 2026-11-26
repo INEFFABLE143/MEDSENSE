@@ -1,0 +1,42 @@
+﻿id,genericName,aliases,therapeuticClass,ingredients,mechanismOfAction,nlem2022Membership,rxcui,rxnormStatus
+paracetamol,Paracetamol,Acetaminophen,Analgesic / antipyretic,paracetamol,Reduces prostaglandin production mainly in the central nervous system; its precise mechanism is not fully established.,unverified,,not_reviewed
+ibuprofen,Ibuprofen,,NSAID,ibuprofen,"Inhibits COX-1 and COX-2 enzymes, reducing prostaglandin production.",unverified,,not_reviewed
+aspirin,Aspirin,Acetylsalicylic acid,NSAID / antiplatelet,acetylsalicylic acid,Irreversibly inhibits cyclooxygenase enzymes; in platelets this reduces thromboxane A2 production.,unverified,,not_reviewed
+morphine,Morphine,,Opioid analgesic,morphine,"Activates opioid receptors, especially mu receptors, changing pain signalling in the nervous system.",unverified,,not_reviewed
+epinephrine,Epinephrine,Adrenaline,Adrenergic agonist,epinephrine,"Activates alpha- and beta-adrenergic receptors, producing effects in blood vessels, the heart, and airways.",unverified,,not_reviewed
+salbutamol,Salbutamol,Albuterol,Short-acting beta-2 agonist,salbutamol,"Activates beta-2 receptors in bronchial smooth muscle, promoting relaxation of the airways.",unverified,,not_reviewed
+ipratropium,Ipratropium,,Antimuscarinic bronchodilator,ipratropium,"Blocks muscarinic receptors in the airways, reducing cholinergic bronchoconstriction.",unverified,,not_reviewed
+budesonide,Budesonide,,Corticosteroid,budesonide,Activates glucocorticoid receptors and reduces inflammatory signalling.,unverified,,not_reviewed
+prednisolone,Prednisolone,,Corticosteroid,prednisolone,"Activates glucocorticoid receptors, changing gene expression and suppressing inflammatory and immune activity.",unverified,,not_reviewed
+cetirizine,Cetirizine,,Antihistamine,cetirizine,"Blocks peripheral histamine H1 receptors, reducing histamine-mediated symptoms.",unverified,,not_reviewed
+chlorpheniramine,Chlorpheniramine,,Antihistamine,chlorpheniramine,"Blocks histamine H1 receptors, reducing histamine-mediated effects.",unverified,,not_reviewed
+amoxicillin,Amoxicillin,,Penicillin antibiotic,amoxicillin,A beta-lactam antibiotic that binds penicillin-binding proteins and interferes with bacterial cell-wall synthesis.,unverified,,not_reviewed
+amoxicillin-clavulanate,Amoxicillin / clavulanic acid,Co-amoxiclav,Penicillin antibiotic combination,amoxicillin; clavulanic acid,Amoxicillin interferes with bacterial cell-wall synthesis; clavulanic acid inhibits some beta-lactamase enzymes.,unverified,,not_reviewed
+ceftriaxone,Ceftriaxone,,Cephalosporin antibiotic,ceftriaxone,Binds penicillin-binding proteins and interferes with bacterial cell-wall synthesis.,unverified,,not_reviewed
+azithromycin,Azithromycin,,Macrolide antibiotic,azithromycin,Binds the bacterial 50S ribosomal subunit and interferes with protein synthesis.,unverified,,not_reviewed
+doxycycline,Doxycycline,,Tetracycline antibiotic,doxycycline,Binds the bacterial 30S ribosomal subunit and interferes with protein synthesis.,unverified,,not_reviewed
+metronidazole,Metronidazole,,Nitroimidazole antimicrobial,metronidazole,"In susceptible anaerobes and protozoa, reactive metabolites damage DNA and disrupt nucleic-acid function.",unverified,,not_reviewed
+ciprofloxacin,Ciprofloxacin,,Fluoroquinolone antibiotic,ciprofloxacin,"Inhibits bacterial DNA gyrase and topoisomerase IV, disrupting DNA replication.",unverified,,not_reviewed
+rifampicin,Rifampicin,Rifampin,Antimycobacterial antibiotic,rifampicin,"Inhibits bacterial DNA-dependent RNA polymerase, disrupting RNA synthesis.",unverified,,not_reviewed
+isoniazid,Isoniazid,INH,Antimycobacterial medicine,isoniazid,"After activation in susceptible bacteria, inhibits mycolic-acid synthesis, an important part of the mycobacterial cell wall.",unverified,,not_reviewed
+metformin,Metformin,,Biguanide,metformin,Lowers hepatic glucose production and improves insulin sensitivity; its cellular effects are complex.,unverified,,not_reviewed
+human-insulin,Human insulin,,Hormone / antidiabetic medicine,insulin,"Activates insulin receptors, promoting glucose uptake in some tissues and reducing hepatic glucose output.",unverified,,not_reviewed
+glibenclamide,Glibenclamide,Glyburide,Sulfonylurea,glibenclamide,"Closes ATP-sensitive potassium channels in pancreatic beta cells, stimulating insulin release.",unverified,,not_reviewed
+amlodipine,Amlodipine,,Calcium-channel blocker,amlodipine,"Blocks L-type calcium channels, especially in vascular smooth muscle, promoting vasodilation.",unverified,,not_reviewed
+enalapril,Enalapril,,ACE inhibitor,enalapril,"Reduces angiotensin-converting enzyme activity, lowering formation of angiotensin II.",unverified,,not_reviewed
+losartan,Losartan,,Angiotensin receptor blocker,losartan,"Blocks angiotensin II type 1 receptors, reducing signalling through that receptor.",unverified,,not_reviewed
+hydrochlorothiazide,Hydrochlorothiazide,HCTZ,Thiazide diuretic,hydrochlorothiazide,Inhibits the sodium-chloride cotransporter in the distal convoluted tubule of the kidney.,unverified,,not_reviewed
+furosemide,Furosemide,,Loop diuretic,furosemide,Inhibits the sodium-potassium-chloride cotransporter in the thick ascending limb of the loop of Henle.,unverified,,not_reviewed
+atorvastatin,Atorvastatin,,Statin,atorvastatin,"Inhibits HMG-CoA reductase, an enzyme involved in cholesterol synthesis.",unverified,,not_reviewed
+omeprazole,Omeprazole,,Proton-pump inhibitor,omeprazole,"Inhibits the gastric parietal-cell hydrogen-potassium ATPase, reducing acid secretion.",unverified,,not_reviewed
+ondansetron,Ondansetron,,Antiemetic,ondansetron,Blocks serotonin 5-HT3 receptors involved in nausea and vomiting pathways.,unverified,,not_reviewed
+levothyroxine,Levothyroxine,Thyroxine; T4,Thyroid hormone,levothyroxine,"Provides synthetic T4, which can be converted to T3 and act through thyroid hormone receptors.",unverified,,not_reviewed
+ferrous-sulfate,Ferrous sulfate,,Iron preparation,ferrous sulfate,Provides iron used in haemoglobin and other iron-containing proteins.,unverified,,not_reviewed
+folic-acid,Folic acid,Vitamin B9,Vitamin,folic acid,Provides a precursor for folate coenzymes involved in one-carbon transfer and nucleotide synthesis.,unverified,,not_reviewed
+oral-rehydration-salts,Oral rehydration salts,ORS,Oral electrolyte solution,oral rehydration salts,Glucose and sodium are absorbed together in the intestine; water follows this solute absorption.,unverified,,not_reviewed
+zinc-sulfate,Zinc sulfate,,Mineral supplement,zinc sulfate,"Provides zinc, an essential component of many enzymes and proteins; it does not have one single drug target.",unverified,,not_reviewed
+diazepam,Diazepam,,Benzodiazepine,diazepam,Enhances GABA action at GABA-A receptors through positive allosteric modulation.,unverified,,not_reviewed
+phenytoin,Phenytoin,,Antiseizure medicine,phenytoin,"Stabilizes inactivated voltage-gated sodium channels, limiting repeated high-frequency neuronal firing.",unverified,,not_reviewed
+fluconazole,Fluconazole,,Azole antifungal,fluconazole,"Inhibits fungal lanosterol 14-alpha-demethylase, disrupting ergosterol synthesis.",unverified,,not_reviewed
+artesunate,Artesunate,,Antimalarial,artesunate,An artemisinin derivative; activation in malaria parasites produces reactive species that damage parasite components.,unverified,,not_reviewed
+artemether-lumefantrine,Artemether / lumefantrine,,Antimalarial combination,artemether; lumefantrine,"Artemether acts rapidly against parasites; lumefantrine has a complementary antimalarial effect, including interference with parasite heme handling.",unverified,,not_reviewed

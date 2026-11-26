@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "dataset": {
+    "name": "MEDSENSE Medicine Study Library — Starter",
+    "intendedNlemEdition": "India NLEM 2022",
+    "officialListVerified": false,
+    "disclaimer": "Starter study material, not a verified NLEM crosswalk or prescribing guide. Review medicine entries and mechanisms against authoritative references before publishing."
+  },
+  "medicines": [
+    {
+      "id": "paracetamol",
+      "genericName": "Paracetamol",
+      "aliases": ["Acetaminophen"],
+      "therapeuticClass": "Analgesic / antipyretic",
+      "ingredients": ["paracetamol"],
+      "mechanismOfAction": "Reduces prostaglandin production mainly in the central nervous system; its precise mechanism is not fully established.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ibuprofen",
+      "genericName": "Ibuprofen",
+      "aliases": [],
+      "therapeuticClass": "NSAID",
+      "ingredients": ["ibuprofen"],
+      "mechanismOfAction": "Inhibits COX-1 and COX-2 enzymes, reducing prostaglandin production.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "aspirin",
+      "genericName": "Aspirin",
+      "aliases": ["Acetylsalicylic acid"],
+      "therapeuticClass": "NSAID / antiplatelet",
+      "ingredients": ["acetylsalicylic acid"],
+      "mechanismOfAction": "Irreversibly inhibits cyclooxygenase enzymes; in platelets this reduces thromboxane A2 production.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "morphine",
+      "genericName": "Morphine",
+      "aliases": [],
+      "therapeuticClass": "Opioid analgesic",
+      "ingredients": ["morphine"],
+      "mechanismOfAction": "Activates opioid receptors, especially mu receptors, changing pain signalling in the nervous system.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "epinephrine",
+      "genericName": "Epinephrine",
+      "aliases": ["Adrenaline"],
+      "therapeuticClass": "Adrenergic agonist",
+      "ingredients": ["epinephrine"],
+      "mechanismOfAction": "Activates alpha- and beta-adrenergic receptors, producing effects in blood vessels, the heart, and airways.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "salbutamol",
+      "genericName": "Salbutamol",
+      "aliases": ["Albuterol"],
+      "therapeuticClass": "Short-acting beta-2 agonist",
+      "ingredients": ["salbutamol"],
+      "mechanismOfAction": "Activates beta-2 receptors in bronchial smooth muscle, promoting relaxation of the airways.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ipratropium",
+      "genericName": "Ipratropium",
+      "aliases": [],
+      "therapeuticClass": "Antimuscarinic bronchodilator",
+      "ingredients": ["ipratropium"],
+      "mechanismOfAction": "Blocks muscarinic receptors in the airways, reducing cholinergic bronchoconstriction.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "budesonide",
+      "genericName": "Budesonide",
+      "aliases": [],
+      "therapeuticClass": "Corticosteroid",
+      "ingredients": ["budesonide"],
+      "mechanismOfAction": "Activates glucocorticoid receptors and reduces inflammatory signalling.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "prednisolone",
+      "genericName": "Prednisolone",
+      "aliases": [],
+      "therapeuticClass": "Corticosteroid",
+      "ingredients": ["prednisolone"],
+      "mechanismOfAction": "Activates glucocorticoid receptors, changing gene expression and suppressing inflammatory and immune activity.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "cetirizine",
+      "genericName": "Cetirizine",
+      "aliases": [],
+      "therapeuticClass": "Antihistamine",
+      "ingredients": ["cetirizine"],
+      "mechanismOfAction": "Blocks peripheral histamine H1 receptors, reducing histamine-mediated symptoms.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "chlorpheniramine",
+      "genericName": "Chlorpheniramine",
+      "aliases": [],
+      "therapeuticClass": "Antihistamine",
+      "ingredients": ["chlorpheniramine"],
+      "mechanismOfAction": "Blocks histamine H1 receptors, reducing histamine-mediated effects.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "amoxicillin",
+      "genericName": "Amoxicillin",
+      "aliases": [],
+      "therapeuticClass": "Penicillin antibiotic",
+      "ingredients": ["amoxicillin"],
+      "mechanismOfAction": "A beta-lactam antibiotic that binds penicillin-binding proteins and interferes with bacterial cell-wall synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "amoxicillin-clavulanate",
+      "genericName": "Amoxicillin / clavulanic acid",
+      "aliases": ["Co-amoxiclav"],
+      "therapeuticClass": "Penicillin antibiotic combination",
+      "ingredients": ["amoxicillin", "clavulanic acid"],
+      "mechanismOfAction": "Amoxicillin interferes with bacterial cell-wall synthesis; clavulanic acid inhibits some beta-lactamase enzymes.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ceftriaxone",
+      "genericName": "Ceftriaxone",
+      "aliases": [],
+      "therapeuticClass": "Cephalosporin antibiotic",
+      "ingredients": ["ceftriaxone"],
+      "mechanismOfAction": "Binds penicillin-binding proteins and interferes with bacterial cell-wall synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "azithromycin",
+      "genericName": "Azithromycin",
+      "aliases": [],
+      "therapeuticClass": "Macrolide antibiotic",
+      "ingredients": ["azithromycin"],
+      "mechanismOfAction": "Binds the bacterial 50S ribosomal subunit and interferes with protein synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "doxycycline",
+      "genericName": "Doxycycline",
+      "aliases": [],
+      "therapeuticClass": "Tetracycline antibiotic",
+      "ingredients": ["doxycycline"],
+      "mechanismOfAction": "Binds the bacterial 30S ribosomal subunit and interferes with protein synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "metronidazole",
+      "genericName": "Metronidazole",
+      "aliases": [],
+      "therapeuticClass": "Nitroimidazole antimicrobial",
+      "ingredients": ["metronidazole"],
+      "mechanismOfAction": "In susceptible anaerobes and protozoa, reactive metabolites damage DNA and disrupt nucleic-acid function.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ciprofloxacin",
+      "genericName": "Ciprofloxacin",
+      "aliases": [],
+      "therapeuticClass": "Fluoroquinolone antibiotic",
+      "ingredients": ["ciprofloxacin"],
+      "mechanismOfAction": "Inhibits bacterial DNA gyrase and topoisomerase IV, disrupting DNA replication.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "rifampicin",
+      "genericName": "Rifampicin",
+      "aliases": ["Rifampin"],
+      "therapeuticClass": "Antimycobacterial antibiotic",
+      "ingredients": ["rifampicin"],
+      "mechanismOfAction": "Inhibits bacterial DNA-dependent RNA polymerase, disrupting RNA synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "isoniazid",
+      "genericName": "Isoniazid",
+      "aliases": ["INH"],
+      "therapeuticClass": "Antimycobacterial medicine",
+      "ingredients": ["isoniazid"],
+      "mechanismOfAction": "After activation in susceptible bacteria, inhibits mycolic-acid synthesis, an important part of the mycobacterial cell wall.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "metformin",
+      "genericName": "Metformin",
+      "aliases": [],
+      "therapeuticClass": "Biguanide",
+      "ingredients": ["metformin"],
+      "mechanismOfAction": "Lowers hepatic glucose production and improves insulin sensitivity; its cellular effects are complex.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "human-insulin",
+      "genericName": "Human insulin",
+      "aliases": [],
+      "therapeuticClass": "Hormone / antidiabetic medicine",
+      "ingredients": ["insulin"],
+      "mechanismOfAction": "Activates insulin receptors, promoting glucose uptake in some tissues and reducing hepatic glucose output.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "glibenclamide",
+      "genericName": "Glibenclamide",
+      "aliases": ["Glyburide"],
+      "therapeuticClass": "Sulfonylurea",
+      "ingredients": ["glibenclamide"],
+      "mechanismOfAction": "Closes ATP-sensitive potassium channels in pancreatic beta cells, stimulating insulin release.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "amlodipine",
+      "genericName": "Amlodipine",
+      "aliases": [],
+      "therapeuticClass": "Calcium-channel blocker",
+      "ingredients": ["amlodipine"],
+      "mechanismOfAction": "Blocks L-type calcium channels, especially in vascular smooth muscle, promoting vasodilation.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "enalapril",
+      "genericName": "Enalapril",
+      "aliases": [],
+      "therapeuticClass": "ACE inhibitor",
+      "ingredients": ["enalapril"],
+      "mechanismOfAction": "Reduces angiotensin-converting enzyme activity, lowering formation of angiotensin II.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "losartan",
+      "genericName": "Losartan",
+      "aliases": [],
+      "therapeuticClass": "Angiotensin receptor blocker",
+      "ingredients": ["losartan"],
+      "mechanismOfAction": "Blocks angiotensin II type 1 receptors, reducing signalling through that receptor.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "hydrochlorothiazide",
+      "genericName": "Hydrochlorothiazide",
+      "aliases": ["HCTZ"],
+      "therapeuticClass": "Thiazide diuretic",
+      "ingredients": ["hydrochlorothiazide"],
+      "mechanismOfAction": "Inhibits the sodium-chloride cotransporter in the distal convoluted tubule of the kidney.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "furosemide",
+      "genericName": "Furosemide",
+      "aliases": [],
+      "therapeuticClass": "Loop diuretic",
+      "ingredients": ["furosemide"],
+      "mechanismOfAction": "Inhibits the sodium-potassium-chloride cotransporter in the thick ascending limb of the loop of Henle.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "atorvastatin",
+      "genericName": "Atorvastatin",
+      "aliases": [],
+      "therapeuticClass": "Statin",
+      "ingredients": ["atorvastatin"],
+      "mechanismOfAction": "Inhibits HMG-CoA reductase, an enzyme involved in cholesterol synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "omeprazole",
+      "genericName": "Omeprazole",
+      "aliases": [],
+      "therapeuticClass": "Proton-pump inhibitor",
+      "ingredients": ["omeprazole"],
+      "mechanismOfAction": "Inhibits the gastric parietal-cell hydrogen-potassium ATPase, reducing acid secretion.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ondansetron",
+      "genericName": "Ondansetron",
+      "aliases": [],
+      "therapeuticClass": "Antiemetic",
+      "ingredients": ["ondansetron"],
+      "mechanismOfAction": "Blocks serotonin 5-HT3 receptors involved in nausea and vomiting pathways.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "levothyroxine",
+      "genericName": "Levothyroxine",
+      "aliases": ["Thyroxine", "T4"],
+      "therapeuticClass": "Thyroid hormone",
+      "ingredients": ["levothyroxine"],
+      "mechanismOfAction": "Provides synthetic T4, which can be converted to T3 and act through thyroid hormone receptors.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "ferrous-sulfate",
+      "genericName": "Ferrous sulfate",
+      "aliases": [],
+      "therapeuticClass": "Iron preparation",
+      "ingredients": ["ferrous sulfate"],
+      "mechanismOfAction": "Provides iron used in haemoglobin and other iron-containing proteins.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "folic-acid",
+      "genericName": "Folic acid",
+      "aliases": ["Vitamin B9"],
+      "therapeuticClass": "Vitamin",
+      "ingredients": ["folic acid"],
+      "mechanismOfAction": "Provides a precursor for folate coenzymes involved in one-carbon transfer and nucleotide synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "oral-rehydration-salts",
+      "genericName": "Oral rehydration salts",
+      "aliases": ["ORS"],
+      "therapeuticClass": "Oral electrolyte solution",
+      "ingredients": ["oral rehydration salts"],
+      "mechanismOfAction": "Glucose and sodium are absorbed together in the intestine; water follows this solute absorption.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "zinc-sulfate",
+      "genericName": "Zinc sulfate",
+      "aliases": [],
+      "therapeuticClass": "Mineral supplement",
+      "ingredients": ["zinc sulfate"],
+      "mechanismOfAction": "Provides zinc, an essential component of many enzymes and proteins; it does not have one single drug target.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "diazepam",
+      "genericName": "Diazepam",
+      "aliases": [],
+      "therapeuticClass": "Benzodiazepine",
+      "ingredients": ["diazepam"],
+      "mechanismOfAction": "Enhances GABA action at GABA-A receptors through positive allosteric modulation.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "phenytoin",
+      "genericName": "Phenytoin",
+      "aliases": [],
+      "therapeuticClass": "Antiseizure medicine",
+      "ingredients": ["phenytoin"],
+      "mechanismOfAction": "Stabilizes inactivated voltage-gated sodium channels, limiting repeated high-frequency neuronal firing.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "fluconazole",
+      "genericName": "Fluconazole",
+      "aliases": [],
+      "therapeuticClass": "Azole antifungal",
+      "ingredients": ["fluconazole"],
+      "mechanismOfAction": "Inhibits fungal lanosterol 14-alpha-demethylase, disrupting ergosterol synthesis.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "artesunate",
+      "genericName": "Artesunate",
+      "aliases": [],
+      "therapeuticClass": "Antimalarial",
+      "ingredients": ["artesunate"],
+      "mechanismOfAction": "An artemisinin derivative; activation in malaria parasites produces reactive species that damage parasite components.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    },
+    {
+      "id": "artemether-lumefantrine",
+      "genericName": "Artemether / lumefantrine",
+      "aliases": [],
+      "therapeuticClass": "Antimalarial combination",
+      "ingredients": ["artemether", "lumefantrine"],
+      "mechanismOfAction": "Artemether acts rapidly against parasites; lumefantrine has a complementary antimalarial effect, including interference with parasite heme handling.",
+      "nlem2022Membership": "unverified",
+      "rxnorm": { "rxcui": null, "status": "not_reviewed" }
+    }
+  ]
+}

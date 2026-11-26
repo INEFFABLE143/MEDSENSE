@@ -918,6 +918,20 @@ function renderResult(data, age){
         : a >= 65 ? "Older adults can be more sensitive to side effects and interactions. Please check with a doctor or pharmacist before use."
         : a < 16 && /aspirin/i.test(medicine.name) ? "Aspirin is generally avoided in children and teenagers because of the risk of Reye's syndrome."
         : "";
+    const lib = data.library;
+    const nlemText = !lib ? "" : (lib.nlem2022Membership === "unverified" ? "Not verified yet" : lib.nlem2022Membership);
+    const rxText = !lib ? "" : (lib.rxnorm && lib.rxnorm.rxcui ? "RxCUI " + lib.rxnorm.rxcui : "Not reviewed yet");
+    const libraryHtml = lib ? `
+        <h2 class="section-title">📚 Medicine Study Library</h2>
+        <div class="medicine-result">
+            <div class="detail-grid">
+                ${lib.therapeuticClass ? `<div class="detail"><strong>🏷️ Therapeutic Class</strong>${escapeHTML(lib.therapeuticClass)}</div>` : ""}
+                ${lib.mechanismOfAction ? `<div class="detail"><strong>⚙️ How It Works</strong>${escapeHTML(lib.mechanismOfAction)}</div>` : ""}
+                <div class="detail"><strong>📋 NLEM 2022</strong>${escapeHTML(nlemText)}</div>
+                <div class="detail"><strong>🔢 RxNorm ID</strong>${escapeHTML(rxText)}</div>
+            </div>
+            <p style="padding:0 24px 18px"><a href="medicine-library.html">Open the Medicine Study Library</a></p>
+        </div>` : "";
     const ageHtml = ageNote ? `<div class="warning"><b>👤 Age note:</b> ${escapeHTML(ageNote)}</div>` : "";
 
     result.innerHTML = `
@@ -1051,6 +1065,8 @@ function renderResult(data, age){
             </div>
 
         </div>
+
+        ${libraryHtml}
 
         <div class="warning">
             <b>⚠️ Dosage / Tablet Strength Notice</b>

@@ -21,7 +21,8 @@
   var TOOLS = [
     { key: "scan", href: "scan.html", ico: "📄", label: "Scan prescription" },
     { key: "checker", href: "checker.html", ico: "✅", label: "Medicine checker" },
-    { key: "search", href: "search.html", ico: "🔎", label: "Search all medicines" }
+    { key: "search", href: "search.html", ico: "🔎", label: "Search all medicines" },
+    { key: "library", href: "medicine-library.html", ico: "📚", label: "Medicine Study Library" }
   ];
 
   function link(i) {
@@ -63,6 +64,7 @@
     if (page === "scan.html") return "scan";
     if (page === "checker.html") return "checker";
     if (page === "search.html") return "search";
+    if (page === "medicine-library.html") return "library";
     var h = location.hash.slice(1).split("/")[0];
     return ({ "": "home", home: "home", d: "home", medicines: "medicines", m: "medicines", ingredients: "ingredients", i: "ingredients", compare: "compare", saved: "saved" })[h] || "home";
   }
