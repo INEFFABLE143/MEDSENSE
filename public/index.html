@@ -206,15 +206,21 @@ function meds(){
   const draw=s=>{document.getElementById("g").innerHTML=Object.entries(M).filter(([n,m])=>(n+m.purpose+m.ingredient).toLowerCase().includes(s)).sort().map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join("")||'<p class="lead">No match.</p>'};
   draw("");document.getElementById("mq").oninput=e=>draw(e.target.value.trim().toLowerCase());
 }
+function libBox(l){
+  if(!l)return"";
+  const nl=l.nlem2022Membership==="listed"?"Listed in NLEM 2022":l.nlem2022Membership==="not_listed"?"Not in NLEM 2022":"Not verified yet";
+  const rx=l.rxnorm&&l.rxnorm.rxcui?"RxCUI "+l.rxnorm.rxcui:"Not reviewed yet";
+  return '<div class="box"><h3>Medicine Study Library</h3>'+(l.therapeuticClass?'<p><b>Class:</b> '+esc(l.therapeuticClass)+'</p>':'')+(l.mechanismOfAction?'<p><b>How it works:</b> '+esc(l.mechanismOfAction)+'</p>':'')+'<p><b>NLEM 2022:</b> '+esc(nl)+' &middot; <b>RxNorm ID:</b> '+esc(rx)+'</p><p class="lead">Source: Medicine Study Library'+(l.nlem2022Membership==="unverified"?' (study notes, not yet verified against official references)':'')+'. <a href="medicine-library.html">Open the library</a></p></div>';
+}
 function medicine(n){
   const m=M[n];if(!m)return meds();
   bar("med");
   const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k])=>k);
   const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
-  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+esc(m.form)+' &middot; '+esc(m.ingredient)+'</p><p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
+  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+[m.form,m.ingredient].filter(Boolean).map(esc).join(' &middot; ')+'</p><p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
   '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+ingBox(m)+
-  '<div class="facts">'+F.map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
-  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
+  '<div class="facts">'+F.filter(([t,k])=>m[k]).map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
+  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+libBox(m.library)+
   (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(k=>'<a href="#d/'+enc(k)+'">'+esc(k)+'</a>').join("")+'</div></div>':'')+NOTE;
   favWire("m",n);scrollTo(0,0);
 }

@@ -194,7 +194,13 @@ app.get("/api/medicines", (req, res) => {
 
 // Full lists (used by the dashboard)
 app.get("/api/diseases-all", (req, res) => res.json(diseases));
-app.get("/api/medicines-all", (req, res) => res.json(medicines));
+app.get("/api/medicines-all", (req, res) => {
+  const out = {};
+  for (const k of Object.keys(medicines)) {
+    out[k] = LIBRARY.byKey[k] ? { ...medicines[k], library: LIBRARY.byKey[k] } : medicines[k];
+  }
+  res.json(out);
+});
 app.get("/api/ingredients-all", (req, res) => res.json(ingredients));
 
 // One search that covers EVERYTHING: your database first, then the live
@@ -209,6 +215,7 @@ app.get("/api/lookup", async (req, res) => {
   res.json({
     query: q,
     local,
+    library: key ? LIBRARY.byKey[key] || null : null,
     localDidYouMean: local ? [] : closestMedicineNames(q),
     external: ext,
   });

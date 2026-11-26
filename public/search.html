@@ -74,9 +74,20 @@ var out = document.getElementById("out"), qi = document.getElementById("q");
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 var FIELDS=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
 function localCard(m){
-  return '<h2>In the Med Sense database</h2><div class="box"><span class="badge">'+esc(m.form)+'</span><h3 style="font-size:20px;margin-top:6px">'+esc(m.name)+'</h3><p class="lead">'+esc(m.ingredient)+'</p><p style="margin-top:6px"><b>Purpose:</b> '+esc(m.purpose)+'</p></div>'+
+  return '<h2>In the Med Sense database</h2><div class="box">'+(m.form?'<span class="badge">'+esc(m.form)+'</span>':'')+'<h3 style="font-size:20px;margin-top:6px">'+esc(m.name)+'</h3><p class="lead">'+esc(m.ingredient)+'</p><p style="margin-top:6px"><b>Purpose:</b> '+esc(m.purpose)+'</p></div>'+
     '<div class="facts">'+FIELDS.filter(function(f){return m[f[1]]}).map(function(f){return '<div class="box"><h3>'+f[0]+'</h3><p>'+esc(m[f[1]])+'</p></div>'}).join("")+'</div>'+
     (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'');
+}
+function nlemLabel(v){return v==="listed"?"Listed in NLEM 2022":v==="not_listed"?"Not in NLEM 2022":"Not verified yet"}
+function libCard(l){
+  if(!l) return "";
+  var rx=l.rxnorm&&l.rxnorm.rxcui?"RxCUI "+l.rxnorm.rxcui:"Not reviewed yet";
+  return '<h2>Medicine Study Library</h2><div class="facts">'+
+    (l.therapeuticClass?'<div class="box"><h3>Therapeutic class</h3><p>'+esc(l.therapeuticClass)+'</p></div>':'')+
+    (l.mechanismOfAction?'<div class="box"><h3>How it works</h3><p>'+esc(l.mechanismOfAction)+'</p></div>':'')+
+    '<div class="box"><h3>NLEM 2022</h3><p>'+esc(nlemLabel(l.nlem2022Membership))+'</p></div>'+
+    '<div class="box"><h3>RxNorm ID</h3><p>'+esc(rx)+'</p></div></div>'+
+    '<p class="hint">Source: Medicine Study Library'+(l.nlem2022Membership==="unverified"?' (study notes, not yet verified against official references)':'')+'. <a href="medicine-library.html">Open the library</a></p>';
 }
 function chips(list){return '<div class="chips">'+list.map(function(n){return '<button type="button" class="chip" data-q="'+esc(n)+'">'+esc(n)+'</button>'}).join("")+'</div>'}
 async function search(term){
@@ -87,7 +98,7 @@ async function search(term){
     var r=await fetch("/api/lookup?q="+encodeURIComponent(term)); var d=await r.json();
     if(!r.ok) throw new Error(d.error||"Search failed");
     var h="", ext=d.external||{};
-    if(d.local) h+=localCard(d.local);
+    if(d.local) h+=localCard(d.local)+libCard(d.library);
     if(ext.found) h+='<h2>U.S. FDA drug label</h2>'+window.renderFdaCard(ext);
     if(!d.local && !ext.found){
       h+='<div class="box warn"><h3>No match found for "'+esc(term)+'"</h3><p>'+(ext.unavailable?'The online drug database could not be reached right now. Please try again later.':'Try the generic (ingredient) name, or check the spelling.')+'</p></div>';

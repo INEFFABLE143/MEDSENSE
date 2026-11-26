@@ -2,9 +2,8 @@
    - Library medicines that already exist in medicines.json keep their full records;
      the library info (class, mechanism, NLEM / RxNorm status) is attached to them.
    - Library medicines that are missing are added with ONLY the fields the library
-     really has. Every other field says "Not added yet" so nothing is invented. */
-
-const NOT_ADDED = "Not added yet. Check the package label and ask a doctor or pharmacist.";
+     really has. Fields without real data are left out (the pages hide empty fields),
+     so no medical text is invented. */
 
 function mergeLibrary(medicines, library, normalize) {
   const entries = (library && library.medicines) || [];
@@ -36,17 +35,9 @@ function mergeLibrary(medicines, library, normalize) {
     if (!hits.length) {
       const key = e.genericName;
       medicines[key] = {
-        form: "Not added yet",
         ingredient: (e.ingredients || []).join(" + "),
-        purpose: e.therapeuticClass || NOT_ADDED,
-        uses: NOT_ADDED,
-        age: NOT_ADDED,
-        precautions: NOT_ADDED,
-        sideEffects: NOT_ADDED,
-        interactions: NOT_ADDED,
-        food: NOT_ADDED,
-        status: "Listed in the Medicine Study Library. Availability and prescription rules differ, so ask a pharmacist.",
-        warning: "Details for this medicine have not been added yet. Do not use it based on this page; ask a doctor or pharmacist.",
+        purpose: e.therapeuticClass || "",
+        warning: "Detailed information for this medicine has not been added yet. Do not use it based on this page; ask a doctor or pharmacist.",
         actives: e.ingredients || [],
         libraryOnly: true,
       };
