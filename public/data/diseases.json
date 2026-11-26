@@ -1836,5 +1836,169 @@
       "Trouble swallowing or breathing",
       "Bleeding that will not stop"
     ]
+  },
+  "Fever in children": {
+    "category": "Child Care",
+    "symptoms": "Raised body temperature, irritability, reduced appetite, flushed skin, sometimes febrile seizure risk in young children.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "ORS"
+    ]
+  },
+  "Common cold in children": {
+    "category": "Child Care",
+    "symptoms": "Runny nose, mild cough, sneezing, low-grade fever, fussiness.",
+    "medicines": [
+      "Saline Nasal Spray",
+      "Paracetamol",
+      "ORS"
+    ]
+  },
+  "Diarrhoea in children": {
+    "category": "Child Care",
+    "symptoms": "Loose watery stools, dehydration risk, reduced urine, dry mouth, lethargy.",
+    "medicines": [
+      "ORS",
+      "Zinc Sulfate",
+      "Loperamide"
+    ]
+  },
+  "Childhood asthma / wheeze": {
+    "category": "Child Care",
+    "symptoms": "Wheezing, shortness of breath, night cough, chest tightness.",
+    "medicines": [
+      "Salbutamol Inhaler",
+      "Budesonide Inhaler"
+    ]
+  },
+  "Impetigo / skin infection in children": {
+    "category": "Child Care",
+    "symptoms": "Honey-coloured crusts, red sores usually on face or hands, mild itching.",
+    "medicines": [
+      "Mupirocin",
+      "Fusidic Acid Cream"
+    ]
+  },
+  "Osteoarthritis in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Joint pain and stiffness, reduced mobility, crepitus, worse after inactivity.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Glucosamine"
+    ]
+  },
+  "Hypertension in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Often silent; sometimes headache, dizziness, or found on routine check.",
+    "medicines": [
+      "Amlodipine",
+      "Losartan",
+      "Hydrochlorothiazide"
+    ]
+  },
+  "Constipation in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Infrequent hard stools, straining, abdominal discomfort, reduced appetite.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)",
+      "Lactulose",
+      "Bisacodyl"
+    ]
+  },
+  "Insomnia in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Difficulty falling or staying asleep, early waking, daytime fatigue.",
+    "medicines": [
+      "Melatonin"
+    ]
+  },
+  "Urinary tract infection in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Burning urination, frequency, urgency, sometimes confusion or falls in elderly.",
+    "medicines": [
+      "Nitrofurantoin",
+      "Ciprofloxacin"
+    ]
+  },
+  "Nausea and vomiting of pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Morning sickness, nausea, vomiting, food aversions, usually first trimester.",
+    "medicines": [
+      "Doxylamine + Pyridoxine",
+      "Ginger"
+    ]
+  },
+  "Heartburn in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Burning chest pain after meals, worse when lying down, common in later pregnancy.",
+    "medicines": [
+      "Antacid",
+      "Ranitidine"
+    ]
+  },
+  "Anaemia in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Fatigue, pallor, shortness of breath, low haemoglobin on blood test.",
+    "medicines": [
+      "Iron + Folic Acid",
+      "Folic Acid"
+    ]
+  },
+  "Constipation in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Hard infrequent stools due to hormonal slowing of gut and pressure from uterus.",
+    "medicines": [
+      "Psyllium Husk (Isabgol)",
+      "Lactulose"
+    ]
+  },
+  "Gestational diabetes monitoring support": {
+    "category": "Pregnancy",
+    "symptoms": "High blood sugar detected in pregnancy, often no symptoms; screened routinely.",
+    "medicines": [
+      "Metformin"
+    ]
+  },
+  "Canine flea infestation": {
+    "category": "Veterinary",
+    "symptoms": "Itching, scratching, visible fleas or flea dirt, hair loss, secondary skin infection.",
+    "medicines": [
+      "Fipronil Spot-on",
+      "Ivermectin"
+    ]
+  },
+  "Feline upper respiratory infection": {
+    "category": "Veterinary",
+    "symptoms": "Sneezing, nasal discharge, conjunctivitis, reduced appetite in cats.",
+    "medicines": [
+      "Doxycycline (Vet)",
+      "Lysine"
+    ]
+  },
+  "Canine diarrhoea": {
+    "category": "Veterinary",
+    "symptoms": "Loose stools, urgency, sometimes blood or mucus, dehydration risk.",
+    "medicines": [
+      "Metronidazole (Vet)",
+      "Probiotic (Vet)"
+    ]
+  },
+  "Tick-borne illness prevention (dogs)": {
+    "category": "Veterinary",
+    "symptoms": "Prevention of tick attachment and related diseases such as babesiosis or ehrlichiosis.",
+    "medicines": [
+      "Fipronil Spot-on",
+      "Ivermectin"
+    ]
+  },
+  "Worm infestation in pets": {
+    "category": "Veterinary",
+    "symptoms": "Weight loss, pot belly in puppies, visible worms in stool, dull coat.",
+    "medicines": [
+      "Pyrantel Pamoate (Vet)",
+      "Fenbendazole"
+    ]
   }
 }

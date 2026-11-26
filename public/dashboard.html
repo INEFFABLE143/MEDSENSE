@@ -57,6 +57,22 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
 .btn{display:inline-block;margin-top:18px;text-decoration:none;background:var(--teal);color:#fff;font-weight:700;padding:12px 22px;border-radius:14px}
 .btn:hover{background:var(--teal-hover)}
 .note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+
+.audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0 24px}
+.audience-card{display:block;text-decoration:none;color:var(--ink);background:var(--mist);border:1.5px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.audience-card:hover{border-color:var(--teal)}
+.audience-card h3{font-family:var(--font-display);font-size:16px;color:var(--pine);margin:4px 0}
+.audience-card p{font-size:12px;color:var(--muted);margin:0}
+.feedback-fab{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--amber);color:#1a1200;font-weight:700;font-size:14px;padding:12px 18px;border-radius:99px;border:0;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px}
+.modal{background:#fff;border-radius:20px;max-width:420px;width:100%;padding:24px}
+.modal h3{font-family:var(--font-display);color:var(--pine);margin-bottom:8px}
+.stars{display:flex;gap:8px;margin:12px 0 16px}
+.stars button{background:none;border:0;font-size:28px;cursor:pointer;opacity:.35}
+.stars button.on{opacity:1}
+.modal textarea{width:100%;min-height:80px;padding:12px;border:1.5px solid var(--line);border-radius:12px;font:inherit;margin-bottom:12px}
+.modal .row{display:flex;gap:10px;justify-content:flex-end}
+
 @media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
 </style>
 </head>
@@ -81,7 +97,15 @@ function bar(on){nav.innerHTML='<a href="#home" class="'+(on==="home"?"on":"")+'
 function home(){
   bar("home");
   const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
+  const audiences=[
+    {id:"Child Care",title:"Child Care",desc:"Paediatric fever, colds, diarrhoea",icon:"🧒"},
+    {id:"Aged Care",title:"Aged People",desc:"Joints, BP, sleep, UTIs",icon:"👴"},
+    {id:"Pregnancy",title:"Pregnant Women",desc:"Nausea, anaemia, heartburn",icon:"🤰"},
+    {id:"Veterinary",title:"Animals / Vet",desc:"Fleas, worms, pet care",icon:"🐾"}
+  ];
   app.innerHTML='<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
+  '<h2 style="margin-top:6px">Browse by audience</h2><p class="lead">Child care, aged people, pregnancy and veterinary sections are open with filled data.</p>'+
+  '<div class="audience-grid">'+audiences.map(a=>'<a class="audience-card" href="#home" data-aud="'+esc(a.id)+'"><div style="font-size:26px">'+a.icon+'</div><h3>'+esc(a.title)+'</h3><p>'+esc(a.desc)+'</p></a>').join("")+'</div>'+
   '<input id="q" type="search" placeholder="Search diseases, symptoms or medicines" aria-label="Search" value="'+esc(q)+'">'+
   '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
   const draw=()=>{
@@ -93,6 +117,10 @@ function home(){
   draw();
   document.getElementById("q").oninput=e=>{q=e.target.value.trim();draw()};
   document.getElementById("chips").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;draw()}};
+  document.querySelector(".audience-grid").onclick=e=>{
+    const a=e.target.closest("[data-aud]");
+    if(a){cat=a.dataset.aud;q="";document.getElementById("q").value="";draw()}
+  };
 }
 function disease(n){
   const d=D[n];if(!d)return home();
@@ -128,6 +156,32 @@ function route(){
 Promise.all([fetch(API_BASE+"/api/diseases-all").then(r=>r.json()),fetch(API_BASE+"/api/medicines-all").then(r=>r.json())])
  .then(([d,m])=>{D=d;M=m;route();addEventListener("hashchange",route)})
  .catch(()=>{app.innerHTML='<p class="lead">Could not load data. Start the server with <b>npm start</b> and open this page from the same address.</p>'});
+
+(function(){
+  if(document.getElementById("feedback-fab"))return;
+  const fab=document.createElement("button");
+  fab.id="feedback-fab";fab.className="feedback-fab";fab.type="button";fab.textContent="Rate & Suggest";
+  document.body.appendChild(fab);
+  let rating=0;
+  fab.onclick=function(){
+    if(document.getElementById("fb-backdrop"))return;
+    const bd=document.createElement("div");bd.id="fb-backdrop";bd.className="modal-backdrop";
+    bd.innerHTML='<div class="modal"><h3>Rate Med Sense & share ideas</h3><p class="lead">How useful is the site?</p><div class="stars" id="fb-stars">'+[1,2,3,4,5].map(n=>'<button type="button" data-r="'+n+'">★</button>').join("")+'</div><textarea id="fb-idea" placeholder="Your suggestions..."></textarea><div class="row"><button type="button" class="btn" id="fb-cancel" style="background:transparent;color:var(--teal);border:1.5px solid var(--teal)">Cancel</button><button type="button" class="btn" id="fb-send">Send</button></div></div>';
+    document.body.appendChild(bd);
+    const stars=bd.querySelectorAll("#fb-stars button");
+    stars.forEach(b=>b.onclick=()=>{rating=+b.dataset.r;stars.forEach(s=>s.classList.toggle("on",+s.dataset.r<=rating))});
+    bd.querySelector("#fb-cancel").onclick=()=>bd.remove();
+    bd.onclick=e=>{if(e.target===bd)bd.remove()};
+    bd.querySelector("#fb-send").onclick=()=>{
+      const idea=(document.getElementById("fb-idea").value||"").trim();
+      if(!rating&&!idea){alert("Please rate or write a suggestion.");return}
+      try{const list=JSON.parse(localStorage.getItem("ms_feedback")||"[]");list.push({rating,idea,at:new Date().toISOString()});localStorage.setItem("ms_feedback",JSON.stringify(list))}catch(e){}
+      bd.innerHTML='<div class="modal"><h3>Thank you!</h3><p class="lead">Your feedback helps improve Med Sense.</p><div class="row"><button type="button" class="btn" id="fb-ok">Close</button></div></div>';
+      bd.querySelector("#fb-ok").onclick=()=>bd.remove();
+    };
+  };
+})();
+
 </script>
 </body>
 </html>

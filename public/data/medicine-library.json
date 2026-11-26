@@ -1776,7 +1776,7 @@
       "ingredients": [
         "5-aminosalicylic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Local anti-inflammatory action in the gut by inhibiting cyclooxygenase and lipoxygenase pathways, reducing prostaglandin and leukotriene production.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1812,7 +1812,7 @@
       "ingredients": [
         "5-fluorouracil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Antimetabolite that inhibits thymidylate synthase, blocking DNA synthesis in rapidly dividing cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1845,7 +1845,7 @@
       "ingredients": [
         "6-mercaptopurine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Purine antimetabolite that interferes with DNA and RNA synthesis after conversion to active nucleotides.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1878,7 +1878,7 @@
       "ingredients": [
         "abacavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Nucleoside reverse transcriptase inhibitor (NRTI) that competes with natural nucleotides and causes chain termination of viral DNA.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1914,7 +1914,7 @@
         "abacavir",
         "lamivudine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Combination of two NRTIs that inhibit HIV reverse transcriptase and terminate viral DNA chain elongation.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1949,7 +1949,7 @@
       "ingredients": [
         "acetazolamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Carbonic anhydrase inhibitor that reduces aqueous humor production and decreases intraocular pressure; also causes diuresis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -1984,7 +1984,7 @@
       "ingredients": [
         "actinomycin d"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Intercalates into DNA and inhibits RNA polymerase, blocking transcription.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2017,7 +2017,7 @@
       "ingredients": [
         "activated charcoal"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Adsorbant that binds toxins and drugs in the gastrointestinal tract, preventing systemic absorption.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2052,7 +2052,7 @@
       "ingredients": [
         "acyclovir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Guanosine analogue phosphorylated by viral thymidine kinase; inhibits viral DNA polymerase and terminates DNA chain.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2115,7 +2115,7 @@
       "ingredients": [
         "adenosine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Purine nucleoside that slows conduction through the AV node by activating A1 receptors and opening potassium channels.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2149,7 +2149,7 @@
       "ingredients": [
         "albendazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Binds to parasite beta-tubulin, inhibiting microtubule polymerization and impairing glucose uptake.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2198,7 +2198,7 @@
       "ingredients": [
         "all-trans retinoic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Induces differentiation of acute promyelocytic leukemia cells by binding RAR-alpha receptors.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2231,7 +2231,7 @@
       "ingredients": [
         "allopurinol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Xanthine oxidase inhibitor that reduces production of uric acid from purines.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2278,7 +2278,7 @@
       "ingredients": [
         "alprostadil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Prostaglandin E1 analogue that causes vasodilation by increasing cAMP in smooth muscle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2312,7 +2312,7 @@
       "ingredients": [
         "amikacin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Aminoglycoside that binds 30S ribosomal subunit, inhibiting bacterial protein synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2348,7 +2348,7 @@
       "ingredients": [
         "amiodarone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Class III antiarrhythmic that prolongs action potential duration by blocking potassium channels; also has sodium, calcium and beta-blocking effects.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2384,7 +2384,7 @@
       "ingredients": [
         "amitriptyline"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Tricyclic antidepressant that inhibits reuptake of serotonin and norepinephrine; also blocks various receptors.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2447,7 +2447,7 @@
       "ingredients": [
         "amphotericin b"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Binds ergosterol in fungal cell membranes, creating pores that leak cellular contents.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2494,7 +2494,7 @@
       "ingredients": [
         "ampicillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding penicillin-binding proteins.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2530,7 +2530,7 @@
       "ingredients": [
         "anti-d immunoglobulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Provides passive immunity by binding RhD antigen on red cells, preventing maternal sensitization.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2564,7 +2564,7 @@
       "ingredients": [
         "anti-rabies immunoglobulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Provides immediate passive antibodies against rabies virus until active immunity develops.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2599,7 +2599,7 @@
       "ingredients": [
         "anti-tetanus immunoglobulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Neutralizes unbound tetanus toxin and provides temporary passive immunity.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2634,7 +2634,7 @@
       "ingredients": [
         "arsenic trioxide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Induces apoptosis and differentiation in acute promyelocytic leukemia cells; degrades PML-RAR-alpha fusion protein.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2668,7 +2668,7 @@
         "artesunate",
         "sulphadoxine - pyrimethamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Artesunate generates free radicals that damage parasite proteins; sulphadoxine-pyrimethamine inhibit folate synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2708,7 +2708,7 @@
       "ingredients": [
         "ascorbic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Essential cofactor in collagen synthesis, antioxidant, and improves iron absorption.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2745,7 +2745,7 @@
         "atazanavir",
         "ritonavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Protease inhibitors that block HIV protease, preventing maturation of viral particles; ritonavir boosts levels.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2779,7 +2779,7 @@
       "ingredients": [
         "atracurium"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Non-depolarizing neuromuscular blocker that competitively antagonizes acetylcholine at the nicotinic receptor.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2813,7 +2813,7 @@
       "ingredients": [
         "atropine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Competitive muscarinic receptor antagonist that blocks parasympathetic effects.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2871,7 +2871,7 @@
       "ingredients": [
         "azathioprine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Purine antimetabolite converted to 6-mercaptopurine; suppresses lymphocyte proliferation.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2917,7 +2917,7 @@
       "ingredients": [
         "baclofen"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "GABA-B receptor agonist that reduces excitatory neurotransmitter release in the spinal cord, decreasing muscle tone.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2953,7 +2953,7 @@
       "ingredients": [
         "barium sulphate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Radiocontrast Media'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -2987,7 +2987,7 @@
       "ingredients": [
         "bcg vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3022,7 +3022,7 @@
       "ingredients": [
         "bedaquiline"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3055,7 +3055,7 @@
       "ingredients": [
         "bendamustine hydrochloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3089,7 +3089,7 @@
       "ingredients": [
         "benzathine benzylpenicillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3125,7 +3125,7 @@
       "ingredients": [
         "benzoyl peroxide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Keratolytic agents'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3160,7 +3160,7 @@
       "ingredients": [
         "benzylpenicillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3195,7 +3195,7 @@
       "ingredients": [
         "betamethasone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Preterm Labour'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3230,7 +3230,7 @@
       "ingredients": [
         "betamethasone valerate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiinflammatory and Antipruritic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3266,7 +3266,7 @@
       "ingredients": [
         "bicalutamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones and Anti-hormones used in Cancer Therapy'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3299,7 +3299,7 @@
       "ingredients": [
         "bisacodyl"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3335,7 +3335,7 @@
       "ingredients": [
         "bleomycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3368,7 +3368,7 @@
       "ingredients": [
         "bortezomib"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3402,7 +3402,7 @@
         "budesonide",
         "formoterol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiasthmatic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3440,7 +3440,7 @@
       "ingredients": [
         "bupivacaine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Local Anaesthetics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3476,7 +3476,7 @@
       "ingredients": [
         "buprenorphine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in treatment of Psychiatric Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3512,7 +3512,7 @@
         "buprenorphine",
         "naloxone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in treatment of Psychiatric Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3549,7 +3549,7 @@
       "ingredients": [
         "caffeine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supports transitional physiology or treats conditions specific to newborns.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3584,7 +3584,7 @@
       "ingredients": [
         "calamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiinflammatory and Antipruritic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3619,7 +3619,7 @@
       "ingredients": [
         "calcium carbonate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3655,7 +3655,7 @@
       "ingredients": [
         "calcium folinate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3689,7 +3689,7 @@
       "ingredients": [
         "calcium gluconate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3735,7 +3735,7 @@
       "ingredients": [
         "capecitabine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3768,7 +3768,7 @@
       "ingredients": [
         "carbamazepine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3824,7 +3824,7 @@
       "ingredients": [
         "carbimazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Thyroid and Antithyroid Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3861,7 +3861,7 @@
       "ingredients": [
         "carboplatin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3894,7 +3894,7 @@
       "ingredients": [
         "carboxymethyl cellulose"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Miscellaneous'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3930,7 +3930,7 @@
       "ingredients": [
         "cefadroxil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -3967,7 +3967,7 @@
       "ingredients": [
         "cefazolin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4003,7 +4003,7 @@
       "ingredients": [
         "cefixime"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4040,7 +4040,7 @@
       "ingredients": [
         "cefotaxime"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4089,7 +4089,7 @@
       "ingredients": [
         "ceftazidime"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4124,7 +4124,7 @@
       "ingredients": [
         "cefuroxime"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4161,7 +4161,7 @@
       "ingredients": [
         "chlorambucil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4195,7 +4195,7 @@
       "ingredients": [
         "chlorhexidine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4230,7 +4230,7 @@
       "ingredients": [
         "chloroquine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with parasite metabolism, heme detoxification or folate synthesis inside red blood cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4266,7 +4266,7 @@
       "ingredients": [
         "cholecalciferol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4302,7 +4302,7 @@
       "ingredients": [
         "cisplatin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4335,7 +4335,7 @@
       "ingredients": [
         "clarithromycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4384,7 +4384,7 @@
       "ingredients": [
         "clindamycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4457,7 +4457,7 @@
       "ingredients": [
         "clobazam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4492,7 +4492,7 @@
       "ingredients": [
         "clofazimine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antileprosy Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4540,7 +4540,7 @@
       "ingredients": [
         "clomiphene citrate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ovulation Inducers'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4574,7 +4574,7 @@
       "ingredients": [
         "clomipramine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Obsessive Compulsive Disorders and Panic attacks'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4611,7 +4611,7 @@
       "ingredients": [
         "clonazepam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Generalized Anxiety and Sleep Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4648,7 +4648,7 @@
       "ingredients": [
         "clopidogrel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiplatelet and Antithrombotic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4684,7 +4684,7 @@
       "ingredients": [
         "clotrimazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4753,7 +4753,7 @@
       "ingredients": [
         "cloxacillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4792,7 +4792,7 @@
       "ingredients": [
         "clozapine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Psychotic Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4828,7 +4828,7 @@
         "sulphamethoxazole",
         "trimethoprim"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4879,7 +4879,7 @@
       "ingredients": [
         "coagulation factor ix"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Plasma fractions for specific use'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4913,7 +4913,7 @@
       "ingredients": [
         "coagulation factor viii"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Plasma fractions for specific use'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4949,7 +4949,7 @@
         "coal tar",
         "salicylic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Keratolytic agents'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -4984,7 +4984,7 @@
       "ingredients": [
         "colchicine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Reduces uric acid production or inflammation associated with crystal deposition.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5019,7 +5019,7 @@
       "ingredients": [
         "condom"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5055,7 +5055,7 @@
       "ingredients": [
         "cryoprecipitate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Plasma fractions for specific use'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5089,7 +5089,7 @@
       "ingredients": [
         "cyclophosphamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5123,7 +5123,7 @@
       "ingredients": [
         "cycloserine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5158,7 +5158,7 @@
       "ingredients": [
         "cyclosporine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Immunosuppressive Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5195,7 +5195,7 @@
       "ingredients": [
         "cytosine arabinoside"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5230,7 +5230,7 @@
       "ingredients": [
         "d- penicillamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5266,7 +5266,7 @@
       "ingredients": [
         "dabigatran"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiplatelet and Antithrombotic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5301,7 +5301,7 @@
       "ingredients": [
         "dacarbazine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5335,7 +5335,7 @@
       "ingredients": [
         "daclatasvir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5370,7 +5370,7 @@
       "ingredients": [
         "dapsone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antileprosy Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5405,7 +5405,7 @@
       "ingredients": [
         "darunavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5440,7 +5440,7 @@
         "darunavir",
         "ritonavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5474,7 +5474,7 @@
       "ingredients": [
         "daunorubicin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5507,7 +5507,7 @@
       "ingredients": [
         "delamanid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5540,7 +5540,7 @@
       "ingredients": [
         "desferrioxamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5574,7 +5574,7 @@
       "ingredients": [
         "dexamethasone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiallergics and Medicines used in Anaphylaxis'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5653,7 +5653,7 @@
       "ingredients": [
         "dextran-40"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Plasma substitutes'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5687,7 +5687,7 @@
       "ingredients": [
         "diclofenac"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Non-opioid Analgesics, Antipyretics and Non-steroidal Anti- inflammatory Drugs'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5723,7 +5723,7 @@
       "ingredients": [
         "dicyclomine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5760,7 +5760,7 @@
       "ingredients": [
         "diethylcarbamazine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts parasite metabolism, motility or structural integrity leading to expulsion or death of the worm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5797,7 +5797,7 @@
       "ingredients": [
         "digoxin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modifies cardiac ion channel activity or autonomic tone to restore or maintain normal heart rhythm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5846,7 +5846,7 @@
       "ingredients": [
         "diltiazem"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Angina'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5885,7 +5885,7 @@
       "ingredients": [
         "dinoprostone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Oxytocics and Abortifacient'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5920,7 +5920,7 @@
       "ingredients": [
         "diphtheria antitoxin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Provides passive antibodies that neutralize toxins or pathogens.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5955,7 +5955,7 @@
       "ingredients": [
         "dobutamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Shock and Heart failure'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -5989,7 +5989,7 @@
       "ingredients": [
         "docetaxel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6023,7 +6023,7 @@
       "ingredients": [
         "dolutegravir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6057,7 +6057,7 @@
       "ingredients": [
         "domperidone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6093,7 +6093,7 @@
       "ingredients": [
         "donepezil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Dementia'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6128,7 +6128,7 @@
       "ingredients": [
         "dopamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Shock and Heart failure'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6162,7 +6162,7 @@
       "ingredients": [
         "doxorubicin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6195,7 +6195,7 @@
       "ingredients": [
         "dpt vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6232,7 +6232,7 @@
         "hib",
         "hep b vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6267,7 +6267,7 @@
       "ingredients": [
         "efavirenz"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6302,7 +6302,7 @@
       "ingredients": [
         "enoxaparin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6361,7 +6361,7 @@
       "ingredients": [
         "entecavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6397,7 +6397,7 @@
       "ingredients": [
         "erythropoietin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antianaemia Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6432,7 +6432,7 @@
       "ingredients": [
         "escitalopram"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Mood Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6469,7 +6469,7 @@
       "ingredients": [
         "esmolol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modifies cardiac ion channel activity or autonomic tone to restore or maintain normal heart rhythm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6503,7 +6503,7 @@
       "ingredients": [
         "ethambutol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6542,7 +6542,7 @@
         "ethinylestradiol",
         "levonorgestrel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6577,7 +6577,7 @@
       "ingredients": [
         "ethionamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6612,7 +6612,7 @@
       "ingredients": [
         "ethyl alcohol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6647,7 +6647,7 @@
       "ingredients": [
         "etoposide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6680,7 +6680,7 @@
       "ingredients": [
         "fentanyl"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Opioid Analgesics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6715,7 +6715,7 @@
         "ferrous salt",
         "folic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antianaemia Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6752,7 +6752,7 @@
       "ingredients": [
         "filgrastim"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6785,7 +6785,7 @@
       "ingredients": [
         "fludrocortisone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Adrenal Hormones and Synthetic substitutes'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6819,7 +6819,7 @@
       "ingredients": [
         "flunarizine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antimigraine Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6855,7 +6855,7 @@
       "ingredients": [
         "fluorescein"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ophthalmic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6889,7 +6889,7 @@
       "ingredients": [
         "fluoxetine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6951,7 +6951,7 @@
       "ingredients": [
         "fluphenazine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Psychotic Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -6986,7 +6986,7 @@
       "ingredients": [
         "framycetin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antibacterial Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7021,7 +7021,7 @@
       "ingredients": [
         "fresh frozen plasma"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Blood and Blood components'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7055,7 +7055,7 @@
       "ingredients": [
         "fusidic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antibacterial Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7090,7 +7090,7 @@
       "ingredients": [
         "gadobenate dimeglumine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Radiocontrast Media'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7123,7 +7123,7 @@
       "ingredients": [
         "gefitinib"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7156,7 +7156,7 @@
       "ingredients": [
         "gemcitabine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7190,7 +7190,7 @@
       "ingredients": [
         "gentamicin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7226,7 +7226,7 @@
       "ingredients": [
         "glimepiride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7262,7 +7262,7 @@
       "ingredients": [
         "glucose"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7312,7 +7312,7 @@
         "glucose",
         "sodium chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7347,7 +7347,7 @@
       "ingredients": [
         "glutaraldehyde"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7381,7 +7381,7 @@
       "ingredients": [
         "glycerin/glycerol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Dermatological Medicines (Topical)'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7416,7 +7416,7 @@
       "ingredients": [
         "glyceryl trinitrate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Angina'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7453,7 +7453,7 @@
       "ingredients": [
         "glycopyrrolate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Produces sedation, amnesia or reduction of secretions and autonomic responses.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7487,7 +7487,7 @@
       "ingredients": [
         "griseofulvin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7524,7 +7524,7 @@
       "ingredients": [
         "haemodialysis fluid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Dialysis components (Haemodialysis and Peritoneal Dialysis)'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7558,7 +7558,7 @@
       "ingredients": [
         "haloperidol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7610,7 +7610,7 @@
       "ingredients": [
         "halothane"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7644,7 +7644,7 @@
       "ingredients": [
         "heparin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7691,7 +7691,7 @@
       "ingredients": [
         "hepatitis b immunoglobulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Provides passive antibodies that neutralize toxins or pathogens.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7725,7 +7725,7 @@
       "ingredients": [
         "hepatitis b vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7760,7 +7760,7 @@
       "ingredients": [
         "homatropine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Mydriatics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7795,7 +7795,7 @@
       "ingredients": [
         "hormone releasing iud"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7828,7 +7828,7 @@
       "ingredients": [
         "human chorionic gonadotropin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ovulation Inducers'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7864,7 +7864,7 @@
       "ingredients": [
         "human normal immunoglobulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Provides passive antibodies that neutralize toxins or pathogens.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7897,7 +7897,7 @@
       "ingredients": [
         "hydrocortisone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiallergics and Medicines used in Anaphylaxis'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7961,7 +7961,7 @@
       "ingredients": [
         "hydrogen peroxide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -7996,7 +7996,7 @@
       "ingredients": [
         "hydroxocobalamin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antianaemia Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8031,7 +8031,7 @@
       "ingredients": [
         "hydroxychloroquine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates immune pathways to slow joint damage and inflammation in autoimmune disease.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8067,7 +8067,7 @@
       "ingredients": [
         "hydroxypropyl methylcellulose"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Miscellaneous'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8100,7 +8100,7 @@
       "ingredients": [
         "hydroxyurea"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8145,7 +8145,7 @@
       "ingredients": [
         "hyoscine butyl bromide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8181,7 +8181,7 @@
       "ingredients": [
         "ifosfamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8215,7 +8215,7 @@
       "ingredients": [
         "imatinib"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8249,7 +8249,7 @@
       "ingredients": [
         "insulin glargine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8284,7 +8284,7 @@
       "ingredients": [
         "insulin intermediate acting"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8319,7 +8319,7 @@
       "ingredients": [
         "insulin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8354,7 +8354,7 @@
       "ingredients": [
         "iohexol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Radiocontrast Media'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8388,7 +8388,7 @@
       "ingredients": [
         "irinotecan hcl trihydrate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8421,7 +8421,7 @@
       "ingredients": [
         "iron sucrose"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antianaemia Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8455,7 +8455,7 @@
       "ingredients": [
         "isoflurane"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8489,7 +8489,7 @@
       "ingredients": [
         "isosorbide dinitrate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Angina'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8526,7 +8526,7 @@
       "ingredients": [
         "ispaghula"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8561,7 +8561,7 @@
       "ingredients": [
         "itraconazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8597,7 +8597,7 @@
       "ingredients": [
         "iud containing copper"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8632,7 +8632,7 @@
       "ingredients": [
         "ivermectin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts parasite metabolism, motility or structural integrity leading to expulsion or death of the worm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8668,7 +8668,7 @@
       "ingredients": [
         "japanese encephalitis vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8703,7 +8703,7 @@
       "ingredients": [
         "ketamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8739,7 +8739,7 @@
       "ingredients": [
         "l-asparaginase"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8773,7 +8773,7 @@
       "ingredients": [
         "labetalol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antihypertensive Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8811,7 +8811,7 @@
       "ingredients": [
         "lactulose"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8856,7 +8856,7 @@
       "ingredients": [
         "lamivudine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8891,7 +8891,7 @@
       "ingredients": [
         "latanoprost"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Lowers intraocular pressure by increasing aqueous outflow or reducing aqueous production.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8926,7 +8926,7 @@
       "ingredients": [
         "lenalidomide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8960,7 +8960,7 @@
       "ingredients": [
         "letrozole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones and Anti-hormones used in Cancer Therapy'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -8993,7 +8993,7 @@
       "ingredients": [
         "leuprolide acetate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones and Anti-hormones used in Cancer Therapy'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9028,7 +9028,7 @@
       "ingredients": [
         "levetiracetam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9067,7 +9067,7 @@
         "levodopa",
         "carbidopa"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiparkinsonism Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9106,7 +9106,7 @@
       "ingredients": [
         "levofloxacin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9143,7 +9143,7 @@
       "ingredients": [
         "levonorgestrel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9179,7 +9179,7 @@
       "ingredients": [
         "lignocaine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Local Anaesthetics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9229,7 +9229,7 @@
         "lignocaine",
         "adrenaline"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Local Anaesthetics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9265,7 +9265,7 @@
       "ingredients": [
         "linezolid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9300,7 +9300,7 @@
       "ingredients": [
         "lithium"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Mood Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9334,7 +9334,7 @@
       "ingredients": [
         "loperamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9369,7 +9369,7 @@
         "lopinavir",
         "ritonavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9408,7 +9408,7 @@
       "ingredients": [
         "lorazepam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9446,7 +9446,7 @@
       "ingredients": [
         "magnesium sulphate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9480,7 +9480,7 @@
       "ingredients": [
         "mannitol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Diuretics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9516,7 +9516,7 @@
       "ingredients": [
         "measles vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9551,7 +9551,7 @@
       "ingredients": [
         "mebendazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts parasite metabolism, motility or structural integrity leading to expulsion or death of the worm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9587,7 +9587,7 @@
       "ingredients": [
         "medroxyprogesterone acetate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Progestogens'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9624,7 +9624,7 @@
       "ingredients": [
         "mefenamic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Non-opioid Analgesics, Antipyretics and Non-steroidal Anti- inflammatory Drugs'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9660,7 +9660,7 @@
       "ingredients": [
         "mefloquine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with parasite metabolism, heme detoxification or folate synthesis inside red blood cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9694,7 +9694,7 @@
       "ingredients": [
         "meglumine diatrizoate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Radiocontrast Media'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9729,7 +9729,7 @@
       "ingredients": [
         "melphalan"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9763,7 +9763,7 @@
       "ingredients": [
         "meropenem"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9797,7 +9797,7 @@
       "ingredients": [
         "mesna"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9830,7 +9830,7 @@
       "ingredients": [
         "methotrexate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates immune pathways to slow joint damage and inflammation in autoimmune disease.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9881,7 +9881,7 @@
       "ingredients": [
         "methylergometrine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Oxytocics and Abortifacient'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9917,7 +9917,7 @@
       "ingredients": [
         "methylprednisolone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Adrenal Hormones and Synthetic substitutes'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9962,7 +9962,7 @@
       "ingredients": [
         "methylrosanilinium chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -9997,7 +9997,7 @@
       "ingredients": [
         "methylthioninium chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10031,7 +10031,7 @@
       "ingredients": [
         "metoclopramide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10080,7 +10080,7 @@
       "ingredients": [
         "metoprolol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Beta-adrenergic receptor antagonist that reduces heart rate, contractility and blood pressure.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10120,7 +10120,7 @@
       "ingredients": [
         "midazolam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Produces sedation, amnesia or reduction of secretions and autonomic responses.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10186,7 +10186,7 @@
       "ingredients": [
         "mifepristone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Oxytocics and Abortifacient'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10221,7 +10221,7 @@
       "ingredients": [
         "miltefosine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiprotozoal Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10256,7 +10256,7 @@
       "ingredients": [
         "misoprostol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Oxytocics and Abortifacient'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10292,7 +10292,7 @@
       "ingredients": [
         "montelukast"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiasthmatic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10328,7 +10328,7 @@
       "ingredients": [
         "moxifloxacin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10363,7 +10363,7 @@
       "ingredients": [
         "mupirocin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10398,7 +10398,7 @@
       "ingredients": [
         "mycophenolate mofetil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Immunosuppressive Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10432,7 +10432,7 @@
       "ingredients": [
         "n-acetylcysteine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10468,7 +10468,7 @@
       "ingredients": [
         "naloxone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10503,7 +10503,7 @@
       "ingredients": [
         "natamycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial protein synthesis by binding to the ribosomal subunit.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10538,7 +10538,7 @@
       "ingredients": [
         "neostigmine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates neuromuscular transmission to reduce muscle tone or reverse blockade.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10585,7 +10585,7 @@
       "ingredients": [
         "nevirapine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10623,7 +10623,7 @@
       "ingredients": [
         "nicotine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in treatment of Psychiatric Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10659,7 +10659,7 @@
       "ingredients": [
         "nifedipine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Preterm Labour'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10693,7 +10693,7 @@
       "ingredients": [
         "nitrofurantoin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10729,7 +10729,7 @@
       "ingredients": [
         "nitrous oxide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10764,7 +10764,7 @@
       "ingredients": [
         "noradrenaline"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Shock and Heart failure'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10798,7 +10798,7 @@
       "ingredients": [
         "norethisterone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Progestogens'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10833,7 +10833,7 @@
       "ingredients": [
         "nystatin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10868,7 +10868,7 @@
       "ingredients": [
         "oral poliomyelitis vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10903,7 +10903,7 @@
       "ingredients": [
         "ormeloxifene"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones, other Endocrine Medicines and Contraceptives'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10938,7 +10938,7 @@
       "ingredients": [
         "oxaliplatin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -10972,7 +10972,7 @@
       "ingredients": [
         "oxygen"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11018,7 +11018,7 @@
       "ingredients": [
         "oxytocin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Oxytocics and Abortifacient'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11054,7 +11054,7 @@
       "ingredients": [
         "paclitaxel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11088,7 +11088,7 @@
       "ingredients": [
         "pantoprazole"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiulcer Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11122,7 +11122,7 @@
       "ingredients": [
         "para- aminosalicylic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11156,7 +11156,7 @@
       "ingredients": [
         "paromomycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial protein synthesis by binding to the ribosomal subunit.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11191,7 +11191,7 @@
       "ingredients": [
         "peritoneal dialysis solution"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Dialysis components (Haemodialysis and Peritoneal Dialysis)'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11225,7 +11225,7 @@
       "ingredients": [
         "permethrin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Scabicides and Pediculicides'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11261,7 +11261,7 @@
       "ingredients": [
         "pheniramine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiallergics and Medicines used in Anaphylaxis'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11296,7 +11296,7 @@
       "ingredients": [
         "phenobarbitone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11335,7 +11335,7 @@
       "ingredients": [
         "phenoxymethyl penicillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11370,7 +11370,7 @@
       "ingredients": [
         "phenylephrine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Mydriatics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11406,7 +11406,7 @@
       "ingredients": [
         "phytomenadione (vitamin k ) 1"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11442,7 +11442,7 @@
       "ingredients": [
         "pilocarpine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Lowers intraocular pressure by increasing aqueous outflow or reducing aqueous production.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11479,7 +11479,7 @@
         "piperacillin",
         "tazobactam"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11515,7 +11515,7 @@
       "ingredients": [
         "platelet rich plasma/ platelet concentrates"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Blood and Blood components'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11549,7 +11549,7 @@
       "ingredients": [
         "podophyllin resin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Keratolytic agents'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11583,7 +11583,7 @@
       "ingredients": [
         "potassium chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11618,7 +11618,7 @@
       "ingredients": [
         "potassium permanganate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11653,7 +11653,7 @@
       "ingredients": [
         "povidone iodine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiseptics and Disinfectants'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11699,7 +11699,7 @@
       "ingredients": [
         "pralidoxime chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11734,7 +11734,7 @@
       "ingredients": [
         "praziquantel"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts parasite metabolism, motility or structural integrity leading to expulsion or death of the worm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11768,7 +11768,7 @@
       "ingredients": [
         "primaquine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with parasite metabolism, heme detoxification or folate synthesis inside red blood cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11805,7 +11805,7 @@
       "ingredients": [
         "procaine benzylpenicillin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11841,7 +11841,7 @@
       "ingredients": [
         "proparacaine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ophthalmic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11887,7 +11887,7 @@
       "ingredients": [
         "propofol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11922,7 +11922,7 @@
       "ingredients": [
         "propranolol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Beta-adrenergic receptor antagonist that reduces heart rate, contractility and blood pressure.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11959,7 +11959,7 @@
       "ingredients": [
         "protamine sulphate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -11993,7 +11993,7 @@
       "ingredients": [
         "pyrazinamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12032,7 +12032,7 @@
       "ingredients": [
         "pyridoxine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12069,7 +12069,7 @@
       "ingredients": [
         "quinine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with parasite metabolism, heme detoxification or folate synthesis inside red blood cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12105,7 +12105,7 @@
       "ingredients": [
         "rabies vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'For Specific Group of Individuals'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12140,7 +12140,7 @@
       "ingredients": [
         "raltegravir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12174,7 +12174,7 @@
       "ingredients": [
         "ramipril"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Blocks the renin-angiotensin system, lowering blood pressure and reducing cardiac workload.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12210,7 +12210,7 @@
       "ingredients": [
         "red blood cells/ packed rbcs"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Blood and Blood components'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12244,7 +12244,7 @@
       "ingredients": [
         "ribavirin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12278,7 +12278,7 @@
       "ingredients": [
         "riboflavin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12313,7 +12313,7 @@
       "ingredients": [
         "ringer lactate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12348,7 +12348,7 @@
       "ingredients": [
         "risperidone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Psychotic Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12388,7 +12388,7 @@
       "ingredients": [
         "ritonavir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12422,7 +12422,7 @@
       "ingredients": [
         "rituximab"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12455,7 +12455,7 @@
       "ingredients": [
         "rotavirus vaccine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12490,7 +12490,7 @@
       "ingredients": [
         "salicylic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Keratolytic agents'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12525,7 +12525,7 @@
       "ingredients": [
         "sevoflurane"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12559,7 +12559,7 @@
       "ingredients": [
         "silver sulphadiazine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antibacterial Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12594,7 +12594,7 @@
       "ingredients": [
         "snake venom antiserum"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12641,7 +12641,7 @@
       "ingredients": [
         "sodium bicarbonate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12676,7 +12676,7 @@
       "ingredients": [
         "sodium chloride"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12713,7 +12713,7 @@
       "ingredients": [
         "sodium nitrite"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12747,7 +12747,7 @@
       "ingredients": [
         "sodium nitroprusside"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antihypertensive Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12781,7 +12781,7 @@
       "ingredients": [
         "sodium thiosulphate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antidotes and Other Substances used in Management of Poisonings/Envenomation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12815,7 +12815,7 @@
       "ingredients": [
         "sodium valproate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Anticonvulsants/ Antiepileptics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12872,7 +12872,7 @@
       "ingredients": [
         "sofosbuvir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12906,7 +12906,7 @@
       "ingredients": [
         "somatostatin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Acts on the gastrointestinal tract to reduce inflammation, acidity, motility or infection depending on the specific agent.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12939,7 +12939,7 @@
       "ingredients": [
         "spironolactone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Shock and Heart failure'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -12987,7 +12987,7 @@
       "ingredients": [
         "streptokinase"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiplatelet and Antithrombotic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13022,7 +13022,7 @@
       "ingredients": [
         "streptomycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits mycobacterial cell wall synthesis, protein synthesis or other essential pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13058,7 +13058,7 @@
       "ingredients": [
         "succinylcholine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates neuromuscular transmission to reduce muscle tone or reverse blockade.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13092,7 +13092,7 @@
       "ingredients": [
         "sulfasalazine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates immune pathways to slow joint damage and inflammation in autoimmune disease.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13126,7 +13126,7 @@
       "ingredients": [
         "sumatriptan"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antimigraine Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13162,7 +13162,7 @@
       "ingredients": [
         "surfactant"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supports transitional physiology or treats conditions specific to newborns.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13196,7 +13196,7 @@
       "ingredients": [
         "tacrolimus"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Immunosuppressive Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13230,7 +13230,7 @@
       "ingredients": [
         "tamoxifen"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Hormones and Anti-hormones used in Cancer Therapy'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13264,7 +13264,7 @@
       "ingredients": [
         "telmisartan"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Blocks the renin-angiotensin system, lowering blood pressure and reducing cardiac workload.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13301,7 +13301,7 @@
       "ingredients": [
         "temozolomide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13336,7 +13336,7 @@
       "ingredients": [
         "tenecteplase"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiplatelet and Antithrombotic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13371,7 +13371,7 @@
       "ingredients": [
         "teneligliptin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Diabetes Mellitus'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13406,7 +13406,7 @@
       "ingredients": [
         "tenofovir alafenamide fumarate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting a viral enzyme or process essential for the viral life cycle.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13440,7 +13440,7 @@
       "ingredients": [
         "tenofovir disproxil fumarate"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13486,7 +13486,7 @@
         "tenofovir disproxil fumarate",
         "lamivudine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13522,7 +13522,7 @@
         "lamivudine",
         "dolutegravir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13559,7 +13559,7 @@
         "lamivudine",
         "efavirenz"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13593,7 +13593,7 @@
       "ingredients": [
         "terbinafine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Disrupts fungal cell membrane or cell wall integrity or inhibits fungal nucleic acid synthesis.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13628,7 +13628,7 @@
       "ingredients": [
         "tetanus toxoid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Vaccines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13663,7 +13663,7 @@
       "ingredients": [
         "thalidomide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13697,7 +13697,7 @@
       "ingredients": [
         "thiamine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13733,7 +13733,7 @@
       "ingredients": [
         "thiopentone"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'General Anaesthetics and Oxygen'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13769,7 +13769,7 @@
       "ingredients": [
         "timolol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Lowers intraocular pressure by increasing aqueous outflow or reducing aqueous production.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13805,7 +13805,7 @@
       "ingredients": [
         "tiotropium"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiasthmatic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13841,7 +13841,7 @@
       "ingredients": [
         "tramadol"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Opioid Analgesics'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13890,7 +13890,7 @@
       "ingredients": [
         "tranexamic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13926,7 +13926,7 @@
       "ingredients": [
         "trastuzumab"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13959,7 +13959,7 @@
       "ingredients": [
         "trihexyphenidyl"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Antiparkinsonism Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -13994,7 +13994,7 @@
       "ingredients": [
         "tropicamide"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ophthalmic Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14040,7 +14040,7 @@
       "ingredients": [
         "tuberculin, purified protein derivative"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Diagnostic agents'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14075,7 +14075,7 @@
       "ingredients": [
         "valganciclovir"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits viral replication by targeting viral enzymes or entry processes.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14121,7 +14121,7 @@
       "ingredients": [
         "vancomycin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits bacterial growth or kills bacteria by targeting cell wall, protein synthesis, DNA or metabolic pathways.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14159,7 +14159,7 @@
       "ingredients": [
         "vecuronium"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modulates neuromuscular transmission to reduce muscle tone or reverse blockade.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14194,7 +14194,7 @@
       "ingredients": [
         "verapamil"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Modifies cardiac ion channel activity or autonomic tone to restore or maintain normal heart rhythm.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14230,7 +14230,7 @@
       "ingredients": [
         "vinblastine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14263,7 +14263,7 @@
       "ingredients": [
         "vincristine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Interferes with DNA synthesis, cell division or signaling pathways to kill or control rapidly dividing cancer cells.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14296,7 +14296,7 @@
       "ingredients": [
         "vitamin a"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Supplies an essential micronutrient required for enzymatic reactions, structure or antioxidant defense.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14331,7 +14331,7 @@
       "ingredients": [
         "warfarin"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines affecting Coagulation'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14368,7 +14368,7 @@
       "ingredients": [
         "water for injection"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Miscellaneous'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14403,7 +14403,7 @@
       "ingredients": [
         "whole blood"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Blood and Blood components'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14437,7 +14437,7 @@
       "ingredients": [
         "xylometazoline"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Ear, Nose and Throat Medicines'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14473,7 +14473,7 @@
       "ingredients": [
         "zidovudine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14509,7 +14509,7 @@
         "zidovudine",
         "lamivudine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14546,7 +14546,7 @@
         "lamivudine",
         "nevirapine"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Inhibits one or more steps of the HIV life cycle (reverse transcription, integration or protease activity).",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14581,7 +14581,7 @@
       "ingredients": [
         "zoledronic acid"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Palliative Care'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
@@ -14614,7 +14614,7 @@
       "ingredients": [
         "zolpidem"
       ],
-      "mechanismOfAction": null,
+      "mechanismOfAction": "Therapeutic agent in the class 'Medicines used in Generalized Anxiety and Sleep Disorders'. Exact molecular target varies; refer to product information for the precise mechanism.",
       "nlem2022Membership": "listed",
       "rxnorm": {
         "rxcui": null,
