@@ -1,54 +1,34 @@
-.medicine-library__notice {
-  padding: 0.8rem 1rem;
-  border-left: 4px solid #d69e2e;
-  background: #fff8e6;
-}
+/* Medicine Study Library: uses the same colours, fonts and layout as the other Med Sense pages */
+:root{--ink:#0a2e30;--pine:#0a4d4e;--teal:#0f8a82;--mint:#7ff0d0;--mist:#eaf6f3;--paper:#f6fbfa;--line:#d3e5e1;--muted:#587571;--amber:#f5a524;--amber-bg:#fff6e0;--font-display:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--font-body:"Manrope","Segoe UI",Arial,sans-serif}
+[data-theme="dark"]{color-scheme:dark;--ink:#eaf6f4;--pine:#8fe3d4;--teal:#19a79d;--mist:#143332;--paper:#0f2322;--line:#2a4a46;--muted:#9ab8b3;--amber-bg:#33280e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;padding:28px 16px;font-family:var(--font-body);color:var(--ink);line-height:1.55;background:radial-gradient(900px 500px at 8% -10%,#c9f1e6 0%,transparent 60%),radial-gradient(800px 500px at 100% 0%,#dcdcff 0%,transparent 55%),#eef6f4}
+[data-theme="dark"] body{background:radial-gradient(900px 520px at 5% -10%,#0f4a43 0%,transparent 60%),#070f0f}
+input,button{font:inherit}
+.container{width:1100px;max-width:100%;margin:auto;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(10,77,78,.35)}
+[data-theme="dark"] .container{background:#0c1a19;border:1px solid #1f3d39}
+.hero{position:relative;display:flex;align-items:center;gap:22px;padding:40px 40px 44px;color:#fff;background:linear-gradient(120deg,#062a33 0%,#0a4d4e 55%,#0f8a82 100%)}
+.logo-img{flex:none;width:74px;height:74px;border-radius:22px;box-shadow:0 8px 24px -8px rgba(0,0,0,.5)}
+.hero h1{font-family:var(--font-display);font-weight:800;font-size:40px;line-height:1.05;letter-spacing:-.02em;color:#fff}
+.subtitle{margin-top:8px;color:#c9ece6}
+.back{position:absolute;top:18px;right:22px;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:8px 16px;border:1.5px solid rgba(255,255,255,.5);border-radius:99px;background:rgba(255,255,255,.12)}
+.main{padding:30px 40px 36px}
+.ml-download{margin-bottom:14px;font-size:14px}
+.ml-download a,.medicine-library__card a{color:var(--teal);font-weight:600}
 
-.medicine-library__search {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 36rem;
-  padding: 0.75rem;
-  margin: 0.75rem 0;
-  border: 1px solid #aaa;
-  border-radius: 0.5rem;
-  font: inherit;
-}
+.medicine-library__notice{padding:14px 20px;border:1.5px solid var(--amber);border-left-width:5px;border-radius:14px;background:var(--amber-bg);color:var(--ink);font-size:14px}
+.medicine-library__search{display:block;width:100%;max-width:36rem;margin:16px 0 10px;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;font-size:16px;color:var(--ink);background:var(--paper)}
+.medicine-library__search::placeholder{color:var(--muted)}
+.medicine-library__search:focus{outline:2px solid var(--teal);outline-offset:1px}
+[role="status"]{color:var(--muted);font-size:14px;margin-bottom:12px}
+.medicine-library__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:16px}
+.medicine-library__card{padding:18px 20px;border:1.5px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink)}
+.medicine-library__card h2{margin:0 0 6px;font-family:var(--font-display);font-size:19px;color:var(--pine)}
+.medicine-library__card p{margin:4px 0;line-height:1.5;font-size:14px}
+.medicine-library__card > p:nth-of-type(1){color:var(--teal);font-weight:700}
+.medicine-library__card details{margin:8px 0;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:var(--mist)}
+.medicine-library__card summary{cursor:pointer;font-weight:700;color:var(--pine)}
+.medicine-library__card details p{color:var(--ink)}
+.medicine-library__card > p:nth-last-of-type(-n+2){color:var(--muted);font-size:13px}
 
-.medicine-library__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  gap: 1rem;
-}
-
-.medicine-library__card {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 0.75rem;
-  background: #fff;
-}
-
-.medicine-library__card h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1.2rem;
-}
-
-.medicine-library__card p {
-  line-height: 1.5;
-}
-
-.medicine-library__card summary {
-  cursor: pointer;
-  font-weight: 600;
-}
-.medicine-library__page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
-}
-
-[data-theme="dark"] .medicine-library__page { color: #eaf6f4; }
-[data-theme="dark"] .medicine-library__card { background: #0c1a19; border-color: #2a4a46; }
-[data-theme="dark"] .medicine-library__search { background: #0f2322; color: #eaf6f4; border-color: #2a4a46; }
-[data-theme="dark"] .medicine-library__notice { background: #33280e; }
+@media(max-width:700px){.hero{padding:32px 22px 40px}.hero h1{font-size:30px}.main{padding:24px 20px}.logo-img{width:58px;height:58px}.back{position:static;margin-left:auto}}

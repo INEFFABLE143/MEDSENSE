@@ -1,22 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Med Sense - Medicine Study Library</title>
-    <link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
-    <link rel="stylesheet" href="css/brand.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/medicine-library.css">
-    <script src="js/theme.js"></script>
-  </head>
-  <body>
-    <script src="js/sidebar.js"></script>
-    <main class="medicine-library__page">
-      <h1>Medicine Study Library</h1>
-      <p><a href="data/medicine-library.csv" download>Download as CSV (opens in Excel)</a></p>
-      <div id="medicine-library"></div>
-    </main>
-    <script type="module" src="js/medicine-library.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Med Sense - Medicine Study Library</title>
+<link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/brand.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/medicine-library.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<script src="js/sidebar.js"></script>
+<div class="container">
+  <header class="hero">
+    <img src="img/med-sense-icon.svg" alt="Med Sense logo" class="logo-img" width="74" height="74">
+    <div><h1>Medicine Study Library</h1><p class="subtitle">Study notes: class, how each medicine works, NLEM and RxNorm status</p></div>
+    <a class="back" href="./">&larr; Dashboard</a>
+  </header>
+  <div class="main">
+    <p class="ml-download"><a href="data/medicine-library.csv" download>Download as CSV (opens in Excel)</a></p>
+    <div id="medicine-library"></div>
+  </div>
+  <footer class="site-footer">
+    <img class="brand-logo is-light" src="img/med-sense-logo.svg" alt="Med Sense - Medicine, made clear." width="168" height="46">
+    <img class="brand-logo is-dark" src="img/med-sense-logo-dark.svg" alt="" aria-hidden="true" width="168" height="46">
+    <small>Educational information only. Not a substitute for advice from a doctor or pharmacist.</small>
+  </footer>
+</div>
+<script type="module" src="js/medicine-library.js"></script>
+</body>
 </html>
