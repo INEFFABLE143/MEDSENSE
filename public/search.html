@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Med Sense - Search all medicines</title>
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
 <link rel="apple-touch-icon" href="img/med-sense-icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +114,13 @@ async function search(term){
 document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();search(qi.value)});
 out.addEventListener("click",function(e){var b=e.target.closest("[data-q]");if(b){qi.value=b.dataset.q;search(b.dataset.q)}});
 var p=new URLSearchParams(location.search).get("q"); if(p){qi.value=p;search(p)}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
 </script>
 </body>
 </html>

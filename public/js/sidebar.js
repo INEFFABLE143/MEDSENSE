@@ -22,7 +22,9 @@
     { key: "scan", href: "scan.html", ico: "📄", label: "Scan prescription" },
     { key: "checker", href: "checker.html", ico: "✅", label: "Medicine checker" },
     { key: "search", href: "search.html", ico: "🔎", label: "Search all medicines" },
-    { key: "library", href: "medicine-library.html", ico: "📚", label: "Medicine Study Library" }
+    { key: "library", href: "medicine-library.html", ico: "📚", label: "Medicine Study Library" },
+    { key: "about", href: "index.html#about", ico: "ℹ️", label: "About & sources" },
+    { key: "changelog", href: "index.html#changelog", ico: "✨", label: "What's new" }
   ];
 
   function link(i) {

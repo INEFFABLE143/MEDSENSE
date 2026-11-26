@@ -1,0 +1,18 @@
+{
+  "name": "Med Sense",
+  "short_name": "Med Sense",
+  "description": "Educational disease and medicine information — not a substitute for a doctor or pharmacist.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#eef6f4",
+  "theme_color": "#0a4d4e",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/med-sense-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

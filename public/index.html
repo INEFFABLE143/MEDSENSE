@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Med Sense - Dashboard</title>
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
 <link rel="apple-touch-icon" href="img/med-sense-icon.svg">
 <meta property="og:title" content="Med Sense - Medicine, made clear.">
@@ -70,6 +71,32 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
 @media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
 
 
+
+/* How-to strip */
+.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}
+.howto div{background:var(--mist);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.4}
+.howto b{display:block;font-family:var(--font-display);font-size:14px;color:var(--pine);margin-bottom:2px}
+@media(max-width:700px){.howto{grid-template-columns:1fr}}
+/* Recently viewed */
+.recent{margin:0 0 18px}
+.recent h3{font-family:var(--font-display);font-size:16px;color:var(--pine);margin:0 0 8px}
+.recent-row{display:flex;flex-wrap:wrap;gap:8px}
+.recent-row a{text-decoration:none;background:#fff;border:1.5px solid var(--line);color:var(--pine);font-weight:600;font-size:13px;padding:6px 12px;border-radius:99px}
+.recent-row a:hover{border-color:var(--teal);background:var(--mist)}
+[data-theme="dark"] .recent-row a{background:var(--paper)}
+/* Empty state */
+.empty-state{padding:28px 18px;text-align:center;background:var(--mist);border-radius:18px;border:1.5px dashed var(--line)}
+.empty-state p{margin:0 0 12px;color:var(--muted)}
+.empty-state .chip{margin:4px}
+/* Form filter */
+.form-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+/* About page */
+.about-box{max-width:62ch}
+.about-box h3{margin-top:18px}
+.about-box ul{padding-left:18px;line-height:1.7}
+/* Changelog */
+.changelog li{margin:6px 0}
+
 /* Source / trust */
 .source-note{font-size:12px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
 /* When to seek care */
@@ -99,6 +126,16 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
   .facts{grid-template-columns:1fr}
   .share-row .btn{min-height:40px}
 }
+
+
+.subtitle strong{display:inline-block;font-family:var(--font-display);font-weight:800;font-size:1.05em;color:#7ff0d0;letter-spacing:-.01em}
+.disclaimer-top{margin:0 0 22px;padding:16px 18px;background:var(--amber-bg);border:1.5px solid var(--amber);border-left-width:6px;border-radius:16px;font-size:14px;line-height:1.55;color:var(--ink)}
+.disclaimer-top strong{color:var(--pine)}
+.disclaimer-top ul{margin:8px 0 0 18px;padding:0}
+[data-theme="dark"] .disclaimer-top{background:#3a2d10;border-color:var(--amber);color:var(--ink)}
+.search-top{margin:0 0 18px}
+.search-top input{width:100%;padding:16px 18px;border:2px solid var(--teal);border-radius:16px;font-size:17px;color:var(--ink);background:var(--paper);box-shadow:0 4px 16px -8px rgba(15,138,130,.35)}
+.search-top input:focus{outline:3px solid rgba(15,138,130,.35)}
 
 /* Audience sections */
 .audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:20px 0 28px}
@@ -205,7 +242,7 @@ table.cmp{width:100%;min-width:640px;border-collapse:collapse}
 <div class="container">
 <header class="hero">
   <img src="img/med-sense-icon.svg" alt="Med Sense logo" class="logo-img" width="74" height="74">
-  <div class="hero-text"><h1>Med Sense</h1><p class="subtitle">Dashboard: browse every disease and medicine in one place</p></div>
+  <div class="hero-text"><h1>Med Sense</h1><p class="subtitle"><strong>Educate medicines in one stop</strong> — clear, practical information on diseases and common medicines</p></div>
   <svg class="pulse" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path class="pulse-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0 40 H190 L212 40 L228 14 L248 62 L268 6 L286 40 H600"/></svg>
 </header>
 <div class="print-only printhead" id="ph"></div><div class="main" id="app"><p class="lead">Loading...</p></div><div class="print-only notes"><b>Notes / questions for my doctor</b><i></i><i></i><i></i><i></i><i></i></div>
@@ -227,7 +264,7 @@ const card=(n,small,p,t)=>'<a class="card" href="#'+(t==="d"?"d":"m")+'/'+enc(n)
 const app=document.getElementById("app");
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const enc=encodeURIComponent;
-const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
+const NOTE='<p class="note">Educational information only. Med Sense does not diagnose, prescribe, or replace a doctor or pharmacist. Always check the label and get professional advice.</p>';
 function bar(on){if(window.msSideSync)window.msSideSync()}
 
 const SYNONYMS={
@@ -292,7 +329,7 @@ function seekCare(cat, name){
   if(cat==="Aged Care")return '<div class="seek-box"><h3>When to seek care</h3><ul><li>Sudden confusion, falls, chest pain, or breathing difficulty</li><li>New incontinence, inability to pass urine, or severe dizziness</li><li>Medicine side effects that interfere with daily life</li><li>Multiple medicines — ask a pharmacist or doctor to review them</li></ul></div>';
   return general;
 }
-function shareRow(kind, name){
+function shareSheet(kind, name){
   const url = location.origin + location.pathname + '#' + (kind==='d'?'d/':'m/') + encodeURIComponent(name);
   return '<div class="share-row no-print"><button type="button" class="btn ghost" data-copy="'+esc(url)+'">Copy link</button><button type="button" class="btn ghost" onclick="window.print()">Print</button></div>';
 }
@@ -301,6 +338,55 @@ function wireShare(){
     b.onclick=async()=>{
       try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy link',1500)}
       catch(e){prompt('Copy this link:', b.dataset.copy)}
+    };
+  });
+}
+
+
+const RECENT_KEY="ms_recent";
+function pushRecent(kind,name){
+  try{
+    let list=JSON.parse(localStorage.getItem(RECENT_KEY)||"[]");
+    list=list.filter(x=>!(x.kind===kind&&x.name===name));
+    list.unshift({kind,name,at:Date.now()});
+    list=list.slice(0,8);
+    localStorage.setItem(RECENT_KEY,JSON.stringify(list));
+  }catch(e){}
+}
+function recentHtml(){
+  try{
+    const list=JSON.parse(localStorage.getItem(RECENT_KEY)||"[]");
+    if(!list.length)return"";
+    return '<div class="recent"><h3>Recently viewed</h3><div class="recent-row">'+
+      list.map(x=>'<a href="#'+(x.kind==="d"?"d":"m")+'/'+enc(x.name)+'">'+esc(x.name)+'</a>').join("")+
+      '</div></div>';
+  }catch(e){return""}
+}
+function shareSheet(kind,name){
+  const url=location.origin+location.pathname+"#"+(kind==="d"?"d/":"m/")+encodeURIComponent(name);
+  const text="Med Sense (educational): "+name+" — "+url;
+  return '<div class="share-row no-print">'+
+    '<button type="button" class="btn ghost" data-copy="'+esc(url)+'">Copy link</button>'+
+    '<button type="button" class="btn ghost" data-share="'+esc(text)+'" data-url="'+esc(url)+'">Share</button>'+
+    '<button type="button" class="btn ghost" onclick="window.print()">Print</button>'+
+    '</div>';
+}
+function wireShare(){
+  document.querySelectorAll("[data-copy]").forEach(b=>{
+    b.onclick=async()=>{
+      try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent="Copied";setTimeout(()=>b.textContent="Copy link",1500)}
+      catch(e){prompt("Copy this link:",b.dataset.copy)}
+    };
+  });
+  document.querySelectorAll("[data-share]").forEach(b=>{
+    b.onclick=async()=>{
+      const text=b.dataset.share,url=b.dataset.url;
+      if(navigator.share){
+        try{await navigator.share({title:"Med Sense",text,url})}catch(e){}
+      }else{
+        const wa="https://wa.me/?text="+encodeURIComponent(text);
+        window.open(wa,"_blank","noopener");
+      }
     };
   });
 }
@@ -314,44 +400,74 @@ function home(){
     {id:"Pregnancy",title:"Pregnant Women",desc:"Nausea, anaemia, heartburn and support",icon:"🤰"},
     {id:"Veterinary",title:"Animals / Vet",desc:"Fleas, worms, diarrhoea and pet care",icon:"🐾"}
   ];
-  app.innerHTML='<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
-  '<h2 style="margin-top:8px">Browse by audience</h2><p class="lead">Open any section below — data is ready for child care, older adults, pregnancy and veterinary topics.</p>'+
+  const DISCLAIMER='<div class="disclaimer-top" role="note"><strong>Educational information only.</strong> Med Sense does not diagnose disease, prescribe medication, or replace advice from a qualified doctor or pharmacist. Always read the product label and follow professional guidance — especially for children, older adults, pregnancy, and animals. If symptoms are severe or you are unsure, seek care promptly.</div>';
+  const HOWTO='<div class="howto" aria-label="How to use this site"><div><b>1. Search</b>Type a symptom, disease or medicine name</div><div><b>2. Open a topic</b>Read common symptoms and listed medicines</div><div><b>3. Check a medicine</b>See uses, precautions and when to seek care</div></div>';
+  app.innerHTML=DISCLAIMER+HOWTO+
+  '<div class="search-top"><input id="q" type="search" placeholder="Search symptoms, diseases or medicines (e.g. fever, high bp, morning sickness)" aria-label="Search" value="'+esc(q)+'"></div>'+
+  recentHtml()+
+  '<div class="stats"><div class="stat"><b>'+Object.keys(D).length+'</b><span>Diseases</span></div><div class="stat"><b>'+Object.keys(M).length+'</b><span>Medicines</span></div><div class="stat"><b>'+(cats.length-1)+'</b><span>Categories</span></div></div>'+
+  '<h2 style="margin-top:4px">Browse by audience</h2><p class="lead">Open any section — data is ready for child care, older adults, pregnancy and veterinary topics.</p>'+
   '<div class="audience-grid">'+audiences.map(a=>'<a class="audience-card" href="#home" data-aud="'+esc(a.id)+'"><div class="icon">'+a.icon+'</div><h3>'+esc(a.title)+'</h3><p>'+esc(a.desc)+'</p></a>').join("")+'</div>'+
-  '<input id="q" type="search" placeholder="Search by symptom, disease or medicine (e.g. fever, cough)" aria-label="Search" value="'+esc(q)+'">'+
   '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
   const draw=()=>{
     document.getElementById("chips").innerHTML=cats.map(c=>'<button class="chip '+(c===cat?"on":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
-    const toks=expandQuery(q);
+    const toks=typeof expandQuery==="function"?expandQuery(q):q.toLowerCase().split(/[\s,;]+/).filter(t=>t.length>1);
     const list=Object.entries(D).filter(([n,d])=>cat==="All"||d.category===cat).map(([n,d])=>{const h=(n+" "+d.symptoms+" "+d.medicines.join(" ")).toLowerCase();return [n,d,toks.filter(t=>h.includes(t)).length]}).filter(x=>!toks.length||x[2]>0).sort((a,b)=>b[2]-a[2]);
-    document.getElementById("g").innerHTML=list.map(([n,d,c])=>card(n,d.category+(toks.length>1?" · "+c+"/"+toks.length+" match":""),d.symptoms.slice(0,80)+(d.symptoms.length>80?"...":""),"d")).join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
+    const examples=["fever","high bp","morning sickness","itchy dog","ear ache","constipation"];
+    document.getElementById("g").innerHTML=list.length?list.map(([n,d,c])=>card(n,d.category+(toks.length>1?" · "+c+"/"+toks.length+" match":""),d.symptoms.slice(0,80)+(d.symptoms.length>80?"...":""),"d")).join(""):
+      '<div class="empty-state"><p><b>No match.</b> Try a symptom, condition or medicine name.</p><p>Examples:</p>'+examples.map(e=>'<button type="button" class="chip" data-ex="'+esc(e)+'">'+esc(e)+'</button>').join("")+'</div>';
   };
   draw();
   document.getElementById("q").oninput=e=>{q=e.target.value.trim();draw()};
   document.getElementById("chips").onclick=e=>{const c=e.target.dataset.c;if(c){cat=c;draw()}};
-  document.querySelector(".audience-grid").onclick=e=>{
-    const a=e.target.closest("[data-aud]");
-    if(a){cat=a.dataset.aud;q="";document.getElementById("q").value="";draw();scrollTo(0,document.getElementById("chips").offsetTop-20)}
+  document.getElementById("g").onclick=e=>{
+    const ex=e.target.closest("[data-ex]");
+    if(ex){q=ex.dataset.ex;document.getElementById("q").value=q;draw()}
   };
+  const ag=document.querySelector(".audience-grid");
+  if(ag)ag.onclick=e=>{
+    const a=e.target.closest("[data-aud]");
+    if(a){cat=a.dataset.aud;q="";document.getElementById("q").value="";draw();const chips=document.getElementById("chips");if(chips)scrollTo(0,chips.offsetTop-20)}
+  };
+  const qi=document.getElementById("q");if(qi&&!q)setTimeout(()=>qi.focus(),80);
 }
 function disease(n){
   const d=D[n];if(!d)return home();
+  pushRecent("d",n);
   bar("home");
   app.innerHTML='<a class="back" href="#home">Back to diseases</a><span class="tags"><a href="#home" style="pointer-events:none">'+esc(d.category)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+
   cautionBanner(d.category)+
   '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+warnBox(d)+
   '<div class="box"><h3>Medicines commonly listed ('+d.medicines.length+')</h3><div class="tags">'+d.medicines.map(m=>M[m]?'<a href="#m/'+enc(m)+'">'+esc(m)+'</a>':'<a href="#home" style="pointer-events:none">'+esc(m)+'</a>').join("")+'</div></div>'+
   seekCare(d.category,n)+
-  shareRow('d',n)+
+  shareSheet('d',n)+
   favBtn("d",n)+PB+'<a class="btn" href="checker.html?disease='+enc(n)+'">Check a medicine for '+esc(n)+'</a>'+
   sourceNote('disease')+NOTE;
   favWire("d",n);wireShare();scrollTo(0,0);
 }
 function meds(){
   bar("med");
-  app.innerHTML='<h2>All medicines</h2><p class="lead">Tap a medicine for uses, precautions and side effects.</p><input id="mq" type="search" placeholder="Search medicines or purpose" aria-label="Search medicines"><div class="grid" id="g" style="margin-top:18px"></div>'+NOTE;
-  const draw=s=>{document.getElementById("g").innerHTML=Object.entries(M).filter(([n,m])=>(n+m.purpose+m.ingredient).toLowerCase().includes(s)).sort().map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join("")||'<p class="lead">No match.</p>'};
-  draw("");document.getElementById("mq").oninput=e=>draw(e.target.value.trim().toLowerCase());
+  const forms=["All",...new Set(Object.values(M).map(m=>(m.form||"").split(/[\/,]/)[0].trim()).filter(Boolean))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
+  let formFilter="All";
+  app.innerHTML='<h2>All medicines</h2><p class="lead">Tap a medicine for uses, precautions and side effects. Filter by form if you need syrups, tablets or other types.</p>'+
+  '<div class="search-top"><input id="mq" type="search" placeholder="Search medicines or purpose" aria-label="Search medicines"></div>'+
+  '<div class="form-filters" id="ff"></div><div class="grid" id="g" style="margin-top:8px"></div>'+NOTE;
+  const draw=s=>{
+    document.getElementById("ff").innerHTML=forms.map(f=>'<button type="button" class="chip '+(f===formFilter?"on":"")+'" data-f="'+esc(f)+'">'+esc(f)+'</button>').join("");
+    const q=(s||"").toLowerCase();
+    const list=Object.entries(M).filter(([n,m])=>{
+      const formOk=formFilter==="All"||(m.form||"").toLowerCase().includes(formFilter.toLowerCase());
+      const textOk=!q||(n+m.purpose+m.ingredient+(m.form||"")).toLowerCase().includes(q);
+      return formOk&&textOk;
+    }).sort((a,b)=>a[0].localeCompare(b[0]));
+    document.getElementById("g").innerHTML=list.length?list.map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join(""):
+      '<div class="empty-state"><p><b>No match.</b> Try another name or clear the form filter.</p></div>';
+  };
+  draw("");
+  document.getElementById("mq").oninput=e=>draw(e.target.value.trim());
+  document.getElementById("ff").onclick=e=>{const f=e.target.dataset.f;if(f){formFilter=f;draw(document.getElementById("mq").value.trim())}};
 }
+
 function libBox(l){
   if(!l)return"";
   const nl=l.nlem2022Membership==="listed"?"Listed in NLEM 2022":l.nlem2022Membership==="not_listed"?"Not in NLEM 2022":"Not verified yet";
@@ -360,6 +476,7 @@ function libBox(l){
 }
 function medicine(n){
   const m=M[n];if(!m)return meds();
+  pushRecent("m",n);
   bar("med");
   const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k,d])=>({name:k,cat:d.category}));
   const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
@@ -369,7 +486,7 @@ function medicine(n){
   app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+[m.form,m.ingredient].filter(Boolean).map(esc).join(' &middot; ')+'</p>'+
   cautionBanner(cautionCat)+
   '<p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
-  shareRow('m',n)+
+  shareSheet('m',n)+
   '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+(typeof ingBox==="function"?ingBox(m):'')+
   '<div class="facts">'+F.filter(([t,k])=>m[k]).map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
   (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
@@ -427,13 +544,51 @@ function compare(v){
   };
   [0,1,2].forEach(i=>document.getElementById("c"+i).onchange=out);out();scrollTo(0,0);
 }
+
+function about(){
+  bar("home");
+  app.innerHTML='<a class="back" href="#home">Back</a><h2>About Med Sense</h2><div class="about-box">'+
+  '<p class="lead">Medicine, made clear. An educational site for diseases, symptoms and common medicines.</p>'+
+  '<div class="disclaimer-top"><strong>What this site is not.</strong> Med Sense does not diagnose conditions, prescribe treatment, or replace a doctor, pharmacist or veterinarian.</div>'+
+  '<h3>Where the information comes from</h3><ul>'+
+  '<li>Core disease and medicine notes curated for learning and everyday reference</li>'+
+  '<li>Medicine Study Library aligned with themes from India\'s NLEM 2022 (study material; verify against official sources)</li>'+
+  '<li>Live U.S. openFDA drug-label lookup when a name is not in our own data</li>'+
+  '</ul>'+
+  '<h3>Who it is for</h3><p>Students, carers, and anyone who wants clearer plain-language context before speaking to a professional. Sections exist for child care, older adults, pregnancy support and veterinary topics — always with extra caution banners.</p>'+
+  '<h3>Last data update</h3><p>November 2026. Mechanisms, audience sections and medicines were expanded; empty library fields were filled with educational summaries.</p>'+
+  '<p style="margin-top:16px"><a class="btn" href="#changelog">What\'s new</a> <a class="btn ghost" href="#home">Back to dashboard</a></p>'+
+  sourceNote("about")+NOTE+
+  '</div>';
+  scrollTo(0,0);
+}
+function changelog(){
+  bar("home");
+  app.innerHTML='<a class="back" href="#home">Back</a><h2>What\'s new</h2><div class="about-box changelog"><ul>'+
+  '<li><b>Nov 2026 — Audience sections:</b> Child Care, Aged Care, Pregnancy and Veterinary with dedicated diseases and medicines</li>'+
+  '<li><b>Search:</b> Everyday phrases (high bp, morning sickness, itchy dog…) map to topics</li>'+
+  '<li><b>Safety:</b> Page-top disclaimer, when-to-seek-care boxes, pregnancy and vet caution banners</li>'+
+  '<li><b>Library:</b> Mechanism summaries filled; source notes on cards</li>'+
+  '<li><b>Scanner:</b> Clear examples of prescription lines the tool accepts</li>'+
+  '<li><b>UX:</b> Search first, how-to strip, recently viewed, share sheet, form filters, keyboard shortcuts</li>'+
+  '</ul><p style="margin-top:16px"><a class="btn" href="#about">About & sources</a></p>'+NOTE+'</div>';
+  scrollTo(0,0);
+}
+
 function route(){
   const h=location.hash.slice(1),i=h.indexOf("/"),k=i<0?h:h.slice(0,i),v=i<0?"":decodeURIComponent(h.slice(i+1));
-  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else if(k==="saved")saved();else if(k==="ingredients")ingredients();else if(k==="i")ingredient(v);else if(k==="compare")compare(v);else home();
+  if(k==="d")disease(v);else if(k==="m")medicine(v);else if(k==="medicines")meds();else if(k==="saved")saved();else if(k==="ingredients")ingredients();else if(k==="i")ingredient(v);else if(k==="compare")compare(v);else if(k==="about")about();else if(k==="changelog")changelog();else home();
 }
 const get=(api,file)=>fetch(API_BASE+api).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch("data/"+file).then(r=>r.json()));
 Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","medicines.json"),get("/api/ingredients-all","ingredients.json")])
- .then(([d,m,g])=>{D=d;M=m;IG=g;route();addEventListener("hashchange",route)})
+ .then(([d,m,g])=>{D=d;M=m;IG=g;route();addEventListener("hashchange",route);
+document.addEventListener("keydown",function(e){
+  const tag=(e.target&&e.target.tagName||"").toLowerCase();
+  if(tag==="input"||tag==="textarea"||e.metaKey||e.ctrlKey||e.altKey)return;
+  if(e.key==="/" ){e.preventDefault();const q=document.getElementById("q")||document.getElementById("mq");if(q){q.focus();q.select()}}
+  if(e.key==="Escape"){const q=document.getElementById("q")||document.getElementById("mq");if(q&&document.activeElement===q){q.value="";q.dispatchEvent(new Event("input"));q.blur()}}
+});
+})
  .catch(()=>{app.innerHTML='<p class="lead">Could not load data. Please refresh, or start the server with <b>npm start</b>.</p>'});
 
 /* Rate & Suggest feature */
@@ -478,6 +633,13 @@ Promise.all([get("/api/diseases-all","diseases.json"),get("/api/medicines-all","
   };
 })();
 
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
 </script>
 </body>
 </html>

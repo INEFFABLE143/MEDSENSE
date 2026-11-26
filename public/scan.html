@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Med Sense - Scan Prescription</title>
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="img/med-sense-icon.svg">
 <link rel="stylesheet" href="css/brand.css">
 <link rel="stylesheet" href="css/layout.css">
@@ -60,8 +61,22 @@ details.read{margin-top:18px;font-size:14px}
 details.read summary{cursor:pointer;font-weight:700;color:var(--pine)}
 details.read pre{margin-top:8px;padding:12px 14px;max-height:220px;overflow:auto;white-space:pre-wrap;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
 .spin{display:none;margin:14px auto;text-align:center;color:var(--muted)}
+
+.format-help{margin:0 0 18px;padding:16px 18px;background:var(--mist);border:1.5px solid var(--line);border-radius:16px;font-size:14px}
+.format-help h3{font-family:var(--font-display);font-size:17px;color:var(--pine);margin:0 0 8px}
+.format-help ul{margin:8px 0 10px 18px;line-height:1.7}
+.format-help code{background:#fff;border:1px solid var(--line);padding:2px 8px;border-radius:6px;font-size:13px}
+[data-theme="dark"] .format-help code{background:#0a1a19}
+
 .theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;padding:10px 18px;border:0;border-radius:99px;font-size:14px;background:var(--pine);color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-[data-theme="dark"] .theme-toggle{color:#0a2e30}
+[data-theme="dark"] 
+.format-help{margin:0 0 18px;padding:16px 18px;background:var(--mist);border:1.5px solid var(--line);border-radius:16px;font-size:14px}
+.format-help h3{font-family:var(--font-display);font-size:17px;color:var(--pine);margin:0 0 8px}
+.format-help ul{margin:8px 0 10px 18px;line-height:1.7}
+.format-help code{background:#fff;border:1px solid var(--line);padding:2px 8px;border-radius:6px;font-size:13px}
+[data-theme="dark"] .format-help code{background:#0a1a19}
+
+.theme-toggle{color:#0a2e30}
 @media(max-width:700px){.main,.hero{padding-left:18px;padding-right:18px}h1{font-size:28px}}
 </style>
 </head>
@@ -75,6 +90,20 @@ details.read pre{margin-top:8px;padding:12px 14px;max-height:220px;overflow:auto
 <div class="main">
   <h2>Add your prescription</h2>
   <p class="lead">Works with typed or printed prescriptions: a PDF with selectable text, a .txt file, or text you paste. Photos and handwriting are not supported. The file is read in your browser, only the text lines are sent to match medicine names, and nothing is stored.</p>
+
+  
+  <div class="format-help" role="note">
+    <h3>How to write lines the scanner understands</h3>
+    <p>One medicine per line. Start with the form if you know it, then the name, strength, and schedule. Examples that work well:</p>
+    <ul>
+      <li><code>Tab. Calpol 650 1-0-1 after food</code></li>
+      <li><code>Cap. Omeprazole 20 mg OD before breakfast</code></li>
+      <li><code>Syp. Cetirizine 5 ml at night</code></li>
+      <li><code>Dolo 650 mg three times a day after meals</code></li>
+      <li><code>ORS sachets as directed</code></li>
+    </ul>
+    <p><b>Tips:</b> Use plain text (typed prescriptions or a clean PDF). Photos and handwriting are not read. Schedules like <code>1-0-1</code>, <code>OD</code>, <code>BD</code>, <code>TDS</code> are fine — the scanner mainly matches the <b>medicine name</b>.</p>
+  </div>
 
   <div class="tabs" role="tablist" aria-label="How to add your prescription">
     <div class="tab" role="tab" tabindex="0" id="tabFile" aria-selected="true" aria-controls="paneFile">Upload PDF or text file</div>
@@ -92,7 +121,7 @@ details.read pre{margin-top:8px;padding:12px 14px;max-height:220px;overflow:auto
   </div>
 
   <div id="paneText" role="tabpanel" aria-labelledby="tabText" hidden>
-    <textarea id="txt" aria-label="Prescription text" placeholder="Tab. Dolo 650 mg 1-0-1 x 5 days after food&#10;Cap. Omeprazole 20 mg OD before breakfast&#10;Syp. Cough syrup 5 ml TDS"></textarea>
+    <textarea id="txt" aria-label="Prescription text" placeholder="Tab. Calpol 650 1-0-1 after food&#10;Cap. Omeprazole 20 mg OD before breakfast&#10;Syp. Cetirizine 5 ml at night&#10;Dolo 650 mg three times a day"></textarea>
   </div>
 
   <div class="actions">
@@ -285,6 +314,13 @@ details.read pre{margin-top:8px;padding:12px 14px;max-height:220px;overflow:auto
   });
   refresh();
 })();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
 </script>
 </body>
 </html>
