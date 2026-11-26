@@ -88,6 +88,13 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
 .empty-state{padding:28px 18px;text-align:center;background:var(--mist);border-radius:18px;border:1.5px dashed var(--line)}
 .empty-state p{margin:0 0 12px;color:var(--muted)}
 .empty-state .chip{margin:4px}
+
+/* Medicine form sections */
+.form-section{margin:22px 0 8px}
+.form-section h3{font-family:var(--font-display);font-size:18px;color:var(--pine);margin:0 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line);display:flex;align-items:center;gap:10px}
+.form-section h3 span{font-size:13px;font-weight:600;color:var(--muted);font-family:var(--font-body)}
+.form-section .grid{margin-top:4px}
+
 /* Form filter */
 .form-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
 /* About page */
@@ -447,25 +454,54 @@ function disease(n){
 }
 function meds(){
   bar("med");
-  const forms=["All",...new Set(Object.values(M).map(m=>(m.form||"").split(/[\/,]/)[0].trim()).filter(Boolean))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
-  let formFilter="All";
-  app.innerHTML='<h2>All medicines</h2><p class="lead">Tap a medicine for uses, precautions and side effects. Filter by form if you need syrups, tablets or other types.</p>'+
+  // Normalize messy form strings into clean section buckets
+  function bucket(form){
+    const f=(form||"").toLowerCase();
+    if(/vet|spot-on|pour-on|animal/.test(f)) return "Veterinary forms";
+    if(/inject|vaccine/.test(f)) return "Injections";
+    if(/inhaler|inhalation/.test(f)) return "Inhalers";
+    if(/nasal\s*spray|throat spray|\bspray\b/.test(f) && !/cream|gel|lotion/.test(f)) return "Sprays";
+    if(/eye\s*drop|ear\s*drop|\bdrops\b/.test(f)) return "Drops";
+    if(/cream|ointment|gel|lotion|balm|shampoo|mouthwash|topical|paste/.test(f) && !/tablet|capsule|syrup|inject/.test(f.split("/")[0])) return "Creams, gels & topicals";
+    if(/syrup|suspension|solution|liquid|sachet|powder|granule|ors|rehydration|effervescent/.test(f) && !/^tablet/.test(f.trim())) {
+      if(/powder|sachet|granule/.test(f) && !/syrup|tablet|capsule/.test(f)) return "Powders & sachets";
+      return "Syrups & liquids";
+    }
+    if(/capsule|cap\b/.test(f) && !/^tablet/.test(f.trim())) return "Capsules";
+    if(/tablet|tab\b|chewable|dispersible|gummy|lozenge|suppository/.test(f)) return "Tablets";
+    if(/powder|sachet|granule/.test(f)) return "Powders & sachets";
+    return "Other forms";
+  }
+  const ORDER=["Tablets","Capsules","Syrups & liquids","Drops","Sprays","Inhalers","Injections","Creams, gels & topicals","Powders & sachets","Veterinary forms","Other forms"];
+  app.innerHTML='<h2>All medicines</h2><p class="lead">Grouped by form. Search to narrow the list, or jump to a section below.</p>'+
   '<div class="search-top"><input id="mq" type="search" placeholder="Search medicines or purpose" aria-label="Search medicines"></div>'+
-  '<div class="form-filters" id="ff"></div><div class="grid" id="g" style="margin-top:8px"></div>'+NOTE;
-  const draw=s=>{
-    document.getElementById("ff").innerHTML=forms.map(f=>'<button type="button" class="chip '+(f===formFilter?"on":"")+'" data-f="'+esc(f)+'">'+esc(f)+'</button>').join("");
+  '<div id="form-jump" class="form-filters" style="margin-bottom:8px"></div>'+
+  '<div id="g"></div>'+NOTE;
+  const draw=(s)=>{
     const q=(s||"").toLowerCase();
-    const list=Object.entries(M).filter(([n,m])=>{
-      const formOk=formFilter==="All"||(m.form||"").toLowerCase().includes(formFilter.toLowerCase());
-      const textOk=!q||(n+m.purpose+m.ingredient+(m.form||"")).toLowerCase().includes(q);
-      return formOk&&textOk;
-    }).sort((a,b)=>a[0].localeCompare(b[0]));
-    document.getElementById("g").innerHTML=list.length?list.map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join(""):
-      '<div class="empty-state"><p><b>No match.</b> Try another name or clear the form filter.</p></div>';
+    const groups={};
+    Object.entries(M).forEach(([n,m])=>{
+      if(q && !(n+m.purpose+m.ingredient+(m.form||"")).toLowerCase().includes(q)) return;
+      const b=bucket(m.form);
+      (groups[b]=groups[b]||[]).push([n,m]);
+    });
+    ORDER.forEach(b=>{(groups[b]||[]).sort((a,c)=>a[0].localeCompare(c[0]))});
+    const present=ORDER.filter(b=>groups[b]&&groups[b].length);
+    document.getElementById("form-jump").innerHTML=present.map(b=>'<a class="chip" href="#sec-'+enc(b)+'" style="text-decoration:none">'+esc(b)+' <small>('+groups[b].length+')</small></a>').join("")+
+      (q?'<button type="button" class="chip" id="clear-mq">Clear search</button>':'');
+    if(!present.length){
+      document.getElementById("g").innerHTML='<div class="empty-state"><p><b>No match.</b> Try another name or clear search.</p></div>';
+      return;
+    }
+    document.getElementById("g").innerHTML=present.map(b=>{
+      const items=groups[b].map(([n,m])=>'<a class="card" href="#m/'+enc(n)+'"><small>'+esc(m.form)+'</small><h3>'+esc(n)+'</h3><p>'+esc(m.purpose)+'</p></a>').join("");
+      return '<section class="form-section" id="sec-'+esc(b)+'"><h3>'+esc(b)+' <span>'+groups[b].length+' medicine'+(groups[b].length===1?"":"s")+'</span></h3><div class="grid">'+items+'</div></section>';
+    }).join("");
+    const clr=document.getElementById("clear-mq");
+    if(clr)clr.onclick=()=>{document.getElementById("mq").value="";draw("")};
   };
   draw("");
   document.getElementById("mq").oninput=e=>draw(e.target.value.trim());
-  document.getElementById("ff").onclick=e=>{const f=e.target.dataset.f;if(f){formFilter=f;draw(document.getElementById("mq").value.trim())}};
 }
 
 function libBox(l){
