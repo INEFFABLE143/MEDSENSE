@@ -1,4 +1,35 @@
 {
+  "5-aminosalicylic acid": {
+    "class": "Gastrointestinal Medicines",
+    "medicines": [
+      "5-aminosalicylic acid (Mesalazine/ Mesalaine)"
+    ]
+  },
+  "5-fluorouracil": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "5-Fluorouracil"
+    ]
+  },
+  "6-mercaptopurine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "6-Mercaptopurine"
+    ]
+  },
+  "Abacavir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Abacavir",
+      "Abacavir + Lamivudine"
+    ]
+  },
+  "Acetazolamide": {
+    "class": "Miotics and Antiglaucoma Medicines",
+    "medicines": [
+      "Acetazolamide"
+    ]
+  },
   "Acetylcysteine": {
     "class": "Mucolytic / antidote",
     "mechanism": "Splits disulfide bonds in mucus; replenishes glutathione (used in paracetamol overdose).",
@@ -11,6 +42,18 @@
     "mechanism": "Irreversibly inhibits COX-1, lowering prostaglandins and platelet thromboxane A2.",
     "medicines": [
       "Aspirin"
+    ]
+  },
+  "Actinomycin d": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Actinomycin D"
+    ]
+  },
+  "Activated charcoal": {
+    "class": "Nonspecific",
+    "medicines": [
+      "Activated Charcoal"
     ]
   },
   "Acyclovir": {
@@ -27,6 +70,18 @@
       "Adapalene"
     ]
   },
+  "Adenosine": {
+    "class": "Antiarrhythmic medicines",
+    "medicines": [
+      "Adenosine"
+    ]
+  },
+  "Adrenaline": {
+    "class": "Local Anaesthetics",
+    "medicines": [
+      "Lignocaine + Adrenaline"
+    ]
+  },
   "Albendazole": {
     "class": "Anthelmintic",
     "mechanism": "Binds worm beta-tubulin, blocking microtubule formation and glucose uptake.",
@@ -41,6 +96,12 @@
       "Alendronate"
     ]
   },
+  "All-trans retinoic acid": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "All-trans retinoic acid"
+    ]
+  },
   "Allopurinol": {
     "class": "Xanthine oxidase inhibitor",
     "mechanism": "Reduces uric acid production.",
@@ -52,6 +113,12 @@
     "class": "Soothing skin gel",
     "medicines": [
       "Aloe Vera Gel"
+    ]
+  },
+  "Alprostadil": {
+    "class": "Medicines for Neonatal Care",
+    "medicines": [
+      "Alprostadil"
     ]
   },
   "Aluminium hydroxide": {
@@ -68,6 +135,24 @@
       "Ambroxol"
     ]
   },
+  "Amikacin": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Amikacin"
+    ]
+  },
+  "Amiodarone": {
+    "class": "Antiarrhythmic medicines",
+    "medicines": [
+      "Amiodarone"
+    ]
+  },
+  "Amitriptyline": {
+    "class": "Antimigraine Medicines",
+    "medicines": [
+      "Amitriptyline"
+    ]
+  },
   "Amlodipine": {
     "class": "Calcium channel blocker",
     "mechanism": "Blocks L-type calcium channels in vascular smooth muscle, relaxing arteries.",
@@ -75,10 +160,66 @@
       "Amlodipine"
     ]
   },
+  "Amoxicillin": {
+    "class": "Penicillin antibiotic",
+    "medicines": [
+      "Amoxicillin",
+      "Amoxicillin / clavulanic acid"
+    ]
+  },
+  "Amphotericin b": {
+    "class": "Antifungal Medicines",
+    "medicines": [
+      "Amphotericin B"
+    ]
+  },
+  "Ampicillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Ampicillin"
+    ]
+  },
   "Amylase": {
     "class": "Digestive aid",
     "medicines": [
       "Digestive Enzymes"
+    ]
+  },
+  "Anti-d immunoglobulin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Anti-D immunoglobulin"
+    ]
+  },
+  "Anti-rabies immunoglobulin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Anti-rabies immunoglobulin"
+    ]
+  },
+  "Anti-tetanus immunoglobulin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Anti-tetanus immunoglobulin"
+    ]
+  },
+  "Arsenic trioxide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Arsenic trioxide"
+    ]
+  },
+  "Artemether": {
+    "class": "Antimalarial combination",
+    "medicines": [
+      "Artemether / lumefantrine"
+    ]
+  },
+  "Artesunate": {
+    "class": "Antimalarial",
+    "medicines": [
+      "Artesunate",
+      "Artesunate + Sulphadoxine - Pyrimethamine"
     ]
   },
   "Artificial tear polymers": {
@@ -100,11 +241,41 @@
       "Ashwagandha Supplement"
     ]
   },
+  "Atazanavir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Atazanavir + Ritonavir"
+    ]
+  },
   "Atorvastatin": {
     "class": "Statin",
     "mechanism": "Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.",
     "medicines": [
       "Atorvastatin"
+    ]
+  },
+  "Atracurium": {
+    "class": "Muscle Relaxants and Cholinesterase Inhibitors",
+    "medicines": [
+      "Atracurium"
+    ]
+  },
+  "Atropine": {
+    "class": "Preoperative Medication and Sedation for Short Term Procedures",
+    "medicines": [
+      "Atropine"
+    ]
+  },
+  "Azathioprine": {
+    "class": "Disease Modifying Agents used in Rheumatoid Disorders",
+    "medicines": [
+      "Azathioprine"
+    ]
+  },
+  "Azithromycin": {
+    "class": "Macrolide antibiotic",
+    "medicines": [
+      "Azithromycin"
     ]
   },
   "Bacitracin": {
@@ -113,6 +284,42 @@
       "Antibiotic Ointment (Neomycin/Bacitracin)"
     ],
     "mechanism": "Blocks bacterial cell wall synthesis."
+  },
+  "Baclofen": {
+    "class": "Muscle Relaxants and Cholinesterase Inhibitors",
+    "medicines": [
+      "Baclofen"
+    ]
+  },
+  "Barium sulphate": {
+    "class": "Radiocontrast Media",
+    "medicines": [
+      "Barium sulphate"
+    ]
+  },
+  "Bcg vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "BCG vaccine"
+    ]
+  },
+  "Bedaquiline": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Bedaquiline"
+    ]
+  },
+  "Bendamustine hydrochloride": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Bendamustine hydrochloride"
+    ]
+  },
+  "Benzathine benzylpenicillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Benzathine benzylpenicillin"
+    ]
   },
   "Benzocaine": {
     "class": "Local anaesthetic",
@@ -139,6 +346,30 @@
     "class": "Scabicide",
     "medicines": [
       "Benzyl Benzoate"
+    ]
+  },
+  "Benzylpenicillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Benzylpenicillin"
+    ]
+  },
+  "Betamethasone": {
+    "class": "Medicines used in Preterm Labour",
+    "medicines": [
+      "Betamethasone"
+    ]
+  },
+  "Betamethasone valerate": {
+    "class": "Antiinflammatory and Antipruritic Medicines",
+    "medicines": [
+      "Betamethasone valerate"
+    ]
+  },
+  "Bicalutamide": {
+    "class": "Hormones and Anti-hormones used in Cancer Therapy",
+    "medicines": [
+      "Bicalutamide"
     ]
   },
   "Bifidobacterium": {
@@ -168,6 +399,18 @@
     ],
     "mechanism": "Coats the gut, reduces secretion and has mild antimicrobial and anti-inflammatory action."
   },
+  "Bleomycin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Bleomycin"
+    ]
+  },
+  "Bortezomib": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Bortezomib"
+    ]
+  },
   "Bromhexine": {
     "class": "Mucolytic",
     "mechanism": "Breaks up thick mucus and helps clear it from the airways.",
@@ -179,7 +422,27 @@
     "class": "Corticosteroid",
     "mechanism": "Reduces airway or nasal inflammation by suppressing inflammatory gene expression.",
     "medicines": [
-      "Budesonide Inhaler"
+      "Budesonide Inhaler",
+      "Budesonide + Formoterol"
+    ]
+  },
+  "Bupivacaine": {
+    "class": "Local Anaesthetics",
+    "medicines": [
+      "Bupivacaine"
+    ]
+  },
+  "Buprenorphine": {
+    "class": "Medicines used in treatment of Psychiatric Disorders",
+    "medicines": [
+      "Buprenorphine",
+      "Buprenorphine + Naloxone"
+    ]
+  },
+  "Caffeine": {
+    "class": "Medicines for Neonatal Care",
+    "medicines": [
+      "Caffeine"
     ]
   },
   "Calamine": {
@@ -202,11 +465,29 @@
       "Calcium Supplement"
     ]
   },
+  "Calcium folinate": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Calcium folinate"
+    ]
+  },
+  "Calcium gluconate": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Calcium gluconate"
+    ]
+  },
   "Camphor": {
     "class": "Topical muscle and joint pain relief",
     "medicines": [
       "Pain Relief Balm / Spray",
       "Menthol Vapor Balm"
+    ]
+  },
+  "Capecitabine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Capecitabine"
     ]
   },
   "Capsaicin": {
@@ -216,10 +497,22 @@
       "Capsaicin Cream"
     ]
   },
+  "Carbamazepine": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Carbamazepine"
+    ]
+  },
   "Carbamide peroxide": {
     "class": "Softens earwax",
     "medicines": [
       "Carbamide Peroxide Ear Drops"
+    ]
+  },
+  "Carbidopa": {
+    "class": "Antiparkinsonism Medicines",
+    "medicines": [
+      "Levodopa + Carbidopa"
     ]
   },
   "Carbimazole": {
@@ -229,10 +522,64 @@
       "Carbimazole"
     ]
   },
+  "Carboplatin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Carboplatin"
+    ]
+  },
+  "Carboxymethyl cellulose": {
+    "class": "Miscellaneous",
+    "medicines": [
+      "Carboxymethyl cellulose"
+    ]
+  },
   "Carboxymethylcellulose": {
     "class": "Artificial tears",
     "medicines": [
       "Carboxymethylcellulose Eye Drops"
+    ]
+  },
+  "Cefadroxil": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cefadroxil"
+    ]
+  },
+  "Cefazolin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cefazolin"
+    ]
+  },
+  "Cefixime": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cefixime"
+    ]
+  },
+  "Cefotaxime": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cefotaxime"
+    ]
+  },
+  "Ceftazidime": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Ceftazidime"
+    ]
+  },
+  "Ceftriaxone": {
+    "class": "Cephalosporin antibiotic",
+    "medicines": [
+      "Ceftriaxone"
+    ]
+  },
+  "Cefuroxime": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cefuroxime"
     ]
   },
   "Ceramides": {
@@ -248,11 +595,23 @@
       "Cetirizine"
     ]
   },
+  "Chlorambucil": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Chlorambucil"
+    ]
+  },
   "Chlorhexidine": {
     "class": "Antiseptic",
     "mechanism": "Disrupts microbial membranes (chlorhexidine) or releases iodine (povidone-iodine) to kill microbes.",
     "medicines": [
       "Chlorhexidine Mouthwash"
+    ]
+  },
+  "Chloroquine": {
+    "class": "Antimalarial Medicines",
+    "medicines": [
+      "Chloroquine"
     ]
   },
   "Chlorpheniramine": {
@@ -276,6 +635,72 @@
       "Oral Pain Relief Gel"
     ]
   },
+  "Ciprofloxacin": {
+    "class": "Fluoroquinolone antibiotic",
+    "medicines": [
+      "Ciprofloxacin"
+    ]
+  },
+  "Cisplatin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Cisplatin"
+    ]
+  },
+  "Clarithromycin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Clarithromycin"
+    ]
+  },
+  "Clavulanic acid": {
+    "class": "Penicillin antibiotic combination",
+    "medicines": [
+      "Amoxicillin / clavulanic acid"
+    ]
+  },
+  "Clindamycin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Clindamycin"
+    ]
+  },
+  "Clobazam": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Clobazam"
+    ]
+  },
+  "Clofazimine": {
+    "class": "Antileprosy Medicines",
+    "medicines": [
+      "Clofazimine"
+    ]
+  },
+  "Clomiphene citrate": {
+    "class": "Ovulation Inducers",
+    "medicines": [
+      "Clomiphene citrate"
+    ]
+  },
+  "Clomipramine": {
+    "class": "Medicines used in Obsessive Compulsive Disorders and Panic attacks",
+    "medicines": [
+      "Clomipramine"
+    ]
+  },
+  "Clonazepam": {
+    "class": "Medicines used in Generalized Anxiety and Sleep Disorders",
+    "medicines": [
+      "Clonazepam"
+    ]
+  },
+  "Clopidogrel": {
+    "class": "Antiplatelet and Antithrombotic Medicines",
+    "medicines": [
+      "Clopidogrel"
+    ]
+  },
   "Clotrimazole": {
     "class": "Azole antifungal",
     "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
@@ -283,10 +708,35 @@
       "Clotrimazole"
     ]
   },
+  "Cloxacillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Cloxacillin"
+    ]
+  },
+  "Clozapine": {
+    "class": "Medicines used in Psychotic Disorders",
+    "medicines": [
+      "Clozapine"
+    ]
+  },
+  "Coagulation factor ix": {
+    "class": "Plasma fractions for specific use",
+    "medicines": [
+      "Coagulation factor IX"
+    ]
+  },
+  "Coagulation factor viii": {
+    "class": "Plasma fractions for specific use",
+    "medicines": [
+      "Coagulation factor VIII"
+    ]
+  },
   "Coal tar": {
     "class": "Keratolytic and anti-scaling agent",
     "medicines": [
-      "Coal Tar Preparation"
+      "Coal Tar Preparation",
+      "Coal tar + Salicylic Acid"
     ]
   },
   "Colchicine": {
@@ -302,10 +752,22 @@
       "Colloidal Oatmeal Lotion"
     ]
   },
+  "Condom": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "Condom"
+    ]
+  },
   "Cranberry extract": {
     "class": "Urinary tract support",
     "medicines": [
       "Cranberry Supplement"
+    ]
+  },
+  "Cryoprecipitate": {
+    "class": "Plasma fractions for specific use",
+    "medicines": [
+      "Cryoprecipitate"
     ]
   },
   "Cyanocobalamin": {
@@ -316,6 +778,85 @@
       "Vitamin B-Complex"
     ]
   },
+  "Cyclophosphamide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Cyclophosphamide"
+    ]
+  },
+  "Cycloserine": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Cycloserine"
+    ]
+  },
+  "Cyclosporine": {
+    "class": "Immunosuppressive Medicines",
+    "medicines": [
+      "Cyclosporine"
+    ]
+  },
+  "Cytosine arabinoside": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Cytosine arabinoside"
+    ]
+  },
+  "D- penicillamine": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "D- Penicillamine"
+    ]
+  },
+  "Dabigatran": {
+    "class": "Antiplatelet and Antithrombotic Medicines",
+    "medicines": [
+      "Dabigatran"
+    ]
+  },
+  "Dacarbazine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Dacarbazine"
+    ]
+  },
+  "Daclatasvir": {
+    "class": "Medicines used in Hepatitis B and Hepatitis C",
+    "medicines": [
+      "Daclatasvir"
+    ]
+  },
+  "Dapsone": {
+    "class": "Antileprosy Medicines",
+    "medicines": [
+      "Dapsone"
+    ]
+  },
+  "Darunavir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Darunavir",
+      "Darunavir + Ritonavir"
+    ]
+  },
+  "Daunorubicin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Daunorubicin"
+    ]
+  },
+  "Delamanid": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Delamanid"
+    ]
+  },
+  "Desferrioxamine": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Desferrioxamine"
+    ]
+  },
   "Desloratadine": {
     "class": "Antihistamine (2nd generation)",
     "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
@@ -323,11 +864,29 @@
       "Desloratadine"
     ]
   },
+  "Dexamethasone": {
+    "class": "Antiallergics and Medicines used in Anaphylaxis",
+    "medicines": [
+      "Dexamethasone"
+    ]
+  },
+  "Dextran-40": {
+    "class": "Plasma substitutes",
+    "medicines": [
+      "Dextran-40"
+    ]
+  },
   "Dextromethorphan": {
     "class": "Antitussive",
     "mechanism": "Acts on the brainstem cough centre (NMDA antagonist, sigma-1 agonist) to suppress cough.",
     "medicines": [
       "Dextromethorphan"
+    ]
+  },
+  "Diazepam": {
+    "class": "Benzodiazepine",
+    "medicines": [
+      "Diazepam"
     ]
   },
   "Diclofenac": {
@@ -342,6 +901,24 @@
     "mechanism": "Blocks muscarinic receptors in gut smooth muscle, relieving cramps.",
     "medicines": [
       "Dicyclomine"
+    ]
+  },
+  "Diethylcarbamazine": {
+    "class": "Anthelminthics",
+    "medicines": [
+      "Diethylcarbamazine (DEC)"
+    ]
+  },
+  "Digoxin": {
+    "class": "Antiarrhythmic medicines",
+    "medicines": [
+      "Digoxin"
+    ]
+  },
+  "Diltiazem": {
+    "class": "Medicines used in Angina",
+    "medicines": [
+      "Diltiazem"
     ]
   },
   "Dimenhydrinate": {
@@ -364,6 +941,12 @@
       "Dimeticone Lotion"
     ]
   },
+  "Dinoprostone": {
+    "class": "Oxytocics and Abortifacient",
+    "medicines": [
+      "Dinoprostone"
+    ]
+  },
   "Diosmin": {
     "class": "Vein support",
     "medicines": [
@@ -377,10 +960,35 @@
       "Diphenhydramine"
     ]
   },
+  "Diphtheria antitoxin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Diphtheria antitoxin"
+    ]
+  },
   "Disodium hydrogen citrate": {
     "class": "Urinary alkalinizer",
     "medicines": [
       "Disodium Hydrogen Citrate"
+    ]
+  },
+  "Dobutamine": {
+    "class": "Medicines used in Shock and Heart failure",
+    "medicines": [
+      "Dobutamine"
+    ]
+  },
+  "Docetaxel": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Docetaxel"
+    ]
+  },
+  "Dolutegravir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Dolutegravir",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Dolutegravir (C)"
     ]
   },
   "Domperidone": {
@@ -390,6 +998,79 @@
       "Domperidone"
     ]
   },
+  "Donepezil": {
+    "class": "Medicines used in Dementia",
+    "medicines": [
+      "Donepezil"
+    ]
+  },
+  "Dopamine": {
+    "class": "Medicines used in Shock and Heart failure",
+    "medicines": [
+      "Dopamine"
+    ]
+  },
+  "Doxorubicin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Doxorubicin"
+    ]
+  },
+  "Doxycycline": {
+    "class": "Tetracycline antibiotic",
+    "medicines": [
+      "Doxycycline"
+    ]
+  },
+  "Dpt": {
+    "class": "Vaccines",
+    "medicines": [
+      "DPT+ Hib+ Hep B vaccine"
+    ]
+  },
+  "Dpt vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "DPT vaccine"
+    ]
+  },
+  "Efavirenz": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Efavirenz",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Efavirenz (C)"
+    ]
+  },
+  "Enalapril": {
+    "class": "ACE inhibitor",
+    "medicines": [
+      "Enalapril"
+    ]
+  },
+  "Enoxaparin": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Enoxaparin"
+    ]
+  },
+  "Entecavir": {
+    "class": "Medicines used in Hepatitis B and Hepatitis C",
+    "medicines": [
+      "Entecavir"
+    ]
+  },
+  "Epinephrine": {
+    "class": "Adrenergic agonist",
+    "medicines": [
+      "Epinephrine"
+    ]
+  },
+  "Erythropoietin": {
+    "class": "Antianaemia Medicines",
+    "medicines": [
+      "Erythropoietin"
+    ]
+  },
   "Escitalopram": {
     "class": "SSRI",
     "mechanism": "Blocks serotonin reuptake, raising synaptic serotonin.",
@@ -397,11 +1078,47 @@
       "Escitalopram"
     ]
   },
+  "Esmolol": {
+    "class": "Antiarrhythmic medicines",
+    "medicines": [
+      "Esmolol"
+    ]
+  },
   "Esomeprazole": {
     "class": "Proton pump inhibitor",
     "mechanism": "Irreversibly blocks the gastric H+/K+ ATPase (proton pump), sharply cutting stomach acid.",
     "medicines": [
       "Esomeprazole"
+    ]
+  },
+  "Ethambutol": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Ethambutol"
+    ]
+  },
+  "Ethinylestradiol": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "Ethinylestradiol+ Levonorgestrel"
+    ]
+  },
+  "Ethionamide": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Ethionamide"
+    ]
+  },
+  "Ethyl alcohol": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Ethyl alcohol (Denatured)"
+    ]
+  },
+  "Etoposide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Etoposide"
     ]
   },
   "Eucalyptus oil": {
@@ -423,6 +1140,18 @@
       "Famotidine"
     ]
   },
+  "Fentanyl": {
+    "class": "Opioid Analgesics",
+    "medicines": [
+      "Fentanyl"
+    ]
+  },
+  "Ferrous salt": {
+    "class": "Antianaemia Medicines",
+    "medicines": [
+      "Ferrous Salt+ Folic acid"
+    ]
+  },
   "Ferrous sulfate": {
     "class": "Mineral",
     "mechanism": "Supplies iron for haemoglobin synthesis.",
@@ -435,6 +1164,48 @@
     "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
     "medicines": [
       "Fexofenadine"
+    ]
+  },
+  "Filgrastim": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Filgrastim"
+    ]
+  },
+  "Fluconazole": {
+    "class": "Azole antifungal",
+    "medicines": [
+      "Fluconazole"
+    ]
+  },
+  "Fludrocortisone": {
+    "class": "Adrenal Hormones and Synthetic substitutes",
+    "medicines": [
+      "Fludrocortisone"
+    ]
+  },
+  "Flunarizine": {
+    "class": "Antimigraine Medicines",
+    "medicines": [
+      "Flunarizine"
+    ]
+  },
+  "Fluorescein": {
+    "class": "Ophthalmic Medicines",
+    "medicines": [
+      "Fluorescein"
+    ]
+  },
+  "Fluoxetine": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Fluoxetine"
+    ]
+  },
+  "Fluphenazine": {
+    "class": "Medicines used in Psychotic Disorders",
+    "medicines": [
+      "Fluphenazine"
     ]
   },
   "Flurbiprofen": {
@@ -454,13 +1225,74 @@
     "class": "Vitamin",
     "mechanism": "Vitamin B9, needed for DNA synthesis and red blood cell formation.",
     "medicines": [
-      "Folic Acid"
+      "Folic Acid",
+      "Ferrous Salt+ Folic acid"
+    ]
+  },
+  "Formoterol": {
+    "class": "Antiasthmatic Medicines",
+    "medicines": [
+      "Budesonide + Formoterol"
+    ]
+  },
+  "Framycetin": {
+    "class": "Antibacterial Medicines",
+    "medicines": [
+      "Framycetin"
+    ]
+  },
+  "Fresh frozen plasma": {
+    "class": "Blood and Blood components",
+    "medicines": [
+      "Fresh frozen plasma"
+    ]
+  },
+  "Furosemide": {
+    "class": "Loop diuretic",
+    "medicines": [
+      "Furosemide"
+    ]
+  },
+  "Fusidic acid": {
+    "class": "Antibacterial Medicines",
+    "medicines": [
+      "Fusidic acid"
+    ]
+  },
+  "Gadobenate dimeglumine": {
+    "class": "Radiocontrast Media",
+    "medicines": [
+      "Gadobenate dimeglumine"
+    ]
+  },
+  "Gefitinib": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Gefitinib"
+    ]
+  },
+  "Gemcitabine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Gemcitabine"
+    ]
+  },
+  "Gentamicin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Gentamicin"
     ]
   },
   "Ginger extract": {
     "class": "Natural anti-nausea aid",
     "medicines": [
       "Ginger Supplement"
+    ]
+  },
+  "Glibenclamide": {
+    "class": "Sulfonylurea",
+    "medicines": [
+      "Glibenclamide"
     ]
   },
   "Glimepiride": {
@@ -480,15 +1312,46 @@
     "class": "Carbohydrate",
     "medicines": [
       "ORS",
-      "Electrolyte Powder"
+      "Electrolyte Powder",
+      "Glucose + Sodium chloride"
     ],
     "mechanism": "Drives sodium and water absorption in the gut through the SGLT1 co-transporter (the basis of ORS)."
+  },
+  "Glutaraldehyde": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Glutaraldehyde"
+    ]
   },
   "Glycerin": {
     "class": "Skin barrier moisturizer",
     "medicines": [
       "Emollient / Moisturizer",
       "Glycerin Suppository"
+    ]
+  },
+  "Glycerin/glycerol": {
+    "class": "Dermatological Medicines (Topical)",
+    "medicines": [
+      "Glycerin/glycerol (as mentioned in IP)"
+    ]
+  },
+  "Glyceryl trinitrate": {
+    "class": "Medicines used in Angina",
+    "medicines": [
+      "Glyceryl trinitrate"
+    ]
+  },
+  "Glycopyrrolate": {
+    "class": "Preoperative Medication and Sedation for Short Term Procedures",
+    "medicines": [
+      "Glycopyrrolate"
+    ]
+  },
+  "Griseofulvin": {
+    "class": "Antifungal Medicines",
+    "medicines": [
+      "Griseofulvin"
     ]
   },
   "Guaifenesin": {
@@ -498,10 +1361,64 @@
       "Guaifenesin"
     ]
   },
+  "Haemodialysis fluid": {
+    "class": "Dialysis components (Haemodialysis and Peritoneal Dialysis)",
+    "medicines": [
+      "Haemodialysis fluid"
+    ]
+  },
+  "Haloperidol": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Haloperidol"
+    ]
+  },
+  "Halothane": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Halothane"
+    ]
+  },
+  "Hep b vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "DPT+ Hib+ Hep B vaccine"
+    ]
+  },
+  "Heparin": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Heparin"
+    ]
+  },
+  "Hepatitis b immunoglobulin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Hepatitis B immunoglobulin"
+    ]
+  },
+  "Hepatitis b vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "Hepatitis B vaccine"
+    ]
+  },
   "Herbal extracts": {
     "class": "Soothing demulcent",
     "medicines": [
       "Honey-Based Cough Syrup"
+    ]
+  },
+  "Hib": {
+    "class": "Vaccines",
+    "medicines": [
+      "DPT+ Hib+ Hep B vaccine"
+    ]
+  },
+  "Homatropine": {
+    "class": "Mydriatics",
+    "medicines": [
+      "Homatropine"
     ]
   },
   "Honey": {
@@ -510,11 +1427,71 @@
       "Honey-Based Cough Syrup"
     ]
   },
+  "Hormone releasing iud": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "Hormone releasing IUD"
+    ]
+  },
+  "Human chorionic gonadotropin": {
+    "class": "Ovulation Inducers",
+    "medicines": [
+      "Human chorionic gonadotropin"
+    ]
+  },
+  "Human normal immunoglobulin": {
+    "class": "Sera and Immunoglobulins (Liquid/ Lyophilized)",
+    "medicines": [
+      "Human normal immunoglobulin"
+    ]
+  },
+  "Hydrochlorothiazide": {
+    "class": "Thiazide diuretic",
+    "medicines": [
+      "Hydrochlorothiazide"
+    ]
+  },
   "Hydrocortisone": {
     "class": "Topical corticosteroid",
     "mechanism": "Anti-inflammatory and anti-itch through glucocorticoid receptor signalling.",
     "medicines": [
       "Hydrocortisone"
+    ]
+  },
+  "Hydrogen peroxide": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Hydrogen peroxide"
+    ]
+  },
+  "Hydroxocobalamin": {
+    "class": "Antianaemia Medicines",
+    "medicines": [
+      "Hydroxocobalamin"
+    ]
+  },
+  "Hydroxychloroquine": {
+    "class": "Disease Modifying Agents used in Rheumatoid Disorders",
+    "medicines": [
+      "Hydroxychloroquine"
+    ]
+  },
+  "Hydroxypropyl methylcellulose": {
+    "class": "Miscellaneous",
+    "medicines": [
+      "Hydroxypropyl methylcellulose"
+    ]
+  },
+  "Hydroxyurea": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Hydroxyurea"
+    ]
+  },
+  "Hyoscine butyl bromide": {
+    "class": "Gastrointestinal Medicines",
+    "medicines": [
+      "Hyoscine butyl bromide"
     ]
   },
   "Hyoscine butylbromide": {
@@ -538,6 +1515,18 @@
       "Ibuprofen Gel"
     ]
   },
+  "Ifosfamide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Ifosfamide"
+    ]
+  },
+  "Imatinib": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Imatinib"
+    ]
+  },
   "Insulin": {
     "class": "Hormone",
     "mechanism": "Replaces insulin to move glucose into cells and lower blood sugar.",
@@ -545,11 +1534,113 @@
       "Insulin"
     ]
   },
+  "Insulin glargine": {
+    "class": "Medicines used in Diabetes Mellitus",
+    "medicines": [
+      "Insulin Glargine"
+    ]
+  },
+  "Insulin intermediate acting": {
+    "class": "Medicines used in Diabetes Mellitus",
+    "medicines": [
+      "Insulin Intermediate Acting (NPH)"
+    ]
+  },
+  "Iohexol": {
+    "class": "Radiocontrast Media",
+    "medicines": [
+      "Iohexol"
+    ]
+  },
+  "Ipratropium": {
+    "class": "Antimuscarinic bronchodilator",
+    "medicines": [
+      "Ipratropium"
+    ]
+  },
+  "Irinotecan hcl trihydrate": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Irinotecan HCl trihydrate"
+    ]
+  },
+  "Iron sucrose": {
+    "class": "Antianaemia Medicines",
+    "medicines": [
+      "Iron sucrose"
+    ]
+  },
+  "Isoflurane": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Isoflurane"
+    ]
+  },
+  "Isoniazid": {
+    "class": "Antimycobacterial medicine",
+    "medicines": [
+      "Isoniazid"
+    ]
+  },
+  "Isosorbide dinitrate": {
+    "class": "Medicines used in Angina",
+    "medicines": [
+      "Isosorbide dinitrate"
+    ]
+  },
+  "Ispaghula": {
+    "class": "Gastrointestinal Medicines",
+    "medicines": [
+      "Ispaghula"
+    ]
+  },
+  "Itraconazole": {
+    "class": "Antifungal Medicines",
+    "medicines": [
+      "Itraconazole"
+    ]
+  },
+  "Iud containing copper": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "IUD containing Copper"
+    ]
+  },
+  "Ivermectin": {
+    "class": "Anthelminthics",
+    "medicines": [
+      "Ivermectin"
+    ]
+  },
+  "Japanese encephalitis vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "Japanese encephalitis vaccine"
+    ]
+  },
+  "Ketamine": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Ketamine"
+    ]
+  },
   "Ketoconazole": {
     "class": "Azole antifungal",
     "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
     "medicines": [
       "Ketoconazole Shampoo"
+    ]
+  },
+  "L-asparaginase": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "L-Asparaginase"
+    ]
+  },
+  "Labetalol": {
+    "class": "Antihypertensive Medicines",
+    "medicines": [
+      "Labetalol"
     ]
   },
   "Lactobacillus": {
@@ -566,11 +1657,72 @@
       "Lactulose"
     ]
   },
+  "Lamivudine": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Abacavir + Lamivudine",
+      "Lamivudine",
+      "Tenofovir Disproxil Fumarate + Lamivudine",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Dolutegravir (C)",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Efavirenz (C)",
+      "Zidovudine + Lamivudine",
+      "Zidovudine + Lamivudine + Nevirapine (C)"
+    ]
+  },
+  "Latanoprost": {
+    "class": "Miotics and Antiglaucoma Medicines",
+    "medicines": [
+      "Latanoprost"
+    ]
+  },
+  "Lenalidomide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Lenalidomide"
+    ]
+  },
+  "Letrozole": {
+    "class": "Hormones and Anti-hormones used in Cancer Therapy",
+    "medicines": [
+      "Letrozole"
+    ]
+  },
+  "Leuprolide acetate": {
+    "class": "Hormones and Anti-hormones used in Cancer Therapy",
+    "medicines": [
+      "Leuprolide acetate"
+    ]
+  },
+  "Levetiracetam": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Levetiracetam"
+    ]
+  },
   "Levocetirizine": {
     "class": "Antihistamine (2nd generation)",
     "mechanism": "Blocks peripheral H1 receptors, reducing itching, sneezing and runny nose with less sedation.",
     "medicines": [
       "Levocetirizine"
+    ]
+  },
+  "Levodopa": {
+    "class": "Antiparkinsonism Medicines",
+    "medicines": [
+      "Levodopa + Carbidopa"
+    ]
+  },
+  "Levofloxacin": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Levofloxacin"
+    ]
+  },
+  "Levonorgestrel": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "Ethinylestradiol+ Levonorgestrel",
+      "Levonorgestrel"
     ]
   },
   "Levothyroxine": {
@@ -588,6 +1740,18 @@
       "Lidocaine Gel / Ointment"
     ]
   },
+  "Lignocaine": {
+    "class": "Local Anaesthetics",
+    "medicines": [
+      "Lignocaine + Adrenaline"
+    ]
+  },
+  "Linezolid": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Linezolid"
+    ]
+  },
   "Lipase": {
     "class": "Digestive aid",
     "medicines": [
@@ -600,11 +1764,23 @@
       "Emollient / Moisturizer"
     ]
   },
+  "Lithium": {
+    "class": "Medicines used in Mood Disorders",
+    "medicines": [
+      "Lithium"
+    ]
+  },
   "Loperamide": {
     "class": "Antidiarrheal",
     "mechanism": "Mu-opioid agonist in the gut wall that slows motility and increases fluid absorption.",
     "medicines": [
       "Loperamide"
+    ]
+  },
+  "Lopinavir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Lopinavir + Ritonavir"
     ]
   },
   "Loratadine": {
@@ -614,11 +1790,23 @@
       "Loratadine"
     ]
   },
+  "Lorazepam": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Lorazepam"
+    ]
+  },
   "Losartan": {
     "class": "Angiotensin receptor blocker",
     "mechanism": "Blocks AT1 receptors, causing vasodilation and lower blood pressure.",
     "medicines": [
       "Losartan"
+    ]
+  },
+  "Lumefantrine": {
+    "class": "Antimalarial combination",
+    "medicines": [
+      "Artemether / lumefantrine"
     ]
   },
   "Magnesium": {
@@ -634,6 +1822,24 @@
     "medicines": [
       "Antacid",
       "Magnesium Hydroxide"
+    ]
+  },
+  "Magnesium sulphate": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Magnesium sulphate"
+    ]
+  },
+  "Mannitol": {
+    "class": "Diuretics",
+    "medicines": [
+      "Mannitol"
+    ]
+  },
+  "Measles vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "Measles vaccine"
     ]
   },
   "Mebendazole": {
@@ -657,6 +1863,12 @@
       "Meclizine"
     ]
   },
+  "Medroxyprogesterone acetate": {
+    "class": "Progestogens",
+    "medicines": [
+      "Medroxyprogesterone acetate"
+    ]
+  },
   "Mefenamic acid": {
     "class": "NSAID",
     "mechanism": "Inhibits COX-1 and COX-2, lowering prostaglandin synthesis (pain, inflammation, fever).",
@@ -664,11 +1876,29 @@
       "Mefenamic Acid"
     ]
   },
+  "Mefloquine": {
+    "class": "Antimalarial Medicines",
+    "medicines": [
+      "Mefloquine"
+    ]
+  },
+  "Meglumine diatrizoate": {
+    "class": "Radiocontrast Media",
+    "medicines": [
+      "Meglumine diatrizoate"
+    ]
+  },
   "Melatonin": {
     "class": "Sleep-wake regulator",
     "mechanism": "Activates MT1/MT2 receptors to signal night and adjust the body clock.",
     "medicines": [
       "Melatonin"
+    ]
+  },
+  "Melphalan": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Melphalan"
     ]
   },
   "Menthol": {
@@ -681,11 +1911,29 @@
     ],
     "mechanism": "Activates TRPM8 cold receptors, giving a cooling feel that distracts from pain and itch."
   },
+  "Meropenem": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Meropenem"
+    ]
+  },
+  "Mesna": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Mesna"
+    ]
+  },
   "Metformin": {
     "class": "Biguanide",
     "mechanism": "Lowers liver glucose output and improves insulin sensitivity (AMPK activation).",
     "medicines": [
       "Metformin"
+    ]
+  },
+  "Methotrexate": {
+    "class": "Disease Modifying Agents used in Rheumatoid Disorders",
+    "medicines": [
+      "Methotrexate"
     ]
   },
   "Methyl salicylate": {
@@ -701,11 +1949,71 @@
       "Vitamin B12 Supplement"
     ]
   },
+  "Methylergometrine": {
+    "class": "Oxytocics and Abortifacient",
+    "medicines": [
+      "Methylergometrine"
+    ]
+  },
+  "Methylprednisolone": {
+    "class": "Adrenal Hormones and Synthetic substitutes",
+    "medicines": [
+      "Methylprednisolone"
+    ]
+  },
+  "Methylrosanilinium chloride": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Methylrosanilinium chloride (Gentian Violet)"
+    ]
+  },
+  "Methylthioninium chloride": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Methylthioninium chloride (Methylene blue)"
+    ]
+  },
+  "Metoclopramide": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Metoclopramide"
+    ]
+  },
+  "Metoprolol": {
+    "class": "Medicines used in Angina",
+    "medicines": [
+      "Metoprolol"
+    ]
+  },
+  "Metronidazole": {
+    "class": "Nitroimidazole antimicrobial",
+    "medicines": [
+      "Metronidazole"
+    ]
+  },
   "Miconazole": {
     "class": "Azole antifungal",
     "mechanism": "Inhibits ergosterol synthesis (CYP51), damaging the fungal cell membrane.",
     "medicines": [
       "Miconazole"
+    ]
+  },
+  "Midazolam": {
+    "class": "Preoperative Medication and Sedation for Short Term Procedures",
+    "medicines": [
+      "Midazolam"
+    ]
+  },
+  "Mifepristone": {
+    "class": "Oxytocics and Abortifacient",
+    "medicines": [
+      "Mifepristone"
+    ]
+  },
+  "Miltefosine": {
+    "class": "Antiprotozoal Medicines",
+    "medicines": [
+      "Miltefosine"
     ]
   },
   "Mineral oil": {
@@ -720,11 +2028,54 @@
       "Multivitamin"
     ]
   },
+  "Misoprostol": {
+    "class": "Oxytocics and Abortifacient",
+    "medicines": [
+      "Misoprostol"
+    ]
+  },
   "Montelukast": {
     "class": "Leukotriene receptor antagonist",
     "mechanism": "Blocks CysLT1 receptors, reducing airway inflammation and bronchoconstriction.",
     "medicines": [
       "Montelukast"
+    ]
+  },
+  "Morphine": {
+    "class": "Opioid analgesic",
+    "medicines": [
+      "Morphine"
+    ]
+  },
+  "Moxifloxacin": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Moxifloxacin"
+    ]
+  },
+  "Mupirocin": {
+    "class": "Antifungal Medicines",
+    "medicines": [
+      "Mupirocin"
+    ]
+  },
+  "Mycophenolate mofetil": {
+    "class": "Immunosuppressive Medicines",
+    "medicines": [
+      "Mycophenolate mofetil"
+    ]
+  },
+  "N-acetylcysteine": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "N-acetylcysteine"
+    ]
+  },
+  "Naloxone": {
+    "class": "Medicines used in treatment of Psychiatric Disorders",
+    "medicines": [
+      "Buprenorphine + Naloxone",
+      "Naloxone"
     ]
   },
   "Naproxen": {
@@ -734,6 +2085,12 @@
       "Naproxen"
     ]
   },
+  "Natamycin": {
+    "class": "Anti-infective Medicines",
+    "medicines": [
+      "Natamycin"
+    ]
+  },
   "Neomycin": {
     "class": "Aminoglycoside antibiotic",
     "medicines": [
@@ -741,10 +2098,35 @@
     ],
     "mechanism": "Binds the bacterial 30S ribosome, blocking protein synthesis."
   },
+  "Neostigmine": {
+    "class": "Muscle Relaxants and Cholinesterase Inhibitors",
+    "medicines": [
+      "Neostigmine"
+    ]
+  },
+  "Nevirapine": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Nevirapine",
+      "Zidovudine + Lamivudine + Nevirapine (C)"
+    ]
+  },
   "Niacin (B3)": {
     "class": "Vitamin supplement",
     "medicines": [
       "Vitamin B-Complex"
+    ]
+  },
+  "Nicotine": {
+    "class": "Medicines used in treatment of Psychiatric Disorders",
+    "medicines": [
+      "Nicotine"
+    ]
+  },
+  "Nifedipine": {
+    "class": "Medicines used in Preterm Labour",
+    "medicines": [
+      "Nifedipine"
     ]
   },
   "Nitrofurantoin": {
@@ -754,10 +2136,28 @@
       "Nitrofurantoin"
     ]
   },
+  "Nitrous oxide": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Nitrous oxide"
+    ]
+  },
+  "Noradrenaline": {
+    "class": "Medicines used in Shock and Heart failure",
+    "medicines": [
+      "Noradrenaline"
+    ]
+  },
   "Norethisterone": {
     "class": "Hormonal cycle regulation",
     "medicines": [
       "Norethisterone"
+    ]
+  },
+  "Nystatin": {
+    "class": "Antifungal Medicines",
+    "medicines": [
+      "Nystatin"
     ]
   },
   "Olive oil": {
@@ -773,6 +2173,18 @@
       "Omeprazole"
     ]
   },
+  "Ondansetron": {
+    "class": "Antiemetic",
+    "medicines": [
+      "Ondansetron"
+    ]
+  },
+  "Oral poliomyelitis vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "Oral poliomyelitis vaccine"
+    ]
+  },
   "Orlistat": {
     "class": "Lipase inhibitor",
     "mechanism": "Blocks gut lipases so about a third of dietary fat is not absorbed.",
@@ -780,11 +2192,41 @@
       "Orlistat"
     ]
   },
+  "Ormeloxifene": {
+    "class": "Hormones, other Endocrine Medicines and Contraceptives",
+    "medicines": [
+      "Ormeloxifene (Centchroman)"
+    ]
+  },
+  "Oxaliplatin": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Oxaliplatin"
+    ]
+  },
+  "Oxygen": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Oxygen"
+    ]
+  },
   "Oxymetazoline": {
     "class": "Decongestant",
     "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
     "medicines": [
       "Oxymetazoline Nasal Spray"
+    ]
+  },
+  "Oxytocin": {
+    "class": "Oxytocics and Abortifacient",
+    "medicines": [
+      "Oxytocin"
+    ]
+  },
+  "Paclitaxel": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Paclitaxel"
     ]
   },
   "Pancreatin": {
@@ -800,6 +2242,12 @@
       "Pantoprazole"
     ]
   },
+  "Para- aminosalicylic acid": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Para- aminosalicylic acid"
+    ]
+  },
   "Paracetamol": {
     "class": "Analgesic / antipyretic",
     "mechanism": "Acts mainly in the central nervous system (COX inhibition and other pathways) to reduce pain and fever; little anti-inflammatory effect.",
@@ -808,10 +2256,22 @@
       "Dolo 650"
     ]
   },
+  "Paromomycin": {
+    "class": "Antiprotozoal Medicines",
+    "medicines": [
+      "Paromomycin"
+    ]
+  },
   "Peppermint oil": {
     "class": "Natural antispasmodic",
     "medicines": [
       "Peppermint Oil Capsule"
+    ]
+  },
+  "Peritoneal dialysis solution": {
+    "class": "Dialysis components (Haemodialysis and Peritoneal Dialysis)",
+    "medicines": [
+      "Peritoneal dialysis solution"
     ]
   },
   "Permethrin": {
@@ -829,11 +2289,59 @@
     ],
     "mechanism": "Forms a barrier that reduces water loss from the skin."
   },
+  "Phenobarbitone": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Phenobarbitone"
+    ]
+  },
+  "Phenoxymethyl penicillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Phenoxymethyl penicillin"
+    ]
+  },
   "Phenylephrine": {
     "class": "Decongestant",
     "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
     "medicines": [
       "Phenylephrine"
+    ]
+  },
+  "Phenytoin": {
+    "class": "Antiseizure medicine",
+    "medicines": [
+      "Phenytoin"
+    ]
+  },
+  "Phytomenadione (vitamin k ) 1": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Phytomenadione (Vitamin K ) 1"
+    ]
+  },
+  "Pilocarpine": {
+    "class": "Miotics and Antiglaucoma Medicines",
+    "medicines": [
+      "Pilocarpine"
+    ]
+  },
+  "Piperacillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Piperacillin + Tazobactam"
+    ]
+  },
+  "Platelet rich plasma/ platelet concentrates": {
+    "class": "Blood and Blood components",
+    "medicines": [
+      "Platelet rich plasma/ Platelet concentrates"
+    ]
+  },
+  "Podophyllin resin": {
+    "class": "Keratolytic agents",
+    "medicines": [
+      "Podophyllin resin"
     ]
   },
   "Polyethylene glycol": {
@@ -853,7 +2361,20 @@
     "class": "Fluid and electrolyte replacement",
     "medicines": [
       "ORS",
-      "Electrolyte Powder"
+      "Electrolyte Powder",
+      "Potassium chloride"
+    ]
+  },
+  "Potassium permanganate": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Potassium permanganate"
+    ]
+  },
+  "Povidone iodine": {
+    "class": "Antiseptics and Disinfectants",
+    "medicines": [
+      "Povidone iodine"
     ]
   },
   "Povidone-iodine": {
@@ -863,10 +2384,64 @@
       "Povidone-Iodine"
     ]
   },
+  "Pralidoxime chloride": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Pralidoxime chloride (2- PAM)"
+    ]
+  },
+  "Praziquantel": {
+    "class": "Anthelminthics",
+    "medicines": [
+      "Praziquantel"
+    ]
+  },
+  "Prednisolone": {
+    "class": "Corticosteroid",
+    "medicines": [
+      "Prednisolone"
+    ]
+  },
+  "Primaquine": {
+    "class": "Antimalarial Medicines",
+    "medicines": [
+      "Primaquine"
+    ]
+  },
+  "Procaine benzylpenicillin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Procaine Benzylpenicillin"
+    ]
+  },
   "Propane": {
     "class": "Wart removal",
     "medicines": [
       "Wart Freeze Spray"
+    ]
+  },
+  "Proparacaine": {
+    "class": "Ophthalmic Medicines",
+    "medicines": [
+      "Proparacaine"
+    ]
+  },
+  "Propofol": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Propofol"
+    ]
+  },
+  "Propranolol": {
+    "class": "Antimigraine Medicines",
+    "medicines": [
+      "Propranolol"
+    ]
+  },
+  "Protamine sulphate": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Protamine Sulphate"
     ]
   },
   "Protease": {
@@ -888,12 +2463,30 @@
       "Psyllium Husk (Isabgol)"
     ]
   },
+  "Pyrazinamide": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Pyrazinamide"
+    ]
+  },
   "Pyridoxine": {
     "class": "Vitamin",
     "mechanism": "Vitamin B6, a cofactor in amino acid metabolism.",
     "medicines": [
       "Vitamin B-Complex",
       "Vitamin B6 (Pyridoxine)"
+    ]
+  },
+  "Quinine": {
+    "class": "Antimalarial Medicines",
+    "medicines": [
+      "Quinine"
+    ]
+  },
+  "Rabies vaccine": {
+    "class": "For Specific Group of Individuals",
+    "medicines": [
+      "Rabies vaccine"
     ]
   },
   "Racecadotril": {
@@ -903,10 +2496,67 @@
       "Racecadotril"
     ]
   },
+  "Raltegravir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Raltegravir"
+    ]
+  },
+  "Ramipril": {
+    "class": "Antihypertensive Medicines",
+    "medicines": [
+      "Ramipril"
+    ]
+  },
+  "Red blood cells/ packed rbcs": {
+    "class": "Blood and Blood components",
+    "medicines": [
+      "Red blood cells/ Packed RBCs"
+    ]
+  },
+  "Ribavirin": {
+    "class": "Medicines used in Hepatitis B and Hepatitis C",
+    "medicines": [
+      "Ribavirin"
+    ]
+  },
   "Riboflavin (B2)": {
     "class": "Vitamin supplement",
     "medicines": [
       "Vitamin B-Complex"
+    ]
+  },
+  "Rifampicin": {
+    "class": "Antimycobacterial antibiotic",
+    "medicines": [
+      "Rifampicin"
+    ]
+  },
+  "Ringer lactate": {
+    "class": "Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances",
+    "medicines": [
+      "Ringer lactate"
+    ]
+  },
+  "Risperidone": {
+    "class": "Medicines used in Psychotic Disorders",
+    "medicines": [
+      "Risperidone"
+    ]
+  },
+  "Ritonavir": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Atazanavir + Ritonavir",
+      "Darunavir + Ritonavir",
+      "Lopinavir + Ritonavir",
+      "Ritonavir"
+    ]
+  },
+  "Rituximab": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Rituximab"
     ]
   },
   "Rosuvastatin": {
@@ -914,6 +2564,12 @@
     "mechanism": "Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.",
     "medicines": [
       "Rosuvastatin"
+    ]
+  },
+  "Rotavirus vaccine": {
+    "class": "Vaccines",
+    "medicines": [
+      "Rotavirus vaccine"
     ]
   },
   "Saccharomyces": {
@@ -933,7 +2589,8 @@
     "class": "Keratolytic",
     "mechanism": "Dissolves bonds between skin cells so thickened skin sheds.",
     "medicines": [
-      "Salicylic Acid"
+      "Salicylic Acid",
+      "Coal tar + Salicylic Acid"
     ]
   },
   "Selenium sulfide": {
@@ -950,11 +2607,29 @@
       "Senna"
     ]
   },
+  "Sevoflurane": {
+    "class": "General Anaesthetics and Oxygen",
+    "medicines": [
+      "Sevoflurane"
+    ]
+  },
+  "Silver sulphadiazine": {
+    "class": "Antibacterial Medicines",
+    "medicines": [
+      "Silver sulphadiazine"
+    ]
+  },
   "Simethicone": {
     "class": "Anti-foaming agent",
     "mechanism": "Lowers surface tension so gas bubbles merge; not absorbed.",
     "medicines": [
       "Simethicone"
+    ]
+  },
+  "Snake venom antiserum": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Snake venom antiserum"
     ]
   },
   "Sodium alginate": {
@@ -964,12 +2639,19 @@
     ],
     "mechanism": "Forms a gel raft on stomach contents that blocks acid reflux."
   },
+  "Sodium bicarbonate": {
+    "class": "Solutions correcting Water, Electrolyte disturbances and Acid-base disturbances",
+    "medicines": [
+      "Sodium bicarbonate"
+    ]
+  },
   "Sodium chloride": {
     "class": "Electrolyte / isotonic agent",
     "medicines": [
       "ORS",
       "Saline Nasal Spray",
-      "Electrolyte Powder"
+      "Electrolyte Powder",
+      "Glucose + Sodium chloride"
     ],
     "mechanism": "Replaces sodium and water; in nasal sprays it thins mucus and flushes irritants."
   },
@@ -979,10 +2661,112 @@
       "ORS"
     ]
   },
+  "Sodium nitrite": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Sodium nitrite"
+    ]
+  },
+  "Sodium nitroprusside": {
+    "class": "Antihypertensive Medicines",
+    "medicines": [
+      "Sodium nitroprusside"
+    ]
+  },
+  "Sodium thiosulphate": {
+    "class": "Antidotes and Other Substances used in Management of Poisonings/Envenomation",
+    "medicines": [
+      "Sodium thiosulphate"
+    ]
+  },
+  "Sodium valproate": {
+    "class": "Anticonvulsants/ Antiepileptics",
+    "medicines": [
+      "Sodium Valproate"
+    ]
+  },
+  "Sofosbuvir": {
+    "class": "Medicines used in Hepatitis B and Hepatitis C",
+    "medicines": [
+      "Sofosbuvir"
+    ]
+  },
+  "Somatostatin": {
+    "class": "Gastrointestinal Medicines",
+    "medicines": [
+      "Somatostatin"
+    ]
+  },
+  "Spironolactone": {
+    "class": "Medicines used in Shock and Heart failure",
+    "medicines": [
+      "Spironolactone"
+    ]
+  },
   "Starch": {
     "class": "Cooling skin powder",
     "medicines": [
       "Prickly Heat Powder"
+    ]
+  },
+  "Streptokinase": {
+    "class": "Antiplatelet and Antithrombotic Medicines",
+    "medicines": [
+      "Streptokinase"
+    ]
+  },
+  "Streptomycin": {
+    "class": "Antituberculosis Medicines",
+    "medicines": [
+      "Streptomycin"
+    ]
+  },
+  "Succinylcholine": {
+    "class": "Muscle Relaxants and Cholinesterase Inhibitors",
+    "medicines": [
+      "Succinylcholine"
+    ]
+  },
+  "Sulfasalazine": {
+    "class": "Disease Modifying Agents used in Rheumatoid Disorders",
+    "medicines": [
+      "Sulfasalazine"
+    ]
+  },
+  "Sulphadoxine - pyrimethamine": {
+    "class": "Antimalarial Medicines",
+    "medicines": [
+      "Artesunate + Sulphadoxine - Pyrimethamine"
+    ]
+  },
+  "Sulphamethoxazole": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Co-trimoxazole"
+    ]
+  },
+  "Sumatriptan": {
+    "class": "Antimigraine Medicines",
+    "medicines": [
+      "Sumatriptan"
+    ]
+  },
+  "Surfactant": {
+    "class": "Medicines for Neonatal Care",
+    "medicines": [
+      "Surfactant"
+    ]
+  },
+  "Tacrolimus": {
+    "class": "Immunosuppressive Medicines",
+    "medicines": [
+      "Tacrolimus"
+    ]
+  },
+  "Tamoxifen": {
+    "class": "Hormones and Anti-hormones used in Cancer Therapy",
+    "medicines": [
+      "Tamoxifen"
     ]
   },
   "Tamsulosin": {
@@ -992,11 +2776,50 @@
       "Tamsulosin"
     ]
   },
+  "Tazobactam": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Piperacillin + Tazobactam"
+    ]
+  },
   "Telmisartan": {
     "class": "Angiotensin receptor blocker",
     "mechanism": "Blocks AT1 receptors, causing vasodilation and lower blood pressure.",
     "medicines": [
       "Telmisartan"
+    ]
+  },
+  "Temozolomide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Temozolomide"
+    ]
+  },
+  "Tenecteplase": {
+    "class": "Antiplatelet and Antithrombotic Medicines",
+    "medicines": [
+      "Tenecteplase"
+    ]
+  },
+  "Teneligliptin": {
+    "class": "Medicines used in Diabetes Mellitus",
+    "medicines": [
+      "Teneligliptin"
+    ]
+  },
+  "Tenofovir alafenamide fumarate": {
+    "class": "Medicines used in Hepatitis B and Hepatitis C",
+    "medicines": [
+      "Tenofovir Alafenamide Fumarate (TAF)"
+    ]
+  },
+  "Tenofovir disproxil fumarate": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Tenofovir Disproxil Fumarate (TDF)",
+      "Tenofovir Disproxil Fumarate + Lamivudine",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Dolutegravir (C)",
+      "Tenofovir Disproxil Fumarate + Lamivudine + Efavirenz (C)"
     ]
   },
   "Terbinafine": {
@@ -1006,16 +2829,82 @@
       "Terbinafine Cream"
     ]
   },
+  "Tetanus toxoid": {
+    "class": "Vaccines",
+    "medicines": [
+      "Tetanus toxoid"
+    ]
+  },
+  "Thalidomide": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Thalidomide"
+    ]
+  },
   "Thiamine (B1)": {
     "class": "Vitamin supplement",
     "medicines": [
       "Vitamin B-Complex"
     ]
   },
-  "UV filters": {
-    "class": "Sun protection",
+  "Thiopentone": {
+    "class": "General Anaesthetics and Oxygen",
     "medicines": [
-      "Sunscreen"
+      "Thiopentone"
+    ]
+  },
+  "Timolol": {
+    "class": "Miotics and Antiglaucoma Medicines",
+    "medicines": [
+      "Timolol"
+    ]
+  },
+  "Tiotropium": {
+    "class": "Antiasthmatic Medicines",
+    "medicines": [
+      "Tiotropium"
+    ]
+  },
+  "Tramadol": {
+    "class": "Opioid Analgesics",
+    "medicines": [
+      "Tramadol"
+    ]
+  },
+  "Tranexamic acid": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Tranexamic acid"
+    ]
+  },
+  "Trastuzumab": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Trastuzumab"
+    ]
+  },
+  "Trihexyphenidyl": {
+    "class": "Antiparkinsonism Medicines",
+    "medicines": [
+      "Trihexyphenidyl"
+    ]
+  },
+  "Trimethoprim": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Co-trimoxazole"
+    ]
+  },
+  "Tropicamide": {
+    "class": "Ophthalmic Medicines",
+    "medicines": [
+      "Tropicamide"
+    ]
+  },
+  "Tuberculin, purified protein derivative": {
+    "class": "Diagnostic agents",
+    "medicines": [
+      "Tuberculin, Purified Protein derivative"
     ]
   },
   "Urea": {
@@ -1025,10 +2914,76 @@
     ],
     "mechanism": "Holds water in the skin and softens thick, dry skin."
   },
+  "UV filters": {
+    "class": "Sun protection",
+    "medicines": [
+      "Sunscreen"
+    ]
+  },
+  "Valganciclovir": {
+    "class": "Antiviral Medicines",
+    "medicines": [
+      "Valganciclovir"
+    ]
+  },
+  "Vancomycin": {
+    "class": "Antibacterials",
+    "medicines": [
+      "Vancomycin"
+    ]
+  },
+  "Vecuronium": {
+    "class": "Muscle Relaxants and Cholinesterase Inhibitors",
+    "medicines": [
+      "Vecuronium"
+    ]
+  },
+  "Verapamil": {
+    "class": "Antiarrhythmic medicines",
+    "medicines": [
+      "Verapamil"
+    ]
+  },
+  "Vinblastine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Vinblastine"
+    ]
+  },
+  "Vincristine": {
+    "class": "Antineoplastic medicines",
+    "medicines": [
+      "Vincristine"
+    ]
+  },
+  "Vitamin a": {
+    "class": "Vitamins and Minerals",
+    "medicines": [
+      "Vitamin A"
+    ]
+  },
   "Vitamins (various)": {
     "class": "General nutritional supplement",
     "medicines": [
       "Multivitamin"
+    ]
+  },
+  "Warfarin": {
+    "class": "Medicines affecting Coagulation",
+    "medicines": [
+      "Warfarin"
+    ]
+  },
+  "Water for injection": {
+    "class": "Miscellaneous",
+    "medicines": [
+      "Water for Injection"
+    ]
+  },
+  "Whole blood": {
+    "class": "Blood and Blood components",
+    "medicines": [
+      "Whole blood"
     ]
   },
   "Xylometazoline": {
@@ -1036,6 +2991,14 @@
     "mechanism": "Stimulates alpha-adrenergic receptors, constricting swollen nasal blood vessels.",
     "medicines": [
       "Xylometazoline Nasal Spray"
+    ]
+  },
+  "Zidovudine": {
+    "class": "Medicines used in the Management of HIV",
+    "medicines": [
+      "Zidovudine",
+      "Zidovudine + Lamivudine",
+      "Zidovudine + Lamivudine + Nevirapine (C)"
     ]
   },
   "Zinc": {
@@ -1060,5 +3023,23 @@
       "Zinc Pyrithione Shampoo"
     ],
     "mechanism": "Disrupts fungal membrane transport and metabolism, reducing dandruff yeast."
+  },
+  "Zinc sulfate": {
+    "class": "Mineral supplement",
+    "medicines": [
+      "Zinc sulfate"
+    ]
+  },
+  "Zoledronic acid": {
+    "class": "Medicines used in Palliative Care",
+    "medicines": [
+      "Zoledronic acid"
+    ]
+  },
+  "Zolpidem": {
+    "class": "Medicines used in Generalized Anxiety and Sleep Disorders",
+    "medicines": [
+      "Zolpidem"
+    ]
   }
 }

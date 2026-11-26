@@ -10,7 +10,9 @@ const ingredients = await load("ingredients.json");
 const library = await load("medicine-library.json");
 
 const norm = (s) => String(s).toLowerCase().trim();
-const medKeys = new Set(Object.keys(medicines).map(norm));
+// Library medicines are added to the checker when the server starts (see library.js),
+// so ingredient and disease lists may refer to them even though medicines.json does not hold them.
+const medKeys = new Set([...Object.keys(medicines), ...(library.medicines || []).map((m) => m.genericName)].map(norm));
 const errors = [];
 const warnings = [];
 
@@ -40,6 +42,11 @@ for (const e of library.medicines || []) {
   if (!NLEM.has(e.nlem2022Membership)) errors.push(`Library entry "${e.genericName}" has invalid nlem2022Membership "${e.nlem2022Membership}" (use ${[...NLEM].join(" / ")})`);
   const rx = e.rxnorm || {};
   if (rx.rxcui != null && !/^\d+$/.test(String(rx.rxcui))) errors.push(`Library entry "${e.genericName}" has a non-numeric rxcui "${rx.rxcui}"`);
+}
+
+for (const e of library.medicines || []) {
+  if (e.nlem2022Membership === "listed" && !(e.nlem && e.nlem.listings && e.nlem.listings.length)) errors.push(`Library entry "${e.genericName}" is marked listed but has no NLEM listing`);
+  for (const l of (e.nlem && e.nlem.listings) || []) if (!l.forms.length) warnings.push(`NLEM ${l.nlemId} ${e.genericName} has no dosage forms`);
 }
 
 console.log(`Checked ${Object.keys(diseases).length} diseases, ${Object.keys(medicines).length} medicines, ${Object.keys(ingredients).length} ingredients, ${(library.medicines || []).length} library entries.`);

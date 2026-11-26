@@ -3,7 +3,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const source = JSON.parse(await readFile(new URL("../public/data/medicine-library.json", import.meta.url), "utf8"));
-const columns = ["id", "genericName", "aliases", "therapeuticClass", "ingredients", "mechanismOfAction", "nlem2022Membership", "rxcui", "rxnormStatus"];
+const columns = ["id", "genericName", "aliases", "therapeuticClass", "ingredients", "mechanismOfAction", "nlem2022Membership", "nlemLevels", "nlemSections", "nlemForms", "rxcui", "rxnormStatus"];
 const cell = (v) => {
   const t = String(v ?? "");
   return /[",\n\r]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t;
@@ -17,6 +17,9 @@ const rows = (source.medicines ?? []).map((m) => [
   (m.ingredients ?? []).join("; "),
   m.mechanismOfAction ?? "",
   m.nlem2022Membership ?? "unverified",
+  (m.nlem?.levels ?? []).join("/"),
+  [...new Set((m.nlem?.listings ?? []).map((l) => l.nlemId + " " + (l.category || l.sectionTitle)))].join("; "),
+  [...new Set((m.nlem?.listings ?? []).flatMap((l) => l.forms))].join("; "),
   m.rxnorm?.rxcui ?? "",
   m.rxnorm?.status ?? "not_reviewed",
 ]);

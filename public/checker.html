@@ -930,6 +930,9 @@ function renderResult(data, age){
                 ${lib.therapeuticClass ? `<div class="detail"><strong>🏷️ Therapeutic Class</strong>${escapeHTML(lib.therapeuticClass)}</div>` : ""}
                 ${lib.mechanismOfAction ? `<div class="detail"><strong>⚙️ How It Works</strong>${escapeHTML(lib.mechanismOfAction)}</div>` : ""}
                 <div class="detail"><strong>📋 NLEM 2022</strong>${escapeHTML(nlemText)}</div>
+                ${lib.nlem ? `<div class="detail"><strong>🏥 NLEM Healthcare Level</strong>${escapeHTML(lib.nlem.levels.map((l) => ({ P: "Primary", S: "Secondary", T: "Tertiary" }[l] || l)).join(", "))}</div>
+                <div class="detail"><strong>📑 NLEM Section</strong>${escapeHTML([...new Set(lib.nlem.listings.map((l) => l.sectionTitle + (l.category ? " – " + l.category : "")))].join("; "))}</div>
+                <div class="detail"><strong>💊 NLEM Dosage Forms</strong>${escapeHTML([...new Set(lib.nlem.listings.flatMap((l) => l.forms))].join("; "))}</div>` : ""}
                 <div class="detail"><strong>🔢 RxNorm ID</strong>${escapeHTML(rxText)}</div>
             </div>
             <p style="padding:0 24px 6px;font-size:13px;opacity:.8">Source: Medicine Study Library${lib.nlem2022Membership === "unverified" ? " (study notes, not yet verified against official references)." : "."}</p>

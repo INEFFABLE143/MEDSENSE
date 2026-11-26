@@ -30,13 +30,18 @@ function mergeLibrary(medicines, library, normalize) {
       mechanismOfAction: e.mechanismOfAction || null,
       nlem2022Membership: e.nlem2022Membership || "unverified",
       rxnorm: e.rxnorm || { rxcui: null, status: "not_reviewed" },
+      nlem: e.nlem || null,
     };
 
     if (!hits.length) {
       const key = e.genericName;
+      const nl = e.nlem || null;
+      const forms = nl ? [...new Set(nl.listings.flatMap((l) => l.forms))] : [];
       medicines[key] = {
         ingredient: (e.ingredients || []).join(" + "),
         purpose: e.therapeuticClass || "",
+        ...(forms.length ? { form: forms.join("; ") } : {}),
+        ...(nl ? { status: "Essential medicine in India's NLEM 2022 (healthcare level: " + nl.levels.join(", ") + ")." } : {}),
         warning: "Detailed information for this medicine has not been added yet. Do not use it based on this page; ask a doctor or pharmacist.",
         actives: e.ingredients || [],
         libraryOnly: true,

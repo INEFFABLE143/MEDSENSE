@@ -158,3 +158,10 @@ package label and consult a doctor or pharmacist.
 ## License
 
 MIT (see `LICENSE`). Data from openFDA is public domain (CC0).
+
+## NLEM 2022 data
+
+- `public/data/nlem-2022.json` is the full official list (Sections 1-27), read from the Gazette notification S.O. 5249(E) of 11 Nov 2022: 384 medicines, each with its section, category, healthcare level (P / S / T), dosage forms and strengths, and the gazette page.
+- All 384 are in `medicine-library.json` (the Study Library) and are added to the checker when the server starts, so they are searchable there.
+- The NLEM document has no mechanisms of action. Those stay blank for the new entries until they are written and checked. The 41 starter entries keep their existing notes.
+- Entries flagged `formsNeedReview` were rebuilt from table cells that the gazette splits across pages. Check them against the printed page.
