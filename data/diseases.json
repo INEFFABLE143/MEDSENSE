@@ -2000,5 +2000,333 @@
       "Pyrantel Pamoate (Vet)",
       "Fenbendazole"
     ]
+  },
+  "Hand foot and mouth disease": {
+    "category": "Child Care",
+    "symptoms": "Fever, sore throat, painful mouth ulcers, rash on hands feet and buttocks, reduced appetite.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "ORS"
+    ]
+  },
+  "Croup": {
+    "category": "Child Care",
+    "symptoms": "Barking cough, hoarse voice, stridor especially at night, mild fever.",
+    "medicines": [
+      "Paracetamol",
+      "Dexamethasone"
+    ]
+  },
+  "Ear infection (otitis media) in children": {
+    "category": "Child Care",
+    "symptoms": "Ear pain, fever, irritability, tugging at the ear, temporary hearing reduction.",
+    "medicines": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Amoxicillin"
+    ]
+  },
+  "Allergic rhinitis in children": {
+    "category": "Child Care",
+    "symptoms": "Sneezing, runny or blocked nose, itchy eyes, seasonal or perennial.",
+    "medicines": [
+      "Cetirizine",
+      "Loratadine",
+      "Saline Nasal Spray"
+    ]
+  },
+  "Constipation in children": {
+    "category": "Child Care",
+    "symptoms": "Infrequent hard stools, straining, abdominal pain, soiling, reduced appetite.",
+    "medicines": [
+      "Lactulose",
+      "Psyllium Husk (Isabgol)",
+      "Polyethylene Glycol"
+    ]
+  },
+  "Atopic eczema in children": {
+    "category": "Child Care",
+    "symptoms": "Itchy dry red skin, especially in creases of elbows and knees, flares with irritants.",
+    "medicines": [
+      "Hydrocortisone",
+      "Emollient Cream",
+      "Cetirizine"
+    ]
+  },
+  "Threadworm (pinworm)": {
+    "category": "Child Care",
+    "symptoms": "Anal itching especially at night, restless sleep, visible worms sometimes.",
+    "medicines": [
+      "Albendazole",
+      "Mebendazole"
+    ]
+  },
+  "Mild acne in adolescents": {
+    "category": "Child Care",
+    "symptoms": "Blackheads, whiteheads, inflamed spots on face chest or back.",
+    "medicines": [
+      "Benzoyl Peroxide",
+      "Adapalene Gel"
+    ]
+  },
+  "Viral gastroenteritis in children": {
+    "category": "Child Care",
+    "symptoms": "Vomiting, watery diarrhoea, fever, dehydration risk, usually self-limiting.",
+    "medicines": [
+      "ORS",
+      "Zinc Sulfate",
+      "Ondansetron"
+    ]
+  },
+  "Bronchiolitis support": {
+    "category": "Child Care",
+    "symptoms": "Wheeze, cough, fast breathing, feeding difficulty in infants under 12 months.",
+    "medicines": [
+      "Saline Nasal Spray",
+      "Paracetamol"
+    ]
+  },
+  "Type 2 diabetes in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Often silent; thirst, frequent urination, fatigue, or found on routine blood tests.",
+    "medicines": [
+      "Metformin",
+      "Sitagliptin",
+      "Gliclazide"
+    ]
+  },
+  "Heart failure symptom support": {
+    "category": "Aged Care",
+    "symptoms": "Shortness of breath, ankle swelling, fatigue, reduced exercise tolerance.",
+    "medicines": [
+      "Furosemide",
+      "Spironolactone",
+      "Bisoprolol"
+    ]
+  },
+  "Benign prostatic hyperplasia symptoms": {
+    "category": "Aged Care",
+    "symptoms": "Weak stream, hesitancy, nocturia, incomplete emptying in older men.",
+    "medicines": [
+      "Tamsulosin",
+      "Finasteride"
+    ]
+  },
+  "Osteoporosis prevention support": {
+    "category": "Aged Care",
+    "symptoms": "Often no symptoms until fracture; height loss or back pain possible.",
+    "medicines": [
+      "Calcium + Vitamin D",
+      "Alendronate"
+    ]
+  },
+  "Parkinson disease symptom support": {
+    "category": "Aged Care",
+    "symptoms": "Tremor, rigidity, slow movement, balance problems.",
+    "medicines": [
+      "Levodopa + Carbidopa",
+      "Pramipexole"
+    ]
+  },
+  "Dry eyes in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Gritty sensation, burning, redness, blurred vision that improves with blinking.",
+    "medicines": [
+      "Artificial Tears",
+      "Carboxymethylcellulose Drops"
+    ]
+  },
+  "Chronic pain in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Persistent joint or musculoskeletal pain affecting sleep and daily activity.",
+    "medicines": [
+      "Paracetamol",
+      "Topical NSAID Gel",
+      "Tramadol"
+    ]
+  },
+  "Depression in older adults": {
+    "category": "Aged Care",
+    "symptoms": "Low mood, loss of interest, sleep change, fatigue, sometimes more physical complaints.",
+    "medicines": [
+      "Sertraline",
+      "Mirtazapine"
+    ]
+  },
+  "Venous leg ulcer care support": {
+    "category": "Aged Care",
+    "symptoms": "Open wound on lower leg, swelling, skin discolouration, slow healing.",
+    "medicines": [
+      "Compression advice support",
+      "Zinc Oxide Paste"
+    ]
+  },
+  "Falls risk and vitamin D deficiency": {
+    "category": "Aged Care",
+    "symptoms": "Recurrent falls, muscle weakness, low vitamin D on blood test.",
+    "medicines": [
+      "Calcium + Vitamin D",
+      "Vitamin D3"
+    ]
+  },
+  "Urinary tract infection in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Burning urination, frequency, urgency; sometimes asymptomatic bacteriuria on screening.",
+    "medicines": [
+      "Nitrofurantoin",
+      "Cephalexin"
+    ]
+  },
+  "Pre-eclampsia monitoring support": {
+    "category": "Pregnancy",
+    "symptoms": "High blood pressure, protein in urine, headache, visual changes, swelling (needs urgent care).",
+    "medicines": [
+      "Labetalol",
+      "Nifedipine"
+    ]
+  },
+  "Haemorrhoids in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Anal pain, itching, bright red bleeding on wiping, swelling.",
+    "medicines": [
+      "Lidocaine Cream",
+      "Psyllium Husk (Isabgol)"
+    ]
+  },
+  "Insomnia in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Difficulty sleeping due to discomfort, frequent urination or anxiety.",
+    "medicines": [
+      "Melatonin"
+    ]
+  },
+  "Leg cramps in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Sudden painful calf or foot cramps, often at night in later pregnancy.",
+    "medicines": [
+      "Magnesium Supplement",
+      "Calcium + Vitamin D"
+    ]
+  },
+  "Vaginal thrush in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Itching, thick white discharge, soreness; common due to hormonal change.",
+    "medicines": [
+      "Clotrimazole"
+    ]
+  },
+  "Low back pain in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Aching or sharp pain in lower back, worse with prolonged standing or walking.",
+    "medicines": [
+      "Paracetamol",
+      "Topical NSAID Gel"
+    ]
+  },
+  "Hypothyroidism in pregnancy": {
+    "category": "Pregnancy",
+    "symptoms": "Fatigue, weight gain, cold intolerance, or detected on routine thyroid screening.",
+    "medicines": [
+      "Levothyroxine"
+    ]
+  },
+  "Gestational hypertension support": {
+    "category": "Pregnancy",
+    "symptoms": "Raised blood pressure after 20 weeks without significant protein in urine.",
+    "medicines": [
+      "Labetalol",
+      "Nifedipine"
+    ]
+  },
+  "Iron deficiency without anaemia symptoms": {
+    "category": "Pregnancy",
+    "symptoms": "Fatigue, reduced exercise tolerance, low ferritin even if haemoglobin is borderline.",
+    "medicines": [
+      "Iron + Folic Acid",
+      "Ferrous Sulfate"
+    ]
+  },
+  "Canine atopic dermatitis": {
+    "category": "Veterinary",
+    "symptoms": "Itchy skin, licking paws, ear infections, seasonal or year-round in allergic dogs.",
+    "medicines": [
+      "Oclacitinib",
+      "Apoquel support",
+      "Antihistamine (Vet)"
+    ]
+  },
+  "Feline lower urinary tract disease": {
+    "category": "Veterinary",
+    "symptoms": "Straining to urinate, blood in urine, frequent litter visits, vocalising; emergency if blocked.",
+    "medicines": [
+      "Prazosin (Vet)",
+      "Buprenorphine (Vet)"
+    ]
+  },
+  "Canine otitis externa": {
+    "category": "Veterinary",
+    "symptoms": "Head shaking, ear scratching, smell, discharge, pain on touching the ear.",
+    "medicines": [
+      "Ear Cleaner (Vet)",
+      "Gentamicin + Betamethasone Ear Drops"
+    ]
+  },
+  "Kennel cough": {
+    "category": "Veterinary",
+    "symptoms": "Harsh dry cough, retching, mild fever, usually after contact with other dogs.",
+    "medicines": [
+      "Doxycycline (Vet)",
+      "Cough suppressant (Vet)"
+    ]
+  },
+  "Feline diabetes mellitus support": {
+    "category": "Veterinary",
+    "symptoms": "Increased thirst and urination, weight loss despite appetite, lethargy.",
+    "medicines": [
+      "Insulin (Vet)",
+      "Glipizide (Vet)"
+    ]
+  },
+  "Canine osteoarthritis": {
+    "category": "Veterinary",
+    "symptoms": "Stiffness after rest, reluctance to jump or climb stairs, limping, reduced play.",
+    "medicines": [
+      "Carprofen",
+      "Gabapentin (Vet)",
+      "Glucosamine"
+    ]
+  },
+  "Cat flea allergy dermatitis": {
+    "category": "Veterinary",
+    "symptoms": "Intense itching, hair loss over the back and base of tail, scabs, even with few fleas.",
+    "medicines": [
+      "Fipronil Spot-on",
+      "Prednisolone (Vet)"
+    ]
+  },
+  "Puppy and kitten vaccination support": {
+    "category": "Veterinary",
+    "symptoms": "Preventive schedule for core diseases (parvo, distemper, panleukopenia, etc.).",
+    "medicines": [
+      "Core Vaccine Protocol (Vet)"
+    ]
+  },
+  "Canine parvovirus support": {
+    "category": "Veterinary",
+    "symptoms": "Severe vomiting, bloody diarrhoea, lethargy, dehydration in unvaccinated puppies.",
+    "medicines": [
+      "ORS",
+      "Metronidazole (Vet)",
+      "Probiotic (Vet)"
+    ]
+  },
+  "Ear mites in cats and dogs": {
+    "category": "Veterinary",
+    "symptoms": "Intense ear scratching, dark crumbly discharge, head shaking.",
+    "medicines": [
+      "Ivermectin",
+      "Selamectin Spot-on"
+    ]
   }
 }
