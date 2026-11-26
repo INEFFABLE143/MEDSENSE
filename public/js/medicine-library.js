@@ -120,6 +120,9 @@ async function startLibrary() {
         el("p", "", `NLEM 2022 membership: ${medicine.nlem2022Membership ?? "unverified"}`),
         el("p", "", `RxNorm: ${medicine.rxnorm?.status ?? "not reviewed"}`),
       );
+      const src = el("p", "medicine-library__source", "Educational study note · Med Sense library · Last reviewed Nov 2026");
+      src.style.cssText = "font-size:12px;color:var(--muted);margin-top:8px;padding-top:6px;border-top:1px dashed var(--line)";
+      card.append(src);
       list.append(card);
     }
   }

@@ -69,6 +69,37 @@ input:focus,a:focus-visible,button:focus-visible{outline:3px solid rgba(15,138,1
 .btn{margin-right:8px}button.btn{border:0;cursor:pointer;font-size:16px}.btn.fav{background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:10.5px 20px}.note{font-size:13px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
 @media(max-width:700px){.hero{padding:32px 22px 64px}h1{font-size:34px}.main{padding:26px 20px}nav{padding:12px 20px}.stats{grid-template-columns:1fr}nav a.out{margin-left:0}}
 
+
+/* Source / trust */
+.source-note{font-size:12px;color:var(--muted);margin-top:10px;padding-top:8px;border-top:1px dashed var(--line)}
+/* When to seek care */
+.seek-box{margin:16px 0;padding:16px 18px;background:#e8f4ff;border-left:5px solid #1976d2;border-radius:14px}
+.seek-box h3{color:#0d47a1;margin:0 0 6px;font-family:var(--font-display);font-size:16px}
+.seek-box p,.seek-box ul{margin:0;font-size:14px;color:var(--ink)}
+.seek-box ul{padding-left:18px;margin-top:6px}
+[data-theme="dark"] .seek-box{background:#0d2130;border-color:#42a5f5}
+[data-theme="dark"] .seek-box h3{color:#90caf9}
+/* Audience caution banners */
+.caution{margin:12px 0 16px;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:600;line-height:1.45}
+.caution-preg{background:#fce4ec;border:1.5px solid #ec407a;color:#880e4f}
+.caution-vet{background:#fff3e0;border:1.5px solid #ff9800;color:#e65100}
+[data-theme="dark"] .caution-preg{background:#3a1528;border-color:#ec407a;color:#f8bbd0}
+[data-theme="dark"] .caution-vet{background:#3a2a10;border-color:#ff9800;color:#ffcc80}
+/* Share / copy */
+.share-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.share-row .btn{margin-top:0;padding:8px 14px;font-size:13px}
+.btn.ghost{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn.ghost:hover{background:var(--mist)}
+/* Mobile touch targets & spacing */
+@media(max-width:700px){
+  .chip{min-height:40px;padding:8px 14px}
+  .card{padding:14px 16px}
+  .audience-card{padding:16px 12px;min-height:100px}
+  .btn{min-height:44px;display:inline-flex;align-items:center}
+  .facts{grid-template-columns:1fr}
+  .share-row .btn{min-height:40px}
+}
+
 /* Audience sections */
 .audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:20px 0 28px}
 .audience-card{display:block;text-decoration:none;color:var(--ink);background:linear-gradient(145deg,var(--mist),#fff);border:1.5px solid var(--line);border-radius:18px;padding:18px 16px;text-align:center;transition:.15s}
@@ -198,6 +229,82 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const enc=encodeURIComponent;
 const NOTE='<p class="note">Educational information only. It does not diagnose disease or prescribe medication. Always check the package label and consult a doctor or pharmacist.</p>';
 function bar(on){if(window.msSideSync)window.msSideSync()}
+
+const SYNONYMS={
+  "stomach pain":"abdominal pain indigestion gastritis",
+  "tummy pain":"abdominal pain indigestion",
+  "high bp":"hypertension blood pressure",
+  "high blood pressure":"hypertension",
+  "sugar":"diabetes",
+  "blood sugar":"diabetes",
+  "itchy dog":"canine atopic dermatitis flea",
+  "dog itch":"canine atopic dermatitis flea",
+  "cat pee":"feline lower urinary",
+  "morning sickness":"nausea vomiting pregnancy",
+  "throwing up":"vomiting nausea gastroenteritis",
+  "runny nose":"cold rhinitis allergy",
+  "blocked nose":"cold rhinitis",
+  "sore throat":"cold infection",
+  "ear ache":"ear infection otitis",
+  "earache":"ear infection otitis",
+  "itchy skin":"eczema dermatitis allergy",
+  "joint pain":"osteoarthritis musculoskeletal",
+  "back pain":"musculoskeletal low back",
+  "cant sleep":"insomnia sleep",
+  "can't sleep":"insomnia sleep",
+  "constipation":"constipation hard stools",
+  "diarrhoea":"diarrhoea diarrhea loose stools",
+  "diarrhea":"diarrhoea diarrhea",
+  "fever child":"fever children paediatric",
+  "baby fever":"fever children",
+  "worm":"threadworm pinworm anthelmintic",
+  "flea":"flea infestation veterinary",
+  "tick":"tick veterinary",
+  "heartburn":"heartburn acid reflux pregnancy",
+  "piles":"haemorrhoids hemorrhoids",
+  "uti":"urinary tract infection",
+  "bp":"hypertension blood pressure",
+  "asthma child":"childhood asthma wheeze",
+  "wheeze":"asthma bronchiolitis"
+};
+function expandQuery(q){
+  let s=q.toLowerCase().trim();
+  if(!s)return [];
+  const extra=[];
+  for(const [k,v] of Object.entries(SYNONYMS)){if(s.includes(k)||k.includes(s))extra.push(...v.split(/\s+/))}
+  return [...new Set(s.split(/[\s,;]+/).filter(t=>t.length>1).concat(extra))];
+}
+
+
+function sourceNote(kind){
+  return '<p class="source-note">Educational summary from Med Sense data · Last reviewed: Nov 2026 · Not a substitute for a doctor or pharmacist. Always check the product label.</p>';
+}
+function cautionBanner(cat){
+  if(cat==="Pregnancy")return '<div class="caution caution-preg">Pregnancy: Medicines and doses can affect both parent and baby. Confirm every medicine with your obstetrician or midwife before use.</div>';
+  if(cat==="Veterinary")return '<div class="caution caution-vet">Veterinary only: Human medicines are not automatically safe for animals. Use products and doses prescribed by a veterinarian for the correct species.</div>';
+  return '';
+}
+function seekCare(cat, name){
+  const general='<div class="seek-box"><h3>When to seek care</h3><ul><li>Symptoms are severe, sudden, or getting worse quickly</li><li>You are unsure whether a medicine is suitable</li><li>There is high fever, breathing difficulty, chest pain, confusion, or uncontrolled bleeding</li><li>A child, older adult, or pregnant person is affected and you are worried</li></ul><p style="margin-top:8px">This site does not diagnose or prescribe. Speak to a doctor or pharmacist.</p></div>';
+  if(cat==="Pregnancy")return '<div class="seek-box"><h3>When to seek care in pregnancy</h3><ul><li>Severe headache, visual changes, sudden swelling, or reduced baby movements</li><li>Vaginal bleeding, fluid leak, or regular painful contractions</li><li>Fever, burning urination, or inability to keep fluids down</li><li>Any medicine question — confirm with your maternity team</li></ul></div>';
+  if(cat==="Veterinary")return '<div class="seek-box"><h3>When to see a vet</h3><ul><li>Pet cannot urinate, is in severe pain, or is collapsing</li><li>Persistent vomiting, bloody diarrhoea, or refusal to eat</li><li>Difficulty breathing, seizures, or suspected poisoning</li><li>Before giving any human medicine to an animal</li></ul></div>';
+  if(cat==="Child Care")return '<div class="seek-box"><h3>When to seek care for a child</h3><ul><li>Under 3 months with any fever, or fever lasting more than 2–3 days</li><li>Breathing difficulty, blue lips, unusual drowsiness, or rash that does not fade</li><li>Persistent vomiting, no wet nappies, or signs of dehydration</li><li>You are worried — trust your instincts and get checked</li></ul></div>';
+  if(cat==="Aged Care")return '<div class="seek-box"><h3>When to seek care</h3><ul><li>Sudden confusion, falls, chest pain, or breathing difficulty</li><li>New incontinence, inability to pass urine, or severe dizziness</li><li>Medicine side effects that interfere with daily life</li><li>Multiple medicines — ask a pharmacist or doctor to review them</li></ul></div>';
+  return general;
+}
+function shareRow(kind, name){
+  const url = location.origin + location.pathname + '#' + (kind==='d'?'d/':'m/') + encodeURIComponent(name);
+  return '<div class="share-row no-print"><button type="button" class="btn ghost" data-copy="'+esc(url)+'">Copy link</button><button type="button" class="btn ghost" onclick="window.print()">Print</button></div>';
+}
+function wireShare(){
+  document.querySelectorAll('[data-copy]').forEach(b=>{
+    b.onclick=async()=>{
+      try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy link',1500)}
+      catch(e){prompt('Copy this link:', b.dataset.copy)}
+    };
+  });
+}
+
 function home(){
   bar("home");
   const cats=["All",...new Set(Object.values(D).map(d=>d.category))].sort((a,b)=>a==="All"?-1:b==="All"?1:a.localeCompare(b));
@@ -214,7 +321,7 @@ function home(){
   '<div class="chips" id="chips"></div><div class="grid" id="g"></div>'+NOTE;
   const draw=()=>{
     document.getElementById("chips").innerHTML=cats.map(c=>'<button class="chip '+(c===cat?"on":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
-    const toks=q.toLowerCase().split(/[\s,;]+/).filter(t=>t.length>1);
+    const toks=expandQuery(q);
     const list=Object.entries(D).filter(([n,d])=>cat==="All"||d.category===cat).map(([n,d])=>{const h=(n+" "+d.symptoms+" "+d.medicines.join(" ")).toLowerCase();return [n,d,toks.filter(t=>h.includes(t)).length]}).filter(x=>!toks.length||x[2]>0).sort((a,b)=>b[2]-a[2]);
     document.getElementById("g").innerHTML=list.map(([n,d,c])=>card(n,d.category+(toks.length>1?" · "+c+"/"+toks.length+" match":""),d.symptoms.slice(0,80)+(d.symptoms.length>80?"...":""),"d")).join("")||'<p class="lead">No match. Try another word or clear the category.</p>';
   };
@@ -230,10 +337,14 @@ function disease(n){
   const d=D[n];if(!d)return home();
   bar("home");
   app.innerHTML='<a class="back" href="#home">Back to diseases</a><span class="tags"><a href="#home" style="pointer-events:none">'+esc(d.category)+'</a></span><h2 style="margin-top:10px">'+esc(n)+'</h2>'+
+  cautionBanner(d.category)+
   '<div class="box"><h3>Common symptoms</h3><p>'+esc(d.symptoms)+'</p></div>'+warnBox(d)+
   '<div class="box"><h3>Medicines commonly listed ('+d.medicines.length+')</h3><div class="tags">'+d.medicines.map(m=>M[m]?'<a href="#m/'+enc(m)+'">'+esc(m)+'</a>':'<a href="#home" style="pointer-events:none">'+esc(m)+'</a>').join("")+'</div></div>'+
-  favBtn("d",n)+PB+'<a class="btn" href="checker.html?disease='+enc(n)+'">Check a medicine for '+esc(n)+'</a>'+NOTE;
-  favWire("d",n);scrollTo(0,0);
+  seekCare(d.category,n)+
+  shareRow('d',n)+
+  favBtn("d",n)+PB+'<a class="btn" href="checker.html?disease='+enc(n)+'">Check a medicine for '+esc(n)+'</a>'+
+  sourceNote('disease')+NOTE;
+  favWire("d",n);wireShare();scrollTo(0,0);
 }
 function meds(){
   bar("med");
@@ -250,15 +361,25 @@ function libBox(l){
 function medicine(n){
   const m=M[n];if(!m)return meds();
   bar("med");
-  const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k])=>k);
+  const used=Object.entries(D).filter(([k,d])=>d.medicines.includes(n)).map(([k,d])=>({name:k,cat:d.category}));
   const F=[["Uses","uses"],["Age guidance","age"],["Precautions","precautions"],["Side effects","sideEffects"],["Interactions","interactions"],["With food","food"],["Availability","status"]];
-  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+[m.form,m.ingredient].filter(Boolean).map(esc).join(' &middot; ')+'</p><p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
-  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+ingBox(m)+
+  // Determine dominant category for caution
+  const cats=used.map(u=>u.cat);
+  const cautionCat = cats.includes("Pregnancy")?"Pregnancy":cats.includes("Veterinary")?"Veterinary":cats.includes("Child Care")?"Child Care":cats.includes("Aged Care")?"Aged Care":"";
+  app.innerHTML='<a class="back" href="#medicines">Back to medicines</a><h2>'+esc(n)+'</h2><p class="lead">'+[m.form,m.ingredient].filter(Boolean).map(esc).join(' &middot; ')+'</p>'+
+  cautionBanner(cautionCat)+
+  '<p>'+favBtn("m",n)+PB+'<a class="btn fav" href="#compare/'+enc(n)+'">Compare</a><a class="btn" href="checker.html?medicine='+enc(n)+'">Check this medicine</a></p>'+
+  shareRow('m',n)+
+  '<div class="box"><h3>Purpose</h3><p>'+esc(m.purpose)+'</p></div>'+(typeof ingBox==="function"?ingBox(m):'')+
   '<div class="facts">'+F.filter(([t,k])=>m[k]).map(([t,k])=>'<div class="box"><h3>'+t+'</h3><p>'+esc(m[k])+'</p></div>').join("")+'</div>'+
-  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+libBox(m.library)+
-  (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(k=>'<a href="#d/'+enc(k)+'">'+esc(k)+'</a>').join("")+'</div></div>':'')+NOTE;
-  favWire("m",n);scrollTo(0,0);
+  (m.warning?'<div class="box warn"><h3>Warning</h3><p>'+esc(m.warning)+'</p></div>':'')+
+  (used.length?'<div class="box"><h3>Listed for these conditions</h3><div class="tags">'+used.map(u=>'<a href="#d/'+enc(u.name)+'">'+esc(u.name)+' <small style="opacity:.7">('+esc(u.cat)+')</small></a>').join("")+'</div></div>':'')+
+  (m.library?libBox(m.library):'')+
+  seekCare(cautionCat,n)+
+  sourceNote('medicine')+NOTE;
+  favWire("m",n);wireShare();scrollTo(0,0);
 }
+
 function saved(){
   bar("saved");const ds=F.d.filter(n=>D[n]),ms=F.m.filter(n=>M[n]);
   app.innerHTML='<h2>Saved</h2><p class="lead">Your saved diseases and medicines. They are stored in this browser only.</p>'+(ds.length||ms.length?(ds.length?'<h3>Diseases</h3><div class="grid" style="margin:10px 0 22px">'+ds.map(n=>card(n,D[n].category,D[n].symptoms.slice(0,80),"d")).join("")+'</div>':'')+(ms.length?'<h3>Medicines</h3><div class="grid" style="margin-top:10px">'+ms.map(n=>card(n,M[n].form,M[n].purpose,"m")).join("")+'</div>':''):'<p class="lead">Nothing saved yet. Open a disease or medicine and tap Save.</p>')+NOTE;
