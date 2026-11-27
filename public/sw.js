@@ -1,5 +1,5 @@
 /* Med Sense — lightweight offline cache for shell + core data */
-const CACHE = "medsense-v1";
+const CACHE = "medsense-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -21,6 +21,8 @@ const ASSETS = [
   "./img/med-sense-icon.svg",
   "./img/med-sense-logo.svg",
   "./img/med-sense-logo-dark.svg",
+  "./img/icon-192.png",
+  "./img/icon-512.png",
   "./manifest.webmanifest"
 ];
 
@@ -41,7 +43,7 @@ self.addEventListener("fetch", (event) => {
     caches.match(req).then((cached) => {
       const fetchPromise = fetch(req).then((res) => {
         const copy = res.clone();
-        if (res.ok && (req.url.includes("/data/") || req.url.includes("/css/") || req.url.includes("/js/") || req.url.endsWith(".html") || req.url.endsWith(".svg"))) {
+        if (res.ok && (req.url.includes("/data/") || req.url.includes("/css/") || req.url.includes("/js/") || req.url.endsWith(".html") || req.url.endsWith(".svg") || req.url.endsWith(".png"))) {
           caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
         }
         return res;
